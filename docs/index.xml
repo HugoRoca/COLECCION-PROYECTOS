@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hugrid - Grid Theme For Hugo</title>
-    <link>http://example.org/</link>
-    <description>Recent content on Hugrid - Grid Theme For Hugo</description>
+    <title>Hugo Roca - Proyectos personales</title>
+    <link>/</link>
+    <description>Recent content on Hugo Roca - Proyectos personales</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>es-PE</language>
     
-	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
