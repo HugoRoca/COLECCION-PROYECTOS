@@ -9,14 +9,8 @@ layoutdir = "layouts"
 publishdir = "docs"
 
 [params]
-
-    # You can use Markdown syntax for urls [text](//url.to/source) for
-    # most longer texts.
-
-    # To provide some metadata for search engines feel free to add a few
-    # information about you and your website.
-    name = "Hugo"
-    description = "My awesome description"
+    name = "Hugo Roca"
+    description = "Este es mi portafolio de proyectos personales que están desarrollados en varios lenguajes y estilos de programación."
 
     # Since this template is static, the contact form uses www.formspree.io as a
     # proxy. The form makes a POST request to their servers to send the actual
@@ -77,32 +71,32 @@ publishdir = "docs"
 
         # 'error' defines error messages for invalid inputs
         [params.contact.form.name]
-            text = "Name"
-            error = "Please enter your name."
+            text = "Nombre"
+            error = "Por favor ingrese su nombre."
 
         [params.contact.form.email]
-            text = "Email Address"
-            error = "Please enter your email address."
+            text = "Email"
+            error = "Por favor ingrese su email"
 
         [params.contact.form.phone]
-            text = "Phone Number"
-            error = "Please enter your phone number."
+            text = "Celular"
+            error = "Por favor ingrese su celular"
 
         [params.contact.form.message]
-            text = "Message"
-            error = "Please enter a message."
+            text = "Mensaje"
+            error = "Por favor ingrese su mensaje."
 
         [params.contact.form.button]
-            text = "Send"
+            text = "Enviar"
 
 
     [params.footer]
-        copyright = "Published under the Apache License 2.0. Powered by [Hugo](//gohugo.io)."
+        copyright = "Publicado bajo Apache License 2.0. Desarrollado por [Hugo](//hugoroca.github.io)."
 
         [params.footer.location]
-            title = "Location"
+            title = "Ubicación"
             # Postal address (add as many lines as necessary)
-            address = ["3481 Melrose Place", "Beverly Hills, CA 90210"]
+            address = ["Perú - Lima"]
 
         [params.footer.social]
             title = "Around the web"
@@ -111,7 +105,7 @@ publishdir = "docs"
             # CSS class.
             [[params.footer.social.networks]]
                 icon = "fa-github"
-                link = "//github.com/spf13/hugo"
+                link = "//github.com/HugoRoca"
 
             [[params.footer.social.networks]]
                 icon = "fa-stack-overflow"
@@ -119,5 +113,5 @@ publishdir = "docs"
 
 
         [params.footer.credits]
-            title = "About Freelancer"
+            title = "Web Site"
             text = "Freelance is a free to use, open source Bootstrap theme created by [Start Bootstrap](//startbootstrap.com)."
