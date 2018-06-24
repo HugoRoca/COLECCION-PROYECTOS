@@ -48,10 +48,10 @@ publishdir = "docs"
         title = "Proyectos"
 
         [params.portfolio.modal]
-            client = "Client"
-            date = "Date"
-            category = "Category"
-            buttontext = "Close"
+            client = "Más información"
+            date = "Fue desarrollador en"
+            category = "Categoria"
+            buttontext = "Cerrar"
 
 
     [params.about]

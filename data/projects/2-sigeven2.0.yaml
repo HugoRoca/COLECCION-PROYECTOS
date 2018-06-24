@@ -1,0 +1,8 @@
+modalID: 2
+title: SIGEVEN 2.0
+date: MySql
+img: SIGEVEN2.svg
+client: AngularJS, PHP, Ajax, JQuery
+clientLink: "#"
+category: Web
+description: Sistema para el control de ventas y compras, cuenta con.- <br> - Gráficos ChartArt <br> - Registro de usuarios y asignación de permisos <br> - Registro de artículos <br> - Registro categorías <br> - Registro de proveedores y cliente<br> - Registro de compras y ventas <br> - Control de stock <br> - Consultas de gastos y ventas <br> - Consulta de venta por ragon de fechas <br> - Impresión de Boletas, facturas y tickets en pdf <br> - Exportación de datos en Excel, PDF y CSV
