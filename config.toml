@@ -17,7 +17,7 @@ publishdir = "docs"
     subtitle = "Este es mi portafolio de proyectos personales que están desarrollados en varios lenguajes y estilos de programación. Sientete a gusto de escoger los proyectos que te llamen la atención. <b>Recuerda dejar tu correo y un comentario positivo en la parte de abajo, y yo te lo estaré enviando.</b>"
     author = "Hugo Roca"
     description = "Este es mi portafolio de proyectos personales que están desarrollados en varios lenguajes y estilos de programación."
-    keywords = "Hugo, Hugo theme, grid theme, portfolio, bookmarks, collection, contacts"
+    keywords = "Hugo, Portafolio, Proyecto, Sistemas, Base de datos, Angularjs, Jquery, php, .net, c#, MVC"
 
     # Body background color
     bodybgcolor = "#f9f9f9"
