@@ -1,34 +1,120 @@
 # Site settings
-baseurl = "/"
+baseurl = "https://example.org/"
 languageCode = "es-PE"
-title = "Hugo Roca - Proyectos personales"
-theme = "hugrid"
-# Enter your tracking code to enable Google Analytics
-googleAnalytics = "UA-XXXXXXXX-Y"
-
-contentdir = "content"
-datadir = "data"
-layoutdir = "layouts"
+title = "Hugo Roca - Proyectos Personales"
+theme = "hugo-freelancer-theme"
 publishdir = "docs"
 
 [params]
-    # Meta
-    title = "¡Hola! Soy Hugo"
-    subtitle = "Este es mi portafolio de proyectos personales que están desarrollados en varios lenguajes y estilos de programación. Sientete a gusto de escoger los proyectos que te llamen la atención. <b>Recuerda dejar tu correo y un comentario positivo en la parte de abajo, y yo te lo estaré enviando.</b>"
-    author = "Hugo Roca"
-    description = "Este es mi portafolio de proyectos personales que están desarrollados en varios lenguajes y estilos de programación."
-    keywords = "Hugo, Portafolio, Proyecto, Sistemas, Base de datos, Angularjs, Jquery, php, .net, c#, MVC"
 
-    # Body background color
-    bodybgcolor = "#f9f9f9"
+    # You can use Markdown syntax for urls [text](//url.to/source) for
+    # most longer texts.
 
-    # Preview container button text
-    buttontext = "Get the theme"
+    # To provide some metadata for search engines feel free to add a few
+    # information about you and your website.
+    name = "Hugo"
+    description = "My awesome description"
 
-    # Footer text
-    footertext = "Si deseas comunicarte conmigo para alguna duda o sugerencia escribeme a <a>hugo.rock20@hotmail.com, gracias.</a>"
+    # Since this template is static, the contact form uses www.formspree.io as a
+    # proxy. The form makes a POST request to their servers to send the actual
+    # email. Visitors can send up to a 1000 emails each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - set your email address under 'email' below
+    # - upload the generated site to your server
+    # - send a dummy email youself to confirm your account
+    # - click the confirm link in the email from www.formspree.io
+    # - you're done. Happy mailing!
+    email = "hugo.rock20@hotmail.com"
 
-    # add extra-css
-    # custom_css = ['css/extra1.css', 'css/extra2.css']
+    # Custom assets
+	custom_css = []
+	custom_js  = []
 
-    BaseURL = "images/"
+    [params.navigation]
+        brand = "Mr. Hugo Roca"
+
+
+    [params.header]
+        # Copy your own image into './static/img/'' if you wish
+        image = "profile.png"
+        name = "Mr. Hugo"
+        subtitle = "Desarrollador de Software"
+
+
+    [params.portfolio]
+        # All projects defined in their own files. You can find example projects
+        # at 'exampleSite/data/projects'. Copy the 'projects' folder into the 'data' directory
+        # at the root of this Hugo site.
+        # For more informtion take a look at the README.
+        title = "Proyectos"
+
+        [params.portfolio.modal]
+            client = "Client"
+            date = "Date"
+            category = "Category"
+            buttontext = "Close"
+
+
+    [params.about]
+        title = "Acerca de mí"
+        # The about text is splitted into a left and right column
+        left = "Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization."
+        right = "Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!"
+
+        [params.about.button]
+            text = "Download theme"
+            link = "//github.com/digitalcraftsman/hugo-freelancer-theme/archive/master.zip"
+            icon = "download"
+
+
+    [params.contact]
+        title = "Contacto"
+
+        # 'error' defines error messages for invalid inputs
+        [params.contact.form.name]
+            text = "Name"
+            error = "Please enter your name."
+
+        [params.contact.form.email]
+            text = "Email Address"
+            error = "Please enter your email address."
+
+        [params.contact.form.phone]
+            text = "Phone Number"
+            error = "Please enter your phone number."
+
+        [params.contact.form.message]
+            text = "Message"
+            error = "Please enter a message."
+
+        [params.contact.form.button]
+            text = "Send"
+
+
+    [params.footer]
+        copyright = "Published under the Apache License 2.0. Powered by [Hugo](//gohugo.io)."
+
+        [params.footer.location]
+            title = "Location"
+            # Postal address (add as many lines as necessary)
+            address = ["3481 Melrose Place", "Beverly Hills, CA 90210"]
+
+        [params.footer.social]
+            title = "Around the web"
+            # All icons using Fontawesome's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
+            # for more icons. The icons are represented by their corresponding
+            # CSS class.
+            [[params.footer.social.networks]]
+                icon = "fa-github"
+                link = "//github.com/spf13/hugo"
+
+            [[params.footer.social.networks]]
+                icon = "fa-stack-overflow"
+                link=  "//stackoverflow.com/questions/tagged/hugo"
+
+
+        [params.footer.credits]
+            title = "About Freelancer"
+            text = "Freelance is a free to use, open source Bootstrap theme created by [Start Bootstrap](//startbootstrap.com)."
