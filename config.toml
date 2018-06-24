@@ -3,6 +3,9 @@ baseurl = "https://example.org/"
 languageCode = "es-PE"
 title = "Hugo Roca - Proyectos Personales"
 theme = "hugo-freelancer-theme"
+contentdir = "content"
+datadir = "data"
+layoutdir = "layouts"
 publishdir = "docs"
 
 [params]
