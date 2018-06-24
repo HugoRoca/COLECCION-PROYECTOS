@@ -1,5 +1,5 @@
 # Site settings
-baseurl = "/"
+baseurl = "https://hugorocaproyectos.js.org/"
 languageCode = "es-PE"
 title = "Hugo Roca - Proyectos Personales"
 theme = "hugo-freelancer-theme"
