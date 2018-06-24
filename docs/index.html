@@ -17,6 +17,7 @@
 <link href="https://hugorocaproyectos.js.org/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+<link rel="icon" href="img/favicon.ico" />
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -47,14 +48,12 @@
                     <a href="#page-top"></a>
                 </li>
                 <li class="page-scroll">
+                    <a href="#about">Yo</a>
+                </li>
+                <li class="page-scroll">
                     <a href="#portfolio">Proyectos</a>
                 </li>
-                <li class="page-scroll">
-                    <a href="#about">Acerca de mí</a>
-                </li>
-                <li class="page-scroll">
-                    <a href="#contact">Contacto</a>
-                </li>
+                
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -72,12 +71,37 @@
                 <div class="intro-text">
                     <span class="name">Mr. Hugo</span>
                     <hr class="star-light">
-                    <span class="skills">Desarrollador de Software</span>
+                    <span class="skills">Desarrollador Analista de Software</span>
                 </div>
             </div>
         </div>
     </div>
 </header>
+
+        <!-- About Section -->
+<section class="success" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Yo</h2>
+                <hr class="star-light">
+            </div>
+        </div>
+    <div class="row">
+        <div class="col-lg-4 col-lg-offset-2">
+            <p style="text-align: justify">Hola, soy desarrollador de software titulado en computación e informática altamente motivado y orientado a conseguir resultados dentro de cualquier sector, tengo experiencia en diseño, implementación y mantenimiento de sistemas en varios lenguajes de programación.</p>
+        </div>
+            <div class="col-lg-4">
+                <p style="text-align: justify">Sientete a gusto de escoger los proyectos que te llamen la atención. <b>Recuerda dejar tu correo y un comentario positivo en la parte de abajo, y yo te lo estaré enviando.</p>
+            </div>
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <a id="urlCV" href="//hugoroca.github.io" class="btn btn-lg btn-outline">
+                    <i class="fa fa-eye"></i> Curriculum Vitae
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
 
         <!-- Portfolio Grid Section -->
 <section id="portfolio">
@@ -156,88 +180,22 @@
                 </a>
             </div>
             
-        </div>
-    </div>
-</section>
-
-        <!-- About Section -->
-<section class="success" id="about">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2>Acerca de mí</h2>
-                <hr class="star-light">
-            </div>
-        </div>
-    <div class="row">
-        <div class="col-lg-4 col-lg-offset-2">
-            <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
-        </div>
-            <div class="col-lg-4">
-                <p>Whether you&rsquo;re a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+            <div class="col-sm-4 portfolio-item">
+                <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
+                    <div class="caption">
+                        <div class="caption-content">
+                            <i class="fa fa-search-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="img/portfolio/circus.png" class="img-responsive">
+                </a>
             </div>
             
         </div>
     </div>
 </section>
 
-        <!-- Contact Section -->
-<section id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2>Contacto</h2>
-                <hr class="star-primary">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <form  action="//formspree.io/hugo.rock20@hotmail.com" method="POST" name="sentMessage" id="contactForm" novalidate>
-                    <div class="row control-group">
-                        <div class="form-group col-xs-12 floating-label-form-group controls">
-                            <label>Nombre</label>
-                            <input type="text" name="name" class="form-control" placeholder="Nombre" id="name" required data-validation-required-message="Por favor ingrese su nombre.">
-                            <p class="help-block text-danger"></p>
-                        </div>
-                    </div>
-                    <div class="row control-group">
-                        <div class="form-group col-xs-12 floating-label-form-group controls">
-                            <label>Email</label>
-                            <input type="email" name="_replyto" class="form-control" placeholder="Email" id="email" required data-validation-required-message="Por favor ingrese su email">
-                            <p class="help-block text-danger"></p>
-                        </div>
-                    </div>
-                    <div class="row control-group">
-                        <div class="form-group col-xs-12 floating-label-form-group controls">
-                            <label>Celular</label>
-                            <input type="tel" class="form-control" placeholder="Celular" id="phone" required data-validation-required-message="Por favor ingrese su celular">
-                            <p class="help-block text-danger"></p>
-                        </div>
-                    </div>
-                    <div>
-                        <input type="hidden"  name="_subject" value="New submission!">
-                        <input type="text" name="_gotcha" style="display:none" />
-                    </div>
-                    <div class="row control-group">
-                        <div class="form-group col-xs-12 floating-label-form-group controls">
-                            <label>Mensaje</label>
-                            <textarea rows="5" name="message" class="form-control" placeholder="Mensaje" id="message" required data-validation-required-message="Por favor ingrese su mensaje."></textarea>
-                            <p class="help-block text-danger"></p>
-                        </div>
-                    </div>
-                    <br>
-                    <div id="success"></div>
-                    <div class="row">
-                        <div class="form-group col-xs-12">
-                            <button type="submit" class="btn btn-success btn-lg">Enviar</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
-
+        
         <div class="disqus">
             <div id="disqus_thread"></div>
 <script>
@@ -255,7 +213,6 @@ s.setAttribute('data-timestamp', +new Date());
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
         </div>
-
         <!-- Footer -->
 <footer class="text-center">
     <div class="footer-above">
@@ -274,7 +231,7 @@ s.setAttribute('data-timestamp', +new Date());
                     
                 </div>
                 <div class="footer-col col-md-4">
-                    <h3>Around the web</h3>
+                    <h3>Alrededor de la web</h3>
                     <ul class="list-inline">
                         
                             <li>
@@ -288,8 +245,8 @@ s.setAttribute('data-timestamp', +new Date());
                     </ul>
                 </div>
                 <div class="footer-col col-md-4">
-                    <h3>Web Site</h3>
-                    <p>Freelance is a free to use, open source Bootstrap theme created by <a href="//startbootstrap.com">Start Bootstrap</a>.</p>
+                    <h3>Sitio Web</h3>
+                    <p>Esta página fue creada a partir de un tema de Bootstrap de código abierto de uso libre creado por <a href="//startbootstrap.com">Start Bootstrap</a>.</p>
                 </div>
             </div>
         </div>
@@ -511,6 +468,41 @@ s.setAttribute('data-timestamp', +new Date());
                             </li>
                             <li>Date:
                                 <strong>2014-07-1888888</strong>
+                            </li>
+                            <li>Category:
+                                <strong>Web Development</strong>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="modal-body">
+                        <h2>Project Circus</h2>
+                        <hr class="star-primary">
+                        <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt="">
+                        <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="//sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                        <ul class="list-inline item-details">
+                            <li>Client:
+                                <strong><a href="#">Start Bootstrap</a></strong>
+                            </li>
+                            <li>Date:
+                                <strong>2014-07-15</strong>
                             </li>
                             <li>Category:
                                 <strong>Web Development</strong>

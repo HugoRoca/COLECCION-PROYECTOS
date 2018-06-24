@@ -37,7 +37,7 @@ publishdir = "docs"
         # Copy your own image into './static/img/'' if you wish
         image = "profile.png"
         name = "Mr. Hugo"
-        subtitle = "Desarrollador de Software"
+        subtitle = "Desarrollador Analista de Software"
 
 
     [params.portfolio]
@@ -55,15 +55,15 @@ publishdir = "docs"
 
 
     [params.about]
-        title = "Acerca de mí"
+        title = "Yo"
         # The about text is splitted into a left and right column
-        left = "Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization."
-        right = "Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!"
+        left = "Hola, soy desarrollador de software titulado en computación e informática altamente motivado y orientado a conseguir resultados dentro de cualquier sector, tengo experiencia en diseño, implementación y mantenimiento de sistemas en varios lenguajes de programación."
+        right = "Sientete a gusto de escoger los proyectos que te llamen la atención. <b>Recuerda dejar tu correo y un comentario positivo en la parte de abajo, y yo te lo estaré enviando."
 
         [params.about.button]
-            text = "Download theme"
-            link = "//github.com/digitalcraftsman/hugo-freelancer-theme/archive/master.zip"
-            icon = "download"
+            text = "Curriculum Vitae"
+            link = "//hugoroca.github.io"
+            icon = "eye"
 
 
     [params.contact]
@@ -99,7 +99,7 @@ publishdir = "docs"
             address = ["Perú - Lima"]
 
         [params.footer.social]
-            title = "Around the web"
+            title = "Alrededor de la web"
             # All icons using Fontawesome's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
             # for more icons. The icons are represented by their corresponding
             # CSS class.
@@ -113,5 +113,5 @@ publishdir = "docs"
 
 
         [params.footer.credits]
-            title = "Web Site"
-            text = "Freelance is a free to use, open source Bootstrap theme created by [Start Bootstrap](//startbootstrap.com)."
+            title = "Sitio Web"
+            text = "Esta página fue creada a partir de un tema de Bootstrap de código abierto de uso libre creado por [Start Bootstrap](//startbootstrap.com)."

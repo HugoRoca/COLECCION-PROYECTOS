@@ -461,3 +461,11 @@ footer .footer-below {
 .disqus{
     padding: 20px;
 }
+
+#urlCV{
+    color: #fff !important;
+}
+
+#urlCV:hover{
+    color: #2c3e50 !important;
+}
