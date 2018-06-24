@@ -14,7 +14,7 @@ publishdir = "docs"
 [params]
     # Meta
     title = "¡Hola! Soy Hugo"
-    subtitle = "Esta es mi colección de proyectos personales a código abierto, no olvides comentar."
+    subtitle = "Este es mi portafolio de proyectos personales que están desarrollados en varios lenguajes y estilos de programación. Sientete a gusto de escoger los proyectos que te llamen la atención. <b>Recuerda dejar tu correo y un comentario positivo en la parte de abajo, y yo te lo estaré enviando.</b>"
     author = "Pavel Kanyshev"
     description = "Hugrid - grid theme for Hugo with an expanding image preview."
     keywords = "Hugo, Hugo theme, grid theme, portfolio, bookmarks, collection, contacts"
@@ -26,7 +26,7 @@ publishdir = "docs"
     buttontext = "Get the theme"
 
     # Footer text
-    footertext = "Made by [Codrops](http://tympanus.net/codrops/2013/03/19/thumbnail-grid-with-expanding-preview/), [Hugo](http://gohugo.io) and [me](https://github.com/aerohub)"
+    footertext = "Si deseas comunicarte conmigo para alguna duda o sugerencia escribeme a <a>hugo.rock20@hotmail.com.</a>"
 
     # add extra-css
     # custom_css = ['css/extra1.css', 'css/extra2.css']
