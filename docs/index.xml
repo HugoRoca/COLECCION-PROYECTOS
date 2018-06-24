@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo Roca - Proyectos Personales</title>
-    <link>https://example.org/</link>
+    <link>https://hugorocaproyectos.js.org/</link>
     <description>Recent content on Hugo Roca - Proyectos Personales</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-PE</language>
     
-	<atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hugorocaproyectos.js.org/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
