@@ -2,7 +2,7 @@ modalID: 1
 title: SIGEVEN 1.0
 date: AngularJS, PHP y MySql
 img: SIGEVEN1.svg
-client: Comenta 
-clientLink: "#"
+client: Código fuente
+clientLink: "//github.com/PORTAFOLIO-PROYECTOS/SIGEVEN-1.0"
 category: Web
 description: Sistema para la gestión de ingresos y gastos por día para un puesto de ventas, cuenta con.- <br> - Registro de artículos <br> - Registro de tipos y categorías <br> - Registro de gastos diarios <br> - Registro de compras y ventas <br> - Control de stock <br> - Consultas de gastos y ventas

@@ -45,7 +45,7 @@ publishdir = "docs"
         # at 'exampleSite/data/projects'. Copy the 'projects' folder into the 'data' directory
         # at the root of this Hugo site.
         # For more informtion take a look at the README.
-        title = "Proyectos"
+        title = "Proyectos Personales"
 
         [params.portfolio.modal]
             client = "Más información"
@@ -58,7 +58,7 @@ publishdir = "docs"
         title = "Yo"
         # The about text is splitted into a left and right column
         left = "Hola, soy desarrollador de software titulado en computación e informática altamente motivado y orientado a conseguir resultados dentro de cualquier sector, tengo experiencia en diseño, implementación y mantenimiento de sistemas en varios lenguajes de programación."
-        right = "Sientete a gusto de escoger los proyectos que te llamen la atención. <b>Recuerda dejar tu correo y un comentario positivo en la parte de abajo, y yo te lo estaré enviando."
+        right = "Si tuvieras alguna duda, sugerencia, mejora de algunos de estos proyectos o errores no dudes en comunicarte conmigo al siguiente correo hugo.rock20@hotmail.com o en todo caso dejando tu comentario."
 
         [params.about.button]
             text = "Curriculum Vitae"
