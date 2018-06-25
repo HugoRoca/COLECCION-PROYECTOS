@@ -1,0 +1,8 @@
+modalID: 3
+title: Portafolio Profesional
+date: C#, ASP.NET, MVC5 y SQLServer
+img: PORTAFOLIO.svg
+client: Código fuente
+clientLink: "//github.com/PORTAFOLIO-PROYECTOS/PORTAFOLIO-PROFESIONAL"
+category: Web
+description: Sistema para administrar un curriculum vitae, esta formado en dos partes.- <br> 1.- Lo que se muestra al usuario final <br> 2.- Parte administrable <br> &nbsp;&nbsp;&nbsp; - Edición de datos <br> &nbsp;&nbsp;&nbsp; - Registro y edición de estudios <br> &nbsp;&nbsp;&nbsp; - Registro y eliminación de hablidades <br> &nbsp;&nbsp;&nbsp; - Registro y edición de experiencia <br> &nbsp;&nbsp;&nbsp; - Edición de testimonios

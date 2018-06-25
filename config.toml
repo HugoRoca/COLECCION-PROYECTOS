@@ -49,7 +49,7 @@ publishdir = "docs"
 
         [params.portfolio.modal]
             client = "Más información"
-            date = "Fue desarrollador en"
+            date = "Fue desarrollado en"
             category = "Categoria"
             buttontext = "Cerrar"
 

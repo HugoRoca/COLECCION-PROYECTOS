@@ -1,8 +1,8 @@
 modalID: 2
 title: SIGEVEN 2.0
-date: MySql
+date: AngularJS, PHP, Ajax, JQuery y MySql
 img: SIGEVEN2.svg
-client: AngularJS, PHP, Ajax, JQuery
-clientLink: "#"
+client: Código fuente
+clientLink: "//github.com/PORTAFOLIO-PROYECTOS/SIGEVEN-2.0"
 category: Web
-description: Sistema para el control de ventas y compras, cuenta con.- <br> - Gráficos ChartArt <br> - Registro de usuarios y asignación de permisos <br> - Registro de artículos <br> - Registro categorías <br> - Registro de proveedores y cliente<br> - Registro de compras y ventas <br> - Control de stock <br> - Consultas de gastos y ventas <br> - Consulta de venta por ragon de fechas <br> - Impresión de Boletas, facturas y tickets en pdf <br> - Exportación de datos en Excel, PDF y CSV
+description: Sistema para el control de ventas y compras, cuenta con.- <br> - Gráficos ChartArt <br> - Registro de usuarios <br> - Administrador de perfiles <br> - Registro de artículos <br> - Registro de categorías <br> - Registro de proveedores y clientes<br> - Registro de compras y ventas <br> - Control de stock <br> - Consultas de gastos y ventas <br> - Consulta de venta por rango de fechas <br> - Impresión de Boletas, facturas y tickets en pdf <br> - Exportación de datos en Excel, PDF y CSV
