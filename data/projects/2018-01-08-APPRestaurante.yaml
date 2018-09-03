@@ -1,0 +1,8 @@
+modalID: 8
+title: APPRestaurante CMR
+date: C#, DAPPER, JQuery, SQLServer
+img: APPRestaurante.svg
+client: Código fuente
+clientLink: "//github.com/PORTAFOLIO-PROYECTOS/APPRESTAURANTE"
+category: Web/CRM
+description: Sistema para el negocio de restaurante. <br> - Registro del menú del día <br> - Registro de empleados <br> - Control de acceso de usuario <br> - Cobranza <br> - Genera PDF del Cobro <br> - Registro de imagenes <br> - Vista rápida en dashboard <br> - CRM
