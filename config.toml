@@ -41,7 +41,7 @@ Title           = "Hugo Roca"
   authorDescription = "Desarrollador y Analista de Software"
 
   pageNotFoundTitle = "404 - Page not found"
-  image = "img/blog-cover-og.jpg"
+  coverShare = "img/blog-cover-og.jpg"
 
   #casper or caspertwo
   singleViewStyle = "casper"
