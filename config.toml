@@ -28,7 +28,7 @@ Title           = "Hugo Roca"
 
   logo = "hugo-logo.png"
   logoFloat = "hugo-logo-float.png"
-  orgName = "Hugo Roca"
+  orgName = "HR"
   orgWebsite = "https://www.hugorocaproyectos.js.org"
   orgDescription = "El rincón de la información y comunicación sobre la red, programación, arquitectura y más.. sol disfruta y comparte con todos..."
   copyright = ""
@@ -41,6 +41,7 @@ Title           = "Hugo Roca"
   authorDescription = "Desarrollador y Analista de Software"
 
   pageNotFoundTitle = "404 - Page not found"
+  image = "img/blog-cover-og.jpg"
 
   #casper or caspertwo
   singleViewStyle = "casper"
