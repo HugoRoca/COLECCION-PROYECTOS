@@ -11,7 +11,7 @@ publishdir      = "docs"
 
 [params]
   title       = "Hugo Roca"
-  subtitle    = "Port of Casper 2.x for Hugo"
+  subtitle    = ""
 
   cover       = "img/blog-cover.jpg"
   description = "Here is a description of your site."
