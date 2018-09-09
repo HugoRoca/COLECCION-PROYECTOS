@@ -3,38 +3,14 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://hugorocaproyectos.js.org/creating-a-new-theme/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+    <loc>https://hugorocaproyectos.js.org/sistema-de-gesti%C3%B3n-de-ventas/</loc>
+    <lastmod>2018-03-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hugorocaproyectos.js.org/awesomeness/</loc>
-    <lastmod>2014-09-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hugorocaproyectos.js.org/wonderful/</loc>
-    <lastmod>2014-09-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hugorocaproyectos.js.org/getting-started-with-hugo/</loc>
-    <lastmod>2014-06-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hugorocaproyectos.js.org/hugo-template-primer/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hugorocaproyectos.js.org/migrate-to-hugo-from-jekyll/</loc>
-    <lastmod>2014-03-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hugorocaproyectos.js.org/colenak/</loc>
-    <lastmod>2013-09-28T00:00:00+00:00</lastmod>
+    <loc>https://hugorocaproyectos.js.org/tags/angularjs/</loc>
+    <lastmod>2018-03-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -43,74 +19,38 @@
   </url>
   
   <url>
-    <loc>https://hugorocaproyectos.js.org/tags/development/</loc>
-    <lastmod>2014-06-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hugorocaproyectos.js.org/categories/development/</loc>
-    <lastmod>2014-06-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hugorocaproyectos.js.org/categories/food/</loc>
-    <lastmod>2013-09-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hugorocaproyectos.js.org/tags/go/</loc>
-    <lastmod>2014-06-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hugorocaproyectos.js.org/tags/golang/</loc>
-    <lastmod>2014-06-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hugorocaproyectos.js.org/categories/golang/</loc>
-    <lastmod>2014-06-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hugorocaproyectos.js.org/tags/hugo/</loc>
-    <lastmod>2014-06-02T00:00:00+00:00</lastmod>
+    <loc>https://hugorocaproyectos.js.org/tags/codigofuente/</loc>
+    <lastmod>2018-03-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://hugorocaproyectos.js.org/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+    <lastmod>2018-03-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hugorocaproyectos.js.org/tags/mysql/</loc>
+    <lastmod>2018-03-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hugorocaproyectos.js.org/tags/php/</loc>
+    <lastmod>2018-03-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://hugorocaproyectos.js.org/post/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+    <lastmod>2018-03-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://hugorocaproyectos.js.org/tags/</loc>
-    <lastmod>2014-06-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hugorocaproyectos.js.org/tags/templates/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hugorocaproyectos.js.org/tags/themes/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <lastmod>2018-03-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

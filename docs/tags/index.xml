@@ -1,67 +1,49 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Hugo Roca | El rincón de la información y comunicación sobre la red, programación, arquitectura y más.. sol disfruta y comparte con todos.</title>
+    <title>Tags on Hugo Roca</title>
     <link>https://hugorocaproyectos.js.org/tags/</link>
-    <description>Recent content in Tags on Hugo Roca | El rincón de la información y comunicación sobre la red, programación, arquitectura y más.. sol disfruta y comparte con todos.</description>
+    <description>Recent content in Tags on Hugo Roca</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-PE</language>
-    <lastBuildDate>Mon, 02 Jun 2014 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 04 Mar 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://hugorocaproyectos.js.org/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Development</title>
-      <link>https://hugorocaproyectos.js.org/tags/development/</link>
-      <pubDate>Mon, 02 Jun 2014 00:00:00 +0000</pubDate>
+      <title>Angularjs</title>
+      <link>https://hugorocaproyectos.js.org/tags/angularjs/</link>
+      <pubDate>Sun, 04 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://hugorocaproyectos.js.org/tags/development/</guid>
+      <guid>https://hugorocaproyectos.js.org/tags/angularjs/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Go</title>
-      <link>https://hugorocaproyectos.js.org/tags/go/</link>
-      <pubDate>Mon, 02 Jun 2014 00:00:00 +0000</pubDate>
+      <title>Codigofuente</title>
+      <link>https://hugorocaproyectos.js.org/tags/codigofuente/</link>
+      <pubDate>Sun, 04 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://hugorocaproyectos.js.org/tags/go/</guid>
+      <guid>https://hugorocaproyectos.js.org/tags/codigofuente/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Golang</title>
-      <link>https://hugorocaproyectos.js.org/tags/golang/</link>
-      <pubDate>Mon, 02 Jun 2014 00:00:00 +0000</pubDate>
+      <title>Mysql</title>
+      <link>https://hugorocaproyectos.js.org/tags/mysql/</link>
+      <pubDate>Sun, 04 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://hugorocaproyectos.js.org/tags/golang/</guid>
+      <guid>https://hugorocaproyectos.js.org/tags/mysql/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Hugo</title>
-      <link>https://hugorocaproyectos.js.org/tags/hugo/</link>
-      <pubDate>Mon, 02 Jun 2014 00:00:00 +0000</pubDate>
+      <title>Php</title>
+      <link>https://hugorocaproyectos.js.org/tags/php/</link>
+      <pubDate>Sun, 04 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://hugorocaproyectos.js.org/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Templates</title>
-      <link>https://hugorocaproyectos.js.org/tags/templates/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://hugorocaproyectos.js.org/tags/templates/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Themes</title>
-      <link>https://hugorocaproyectos.js.org/tags/themes/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://hugorocaproyectos.js.org/tags/themes/</guid>
+      <guid>https://hugorocaproyectos.js.org/tags/php/</guid>
       <description></description>
     </item>
     

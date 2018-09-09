@@ -1,89 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hugo Roca | El rincón de la información y comunicación sobre la red, programación, arquitectura y más.. sol disfruta y comparte con todos.</title>
+    <title>Hugo Roca</title>
     <link>https://hugorocaproyectos.js.org/</link>
-    <description>Recent content on Hugo Roca | El rincón de la información y comunicación sobre la red, programación, arquitectura y más.. sol disfruta y comparte con todos.</description>
+    <description>Recent content on Hugo Roca</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-PE</language>
-    <lastBuildDate>Sun, 28 Sep 2014 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 04 Mar 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://hugorocaproyectos.js.org/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Creating a New Theme</title>
-      <link>https://hugorocaproyectos.js.org/creating-a-new-theme/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      <title>Sistema de gestión de ventas</title>
+      <link>https://hugorocaproyectos.js.org/sistema-de-gesti%C3%B3n-de-ventas/</link>
+      <pubDate>Sun, 04 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://hugorocaproyectos.js.org/creating-a-new-theme/</guid>
-      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
-We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
-    </item>
-    
-    <item>
-      <title>Awesomeness</title>
-      <link>https://hugorocaproyectos.js.org/awesomeness/</link>
-      <pubDate>Fri, 26 Sep 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://hugorocaproyectos.js.org/awesomeness/</guid>
-      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
-We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
-    </item>
-    
-    <item>
-      <title>Wonderful</title>
-      <link>https://hugorocaproyectos.js.org/wonderful/</link>
-      <pubDate>Thu, 25 Sep 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://hugorocaproyectos.js.org/wonderful/</guid>
-      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
-We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
-    </item>
-    
-    <item>
-      <title>Getting Started with Hugo</title>
-      <link>https://hugorocaproyectos.js.org/getting-started-with-hugo/</link>
-      <pubDate>Mon, 02 Jun 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://hugorocaproyectos.js.org/getting-started-with-hugo/</guid>
-      <description>Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.
-Save it somewhere specific as we will be using it in the next step.
-More complete instructions are available at installing hugo
-Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.
-Follow the following steps:
- Clone the hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313  Corresponding pseudo commands:</description>
-    </item>
-    
-    <item>
-      <title>(Hu)go Template Primer</title>
-      <link>https://hugorocaproyectos.js.org/hugo-template-primer/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://hugorocaproyectos.js.org/hugo-template-primer/</guid>
-      <description>Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.
-This document is a brief primer on using go templates.</description>
-    </item>
-    
-    <item>
-      <title>Migrate to Hugo from Jekyll</title>
-      <link>https://hugorocaproyectos.js.org/migrate-to-hugo-from-jekyll/</link>
-      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://hugorocaproyectos.js.org/migrate-to-hugo-from-jekyll/</guid>
-      <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
-▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png  should become
-▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
-    </item>
-    
-    <item>
-      <title>Colenak</title>
-      <link>https://hugorocaproyectos.js.org/colenak/</link>
-      <pubDate>Sat, 28 Sep 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://hugorocaproyectos.js.org/colenak/</guid>
-      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
-We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
+      <guid>https://hugorocaproyectos.js.org/sistema-de-gesti%C3%B3n-de-ventas/</guid>
+      <description>En esta oportunidad les presento un sistema de gestión de ventas para un puesto de ventas, podrás registrar ventas diarias, gastos, ingresos, registro de proveedores e incluso realizar reportes. Desarrollado en AngularJS, PHP y MySql, maquetado con bootstrap.
+Paso 1 Puedes obtener el codigo fuente de la siguiente forma:
+ Clonar Sigeven 1.0 Copiarlo a un server WAMP, XAMPP o APACHE  Árbol de archivos
+▾ App/ ▾ private/ ▾ articulo/ articulo.</description>
     </item>
     
   </channel>
