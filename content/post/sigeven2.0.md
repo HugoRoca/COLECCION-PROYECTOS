@@ -71,4 +71,4 @@ define("PRO_NOMBRE","ITVentas");
 ```
 
 ## Paso 4
-Ingresa a la ruta del servidor donde fue publicado y disfruta! 
+Ingresa a la ruta del servidor donde fue publicado... Comenta, disfruta y comparte! 

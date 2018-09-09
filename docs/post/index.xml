@@ -1,15 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Hugo Roca</title>
+    <title>Posts on Hugo Roca Proyectos</title>
     <link>https://hugorocaproyectos.js.org/post/</link>
-    <description>Recent content in Posts on Hugo Roca</description>
+    <description>Recent content in Posts on Hugo Roca Proyectos</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-PE</language>
-    <lastBuildDate>Fri, 30 Mar 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Apr 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://hugorocaproyectos.js.org/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Portafolio Profesional</title>
+      <link>https://hugorocaproyectos.js.org/portafolio-profesional/</link>
+      <pubDate>Sun, 15 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://hugorocaproyectos.js.org/portafolio-profesional/</guid>
+      <description>¿Alguna véz haz querido hacer un curriculum profesional usando algo diferente? En esta ocación te traigo el siguiente sistema.
+Sistema de administración de portafolio desarrollado en C#, MVC5, Entity Framework, JQuery, Bootstrap. Esta formado en dos partes:
+ Lo que se muestra al usuario final (Front) Parte administrable  Edición de datos Registro y edición de estudios Registro y eliminación de hablidades Registro y edición de experiencia Edición de testimonios   Paso 1 Debes de tener instalado visual studio y sqlsever.</description>
+    </item>
     
     <item>
       <title>Sistema de gestión de ventas 2.0</title>

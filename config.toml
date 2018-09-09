@@ -7,7 +7,7 @@ contentdir      = "content"
 datadir         = "data"
 layoutdir       = "layouts"
 publishdir      = "docs"
-Title           = "Hugo Roca"
+Title           = "Hugo Roca Proyectos"
 #SectionPagesMenu = "main"
 
 [params]
