@@ -1,4 +1,4 @@
-baseurl         = "/"
+baseurl         = "https://hugorocaproyectos.js.org/"
 theme           = "casper-two"
 languageCode    = "en-US"
 disqusShortname = "hugorocaproyectos"
