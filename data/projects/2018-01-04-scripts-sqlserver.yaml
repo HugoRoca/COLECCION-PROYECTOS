@@ -1,8 +1,0 @@
-modalID: 4
-title: SCRIPTS SQLSERVER
-date: SQLServer
-img: SCRIPTS_SQL.svg
-client: Código fuente
-clientLink: "//github.com/PORTAFOLIO-PROYECTOS/SCRIPTS-SQLSERVER"
-category: Base de datos
-description: 1.- Funcion SPLIT<br> 2.- Función SHA1 Encriptación<br> 3.- Query exists function, store, table, index<br> 4.- Query formato miles<br> 5.- Query Try Catch<br> 6.- Query XML Preparedocument<br> 7.- Query buscar tabla en store o function<br> 8.- Query ceros a la izquierda<br> 9.- SP Enviar correo<br> 10.- SP Registro de errores

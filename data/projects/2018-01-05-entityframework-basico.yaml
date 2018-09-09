@@ -1,8 +1,0 @@
-modalID: 5
-title: ENTITY FRAMEWORK BASICO
-date: C#, Entity FrameWork, SqlServer
-img: EFBASICO.svg
-client: Código fuente
-clientLink: "//github.com/PORTAFOLIO-PROYECTOS/ENTITY-FRAMEWORK-BASICO"
-category: Desktop
-description: Proyecto básico realizado en entity framework haciendo un CRUD a la tabla alumnos. <br> - No olvides ejecutar el script de base de datos y cambiar la conexion que esta en el app.config

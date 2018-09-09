@@ -1,117 +1,64 @@
-# Site settings
-baseurl = "https://hugorocaproyectos.js.org/"
-languageCode = "es-PE"
-title = "Hugo Roca - Proyectos Personales"
-theme = "hugo-freelancer-theme"
-contentdir = "content"
-datadir = "data"
-layoutdir = "layouts"
-publishdir = "docs"
+baseurl         = "/"
+theme           = "casper-two"
+languageCode    = "en-US"
+disqusShortname = "hugorocaproyectos"
+paginate        = 6
+contentdir      = "content"
+datadir         = "data"
+layoutdir       = "layouts"
+publishdir      = "docs"
+#SectionPagesMenu = "main"
 
 [params]
-    name = "Hugo Roca"
-    description = "Este es mi portafolio de proyectos personales que están desarrollados en varios lenguajes y estilos de programación."
+  title       = "Hugo Roca"
+  subtitle    = "Port of Casper 2.x for Hugo"
 
-    # Since this template is static, the contact form uses www.formspree.io as a
-    # proxy. The form makes a POST request to their servers to send the actual
-    # email. Visitors can send up to a 1000 emails each month for free.
-    #
-    # What you need to do for the setup?
-    #
-    # - set your email address under 'email' below
-    # - upload the generated site to your server
-    # - send a dummy email youself to confirm your account
-    # - click the confirm link in the email from www.formspree.io
-    # - you're done. Happy mailing!
-    email = "hugo.rock20@hotmail.com"
+  cover       = "img/blog-cover.jpg"
+  description = "Here is a description of your site."
+  metaDescription = ""
+  googleAnalytics = ""
+  customCSS = []
+  RSSLink = ""
 
-    # Custom assets
-	custom_css = []
-	custom_js  = []
+  twitterName = "faketryghost"
+  fbName = "fakeghost"
+  githubName = "eueung"
 
-    [params.navigation]
-        brand = "Mr. Hugo Roca"
+  logo = "hugo-logo.png"
+  orgName = "EM"
+  orgWebsite = "https://www.telematika.org"
+  orgDescription = "Here is a description placeholder for your org"
 
+  author = "EM"
+  authorAvatar = "img/ghost-icon.png"
+  authorLocation = "Bandung, ID"
+  authorWebsite = "https://eueung.github.io"
+  authorDescription = "Describe yourself.."
 
-    [params.header]
-        # Copy your own image into './static/img/'' if you wish
-        image = "profile.png"
-        name = "Mr. Hugo"
-        subtitle = "Desarrollador Analista de Software"
+  pageNotFoundTitle = "404 - Page not found"
 
+  #casper or caspertwo
+  singleViewStyle = "casper"
 
-    [params.portfolio]
-        # All projects defined in their own files. You can find example projects
-        # at 'exampleSite/data/projects'. Copy the 'projects' folder into the 'data' directory
-        # at the root of this Hugo site.
-        # For more informtion take a look at the README.
-        title = "Proyectos Personales"
+[permalinks]
+  post = "/:slug/"
 
-        [params.portfolio.modal]
-            client = "Más información"
-            date = "Fue desarrollado en"
-            category = "Categoria"
-            buttontext = "Cerrar"
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 200
 
+[[menu.main]]
+  name = "Go"
+  url = "/tags/golang/"
+  weight = 100
 
-    [params.about]
-        title = "Acerca de mí"
-        # The about text is splitted into a left and right column
-        left = "Hola, soy desarrollador de software titulado en computación e informática altamente motivado y orientado a conseguir resultados dentro de cualquier sector, tengo experiencia en diseño, implementación y mantenimiento de sistemas en varios lenguajes de programación."
-        right = "Si tuvieras alguna duda, sugerencia, mejora de algunos de estos proyectos o errores no dudes en comunicarte conmigo al siguiente correo hugo.rock20@hotmail.com o en todo caso dejando tu comentario."
+[[menu.main]]
+  name = "Food"
+  url = "/categories/food/"
+  weight = 99
 
-        [params.about.button]
-            text = "Curriculum Vitae"
-            link = "//hugoroca.github.io"
-            icon = "eye"
-
-
-    [params.contact]
-        title = "Contacto"
-
-        # 'error' defines error messages for invalid inputs
-        [params.contact.form.name]
-            text = "Nombre"
-            error = "Por favor ingrese su nombre."
-
-        [params.contact.form.email]
-            text = "Email"
-            error = "Por favor ingrese su email"
-
-        [params.contact.form.phone]
-            text = "Celular"
-            error = "Por favor ingrese su celular"
-
-        [params.contact.form.message]
-            text = "Mensaje"
-            error = "Por favor ingrese su mensaje."
-
-        [params.contact.form.button]
-            text = "Enviar"
-
-
-    [params.footer]
-        copyright = "Publicado bajo Apache License 2.0. Desarrollado por [Hugo](//hugoroca.github.io)."
-
-        [params.footer.location]
-            title = "Ubicación"
-            # Postal address (add as many lines as necessary)
-            address = ["Perú - Lima"]
-
-        [params.footer.social]
-            title = "Alrededor de la web"
-            # All icons using Fontawesome's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
-            # for more icons. The icons are represented by their corresponding
-            # CSS class.
-            [[params.footer.social.networks]]
-                icon = "fa-github"
-                link = "//github.com/HugoRoca"
-
-            [[params.footer.social.networks]]
-                icon = "fa-stack-overflow"
-                link=  "//stackoverflow.com/questions/tagged/hugo"
-
-
-        [params.footer.credits]
-            title = "Sitio Web"
-            text = "Esta página fue creada a partir de un tema de Bootstrap de código abierto de uso libre creado por [Start Bootstrap](//startbootstrap.com)."
+[[menu.main]]
+  name = "External"
+  url = "https://google.com/"
+  weight = 95

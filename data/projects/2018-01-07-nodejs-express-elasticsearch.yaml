@@ -1,8 +1,0 @@
-modalID: 7
-title: APIREST con Express
-date: ES6, Elasticsearch, nodeJs
-img: NODE_EXPRESS_ELASTIC.svg
-client: Código fuente
-clientLink: "//github.com/PORTAFOLIO-PROYECTOS/NODEJS_EXPRESS_ELASTICSEARCH"
-category: Web, API
-description: Proyecto desarrollado en nodejs con express para consumo de elasticsearch

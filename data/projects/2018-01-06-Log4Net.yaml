@@ -1,8 +1,0 @@
-modalID: 6
-title: Log4Net
-date: C#, SqlServer
-img: Log4Net.svg
-client: Código fuente
-clientLink: "//github.com/PORTAFOLIO-PROYECTOS/LOG4NET_PRINCIPIANTE_A_FIN"
-category: Web, desktop
-description: Proyecto desarrollado en consola windows para el registro de errores tanto en .TXT, .LOG o en base de datos usando la libreria Log4Net de apache
