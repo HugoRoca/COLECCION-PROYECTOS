@@ -7,7 +7,7 @@ contentdir      = "content"
 datadir         = "data"
 layoutdir       = "layouts"
 publishdir      = "docs"
-Title           = "Hugo Roca"
+Title           = "Hugo Roca | El rincón de la información y comunicación sobre la red, programación, arquitectura y más.. sol disfruta y comparte con todos."
 #SectionPagesMenu = "main"
 
 [params]
