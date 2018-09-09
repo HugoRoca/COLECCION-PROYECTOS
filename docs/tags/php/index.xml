@@ -6,17 +6,28 @@
     <description>Recent content in Php on Hugo Roca</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-PE</language>
-    <lastBuildDate>Sun, 04 Mar 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 30 Mar 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://hugorocaproyectos.js.org/tags/php/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Sistema de gestión de ventas</title>
-      <link>https://hugorocaproyectos.js.org/sistema-de-gesti%C3%B3n-de-ventas/</link>
+      <title>Sistema de gestión de ventas 2.0</title>
+      <link>https://hugorocaproyectos.js.org/sistema-de-gesti%C3%B3n-de-ventas-2.0/</link>
+      <pubDate>Fri, 30 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://hugorocaproyectos.js.org/sistema-de-gesti%C3%B3n-de-ventas-2.0/</guid>
+      <description>Como dicen, si hay &amp;lsquo;1.0&amp;rsquo; un &amp;lsquo;2.0&amp;rsquo; va haber, en esta oportunidad les muestro otro sistema de ventas mas completo en full PHP con jquery y ajax.
+Sistema para el contol de ventas e ingreso de stock, impresion de facturas, boletas y tickets, control de usuarios y permisos. Desarrollado en PHP7, JQuery y la plantilla AdminLTE.
+CONTENIDO  Login Dashboard ▾ Almacen/ Registro de artículo Registro de categorías ▾ Compras/ Registro de Ingresos Registro de Proveedor ▾ Ventas/ Registro de Cliente Registro de Ventas ▾ Impresion en PDF/ Factura Boleta ticket ▾ Acceso/ Permisos Registro de usuario Consulta de Compras Consulta de Ventas  Paso 1 Puedes obtener el codigo fuente de la siguiente forma:</description>
+    </item>
+    
+    <item>
+      <title>Sistema de gestión de ventas 1.0</title>
+      <link>https://hugorocaproyectos.js.org/sistema-de-gesti%C3%B3n-de-ventas-1.0/</link>
       <pubDate>Sun, 04 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://hugorocaproyectos.js.org/sistema-de-gesti%C3%B3n-de-ventas/</guid>
+      <guid>https://hugorocaproyectos.js.org/sistema-de-gesti%C3%B3n-de-ventas-1.0/</guid>
       <description>En esta oportunidad les presento un sistema de gestión de ventas para un puesto de ventas, podrás registrar ventas diarias, gastos, ingresos, registro de proveedores e incluso realizar reportes. Desarrollado en AngularJS, PHP y MySql, maquetado con bootstrap.
 Paso 1 Puedes obtener el codigo fuente de la siguiente forma:
  Clonar Sigeven 1.0 Copiarlo a un server WAMP, XAMPP o APACHE  Árbol de archivos

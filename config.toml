@@ -61,10 +61,15 @@ Title           = "Hugo Roca"
 
 [[menu.main]]
   name = "C#"
-  url = "/tags/go/"
+  url = "/tags/csharp/"
   weight = 99
 
 [[menu.main]]
   name = "JS"
-  url = "/categories/food/"
+  url = "/tags/js/"
+  weight = 95
+
+[[menu.main]]
+  name = "PHP"
+  url = "/tags/php/"
   weight = 95

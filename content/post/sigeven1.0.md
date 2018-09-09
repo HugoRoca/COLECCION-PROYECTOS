@@ -2,17 +2,17 @@
 author = "Hugo Roca"
 date =  "2018-03-04"
 linktitle = "Sistema de gestión de ventas 1.0"
-title =  "Sistema de gestión de ventas"
+title =  "Sistema de gestión de ventas 1.0"
 description = "En esta oportunidad les presento un sistema de gestión de ventas para un puesto de ventas, podrás registrar ventas diarias, gastos, ingresos, registro de proveedores e incluso realizar reportes. Desarrollado en AngularJS, PHP y MySql, maquetado con bootstrap."
 weight = "10"
 image =  "img/sigeven1.0.jpg"
 authorAvatar =  "hugo.jpeg"
 nomenu = "main"
 tags = [
-    "codigofuente",
     "angularjs",
     "php",
-    "mysql"
+    "mysql",
+    "js"
 ]
 +++
 

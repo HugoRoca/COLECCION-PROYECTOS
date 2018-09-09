@@ -12,11 +12,11 @@
     
     
     <item>
-      <title>Sistema de gestión de ventas</title>
-      <link>https://hugorocaproyectos.js.org/sistema-de-gesti%C3%B3n-de-ventas/</link>
+      <title>Sistema de gestión de ventas 1.0</title>
+      <link>https://hugorocaproyectos.js.org/sistema-de-gesti%C3%B3n-de-ventas-1.0/</link>
       <pubDate>Sun, 04 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://hugorocaproyectos.js.org/sistema-de-gesti%C3%B3n-de-ventas/</guid>
+      <guid>https://hugorocaproyectos.js.org/sistema-de-gesti%C3%B3n-de-ventas-1.0/</guid>
       <description>En esta oportunidad les presento un sistema de gestión de ventas para un puesto de ventas, podrás registrar ventas diarias, gastos, ingresos, registro de proveedores e incluso realizar reportes. Desarrollado en AngularJS, PHP y MySql, maquetado con bootstrap.
 Paso 1 Puedes obtener el codigo fuente de la siguiente forma:
  Clonar Sigeven 1.0 Copiarlo a un server WAMP, XAMPP o APACHE  Árbol de archivos

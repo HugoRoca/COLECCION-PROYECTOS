@@ -3,7 +3,12 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://hugorocaproyectos.js.org/sistema-de-gesti%C3%B3n-de-ventas/</loc>
+    <loc>https://hugorocaproyectos.js.org/sistema-de-gesti%C3%B3n-de-ventas-2.0/</loc>
+    <lastmod>2018-03-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hugorocaproyectos.js.org/sistema-de-gesti%C3%B3n-de-ventas-1.0/</loc>
     <lastmod>2018-03-04T00:00:00+00:00</lastmod>
   </url>
   
@@ -19,32 +24,32 @@
   </url>
   
   <url>
-    <loc>https://hugorocaproyectos.js.org/tags/codigofuente/</loc>
-    <lastmod>2018-03-04T00:00:00+00:00</lastmod>
+    <loc>https://hugorocaproyectos.js.org/</loc>
+    <lastmod>2018-03-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://hugorocaproyectos.js.org/</loc>
-    <lastmod>2018-03-04T00:00:00+00:00</lastmod>
+    <loc>https://hugorocaproyectos.js.org/tags/js/</loc>
+    <lastmod>2018-03-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://hugorocaproyectos.js.org/tags/mysql/</loc>
-    <lastmod>2018-03-04T00:00:00+00:00</lastmod>
+    <lastmod>2018-03-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://hugorocaproyectos.js.org/tags/php/</loc>
-    <lastmod>2018-03-04T00:00:00+00:00</lastmod>
+    <lastmod>2018-03-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://hugorocaproyectos.js.org/post/</loc>
-    <lastmod>2018-03-04T00:00:00+00:00</lastmod>
+    <lastmod>2018-03-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
