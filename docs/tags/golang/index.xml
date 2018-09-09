@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Golang on </title>
+    <title>Golang on Hugo Roca</title>
     <link>https://hugorocaproyectos.js.org/tags/golang/</link>
-    <description>Recent content in Golang on </description>
+    <description>Recent content in Golang on Hugo Roca</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language>
+    <language>es-PE</language>
     <lastBuildDate>Mon, 02 Jun 2014 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://hugorocaproyectos.js.org/tags/golang/index.xml" rel="self" type="application/rss+xml" />

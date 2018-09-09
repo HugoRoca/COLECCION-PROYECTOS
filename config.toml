@@ -1,12 +1,13 @@
 baseurl         = "https://hugorocaproyectos.js.org/"
 theme           = "casper-two"
-languageCode    = "en-US"
+languageCode    = "es-PE"
 disqusShortname = "hugorocaproyectos"
 paginate        = 6
 contentdir      = "content"
 datadir         = "data"
 layoutdir       = "layouts"
 publishdir      = "docs"
+Title           = "Hugo Roca"
 #SectionPagesMenu = "main"
 
 [params]
@@ -14,26 +15,29 @@ publishdir      = "docs"
   subtitle    = ""
 
   cover       = "img/blog-cover.jpg"
-  description = "Here is a description of your site."
+  description = "El rincón de la información y comunicación sobre la red, programación, arquitectura y más.. sol disfruta y comparte con todos..."
   metaDescription = ""
   googleAnalytics = ""
   customCSS = []
   RSSLink = ""
 
-  twitterName = "faketryghost"
-  fbName = "fakeghost"
-  githubName = "eueung"
+  twitterName = ""
+  fbName = ""
+  githubName = "HugoRoca"
+  linkedinName = "hugoroca"
 
   logo = "hugo-logo.png"
-  orgName = "EM"
-  orgWebsite = "https://www.telematika.org"
-  orgDescription = "Here is a description placeholder for your org"
+  orgName = "Hugo Roca"
+  orgWebsite = "https://www.hugorocaproyectos.js.org"
+  orgDescription = "El rincón de la información y comunicación sobre la red, programación, arquitectura y más.. sol disfruta y comparte con todos..."
+  copyright = ""
+  showSupport = "true"
 
-  author = "EM"
+  author = "Hugo Roca"
   authorAvatar = "img/ghost-icon.png"
   authorLocation = "Bandung, ID"
-  authorWebsite = "https://eueung.github.io"
-  authorDescription = "Describe yourself.."
+  authorWebsite = "https://HugoRoca.github.io"
+  authorDescription = "Desarrollador y Analista de Software"
 
   pageNotFoundTitle = "404 - Page not found"
 
@@ -44,21 +48,21 @@ publishdir      = "docs"
   post = "/:slug/"
 
 [[menu.main]]
-  name = "Home"
+  name = "Inicio"
   url = "/"
   weight = 200
 
 [[menu.main]]
-  name = "Go"
-  url = "/tags/golang/"
+  name = "Acerca de mi"
+  url = "https://hugoroca.github.io/"
   weight = 100
 
 [[menu.main]]
-  name = "Food"
-  url = "/categories/food/"
+  name = "C#"
+  url = "/tags/go/"
   weight = 99
 
 [[menu.main]]
-  name = "External"
-  url = "https://google.com/"
+  name = "JS"
+  url = "/categories/food/"
   weight = 95
