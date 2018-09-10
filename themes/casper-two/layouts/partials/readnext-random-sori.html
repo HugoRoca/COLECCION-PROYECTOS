@@ -17,7 +17,7 @@
     </div>
     <footer class="read-next-card-footer">
       {{if .Params.tags }}{{ range $index, $tag := .Params.tags }}{{if lt $index 1}}
-        <a href="{{$.Site.BaseURL}}tags/{{ $tag | urlize }}/">See all related posts →</a>{{end}}{{end}}{{ end }}
+        <a href="{{$.Site.BaseURL}}tags/{{ $tag | urlize }}/">Ver todos →</a>{{end}}{{end}}{{ end }}
     </footer>
 </article>
 {{end}}
