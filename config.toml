@@ -17,7 +17,7 @@ Title           = "Hugo Roca Proyectos"
   cover       = "img/blog-cover.jpg"
   description = "El rincón de la información y comunicación sobre la red, programación, arquitectura y más.. sol disfruta y comparte con todos..."
   metaDescription = ""
-  googleAnalytics = ""
+  googleAnalytics = "UA-125594168-1"
   customCSS = []
   RSSLink = ""
 
