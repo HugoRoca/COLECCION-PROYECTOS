@@ -6,10 +6,22 @@
     <description>Recent content in Csharp on Hugo Roca Proyectos</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-PE</language>
-    <lastBuildDate>Sun, 06 May 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 20 May 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://hugorocaproyectos.js.org/tags/csharp/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Registro de errores con Log4Net</title>
+      <link>https://hugorocaproyectos.js.org/registro-de-errores-con-log4net/</link>
+      <pubDate>Sun, 20 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://hugorocaproyectos.js.org/registro-de-errores-con-log4net/</guid>
+      <description>Si eres un gran desarrollador sabrás que todo software debe de tener un LOG, en esta oportunidad te muestro un aplicativo de como se hace uno.
+Paso 1 Crear un proyecto de consola en visual studio
+Paso 2 Agregar el siguiente paguete nuget: Paso 3 Agregar una clase a la cual llamaremos LogHelper.cs
+namespace Log4Net { public class LogHelper { public static log4net.ILog GetLogger([CallerFilePath]string filename = &amp;quot;&amp;quot;) { return log4net.</description>
+    </item>
     
     <item>
       <title>Entity Framework Básico</title>
