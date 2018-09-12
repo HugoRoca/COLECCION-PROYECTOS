@@ -116,7 +116,7 @@ namespace Log4Net
 }
 ```
 
-Ejecutamos y comprobamos el error registrado, como lo confugramos en paso 4 ```<file value="C:\Logs\" />```, buscamos la ruta y vemos el error.
+Ejecutamos y comprobamos el error registrado, como lo configuramos en el paso 4 ```<file value="C:\Logs\" />```, buscamos la ruta y vemos el error.
 ![](https://image.ibb.co/itOes9/2.png)
 
 ### Para terminar
