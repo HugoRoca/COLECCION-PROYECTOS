@@ -9,9 +9,6 @@ image =  "https://hugorocaproyectos.js.org/img/POO.jpg"
 authorAvatar =  "hugo.jpeg"
 nomenu = "main"
 tags = [
-    "csharp",
-    "sqlserver",
-    "js",
-    "jquery"
+    "POO"
 ]
 +++

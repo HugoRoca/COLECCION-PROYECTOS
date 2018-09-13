@@ -8,6 +8,11 @@
   </url>
   
   <url>
+    <loc>https://hugorocaproyectos.js.org/programaci%C3%B3n-orientada-a-objetos/</loc>
+    <lastmod>2018-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://hugorocaproyectos.js.org/registro-de-errores-con-log4net/</loc>
     <lastmod>2018-05-20T00:00:00+00:00</lastmod>
   </url>
@@ -81,6 +86,12 @@
   <url>
     <loc>https://hugorocaproyectos.js.org/tags/php/</loc>
     <lastmod>2018-03-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hugorocaproyectos.js.org/tags/poo/</loc>
+    <lastmod>2018-09-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
