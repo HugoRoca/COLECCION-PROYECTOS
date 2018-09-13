@@ -45,3 +45,12 @@ Este seria el caso de un sistema de administración para escuela, también podem
 Como podemos ver una misma entidad puede analizarse desde varias puntos de vista o enfoque, ademas de acuerdo de este enfoque se van a definir las características o comportamientos.
 
 La abstraccion tambien nos va a permitir eliminar todos aquellos aspectos que forman parte del objeto o entidad pero que no son significatios para el caso que estamos analizando.
+
+## Encapsulamiento
+Esta es una de las características más fáciles de entender de la programación orientada a objetos ya que la vamos a poder apreciar a simple vista en nuestro código, el encapsulamiento nos va a permitir empaquetar en un mismo contenedor o plantilla tanto las características de las entidades u objetos como sus comportamientos.
+
+Si has desarrollado con otros paradigmas de programación como la ‘programación estructurada’, podrás recordar que los datos y los módulos estaban separados, en cambio en la programación orientada a objetos estas características y atributos o comportamientos se van a mantener empaquetados en una misma plantilla.
+
+El encapsulamiento también va a permitir establecer niveles de acceso, de esta forma podemos indicar la manera en que los objetos van a poder interactuar entre si.
+
+Si continuamos con el ejemplo de la escuela o el sistema administrativo para la escuela, podríamos tener la clase empleado y un comportamiento que calcule el pago, suponiendo que no queremos que otro elemento conozca el detalle de esta calculo, podríamos entonces ocultarlo y de esta forma estaríamos marcando su nivel de acceso
