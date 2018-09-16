@@ -54,3 +54,7 @@ Si has desarrollado con otros paradigmas de programación como la ‘programaci�
 El encapsulamiento también va a permitir establecer niveles de acceso, de esta forma podemos indicar la manera en que los objetos van a poder interactuar entre si.
 
 Si continuamos con el ejemplo de la escuela o el sistema administrativo para la escuela, podríamos tener la clase empleado y un comportamiento que calcule el pago, suponiendo que no queremos que otro elemento conozca el detalle de esta calculo, podríamos entonces ocultarlo y de esta forma estaríamos marcando su nivel de acceso
+
+## Herencia
+La herencia es otro pilar de programación orientada a objetos que vamos a entender fácilmente, ya que la herencia en sí es parte de la naturaleza humana. 
+En un sistema, la herencia va ayudarnos a clasificar los elementos y su vez nos va a permitir reutilizar el código, regularmente en un sistema vamos a encontrar que sus elementos pueden ser organizdos de manera jerárquica, de tal forma que las clases o elementos de nivel superior puedan compartir sus carasteristicas y acciones
