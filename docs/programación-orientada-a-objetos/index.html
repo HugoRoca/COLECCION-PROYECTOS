@@ -179,6 +179,22 @@ Como podemos ver una misma entidad puede analizarse desde varias puntos de vista
 <p>El encapsulamiento también va a permitir establecer niveles de acceso, de esta forma podemos indicar la manera en que los objetos van a poder interactuar entre si.</p>
 
 <p>Si continuamos con el ejemplo de la escuela o el sistema administrativo para la escuela, podríamos tener la clase empleado y un comportamiento que calcule el pago, suponiendo que no queremos que otro elemento conozca el detalle de esta calculo, podríamos entonces ocultarlo y de esta forma estaríamos marcando su nivel de acceso</p>
+
+<h2 id="herencia">Herencia</h2>
+
+<p>La herencia es otro pilar de la programación orientada a objetos que vamos a entender fácilmente, ya que la herencia en sí es parte de la naturaleza humana.</p>
+
+<p>En un sistema, la herencia va ayudarnos a clasificar los elementos y su vez nos va a permitir reutilizar el código, regularmente en un sistema vamos a encontrar que sus elementos pueden ser organizados de manera jerárquica, de tal forma que las clases o elementos de nivel superior pueda compartir sus características y acciones con las entidades de nivel superior.</p>
+
+<p>Si pensamos en los empleados para el sistema que hemos planteado para la administración de una escuela, estos empleados pueden clasificarse en profesor, director y secretaria por ejemplo.</p>
+
+<p>Podríamos entonces definir estas clases como derivadas de la clase empleado, de esta forma estaríamos aplicando la herencia y las clases derivadas profesor, director y secretaria estarán heredando las características y comportamientos de la clase empleado.</p>
+
+<p>Podemos analizarlo de la siguiente forma, un empleado puede ser un profesor, un director o una secretaria, cabe mencionar que un sistema puede tener &lsquo;n&rsquo; niveles de herencia, en nuestro sistema podríamos pensar por ejemplo en una clasificación adicional para el profesor, para ellos podríamos añadir las clases <code>tiempo_completo</code> y <code>por_horas</code>, estas clases serian entonces derivadas de la clase profesor.</p>
+
+<p>Es así como la herencia nos ha ayudado hacer una estructura jerárquica que nos va servir para desarrollar nuestro sistema.</p>
+
+<p>El ultimo nivel jerárquico en este caso <code>tiempo_completo</code> y <code>por_horas</code> van a adquirir las características de todas las clases de las cuales heredan, es decir que <code>tiempo_completo</code> va adquirir las características y comportamiento tanto de la clase profesor como de la clase empleado, las clases director, profesor y secretaría son clases derivadas únicamente de la clase empleado por la tanto solo van a adquirir las características y comportamientos de esta clase.</p>
     
         </div>
     </section>
@@ -235,15 +251,13 @@ Como podemos ver una misma entidad puede analizarse desde varias puntos de vista
     <div class="read-next-card-content">
       
         <ul>
-          <li><a href="https://hugorocaproyectos.js.org/entity-framework-b%C3%A1sico/">Entity Framework Básico</a></li>            
+          <li><a href="https://hugorocaproyectos.js.org/portafolio-profesional/">Portafolio Profesional</a></li>            
         
-                      
+          <li><a href="https://hugorocaproyectos.js.org/sistema-de-gesti%C3%B3n-de-ventas-1.0/">Sistema de gestión de ventas 1.0</a></li>            
         
-          <li><a href="https://hugorocaproyectos.js.org/scripts-sqlserver/">Scripts SQLServer</a></li>            
+          <li><a href="https://hugorocaproyectos.js.org/sistema-de-gesti%C3%B3n-de-ventas-2.0/">Sistema de gestión de ventas 2.0</a></li>            
         
           <li><a href="https://hugorocaproyectos.js.org/app-restaurante/">APP Restaurante</a></li>            
-        
-          <li><a href="https://hugorocaproyectos.js.org/portafolio-profesional/">Portafolio Profesional</a></li>            
         </ul>
     </div>
     <footer class="read-next-card-footer">

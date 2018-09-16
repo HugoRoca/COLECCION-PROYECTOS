@@ -56,5 +56,16 @@ El encapsulamiento también va a permitir establecer niveles de acceso, de esta 
 Si continuamos con el ejemplo de la escuela o el sistema administrativo para la escuela, podríamos tener la clase empleado y un comportamiento que calcule el pago, suponiendo que no queremos que otro elemento conozca el detalle de esta calculo, podríamos entonces ocultarlo y de esta forma estaríamos marcando su nivel de acceso
 
 ## Herencia
-La herencia es otro pilar de programación orientada a objetos que vamos a entender fácilmente, ya que la herencia en sí es parte de la naturaleza humana. 
-En un sistema, la herencia va ayudarnos a clasificar los elementos y su vez nos va a permitir reutilizar el código, regularmente en un sistema vamos a encontrar que sus elementos pueden ser organizdos de manera jerárquica, de tal forma que las clases o elementos de nivel superior puedan compartir sus carasteristicas y acciones
+La herencia es otro pilar de la programación orientada a objetos que vamos a entender fácilmente, ya que la herencia en sí es parte de la naturaleza humana. 
+
+En un sistema, la herencia va ayudarnos a clasificar los elementos y su vez nos va a permitir reutilizar el código, regularmente en un sistema vamos a encontrar que sus elementos pueden ser organizados de manera jerárquica, de tal forma que las clases o elementos de nivel superior pueda compartir sus características y acciones con las entidades de nivel superior.
+
+Si pensamos en los empleados para el sistema que hemos planteado para la administración de una escuela, estos empleados pueden clasificarse en profesor, director y secretaria por ejemplo.
+
+Podríamos entonces definir estas clases como derivadas de la clase empleado, de esta forma estaríamos aplicando la herencia y las clases derivadas profesor, director y secretaria estarán heredando las características y comportamientos de la clase empleado.
+
+Podemos analizarlo de la siguiente forma, un empleado puede ser un profesor, un director o una secretaria, cabe mencionar que un sistema puede tener 'n' niveles de herencia, en nuestro sistema podríamos pensar por ejemplo en una clasificación adicional para el profesor, para ellos podríamos añadir las clases `tiempo_completo` y `por_horas`, estas clases serian entonces derivadas de la clase profesor.
+
+Es así como la herencia nos ha ayudado hacer una estructura jerárquica que nos va servir para desarrollar nuestro sistema.
+
+El ultimo nivel jerárquico en este caso `tiempo_completo` y `por_horas` van a adquirir las características de todas las clases de las cuales heredan, es decir que `tiempo_completo` va adquirir las características y comportamiento tanto de la clase profesor como de la clase empleado, las clases director, profesor y secretaría son clases derivadas únicamente de la clase empleado por la tanto solo van a adquirir las características y comportamientos de esta clase.
