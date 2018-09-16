@@ -195,6 +195,16 @@ Como podemos ver una misma entidad puede analizarse desde varias puntos de vista
 <p>Es así como la herencia nos ha ayudado hacer una estructura jerárquica que nos va servir para desarrollar nuestro sistema.</p>
 
 <p>El ultimo nivel jerárquico en este caso <code>tiempo_completo</code> y <code>por_horas</code> van a adquirir las características de todas las clases de las cuales heredan, es decir que <code>tiempo_completo</code> va adquirir las características y comportamiento tanto de la clase profesor como de la clase empleado, las clases director, profesor y secretaría son clases derivadas únicamente de la clase empleado por la tanto solo van a adquirir las características y comportamientos de esta clase.</p>
+
+<h2 id="polimorfismo">Polimorfismo</h2>
+
+<p>Es la característica de la programación orientada a objetos que va a permitir que un objeto presente diferentes comportamientos de acuerdo al contexto en el que se encuentre.</p>
+
+<p>Existen diversas formas de implementar el polimorfismo, la implementación que podemos encontrar más comúnmente en un sistema es la que permite definir un comportamiento para que una clase que a su vez va ser heredado a sus clases derivadas y cada una de ellas va poder adaptar este comportamiento e implementarlo de acuerdo a sus necesidades.</p>
+
+<p>Retomando el ejemplo que aviamos planteado de la escuela, vamos a suponer que quiero definir un comportamiento para los empleado, yo se todos los empleados van a tener que recibir un pago, para ello voy a utilizar el comportamiento o método <code>CalcularPago</code>, el problema en este caso que vamos a encontrar es que no todos los empleado van a recibir un mismo pago y su pago no se va a calcular de la misma forma, es entonces que mediante el poliformismo voy a permitir que el método <code>CalcularPago</code> sea implementado por cada clase dependiendo de sus necesidades.</p>
+
+<p>Por ejemplo para la clase profesor de tiempo completo haría que el calculo de pago sea de acuerdo a sus prestaciones y a su quincena, en cambio para un profesor por hora implementaría el método <code>CalcularPago</code> de acuerdo a las horas que a trabajado durante el mes. También la clase director va heredar el método o comportamiento de la clase empleado y la clase derivada secretaria también lo va hacer, cada una de estas clases va implementar el comportamiento de acuerdo a sus necesidades.</p>
     
         </div>
     </section>
@@ -251,9 +261,11 @@ Como podemos ver una misma entidad puede analizarse desde varias puntos de vista
     <div class="read-next-card-content">
       
         <ul>
+          <li><a href="https://hugorocaproyectos.js.org/registro-de-errores-con-log4net/">Registro de errores con Log4Net</a></li>            
+        
           <li><a href="https://hugorocaproyectos.js.org/portafolio-profesional/">Portafolio Profesional</a></li>            
         
-          <li><a href="https://hugorocaproyectos.js.org/sistema-de-gesti%C3%B3n-de-ventas-1.0/">Sistema de gestión de ventas 1.0</a></li>            
+                      
         
           <li><a href="https://hugorocaproyectos.js.org/sistema-de-gesti%C3%B3n-de-ventas-2.0/">Sistema de gestión de ventas 2.0</a></li>            
         

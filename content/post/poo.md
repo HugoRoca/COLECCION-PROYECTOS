@@ -69,3 +69,12 @@ Podemos analizarlo de la siguiente forma, un empleado puede ser un profesor, un 
 Es así como la herencia nos ha ayudado hacer una estructura jerárquica que nos va servir para desarrollar nuestro sistema.
 
 El ultimo nivel jerárquico en este caso `tiempo_completo` y `por_horas` van a adquirir las características de todas las clases de las cuales heredan, es decir que `tiempo_completo` va adquirir las características y comportamiento tanto de la clase profesor como de la clase empleado, las clases director, profesor y secretaría son clases derivadas únicamente de la clase empleado por la tanto solo van a adquirir las características y comportamientos de esta clase.
+
+## Polimorfismo
+Es la característica de la programación orientada a objetos que va a permitir que un objeto presente diferentes comportamientos de acuerdo al contexto en el que se encuentre.
+
+Existen diversas formas de implementar el polimorfismo, la implementación que podemos encontrar más comúnmente en un sistema es la que permite definir un comportamiento para que una clase que a su vez va ser heredado a sus clases derivadas y cada una de ellas va poder adaptar este comportamiento e implementarlo de acuerdo a sus necesidades.
+
+Retomando el ejemplo que aviamos planteado de la escuela, vamos a suponer que quiero definir un comportamiento para los empleado, yo se todos los empleados van a tener que recibir un pago, para ello voy a utilizar el comportamiento o método `CalcularPago`, el problema en este caso que vamos a encontrar es que no todos los empleado van a recibir un mismo pago y su pago no se va a calcular de la misma forma, es entonces que mediante el poliformismo voy a permitir que el método `CalcularPago` sea implementado por cada clase dependiendo de sus necesidades.
+
+Por ejemplo para la clase profesor de tiempo completo haría que el calculo de pago sea de acuerdo a sus prestaciones y a su quincena, en cambio para un profesor por hora implementaría el método `CalcularPago` de acuerdo a las horas que a trabajado durante el mes. También la clase director va heredar el método o comportamiento de la clase empleado y la clase derivada secretaria también lo va hacer, cada una de estas clases va implementar el comportamiento de acuerdo a sus necesidades.
