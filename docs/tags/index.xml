@@ -1,85 +1,49 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Hugo Roca Proyectos</title>
-    <link>https://hugorocaproyectos.js.org/tags/</link>
-    <description>Recent content in Tags on Hugo Roca Proyectos</description>
+    <title>Tags on Blog</title>
+    <link>/tags/</link>
+    <description>Recent content in Tags on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-PE</language>
     <lastBuildDate>Sun, 04 Mar 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://hugorocaproyectos.js.org/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Angularjs</title>
-      <link>https://hugorocaproyectos.js.org/tags/angularjs/</link>
+      <link>/tags/angularjs/</link>
       <pubDate>Sun, 04 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://hugorocaproyectos.js.org/tags/angularjs/</guid>
+      <guid>/tags/angularjs/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Csharp</title>
-      <link>https://hugorocaproyectos.js.org/tags/csharp/</link>
-      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      <title>Css3</title>
+      <link>/tags/css3/</link>
+      <pubDate>Sun, 04 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://hugorocaproyectos.js.org/tags/csharp/</guid>
+      <guid>/tags/css3/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Jquery</title>
-      <link>https://hugorocaproyectos.js.org/tags/jquery/</link>
-      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      <title>Html5</title>
+      <link>/tags/html5/</link>
+      <pubDate>Sun, 04 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://hugorocaproyectos.js.org/tags/jquery/</guid>
+      <guid>/tags/html5/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Js</title>
-      <link>https://hugorocaproyectos.js.org/tags/js/</link>
-      <pubDate>Tue, 02 Oct 2018 00:00:00 +0000</pubDate>
+      <link>/tags/js/</link>
+      <pubDate>Sun, 04 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://hugorocaproyectos.js.org/tags/js/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Mysql</title>
-      <link>https://hugorocaproyectos.js.org/tags/mysql/</link>
-      <pubDate>Fri, 30 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://hugorocaproyectos.js.org/tags/mysql/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Php</title>
-      <link>https://hugorocaproyectos.js.org/tags/php/</link>
-      <pubDate>Fri, 30 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://hugorocaproyectos.js.org/tags/php/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Poo</title>
-      <link>https://hugorocaproyectos.js.org/tags/poo/</link>
-      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://hugorocaproyectos.js.org/tags/poo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Sqlserver</title>
-      <link>https://hugorocaproyectos.js.org/tags/sqlserver/</link>
-      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://hugorocaproyectos.js.org/tags/sqlserver/</guid>
+      <guid>/tags/js/</guid>
       <description></description>
     </item>
     

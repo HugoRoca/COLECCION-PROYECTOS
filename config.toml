@@ -1,80 +1,42 @@
-baseurl         = "https://hugorocaproyectos.js.org/"
-theme           = "casper-two"
-languageCode    = "es-PE"
+baseURL = "https://hugorocaproyectos.js.org/"
+languageCode = "es-PE"
+title = "Blog"
+summerization = "html_firstparagraph"
+paginate = 9 
+theme = "bleak"
 disqusShortname = "hugorocaproyectos"
-paginate        = 6
 contentdir      = "content"
 datadir         = "data"
 layoutdir       = "layouts"
 publishdir      = "docs"
-Title           = "Hugo Roca Proyectos"
-#SectionPagesMenu = "main"
-
-[params]
-  title       = "Hugo Roca"
-  subtitle    = ""
-
-  cover       = "img/blog-cover.jpg"
-  description = "El rincón de la información y comunicación sobre la red, programación, arquitectura y más.. sol disfruta y comparte con todos..."
-  metaDescription = ""
-  googleAnalytics = "UA-125594168-1"
-  customCSS = []
-  RSSLink = ""
-
-  twitterName = ""
-  fbName = ""
-  githubName = "HugoRoca"
-  linkedinName = "hugoroca"
-
-  logo = "hugo-logo.png"
-  logoFloat = "hugo-logo-float.png"
-  orgName = "HR"
-  orgWebsite = "https://www.hugorocaproyectos.js.org"
-  orgDescription = "El rincón de la información y comunicación sobre la red, programación, arquitectura y más.. sol disfruta y comparte con todos..."
-  copyright = ""
-  showSupport = "true"
-
-  author = "Hugo Roca"
-  authorAvatar = "img/ghost-icon.png"
-  authorLocation = "Bandung, ID"
-  authorWebsite = "https://HugoRoca.github.io"
-  authorDescription = "Desarrollador y Analista de Software"
-
-  pageNotFoundTitle = "404 - Page not found"
-  coverShare = "img/blog-cover-og.jpg"
-
-  #casper or caspertwo
-  singleViewStyle = "casper"
 
 [permalinks]
-  post = "/:slug/"
+  post = "/post/:year/:month/:day/:slug"
 
-[[menu.main]]
-  name = "Inicio"
-  url = "/"
-  weight = 200
+[indexes]
+  tag = "tags"
+  topic = "topics"
 
-[[menu.main]]
-  name = "Acerca de mi"
-  url = "https://hugoroca.github.io/"
-  weight = 100
+[params]
+  # Warning Keys are case sensitives
+  Subtitle = "Alter Way le libre autrement"
+  description = "Alter Way une autre idée du web, open source inside, design, build, run train."
+  cover = "/images/oss.jpg"
 
-[[menu.main]]
-  name = "C#"
-  url = "/tags/csharp/"
-  weight = 99
+  # Google analytics
+  ga = "UA-125594168-1"
+  twitter = "alterway"
+  github = "hugoroca"
+  facebook = "alterway"
+  linkedin = "alterway"
+  disqus = "alterway"
+  gplus = "alterway"
+  logo = "/images/logo.png"
 
-[[menu.main]]
-  name = "JS"
-  url = "/tags/js/"
-  weight = 95
-
-[[menu.main]]
-  name = "SQLServer"
-  url = "/tags/sqlserver/"
-  weight = 95
-
-[[menu.main]]
-  name = "PHP"
-  url = "/tags/php/"
-  weight = 95
+[author]
+  FirstName = "Hugo"
+  LastName = "Roca"
+  Gender = "male"
+  UserName = "hugo.roca"
+  Image = "/images/hugo.jpeg"
+  Website = "https://hugoroca.github.io"

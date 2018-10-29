@@ -1,20 +1,18 @@
-+++
-author = "Hugo Roca"
-date =  "2018-03-04"
-linktitle = "Sistema de gestión de ventas 1.0"
-title =  "Sistema de gestión de ventas 1.0"
-description = "En esta oportunidad les presento un sistema de gestión de ventas para un puesto de ventas, podrás registrar ventas diarias, gastos, ingresos, registro de proveedores e incluso realizar reportes. Desarrollado en AngularJS, PHP y MySql, maquetado con bootstrap."
-weight = "10"
-image =  "https://hugorocaproyectos.js.org/img/sigeven1.0.jpg"
-authorAvatar =  "hugo.jpeg"
-nomenu = "main"
-tags = [
-    "angularjs",
-    "php",
-    "mysql",
-    "js"
-]
-+++
+---
+section: post
+date: "2018-03-04"
+title: "SIGEVEN 1.0"
+description: "En esta oportunidad les presento un sistema de gestión de ventas para un puesto de ventas, podrás registrar ventas diarias, gastos, ingresos."
+slug: sigenven1.0
+author: "Hugo Roca"
+image: /post/sigeven1.0.jpg
+tags:
+ - HTML5
+ - CSS3
+ - JS
+ - ANGULARJS
+---
+
 
 En esta oportunidad les presento un sistema de gestión de ventas para un puesto de ventas, podrás registrar ventas diarias, gastos, ingresos, registro de proveedores e incluso realizar reportes. Desarrollado en AngularJS, PHP y MySql, maquetado con bootstrap.
 
