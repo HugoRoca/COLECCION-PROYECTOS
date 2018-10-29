@@ -1,6 +1,6 @@
 baseURL = "https://hugorocaproyectos.js.org/"
 languageCode = "es-PE"
-title = "Blog"
+title = "Hugo Roca Proyectos"
 summerization = "html_firstparagraph"
 paginate = 9 
 theme = "bleak"
@@ -19,18 +19,17 @@ publishdir      = "docs"
 
 [params]
   # Warning Keys are case sensitives
-  Subtitle = "Alter Way le libre autrement"
+  Subtitle = "Sistemas, información, "
   description = "Alter Way une autre idée du web, open source inside, design, build, run train."
   cover = "/images/oss.jpg"
 
   # Google analytics
   ga = "UA-125594168-1"
-  twitter = "alterway"
+  twitter = "xxxxx"
   github = "hugoroca"
-  facebook = "alterway"
-  linkedin = "alterway"
-  disqus = "alterway"
-  gplus = "alterway"
+  facebook = "xxxxx"
+  linkedin = "xxxxx"
+  gplus = ""
   logo = "/images/logo.png"
 
 [author]
@@ -40,3 +39,11 @@ publishdir      = "docs"
   UserName = "hugo.roca"
   Image = "/images/hugo.jpeg"
   Website = "https://hugoroca.github.io"
+
+[[menu.main]]
+  name = "Acerca de mí"
+  url = "https://hugoroca.github.io/"
+
+[[menu.main]]
+  name = "Tags"
+  url = "/tags"
