@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Angularjs on Blog</title>
-    <link>/tags/angularjs/</link>
+    <link>https://hugorocaproyectos.js.org/tags/angularjs/</link>
     <description>Recent content in Angularjs on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-PE</language>
     <lastBuildDate>Sun, 04 Mar 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/angularjs/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hugorocaproyectos.js.org/tags/angularjs/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>SIGEVEN 1.0</title>
-      <link>/post/2018/03/04/sigenven1.0/</link>
+      <link>https://hugorocaproyectos.js.org/post/2018/03/04/sigenven1.0/</link>
       <pubDate>Sun, 04 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/2018/03/04/sigenven1.0/</guid>
+      <guid>https://hugorocaproyectos.js.org/post/2018/03/04/sigenven1.0/</guid>
       <description>En esta oportunidad les presento un sistema de gestión de ventas para un puesto de ventas, podrás registrar ventas diarias, gastos, ingresos, registro de proveedores e incluso realizar reportes. Desarrollado en AngularJS, PHP y MySql, maquetado con bootstrap.
 Paso 1 Puedes obtener el codigo fuente de la siguiente forma:
  Clonar Sigeven 1.0 Copiarlo a un server WAMP, XAMPP o APACHE  Árbol de archivos

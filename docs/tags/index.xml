@@ -2,48 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Blog</title>
-    <link>/tags/</link>
+    <link>https://hugorocaproyectos.js.org/tags/</link>
     <description>Recent content in Tags on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-PE</language>
     <lastBuildDate>Sun, 04 Mar 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hugorocaproyectos.js.org/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Angularjs</title>
-      <link>/tags/angularjs/</link>
+      <link>https://hugorocaproyectos.js.org/tags/angularjs/</link>
       <pubDate>Sun, 04 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/angularjs/</guid>
+      <guid>https://hugorocaproyectos.js.org/tags/angularjs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Css3</title>
-      <link>/tags/css3/</link>
+      <link>https://hugorocaproyectos.js.org/tags/css3/</link>
       <pubDate>Sun, 04 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/css3/</guid>
+      <guid>https://hugorocaproyectos.js.org/tags/css3/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Html5</title>
-      <link>/tags/html5/</link>
+      <link>https://hugorocaproyectos.js.org/tags/html5/</link>
       <pubDate>Sun, 04 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/html5/</guid>
+      <guid>https://hugorocaproyectos.js.org/tags/html5/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Js</title>
-      <link>/tags/js/</link>
+      <link>https://hugorocaproyectos.js.org/tags/js/</link>
       <pubDate>Sun, 04 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/js/</guid>
+      <guid>https://hugorocaproyectos.js.org/tags/js/</guid>
       <description></description>
     </item>
     

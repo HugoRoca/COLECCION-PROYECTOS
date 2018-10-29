@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Topics on Blog</title>
-    <link>/topics/</link>
+    <link>https://hugorocaproyectos.js.org/topics/</link>
     <description>Recent content in Topics on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-PE</language>
     
-	<atom:link href="/topics/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hugorocaproyectos.js.org/topics/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
