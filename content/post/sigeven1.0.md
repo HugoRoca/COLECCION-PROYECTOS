@@ -6,6 +6,7 @@ description: "En esta oportunidad les presento un sistema de gestión de ventas 
 slug: sigenven1.0
 author: "Hugo Roca"
 image: /post/sigeven1.0.jpg
+share: true
 tags:
  - HTML5
  - CSS3
