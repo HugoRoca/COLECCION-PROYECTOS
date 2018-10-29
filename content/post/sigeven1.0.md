@@ -105,7 +105,9 @@ Puedes obtener el codigo fuente de la siguiente forma:
 Ejecutar el script de base de datos (dbVentas.sql) en mysql.
 
 ## Paso 3
+
 Configurar el archivo ```Server/connection.php```
+
 ```
 <?php
 define('HOST', 'localhost');    // => host del server de la base de datos

@@ -9,6 +9,7 @@ contentdir      = "content"
 datadir         = "data"
 layoutdir       = "layouts"
 publishdir      = "docs"
+share = "true"
 
 [permalinks]
   post = "/post/:year/:month/:day/:slug"
@@ -19,8 +20,8 @@ publishdir      = "docs"
 
 [params]
   # Warning Keys are case sensitives
-  Subtitle = "Sistemas, información, "
-  description = "Alter Way une autre idée du web, open source inside, design, build, run train."
+  Subtitle = "Sistemas, información e ideas"
+  description = "Sistemas, información e ideas."
   cover = "/images/oss.jpg"
 
   # Google analytics
@@ -29,6 +30,7 @@ publishdir      = "docs"
   github = "hugoroca"
   facebook = "xxxxx"
   linkedin = "xxxxx"
+  instagram = "xxxxxxx"
   gplus = ""
   logo = "/images/logo.png"
 
