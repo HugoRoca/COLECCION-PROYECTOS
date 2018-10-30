@@ -5,7 +5,7 @@ title: "SIGEVEN 1.0"
 description: "En esta oportunidad les presento un sistema de gestión de ventas para un puesto de ventas, podrás registrar ventas diarias, gastos, ingresos."
 slug: sigenven1.0
 author: "Hugo Roca"
-image: /post/sigeven1.0.jpg
+image: images/post/sigeven1.0.jpg
 share: true
 tags:
  - HTML5
