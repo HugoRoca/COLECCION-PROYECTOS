@@ -21,7 +21,6 @@ publishdir      = "docs"
   # Warning Keys are case sensitives
   Subtitle = "Sistemas, información e ideas"
   description = "Sistemas, información e ideas."
-  cover = "/images/oss.jpg"
 
   # Google analytics
   ga = "UA-125594168-1"
