@@ -1,6 +1,6 @@
 baseURL = "https://hugorocaproyectos.js.org/"
 languageCode = "es-PE"
-title = "Hugo Roca Proyectos"
+title = "Hugo Roca Proyectos | Blog"
 summerization = "html_firstparagraph"
 paginate = 9 
 theme = "bleak"
@@ -12,15 +12,17 @@ publishdir      = "docs"
 
 [permalinks]
   post = "/post/:year/:month/:day/:slug"
+  project = "/project/:year/:month/:day/:slug"
 
 [indexes]
   tag = "tags"
   topic = "topics"
 
+
 [params]
   # Warning Keys are case sensitives
-  Subtitle = "Sistemas, información e ideas"
-  description = "Sistemas, información e ideas."
+  Subtitle = "El rincón de la información y comunicación sobre la red, programación, arquitectura y más.."
+  description = "El rincón de la información y comunicación sobre la red, programación, arquitectura y más..."
 
   # Google analytics
   ga = "UA-125594168-1"
