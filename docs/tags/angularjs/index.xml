@@ -1,15 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Angularjs on Hugo Roca Proyectos</title>
+    <title>Angularjs on Hugo Roca Proyectos | Blog</title>
     <link>https://hugorocaproyectos.js.org/tags/angularjs/</link>
-    <description>Recent content in Angularjs on Hugo Roca Proyectos</description>
+    <description>Recent content in Angularjs on Hugo Roca Proyectos | Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-PE</language>
-    <lastBuildDate>Sun, 04 Mar 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 30 Mar 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://hugorocaproyectos.js.org/tags/angularjs/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>SIGEVEN 2.0</title>
+      <link>https://hugorocaproyectos.js.org/post/2018/03/30/sigenven2.0/</link>
+      <pubDate>Fri, 30 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://hugorocaproyectos.js.org/post/2018/03/30/sigenven2.0/</guid>
+      <description>Como dicen, si hay &amp;lsquo;1.0&amp;rsquo; un &amp;lsquo;2.0&amp;rsquo; va haber, en esta oportunidad les muestro otro sistema de ventas mas completo en full PHP con jquery y ajax.
+Sistema para el contol de ventas e ingreso de stock, impresion de facturas, boletas y tickets, control de usuarios y permisos. Desarrollado en PHP7, JQuery y la plantilla AdminLTE.
+CONTENIDO  Login Dashboard ▾ Almacen/ Registro de artículo Registro de categorías ▾ Compras/ Registro de Ingresos Registro de Proveedor ▾ Ventas/ Registro de Cliente Registro de Ventas ▾ Impresion en PDF/ Factura Boleta ticket ▾ Acceso/ Permisos Registro de usuario Consulta de Compras Consulta de Ventas  Paso 1 Puedes obtener el codigo fuente de la siguiente forma:</description>
+    </item>
     
     <item>
       <title>SIGEVEN 1.0</title>
