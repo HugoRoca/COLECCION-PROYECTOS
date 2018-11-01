@@ -7,29 +7,28 @@
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-        <meta property="og:title" content=" Registro de errores con Log4Net &middot;  Hugo Roca Proyectos | Blog" />
+        <meta property="og:title" content=" Programación Orientada a Objetos &middot;  Hugo Roca Proyectos | Blog" />
         <meta property="og:site_name" content="Hugo Roca Proyectos | Blog" />
-        <meta property="og:url" content="https://hugorocaproyectos.js.org/post/2018/05/20/2018-05-20-registro-errores-log4net/" />
+        <meta property="og:url" content="https://hugorocaproyectos.js.org/post/2018/09/15/2018-09-15-poo/" />
 
     
         <meta property="og:type" content="article" />
-        <meta property="og:article:published_time" content="2018-05-20T00:00:00Z" />
-        <meta property="og:article:tag" content="SQLSERVER" />
-        <meta property="og:article:tag" content="C#" />
+        <meta property="og:article:published_time" content="2018-09-15T00:00:00Z" />
+        <meta property="og:article:tag" content="POO" />
         
 
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@xxxxx" />
         <meta name="twitter:creator" content="@xxxxx" />
-        <meta name="twitter:title" content="Registro de errores con Log4Net" />
-        <meta name="twitter:description" content="Si eres un gran desarrollador sabrás que todo software debe de tener un LOG, en esta oportunidad te muestro un aplicativo de como se hace uno." />
-        <meta name="twitter:url" content="https://hugorocaproyectos.js.org/post/2018/05/20/2018-05-20-registro-errores-log4net/" />
+        <meta name="twitter:title" content="Programación Orientada a Objetos" />
+        <meta name="twitter:description" content="POO es un paradigna de programación que comenzó a desarrollarse en los años 80, en ese momento se dieron cuenta que esta forma de programación facilitaba el desarrollo de sistemas de gran tamaño." />
+        <meta name="twitter:url" content="https://hugorocaproyectos.js.org/post/2018/09/15/2018-09-15-poo/" />
     
 
-        <title> Registro de errores con Log4Net &middot;  Hugo Roca Proyectos | Blog</title>
+        <title> Programación Orientada a Objetos &middot;  Hugo Roca Proyectos | Blog</title>
 
     
-        <meta name="description" content="Si eres un gran desarrollador sabrás que todo software debe de tener un LOG, en esta oportunidad te muestro un aplicativo de como se hace uno." />
+        <meta name="description" content="POO es un paradigna de programación que comenzó a desarrollarse en los años 80, en ese momento se dieron cuenta que esta forma de programación facilitaba el desarrollo de sistemas de gran tamaño." />
     
 
         <meta name="p:domain_verify" content="fc173d84e3a4de948ed4bda2908afd3e"/>
@@ -46,21 +45,21 @@
     
 
     
-        <link rel="canonical" href="https://hugorocaproyectos.js.org/post/2018/05/20/2018-05-20-registro-errores-log4net/" />
+        <link rel="canonical" href="https://hugorocaproyectos.js.org/post/2018/09/15/2018-09-15-poo/" />
 
     
     <script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "Article",
-        "headline": "Registro de errores con Log4Net",
+        "headline": "Programación Orientada a Objetos",
         "author": {
             "@type": "Person",
             "name": "http://profiles.google.com/?rel=author"
         },
-        "datePublished": "2018-05-20",
-        "description": "Si eres un gran desarrollador sabrás que todo software debe de tener un LOG, en esta oportunidad te muestro un aplicativo de como se hace uno.",
-        "wordCount": 292
+        "datePublished": "2018-09-15",
+        "description": "POO es un paradigna de programación que comenzó a desarrollarse en los años 80, en ese momento se dieron cuenta que esta forma de programación facilitaba el desarrollo de sistemas de gran tamaño.",
+        "wordCount": 1220
     }
     </script>
     
@@ -100,134 +99,90 @@
 
   			<header class="post-header">
   				<span class="post-meta">
-						<span class="post-date">20 May 2018</span> <span class="reading-time">| <span class="estimated-reading-time">2 min.</span> (<span class="word-count">292</span> Palabras)</span></span> <span class="author">Autor : Hugo Roca</span>
+						<span class="post-date">15 September 2018</span> <span class="reading-time">| <span class="estimated-reading-time">6 min.</span> (<span class="word-count">1220</span> Palabras)</span></span> <span class="author">Autor : Hugo Roca</span>
   				</span>
   				<div class="clear"></div>
-  				<h1 class="post-title">Registro de errores con Log4Net</h1>
+  				<h1 class="post-title">Programación Orientada a Objetos</h1>
   			</header>
 
   			<section class="post-content">
   				
 
-<p>Si eres un gran desarrollador sabrás que todo software debe de tener un LOG, en esta oportunidad te muestro un aplicativo de como se hace uno.</p>
+<p>POO es un paradigna de programación que comenzó a desarrollarse en los años 80, en ese momento se dieron cuenta que esta forma de programación facilitaba el desarrollo de sistemas de gran tamaño.</p>
 
-<h2 id="paso-1">Paso 1</h2>
+<p>De hecho actualmente este paradigma de programación es el más utilizado, los grandes sistemas que conocemos han sido desarrollados en base a este paradigma.</p>
 
-<p>Crear un proyecto de consola en visual studio</p>
+<h3 id="las-ventajas-de-poo">Las ventajas de poo</h3>
 
-<h2 id="paso-2">Paso 2</h2>
+<ul>
+<li>Es reutilizable, esto quiero decir que si desarrollamos nuestro código de forma adecuada, las clases y lo que creemos se puede reutilizar, en distintas partes del programa la cual nos va a permitir no duplicar código.</li>
+<li>Mantenibilidad, un sistema orientado a objetos va ser mucho mas fácil de leer y comprender para los programadores, ya que para ellos no vas ser necesario adentrarse demasiado al código, basta con ver las clases generales para darse cuenta como funciona .</li>
+<li>Modificable, si nuestro código esta bien implementado va ser muy fácil añadir, modificar  o incluso eliminar las clases u objetos que ya existan en el código.</li>
+<li>Un sistema orientado a objetos también es fiable, es mas fácil detectar errores en este tipo de programas, podemos dividir el sistema en partes e ir las probando de manera independiente</li>
+</ul>
 
-<p>Agregar el siguiente paguete nuget:
-<img src="https://image.ibb.co/bNiXep/1.png" alt="" /></p>
+<h3 id="característica-principales">Característica principales</h3>
 
-<h2 id="paso-3">Paso 3</h2>
+<ul>
+<li>Abstracción</li>
+<li>Encapsulamiento</li>
+<li>Herencia</li>
+<li>Polimorfismo</li>
+</ul>
 
-<p>Agregar una clase a la cual llamaremos <code>LogHelper.cs</code></p>
+<p>Para poder desarrollar aplicaciones orientas a objetos de la mejor manera, debemos analizar y entender cada uno de estos conceptos.</p>
 
-<pre><code>namespace Log4Net
-{
-    public class LogHelper
-    {
-        public static log4net.ILog GetLogger([CallerFilePath]string filename = &quot;&quot;)
-        {
-            return log4net.LogManager.GetLogger(filename);
-        }
-    }
-}
-</code></pre>
+<h2 id="la-abstracción">La abstracción</h2>
 
-<h2 id="paso-4">Paso 4</h2>
+<p>Es un pilar o característica de la programación orienta a objetos, que va permitir que los objetos puedan interactuar sin necesidad de conocer los detalles del funcionamiento, de esta forma el enfoque se centra en aspectos relevantes de las entidades, podemos decir de hecho que estos aspectos son relativos ya que van a depender del enfoque en que se analice. Para entender el concepto vamos a modelar una escuela.
+Una escuela puede tener muchas características, pero con la abstracciones me voy a centar o enfocar únicamente en las características que yo necesito, para ellos debo de pensar de que como quiero modelar la escuela, lo puedo modelas desde el punto de vista administrativo, por ejemplo:</p>
 
-<p>Para configurar el archivo <code>.txt</code> en donde se registrarán los errores, configuramos lo siguiente en el <code>app.config</code></p>
+<ul>
+<li>Control de alumnos</li>
+<li>Control de empleados</li>
+<li>Control de asignaturas</li>
+</ul>
 
-<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
-&lt;configuration&gt;
-  &lt;configSections&gt;
-    &lt;section name=&quot;log4net&quot; type=&quot;log4net.Config.Log4NetConfigurationSectionHandler, log4net&quot; /&gt;
-  &lt;/configSections&gt;
-  &lt;log4net&gt;
-    &lt;appender name=&quot;RollingFileAppender&quot; type=&quot;log4net.Appender.RollingFileAppender&quot;&gt;
-      &lt;lockingModel type=&quot;log4net.Appender.FileAppender+MinimalLock&quot;/&gt;
-      &lt;file value=&quot;C:\Logs\&quot; /&gt;
-      &lt;datePattern value=&quot;dd.MM.yyyy'.log'&quot; /&gt;
-      &lt;appendToFile value=&quot;true&quot; /&gt;
-      &lt;rollingStyle value=&quot;Composite&quot; /&gt;
-      &lt;maximumFileSize value=&quot;10MB&quot; /&gt;
-      &lt;maxSizeRollBackups value=&quot;5&quot; /&gt;
-      &lt;staticLogFileName value=&quot;false&quot; /&gt;
-      &lt;layout type=&quot;log4net.Layout.PatternLayout&quot;&gt;
-        &lt;conversionPattern 
-            value=&quot;::::::::::::::::::::::::::::::::::::::::
-                %newlineFecha: %date{MMMM dd, yyyy HH:mm:ss, fff} 
-                %newlineRuta: %location 
-                %newlineLinea: %line 
-                %newlineMetodo: %method 
-                %newlineTipo: %level 
-                %newlineMensaje: %message%
-                newline%exception
-                %newline::::::::::::::::::::::::::::::::::::::::&quot; /&gt;
-      &lt;/layout&gt;
-    &lt;/appender&gt;
-    &lt;root&gt;
-      &lt;level value=&quot;DEBUG&quot; /&gt;
-      &lt;appender-ref ref=&quot;ConsoleAppender&quot; /&gt;
-      &lt;appender-ref ref=&quot;RollingFileAppender&quot; /&gt;
-    &lt;/root&gt;
-  &lt;/log4net&gt;
-    &lt;startup&gt; 
-        &lt;supportedRuntime version=&quot;v4.0&quot; sku=&quot;.NETFramework,Version=v4.6&quot; /&gt;
-    &lt;/startup&gt;
-&lt;/configuration&gt;
-</code></pre>
+<p>Este seria el caso de un sistema de administración para escuela, también podemos enfocarnos de otra forma en las escuelas; podría ser que yo quisiera un sistema para una constructora,  en este caso puedo ver el enfoque de la escuela es muy diferente; a una constructora le van a interesar las características de la escuela las cuales pueden ser, ventanas, puertas, pisos entre otras aspectos.
+Como podemos ver una misma entidad puede analizarse desde varias puntos de vista o enfoque, ademas de acuerdo de este enfoque se van a definir las características o comportamientos.</p>
 
-<h2 id="paso-5">Paso 5</h2>
+<p>La abstraccion tambien nos va a permitir eliminar todos aquellos aspectos que forman parte del objeto o entidad pero que no son significatios para el caso que estamos analizando.</p>
 
-<p>Nos situamos en el archivo <code>program.cs</code> y hacemos siguiente:</p>
+<h2 id="encapsulamiento">Encapsulamiento</h2>
 
-<pre><code>[assembly: log4net.Config.XmlConfigurator(Watch = true)]
+<p>Esta es una de las características más fáciles de entender de la programación orientada a objetos ya que la vamos a poder apreciar a simple vista en nuestro código, el encapsulamiento nos va a permitir empaquetar en un mismo contenedor o plantilla tanto las características de las entidades u objetos como sus comportamientos.</p>
 
-namespace Log4Net
-{
-    class Program
-    {
-        private static readonly log4net.ILog log = LogHelper.GetLogger();
+<p>Si has desarrollado con otros paradigmas de programación como la ‘programación estructurada’, podrás recordar que los datos y los módulos estaban separados, en cambio en la programación orientada a objetos estas características y atributos o comportamientos se van a mantener empaquetados en una misma plantilla.</p>
 
-        static void Main(string[] args)
-        {
-            divide();
-            Console.ReadLine();
-            void divide()
-            {
-                try
-                {
-                    var i = 0;
-                    var a = 5 / i;
-                }
-                catch (DivideByZeroException ex)
-                {
-                    log.Error(&quot;división entro 0&quot;, ex);
-                }
+<p>El encapsulamiento también va a permitir establecer niveles de acceso, de esta forma podemos indicar la manera en que los objetos van a poder interactuar entre si.</p>
 
-            }
-        }
+<p>Si continuamos con el ejemplo de la escuela o el sistema administrativo para la escuela, podríamos tener la clase empleado y un comportamiento que calcule el pago, suponiendo que no queremos que otro elemento conozca el detalle de esta calculo, podríamos entonces ocultarlo y de esta forma estaríamos marcando su nivel de acceso</p>
 
-    }
-}
-</code></pre>
+<h2 id="herencia">Herencia</h2>
 
-<p>Ejecutamos y comprobamos el error registrado, como lo configuramos en el paso 4 <code>&lt;file value=&quot;C:\Logs\&quot; /&gt;</code>, buscamos la ruta y vemos el error.
-<img src="https://image.ibb.co/itOes9/2.png" alt="" /></p>
+<p>La herencia es otro pilar de la programación orientada a objetos que vamos a entender fácilmente, ya que la herencia en sí es parte de la naturaleza humana.</p>
 
-<h3 id="para-terminar">Para terminar</h3>
+<p>En un sistema, la herencia va ayudarnos a clasificar los elementos y su vez nos va a permitir reutilizar el código, regularmente en un sistema vamos a encontrar que sus elementos pueden ser organizados de manera jerárquica, de tal forma que las clases o elementos de nivel superior pueda compartir sus características y acciones con las entidades de nivel superior.</p>
 
-<p>En este repo, existe ejemplos de como registrar los errores en base de datos</p>
+<p>Si pensamos en los empleados para el sistema que hemos planteado para la administración de una escuela, estos empleados pueden clasificarse en profesor, director y secretaria por ejemplo.</p>
 
-<ol>
-<li>Clonar <a href="https://github.com/PORTAFOLIO-PROYECTOS/LOG4NET_PRINCIPIANTE_A_FIN">Log4Net</a></li>
-<li>Abrir la solución y explorar el código fuente</li>
-</ol>
+<p>Podríamos entonces definir estas clases como derivadas de la clase empleado, de esta forma estaríamos aplicando la herencia y las clases derivadas profesor, director y secretaria estarán heredando las características y comportamientos de la clase empleado.</p>
 
-<p>Comenta, disfruta y comparte!</p>
+<p>Podemos analizarlo de la siguiente forma, un empleado puede ser un profesor, un director o una secretaria, cabe mencionar que un sistema puede tener &lsquo;n&rsquo; niveles de herencia, en nuestro sistema podríamos pensar por ejemplo en una clasificación adicional para el profesor, para ellos podríamos añadir las clases <code>tiempo_completo</code> y <code>por_horas</code>, estas clases serian entonces derivadas de la clase profesor.</p>
+
+<p>Es así como la herencia nos ha ayudado hacer una estructura jerárquica que nos va servir para desarrollar nuestro sistema.</p>
+
+<p>El ultimo nivel jerárquico en este caso <code>tiempo_completo</code> y <code>por_horas</code> van a adquirir las características de todas las clases de las cuales heredan, es decir que <code>tiempo_completo</code> va adquirir las características y comportamiento tanto de la clase profesor como de la clase empleado, las clases director, profesor y secretaría son clases derivadas únicamente de la clase empleado por la tanto solo van a adquirir las características y comportamientos de esta clase.</p>
+
+<h2 id="polimorfismo">Polimorfismo</h2>
+
+<p>Es la característica de la programación orientada a objetos que va a permitir que un objeto presente diferentes comportamientos de acuerdo al contexto en el que se encuentre.</p>
+
+<p>Existen diversas formas de implementar el polimorfismo, la implementación que podemos encontrar más comúnmente en un sistema es la que permite definir un comportamiento para que una clase que a su vez va ser heredado a sus clases derivadas y cada una de ellas va poder adaptar este comportamiento e implementarlo de acuerdo a sus necesidades.</p>
+
+<p>Retomando el ejemplo que aviamos planteado de la escuela, vamos a suponer que quiero definir un comportamiento para los empleado, yo se todos los empleados van a tener que recibir un pago, para ello voy a utilizar el comportamiento o método <code>CalcularPago</code>, el problema en este caso que vamos a encontrar es que no todos los empleado van a recibir un mismo pago y su pago no se va a calcular de la misma forma, es entonces que mediante el poliformismo voy a permitir que el método <code>CalcularPago</code> sea implementado por cada clase dependiendo de sus necesidades.</p>
+
+<p>Por ejemplo para la clase profesor de tiempo completo haría que el calculo de pago sea de acuerdo a sus prestaciones y a su quincena, en cambio para un profesor por hora implementaría el método <code>CalcularPago</code> de acuerdo a las horas que a trabajado durante el mes. También la clase director va heredar el método o comportamiento de la clase empleado y la clase derivada secretaria también lo va hacer, cada una de estas clases va implementar el comportamiento de acuerdo a sus necesidades.</p>
 
   			</section>
 
@@ -235,20 +190,18 @@ namespace Log4Net
   				<div class="post-tags">
             
             
-                <a href="https://hugorocaproyectos.js.org//tags/sqlserver/">SQLSERVER</a>
-            
-                <a href="https://hugorocaproyectos.js.org//tags/c/">C#</a>
+                <a href="https://hugorocaproyectos.js.org//tags/poo/">POO</a>
             
             
   				</div>
   				<div class="post-share">
-  					<a class="icon-twitter" href="https://twitter.com/share?text=Registro%20de%20errores%20con%20Log4Net&url=https%3a%2f%2fhugorocaproyectos.js.org%2fpost%2f2018%2f05%2f20%2f2018-05-20-registro-errores-log4net%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+  					<a class="icon-twitter" href="https://twitter.com/share?text=Programaci%c3%b3n%20Orientada%20a%20Objetos&url=https%3a%2f%2fhugorocaproyectos.js.org%2fpost%2f2018%2f09%2f15%2f2018-09-15-poo%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
   						<span>Twitter</span>
   					</a>
-  					<a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fhugorocaproyectos.js.org%2fpost%2f2018%2f05%2f20%2f2018-05-20-registro-errores-log4net%2f" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+  					<a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fhugorocaproyectos.js.org%2fpost%2f2018%2f09%2f15%2f2018-09-15-poo%2f" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
   						<span>Facebook</span>
   					</a>
-  					<a class="icon-gplus" href="https://plus.google.com/share?url=https%3a%2f%2fhugorocaproyectos.js.org%2fpost%2f2018%2f05%2f20%2f2018-05-20-registro-errores-log4net%2f" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+  					<a class="icon-gplus" href="https://plus.google.com/share?url=https%3a%2f%2fhugorocaproyectos.js.org%2fpost%2f2018%2f09%2f15%2f2018-09-15-poo%2f" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
   						<span>Google+</span>
   					</a>
   				</div>
@@ -266,23 +219,23 @@ namespace Log4Net
 
 			<nav class="post-nav">
 				
-					<a class="post-nav-item post-nav-next" href="https://hugorocaproyectos.js.org/post/2018/05/06/2018-05-06-entityframework/">
+					<a class="post-nav-item post-nav-next" href="https://hugorocaproyectos.js.org/post/2018/09/01/2018-09-01-apprestaurante/">
 						<section class="post-nav-teaser">
 							<span class="post-nav-icon"><i class="icon-arrow-left"></i></span>
 							<span class="post-nav-info">
-								<h4 class="post-nav-title">Entity Framework Básico</h4>
-								<p class="post-nav-excerpt">Una forma mas rápida de realizar CRUD&#39;s, a tan solo unos clicks. Este es el poderosisimo Entity Framework&hellip;</p>
+								<h4 class="post-nav-title">APP Restaurante</h4>
+								<p class="post-nav-excerpt">En estas oportunidad les presento un nuevo sistema de restaurante, cuenta con dos formas de ver, una para los pedidos que se configura dentro del sistema y la otra la parte administrativa.&hellip;</p>
 							</span>
 						</section>
 					</a>
 				
 				
-					<a class="post-nav-item post-nav-prev" href="https://hugorocaproyectos.js.org/post/2018/09/01/2018-09-01-apprestaurante/">
+					<a class="post-nav-item post-nav-prev" href="https://hugorocaproyectos.js.org/post/2018/10/02/2018-10-02-graficosd3js/">
 						<section class="post-nav-teaser">
 							<span class="post-nav-icon"><i class="icon-arrow-right"></i></span>
 							<span class="post-nav-info">
-								<h4 class="post-nav-title">APP Restaurante</h4>
-								<p class="post-nav-excerpt">En estas oportunidad les presento un nuevo sistema de restaurante, cuenta con dos formas de ver, una para los pedidos que se configura dentro del sistema y la otra la parte administrativa.&hellip;</p>
+								<h4 class="post-nav-title">Gráficos con D3JS</h4>
+								<p class="post-nav-excerpt">D3.js es una biblioteca de JavaScript para manipular documentos basados ​​en datos. D3 te ayuda a dar vida a los datos usando HTML, SVG y CSS.&hellip;</p>
 							</span>
 						</section>
 					</a>
