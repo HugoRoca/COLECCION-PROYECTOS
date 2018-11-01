@@ -6,10 +6,20 @@
     <description>Recent content on Hugo Roca Proyectos | Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-PE</language>
-    <lastBuildDate>Fri, 30 Mar 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 29 Apr 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://hugorocaproyectos.js.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Scripts SQLServer</title>
+      <link>https://hugorocaproyectos.js.org/post/2018/04/29/scripts-sqlserver/</link>
+      <pubDate>Sun, 29 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://hugorocaproyectos.js.org/post/2018/04/29/scripts-sqlserver/</guid>
+      <description>Les comparto algunos scripts que me sirvieron de mucho durante el tiempo que llevo trabajando, y es más aún los sigo usando.
+Split -- select * from dbo.[Split](&#39;1,2,3,4,5,6&#39;,&#39;,&#39;) CREATE FUNCTION [dbo].[Split] ( @ItemList NVARCHAR(MAX) ,@delimiter CHAR(1) ) RETURNS @IDTable TABLE ( nro INT identity(1, 1) ,Item VARCHAR(MAX) ) AS BEGIN DECLARE @tempItemList NVARCHAR(MAX) SET @tempItemList = @ItemList DECLARE @i INT DECLARE @Item NVARCHAR(MAX) SET @i = CHARINDEX(@delimiter, @tempItemList) WHILE (LEN(@tempItemList) &amp;gt; 0) BEGIN IF @i = 0 SET @Item = @tempItemList ELSE SET @Item = LEFT(@tempItemList, @i - 1) INSERT INTO @IDTable (Item) VALUES (@Item) IF @i = 0 SET @tempItemList = &#39;&#39; ELSE SET @tempItemList = RIGHT(@tempItemList, LEN(@tempItemList) - @i) SET @i = CHARINDEX(@delimiter, @tempItemList) END RETURN END  Encriptación Recomendado para contraseñas y/o datos sensibles.</description>
+    </item>
     
     <item>
       <title>SIGEVEN 2.0</title>

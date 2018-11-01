@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://hugorocaproyectos.js.org/post/2018/04/29/scripts-sqlserver/</loc>
+    <lastmod>2018-04-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://hugorocaproyectos.js.org/post/2018/03/30/sigenven2.0/</loc>
     <lastmod>2018-03-30T00:00:00+00:00</lastmod>
   </url>
@@ -32,7 +37,7 @@
   
   <url>
     <loc>https://hugorocaproyectos.js.org/</loc>
-    <lastmod>2018-03-30T00:00:00+00:00</lastmod>
+    <lastmod>2018-04-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -44,7 +49,13 @@
   
   <url>
     <loc>https://hugorocaproyectos.js.org/post/</loc>
-    <lastmod>2018-03-30T00:00:00+00:00</lastmod>
+    <lastmod>2018-04-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hugorocaproyectos.js.org/tags/sqlserver/</loc>
+    <lastmod>2018-04-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

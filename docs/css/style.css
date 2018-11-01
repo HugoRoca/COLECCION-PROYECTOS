@@ -216,7 +216,7 @@ a:focus {
 
 .post-content a:hover,
 .post-content a:focus {
-    border-color: #a70446;
+    border-color: #FFC336;
 }
 
 h1,
@@ -390,7 +390,7 @@ small {
 }
 
 mark {
-    background-color: #A70446;
+    background-color: #FFC336;
 }
 
 code,
@@ -998,7 +998,7 @@ body {
     font-size: 0.5em;
     background: #2471A3;
     color: #fff;
-    text-shadow: 0 0 2px #a70446;
+    text-shadow: 0 0 2px #FFC336;
     border-radius: 2em;
 }
 
@@ -1040,7 +1040,7 @@ body {
     overflow: hidden;
     border-radius: 3em;
     border: 2px solid #2471A3;
-    background: #a70446;
+    background: #FFC336;
 }
 
 #header .header-image img {
@@ -1358,8 +1358,8 @@ body {
 }
 
 .post-list .post.post.featured .inner {
-    background: #FFFFFF;
-    color: #808080;
+    background: #1F2026;
+    color: #9D9FA6;
 }
 
 .post-list .post.post.featured .inner:after {
@@ -1369,7 +1369,7 @@ body {
     top: 0;
     width: 0;
     height: 0;
-    border-right: 3em solid #A70446;
+    border-right: 3em solid #FFC336;
     border-bottom: 3em solid transparent;
     z-index: 1;
 }
@@ -1396,11 +1396,11 @@ body {
 
 .post-list .post.post.featured .post-title {
     font-family: 'titilliumweb-bold';
-    color: #2f2e34;
+    color: #FFFFFF;
 }
 
 .post-list .post.post.featured .post-more a {
-    color: #a70446;
+    color: #FFFFFF;
 }
 
 .post-list .post .inner {
@@ -1487,7 +1487,7 @@ body {
 
 .post-list .post .post-excerpt {
     font-family: 'titilliumweb-light';
-    color: #2f2e34;
+    color: #9D9FA6;
     font-size: 18px;
     line-height: 28px;
     margin: 0;
@@ -1512,7 +1512,7 @@ body {
 }
 
 .post-list .post .post-more a i {
-    color: #a70446;
+    color: #2471a3;
 }
 
 /* ==========================================================================
@@ -1542,14 +1542,14 @@ body {
     padding: 0.286em 0.714em;
     border-radius: 2px;
     color: #fff;
-    text-shadow: 0 0 2px #a70446;
+    text-shadow: 0 0 2px #FFC336;
     background: #2471A3;
     font-weight: 300;
 }
 
 .post-footer .post-tags a:hover,
 .post-footer .post-tags a:focus {
-    background: #a70446;
+    background: #FFC336;
 }
 
 .post-footer .post-share {
@@ -1815,7 +1815,7 @@ body {
     text-decoration: none;
     font-weight: 700;
     color: #363740;
-    border: 1px solid #a70446;
+    border: 1px solid #FFC336;
     transition: all ease-out 0.1s;
     border-radius: 4em;
     z-index: 60;
@@ -1823,8 +1823,8 @@ body {
 
 .pagination .pagination-item:hover,
 .pagination .pagination-item:focus {
-    color: #a70446;
-    box-shadow: 0 0 0 2px #a70446;
+    color: #FFC336;
+    box-shadow: 0 0 0 2px #FFC336;
 }
 
 .pagination .pagination-item i {

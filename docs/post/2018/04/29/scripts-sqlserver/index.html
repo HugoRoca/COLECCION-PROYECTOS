@@ -7,31 +7,28 @@
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-        <meta property="og:title" content=" SIGEVEN 1.0 &middot;  Hugo Roca Proyectos | Blog" />
+        <meta property="og:title" content=" Scripts SQLServer &middot;  Hugo Roca Proyectos | Blog" />
         <meta property="og:site_name" content="Hugo Roca Proyectos | Blog" />
-        <meta property="og:url" content="https://hugorocaproyectos.js.org/post/2018/03/04/sigenven1.0/" />
+        <meta property="og:url" content="https://hugorocaproyectos.js.org/post/2018/04/29/scripts-sqlserver/" />
 
     
         <meta property="og:type" content="article" />
-        <meta property="og:article:published_time" content="2018-03-04T00:00:00Z" />
-        <meta property="og:article:tag" content="HTML5" />
-        <meta property="og:article:tag" content="CSS3" />
-        <meta property="og:article:tag" content="JS" />
-        <meta property="og:article:tag" content="ANGULARJS" />
+        <meta property="og:article:published_time" content="2018-04-29T00:00:00Z" />
+        <meta property="og:article:tag" content="SQLSERVER" />
         
 
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@xxxxx" />
         <meta name="twitter:creator" content="@xxxxx" />
-        <meta name="twitter:title" content="SIGEVEN 1.0" />
-        <meta name="twitter:description" content="En esta oportunidad les presento un sistema de gestión de ventas para un puesto de ventas, podrás registrar ventas diarias, gastos, ingresos." />
-        <meta name="twitter:url" content="https://hugorocaproyectos.js.org/post/2018/03/04/sigenven1.0/" />
+        <meta name="twitter:title" content="Scripts SQLServer" />
+        <meta name="twitter:description" content="Les comparto algunos scripts que me sirvieron de mucho durante el tiempo que llevo trabajando, y es más aún los sigo usando." />
+        <meta name="twitter:url" content="https://hugorocaproyectos.js.org/post/2018/04/29/scripts-sqlserver/" />
     
 
-        <title> SIGEVEN 1.0 &middot;  Hugo Roca Proyectos | Blog</title>
+        <title> Scripts SQLServer &middot;  Hugo Roca Proyectos | Blog</title>
 
     
-        <meta name="description" content="En esta oportunidad les presento un sistema de gestión de ventas para un puesto de ventas, podrás registrar ventas diarias, gastos, ingresos." />
+        <meta name="description" content="Les comparto algunos scripts que me sirvieron de mucho durante el tiempo que llevo trabajando, y es más aún los sigo usando." />
     
 
         <meta name="p:domain_verify" content="fc173d84e3a4de948ed4bda2908afd3e"/>
@@ -48,21 +45,21 @@
     
 
     
-        <link rel="canonical" href="https://hugorocaproyectos.js.org/post/2018/03/04/sigenven1.0/" />
+        <link rel="canonical" href="https://hugorocaproyectos.js.org/post/2018/04/29/scripts-sqlserver/" />
 
     
     <script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "Article",
-        "headline": "SIGEVEN 1.0",
+        "headline": "Scripts SQLServer",
         "author": {
             "@type": "Person",
             "name": "http://profiles.google.com/?rel=author"
         },
-        "datePublished": "2018-03-04",
-        "description": "En esta oportunidad les presento un sistema de gestión de ventas para un puesto de ventas, podrás registrar ventas diarias, gastos, ingresos.",
-        "wordCount": 275
+        "datePublished": "2018-04-29",
+        "description": "Les comparto algunos scripts que me sirvieron de mucho durante el tiempo que llevo trabajando, y es más aún los sigo usando.",
+        "wordCount": 556
     }
     </script>
     
@@ -102,141 +99,244 @@
 
   			<header class="post-header">
   				<span class="post-meta">
-						<span class="post-date">4 March 2018</span> <span class="reading-time">| <span class="estimated-reading-time">2 min.</span> (<span class="word-count">275</span> Palabras)</span></span> <span class="author">Autor : Hugo Roca</span>
+						<span class="post-date">29 April 2018</span> <span class="reading-time">| <span class="estimated-reading-time">3 min.</span> (<span class="word-count">556</span> Palabras)</span></span> <span class="author">Autor : Hugo Roca</span>
   				</span>
   				<div class="clear"></div>
-  				<h1 class="post-title">SIGEVEN 1.0</h1>
+  				<h1 class="post-title">Scripts SQLServer</h1>
   			</header>
 
   			<section class="post-content">
   				
 
-<p>En esta oportunidad les presento un sistema de gestión de ventas para un puesto de ventas, podrás registrar ventas diarias, gastos, ingresos, registro de proveedores e incluso realizar reportes. Desarrollado en AngularJS, PHP y MySql, maquetado con bootstrap.</p>
+<p>Les comparto algunos scripts que me sirvieron de mucho durante el tiempo que llevo trabajando, y es más aún los sigo usando.</p>
 
-<h2 id="paso-1">Paso 1</h2>
+<h2 id="split">Split</h2>
 
-<p>Puedes obtener el codigo fuente de la siguiente forma:</p>
+<pre><code>-- select * from dbo.[Split]('1,2,3,4,5,6',',')
+CREATE FUNCTION [dbo].[Split] (
+    @ItemList NVARCHAR(MAX)
+    ,@delimiter CHAR(1)
+    )
+RETURNS @IDTable TABLE (
+    nro INT identity(1, 1)
+    ,Item VARCHAR(MAX)
+    )
+AS
+BEGIN
+    DECLARE @tempItemList NVARCHAR(MAX)
+    SET @tempItemList = @ItemList
+    DECLARE @i INT
+    DECLARE @Item NVARCHAR(MAX)
+         
+    SET @i = CHARINDEX(@delimiter, @tempItemList)
 
-<ol>
-<li>Clonar <a href="https://github.com/PORTAFOLIO-PROYECTOS/SIGEVEN-1.0">Sigeven 1.0</a></li>
-<li>Copiarlo a un server WAMP, XAMPP o APACHE</li>
-</ol>
+    WHILE (LEN(@tempItemList) &gt; 0)
+    BEGIN
+        IF @i = 0
+            SET @Item = @tempItemList
+        ELSE
+            SET @Item = LEFT(@tempItemList, @i - 1)
 
-<p>Árbol de archivos</p>
+        INSERT INTO @IDTable (Item)
+        VALUES (@Item)
 
-<pre><code>▾ App/
-    ▾ private/
-        ▾ articulo/
-            articulo.controller.js
-            articulo.html
-        ▾ consultas/
-            consulta.controller.js
-            consultaGasto.html
-            consultaProveedor.html
-            consultaventa.html
-        ▾ gasto/
-            gasto.controller.js
-            gasto.html
-        ▾ otros/
-            otro.controller.js
-            otro.html
-        ▾ portal/
-            portal.controller.js
-            portal.html
-        ▾ proveedor/
-            proveedor.controller.js
-            proveedor.html
-        ▾ venta/
-            venta.controller.js
-            venta.html
-    ▾ shared/
-        authentication.service.js
-        configuration.service.js
-        data.service.js
-    app.config.js
-    app.controller.js
-    app.js
-    app.router.js
-    login.controller.js
-► Content
-▾ Scripts/
-    ▾ flot-tooltip/
-    ▾ flot/
-    ▾ modules/
-    angular.js
-    bootbox.js
-    download.js
-    jquery.mask.js
-    log.js
-    utils.js
-▾ Server/
-    ▾ data/
-        articulo.php
-        catalogoCodigo.php
-        gasto.php
-        proveedor.php
-        usuario.php
-        venta.php
-    articulo_actualizar.php
-    articulo_anular.php
-    articulo_insert.php
-    articulo_listaPorid.php
-    articulo_top.php
-    catalogoCodigo_insertar.php
-    catalogoCodigo_lista.php
-    connection.php
-    dashboard_consulta.php
-    gastoDetalle_consulta.php
-    gasto_consulta.php
-    gasto_insertar.php
-    proveedor_insertar.php
-    usuario-validate.php
-    ventaDetalle_consulta.php
-    venta_consulta.php
-    venta_insertar.php
-    venta_listaPorSemana.php
-README.md
-dbVentas.sql
-favicon.ico
-index.html
-login.html
+        IF @i = 0
+            SET @tempItemList = ''
+        ELSE
+            SET @tempItemList = RIGHT(@tempItemList, LEN(@tempItemList) - @i)
+
+        SET @i = CHARINDEX(@delimiter, @tempItemList)
+    END
+
+    RETURN
+END
 </code></pre>
 
-<h2 id="paso-2">Paso 2</h2>
+<h2 id="encriptación">Encriptación</h2>
 
-<p>Ejecutar el script de base de datos (dbVentas.sql) en mysql.</p>
+<p>Recomendado para contraseñas y/o datos sensibles.</p>
 
-<h2 id="paso-3">Paso 3</h2>
+<pre><code>CREATE FUNCTION dbo.EncriptarClave (@Clave NVARCHAR(MAX))
+RETURNS NVARCHAR(MAX)
+AS
+BEGIN
+    SET @Clave = UPPER(@Clave)
 
-<p>Configurar el archivo <code>Server/connection.php</code></p>
+    DECLARE @ClaveEncriptada NVARCHAR(MAX);
 
-<pre><code>&lt;?php
-define('HOST', 'localhost');    // =&gt; host del server de la base de datos
-define('USER', 'root');         // =&gt; usuario de la base de datos
-define('PASSWORD', '');         // =&gt; password del usuario de base de datoa
-define('DATABASE', 'dbventas'); //=&gt; nombre de base de datos
- 
-function DB()
-{
-    static $instance;
-    if ($instance === null) {
-        $opt = array(
-            PDO::ATTR_ERRMODE =&gt; PDO::ERRMODE_EXCEPTION,
-            PDO::ATTR_DEFAULT_FETCH_MODE =&gt; PDO::FETCH_ASSOC,
-            PDO::ATTR_EMULATE_PREPARES =&gt; FALSE,
-        );
-        $dsn = 'mysql:host=' . HOST . ';dbname=' . DATABASE;
-        $instance = new PDO($dsn, USER, PASSWORD, $opt);
-    }
-    return $instance;
-}
- 
-?&gt;
+    SELECT
+        @ClaveEncriptada = UPPER(
+            SUBSTRING(master.dbo.fn_varbintohexstr(HASHBYTES('SHA1', @Clave)), 3, 40)
+            );
+
+    RETURN @ClaveEncriptada;
+END
+/*SELECT dbo.EncriptarClave('HUGO')
+Esto no es reversible, una vez encriptada ya no se puede desencriptar, se recomienda guardar log.
+*/
 </code></pre>
 
-<h2 id="paso-4">Paso 4</h2>
+<h2 id="exists-store-function-index">Exists store, function, index</h2>
 
-<p>Ingresa a la ruta del servidor donde fue publicado&hellip; Comenta, disfruta y comparte!</p>
+<pre><code>IF EXISTS(SELECT * FROM sys.SYSOBJECTS A INNER JOIN SYS.SCHEMAS B ON A.uid =B.schema_id 
+    WHERE A.NAME='Gen_SelBandejaProducto_SP' 
+        AND B.name='dbo')
+ DROP PROCEDURE Gen_SelBandejaProducto_SP 
+GO
+
+-- para indeces 
+IF EXISTS (SELECT * FROM sys.indexes 
+    WHERE name='Cedula_INDEX' 
+        AND object_id = OBJECT_ID('CertificadoTributarioDetalle'))
+BEGIN
+    DROP INDEX Cedula_INDEX ON dbo.CertificadoTributarioDetalle; 
+END
+</code></pre>
+
+<h2 id="formato-miles">Formato miles</h2>
+
+<pre><code>select CONVERT(varchar(50), CONVERT(money, 12345.6), 1)
+</code></pre>
+
+<h2 id="try-catch">Try Catch</h2>
+
+<pre><code>BEGIN
+BEGIN TRY
+BEGIN TRANSACTION  
+BEGIN
+&lt;&lt;Cuerpo de procedimiento&gt;&gt;
+END
+COMMIT TRAN
+END TRY
+BEGIN CATCH
+    IF @@TRANCOUNT &gt; 0
+    BEGIN
+        ROLLBACK TRAN
+    END
+DECLARE @nLinea INT=ERROR_LINE()                            
+DECLARE @cError VARCHAR(8000)=ERROR_MESSAGE()                            
+DECLARE @cStored varchar(500)=(SELECT TOP 1 name FROM sys.objects 
+                                WHERE object_id=@@PROCID)                                           
+    EXEC SIS_RegitrarError @nLinea, @cError, @cStored
+END CATCH
+END 
+
+/**************************/
+CREATE PROCEDURE [dbo].[SIS_RegitrarError] @nLineaError INT
+    ,@cDescrip VARCHAR(8000)
+    ,@cNombreStore VARCHAR(500)
+AS
+BEGIN
+    INSERT INTO Errores (
+        dFecha
+        ,nLineaError
+        ,cDescrip
+        ,cDatos
+        ,cStore
+        )
+    VALUES (
+        GETDATE()
+        ,@nLineaError
+        ,@cDescrip
+        ,CONVERT(VARCHAR(50), HOST_NAME() + ' - ' + SUSER_SNAME(SUSER_SID()))
+        ,@cNombreStore
+        )     
+END
+</code></pre>
+
+<h2 id="select-xml">Select XML</h2>
+
+<pre><code>DECLARE @oData XML = '&lt;GENESYS&gt;&lt;DATA nombre=&quot;Hugo&quot; apellido=&quot;Roca&quot; /&gt;&lt;/GENESYS&gt;'
+DECLARE @nDoc int
+EXEC sp_xml_preparedocument @nDoc OUTPUT,@oData
+SELECT *    
+FROM openxml(@nDoc, '/GENESYS/DATA', 1) 
+WITH (
+    nombre varchar(50), 
+    apellido varchar(50)
+)
+</code></pre>
+
+<h2 id="buscar-tabla-en-store">Buscar tabla en store</h2>
+
+<pre><code>SELECT Name
+FROM sys.procedures
+WHERE OBJECT_DEFINITION(OBJECT_ID) LIKE '%table%'
+Go
+
+------
+SELECT DISTINCT so.name
+FROM syscomments sc
+INNER JOIN sysobjects so ON sc.id=so.id
+WHERE sc.TEXT LIKE '%table%'
+Go
+
+----- Con tipo, si es store o function
+SELECT DISTINCT o.name, o.xtype
+FROM syscomments c
+INNER JOIN sysobjects o ON c.id=o.id
+WHERE c.TEXT LIKE '%SolicitudCredito%'
+go
+</code></pre>
+
+<h2 id="ceros-a-la-izquierda">Ceros a la izquierda</h2>
+
+<pre><code>select RIGHT('0000000000' + Ltrim(Rtrim('987654')),10)
+</code></pre>
+
+<h2 id="enviar-correo">Enviar correo</h2>
+
+<pre><code>CREATE PROCEDURE [dbo].[PA_EnviarCorreoDBA] @pcTo AS VARCHAR(255)
+    ,@pcCC AS VARCHAR(255)
+    ,@pcSubject AS VARCHAR(255)
+    ,@pcMessage AS VARCHAR(max)
+AS
+BEGIN
+    EXEC msdb..sp_send_dbmail @profile_name = 'Database Management'
+        ,@recipients = @pcTo
+        ,@copy_recipients = @pcCC
+        ,@subject = @pcSubject
+        ,@body = @pcMessage
+END
+</code></pre>
+
+<h2 id="config-de-parametros">Config de parametros</h2>
+
+<pre><code>CREATE PROCEDURE dbo.SCC_Configurar_Parametros
+AS
+--ACTIVAR VOLCADO DE DATOS A ARCHIVOS PLANOS  
+EXEC sp_configure 'show advanced options',1;
+
+-- To update the currently configured value for advanced options.  
+RECONFIGURE
+WITH OVERRIDE;
+
+-- To enable the feature.  
+EXEC sp_configure 'xp_cmdshell',1;
+
+-- To update the currently configured value for this feature.  
+RECONFIGURE
+WITH OVERRIDE;
+
+/************************/
+CREATE PROCEDURE dbo.SCC_Configurar_Parametros_Cerrar
+AS
+-- To enable the feature.  
+EXEC sp_configure 'xp_cmdshell',0;
+
+-- To update the currently configured value for this feature.  
+RECONFIGURE
+WITH OVERRIDE;
+
+--ACTIVAR VOLCADO DE DATOS A ARCHIVOS PLANOS  
+EXEC sp_configure 'show advanced options',0;
+
+-- To update the currently configured value for advanced options.  
+RECONFIGURE
+WITH OVERRIDE;
+</code></pre>
+
+<p>Comenta, disfruta y comparte!</p>
 
   			</section>
 
@@ -244,24 +344,18 @@ function DB()
   				<div class="post-tags">
             
             
-                <a href="https://hugorocaproyectos.js.org//tags/html5/">HTML5</a>
-            
-                <a href="https://hugorocaproyectos.js.org//tags/css3/">CSS3</a>
-            
-                <a href="https://hugorocaproyectos.js.org//tags/js/">JS</a>
-            
-                <a href="https://hugorocaproyectos.js.org//tags/angularjs/">ANGULARJS</a>
+                <a href="https://hugorocaproyectos.js.org//tags/sqlserver/">SQLSERVER</a>
             
             
   				</div>
   				<div class="post-share">
-  					<a class="icon-twitter" href="https://twitter.com/share?text=SIGEVEN%201.0&url=https%3a%2f%2fhugorocaproyectos.js.org%2fpost%2f2018%2f03%2f04%2fsigenven1.0%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+  					<a class="icon-twitter" href="https://twitter.com/share?text=Scripts%20SQLServer&url=https%3a%2f%2fhugorocaproyectos.js.org%2fpost%2f2018%2f04%2f29%2fscripts-sqlserver%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
   						<span>Twitter</span>
   					</a>
-  					<a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fhugorocaproyectos.js.org%2fpost%2f2018%2f03%2f04%2fsigenven1.0%2f" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+  					<a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fhugorocaproyectos.js.org%2fpost%2f2018%2f04%2f29%2fscripts-sqlserver%2f" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
   						<span>Facebook</span>
   					</a>
-  					<a class="icon-gplus" href="https://plus.google.com/share?url=https%3a%2f%2fhugorocaproyectos.js.org%2fpost%2f2018%2f03%2f04%2fsigenven1.0%2f" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+  					<a class="icon-gplus" href="https://plus.google.com/share?url=https%3a%2f%2fhugorocaproyectos.js.org%2fpost%2f2018%2f04%2f29%2fscripts-sqlserver%2f" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
   						<span>Google+</span>
   					</a>
   				</div>
@@ -279,16 +373,16 @@ function DB()
 
 			<nav class="post-nav">
 				
-				
-					<a class="post-nav-item post-nav-prev" href="https://hugorocaproyectos.js.org/post/2018/03/30/sigenven2.0/">
+					<a class="post-nav-item post-nav-next" href="https://hugorocaproyectos.js.org/post/2018/03/30/sigenven2.0/">
 						<section class="post-nav-teaser">
-							<span class="post-nav-icon"><i class="icon-arrow-right"></i></span>
+							<span class="post-nav-icon"><i class="icon-arrow-left"></i></span>
 							<span class="post-nav-info">
 								<h4 class="post-nav-title">SIGEVEN 2.0</h4>
 								<p class="post-nav-excerpt">Como dicen, si hay &#39;1.0&#39; un &#39;2.0&#39; va haber, en esta oportunidad les muestro otro sistema de ventas mas completo en full PHP con jquery y ajax.&hellip;</p>
 							</span>
 						</section>
 					</a>
+				
 				
 				<div class="clear"></div>
 			</nav>
