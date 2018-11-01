@@ -13,10 +13,10 @@
     
     <item>
       <title>SIGEVEN 2.0</title>
-      <link>https://hugorocaproyectos.js.org/post/2018/03/30/sigenven2.0/</link>
+      <link>https://hugorocaproyectos.js.org/post/2018/03/30/2018-03-30-sigenven2.0/</link>
       <pubDate>Fri, 30 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://hugorocaproyectos.js.org/post/2018/03/30/sigenven2.0/</guid>
+      <guid>https://hugorocaproyectos.js.org/post/2018/03/30/2018-03-30-sigenven2.0/</guid>
       <description>Como dicen, si hay &amp;lsquo;1.0&amp;rsquo; un &amp;lsquo;2.0&amp;rsquo; va haber, en esta oportunidad les muestro otro sistema de ventas mas completo en full PHP con jquery y ajax.
 Sistema para el contol de ventas e ingreso de stock, impresion de facturas, boletas y tickets, control de usuarios y permisos. Desarrollado en PHP7, JQuery y la plantilla AdminLTE.
 CONTENIDO  Login Dashboard ▾ Almacen/ Registro de artículo Registro de categorías ▾ Compras/ Registro de Ingresos Registro de Proveedor ▾ Ventas/ Registro de Cliente Registro de Ventas ▾ Impresion en PDF/ Factura Boleta ticket ▾ Acceso/ Permisos Registro de usuario Consulta de Compras Consulta de Ventas  Paso 1 Puedes obtener el codigo fuente de la siguiente forma:</description>
@@ -24,10 +24,10 @@ CONTENIDO  Login Dashboard ▾ Almacen/ Registro de artículo Registro de catego
     
     <item>
       <title>SIGEVEN 1.0</title>
-      <link>https://hugorocaproyectos.js.org/post/2018/03/04/sigenven1.0/</link>
+      <link>https://hugorocaproyectos.js.org/post/2018/03/04/2018-03-04-sigenven1.0/</link>
       <pubDate>Sun, 04 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://hugorocaproyectos.js.org/post/2018/03/04/sigenven1.0/</guid>
+      <guid>https://hugorocaproyectos.js.org/post/2018/03/04/2018-03-04-sigenven1.0/</guid>
       <description>En esta oportunidad les presento un sistema de gestión de ventas para un puesto de ventas, podrás registrar ventas diarias, gastos, ingresos, registro de proveedores e incluso realizar reportes. Desarrollado en AngularJS, PHP y MySql, maquetado con bootstrap.
 Paso 1 Puedes obtener el codigo fuente de la siguiente forma:
  Clonar Sigeven 1.0 Copiarlo a un server WAMP, XAMPP o APACHE  Árbol de archivos

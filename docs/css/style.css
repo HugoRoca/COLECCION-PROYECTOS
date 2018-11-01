@@ -186,7 +186,7 @@
    Basics
    ========================================================================== */
 body {
-    font: 300 18px / 28px 'titilliumweb-light', sans-serif;
+    font: 300 1em / 1.5em 'Merriweather Sans', sans-serif;
     color: #595B66;
 }
 
@@ -1389,7 +1389,7 @@ body {
 }
 
 .post-list .post.post.featured .post-image:after {
-    background: #FFFFFF;
+    background: #1f2026;
     bottom: -2.5em;
     height: 5em;
 }

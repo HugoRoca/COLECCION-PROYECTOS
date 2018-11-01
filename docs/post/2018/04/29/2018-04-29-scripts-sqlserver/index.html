@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es-PE">
 
@@ -6,18 +7,28 @@
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-        <meta property="og:title" content=" Tags &middot;  Hugo Roca Proyectos | Blog" />
+        <meta property="og:title" content=" Scripts SQLServer &middot;  Hugo Roca Proyectos | Blog" />
         <meta property="og:site_name" content="Hugo Roca Proyectos | Blog" />
-        <meta property="og:url" content="https://hugorocaproyectos.js.org/tags/" />
+        <meta property="og:url" content="https://hugorocaproyectos.js.org/post/2018/04/29/2018-04-29-scripts-sqlserver/" />
 
     
-        <meta property="og:type" content="website" />
+        <meta property="og:type" content="article" />
+        <meta property="og:article:published_time" content="2018-04-29T00:00:00Z" />
+        <meta property="og:article:tag" content="SQLSERVER" />
+        
+
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@xxxxx" />
+        <meta name="twitter:creator" content="@xxxxx" />
+        <meta name="twitter:title" content="Scripts SQLServer" />
+        <meta name="twitter:description" content="Les comparto algunos scripts que me sirvieron de mucho durante el tiempo que llevo trabajando, y es más aún los sigo usando." />
+        <meta name="twitter:url" content="https://hugorocaproyectos.js.org/post/2018/04/29/2018-04-29-scripts-sqlserver/" />
     
 
-        <title> Tags &middot;  Hugo Roca Proyectos | Blog</title>
+        <title> Scripts SQLServer &middot;  Hugo Roca Proyectos | Blog</title>
 
     
-        <meta name="description" content="El rincón de la información y comunicación sobre la red, programación, arquitectura y más..." />
+        <meta name="description" content="Les comparto algunos scripts que me sirvieron de mucho durante el tiempo que llevo trabajando, y es más aún los sigo usando." />
     
 
         <meta name="p:domain_verify" content="fc173d84e3a4de948ed4bda2908afd3e"/>
@@ -34,10 +45,23 @@
     
 
     
-        <link href="https://hugorocaproyectos.js.org/tags/index.xml" rel="alternate" type="application/rss+xml" title="Tags &middot; Hugo Roca Proyectos | Blog" />
-    
-        <link rel="canonical" href="https://hugorocaproyectos.js.org/tags/" />
+        <link rel="canonical" href="https://hugorocaproyectos.js.org/post/2018/04/29/2018-04-29-scripts-sqlserver/" />
 
+    
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Article",
+        "headline": "Scripts SQLServer",
+        "author": {
+            "@type": "Person",
+            "name": "http://profiles.google.com/?rel=author"
+        },
+        "datePublished": "2018-04-29",
+        "description": "Les comparto algunos scripts que me sirvieron de mucho durante el tiempo que llevo trabajando, y es más aún los sigo usando.",
+        "wordCount": 556
+    }
+    </script>
     
 
     <style>
@@ -67,138 +91,315 @@
           </nav>
           
 
-<header id="header" class="header">
-	<div class="inner">
-		<a class="header-title" href="https://hugorocaproyectos.js.org/">
-			<h1 class="header-name">Tags</h1>
-		</a>
-	</div>
-	
-</header>
+<main class="content" role="main">
+	<article class="post">
+		<div class="inner">
 
-	<div id="post-index" class="container">
+			<div id="push">
 
-		<main class="content" role="main">
+  			<header class="post-header">
+  				<span class="post-meta">
+						<span class="post-date">29 April 2018</span> <span class="reading-time">| <span class="estimated-reading-time">3 min.</span> (<span class="word-count">556</span> Palabras)</span></span> <span class="author">Autor : Hugo Roca</span>
+  				</span>
+  				<div class="clear"></div>
+  				<h1 class="post-title">Scripts SQLServer</h1>
+  			</header>
 
-			<div class="post-list">
-				<div id="push">
+  			<section class="post-content">
+  				
 
-			
+<p>Les comparto algunos scripts que me sirvieron de mucho durante el tiempo que llevo trabajando, y es más aún los sigo usando.</p>
 
-			
-			  
-<article class="tags">
+<h2 id="split">Split</h2>
 
-	<div class="inner">
-		<a class="post-link" href="https://hugorocaproyectos.js.org/tags/angularjs/"></a>
-		
-		<span class="post-meta">
-			<span class="post-date">30 March 2018</span>
-		</span>
-		<h2 class="post-title"><a href="https://hugorocaproyectos.js.org/tags/angularjs/">Angularjs</a></h2>
-		<p class="post-excerpt">&hellip;</p>
-		<span class="post-more"><a href="https://hugorocaproyectos.js.org/tags/angularjs/">Leer más<i class="icon-arrow-right"></i></a></span>
-	</div>
-</article>
+<pre><code>-- select * from dbo.[Split]('1,2,3,4,5,6',',')
+CREATE FUNCTION [dbo].[Split] (
+    @ItemList NVARCHAR(MAX)
+    ,@delimiter CHAR(1)
+    )
+RETURNS @IDTable TABLE (
+    nro INT identity(1, 1)
+    ,Item VARCHAR(MAX)
+    )
+AS
+BEGIN
+    DECLARE @tempItemList NVARCHAR(MAX)
+    SET @tempItemList = @ItemList
+    DECLARE @i INT
+    DECLARE @Item NVARCHAR(MAX)
+         
+    SET @i = CHARINDEX(@delimiter, @tempItemList)
 
-			
-			  
-<article class="tags">
+    WHILE (LEN(@tempItemList) &gt; 0)
+    BEGIN
+        IF @i = 0
+            SET @Item = @tempItemList
+        ELSE
+            SET @Item = LEFT(@tempItemList, @i - 1)
 
-	<div class="inner">
-		<a class="post-link" href="https://hugorocaproyectos.js.org/tags/c#/"></a>
-		
-		<span class="post-meta">
-			<span class="post-date">20 May 2018</span>
-		</span>
-		<h2 class="post-title"><a href="https://hugorocaproyectos.js.org/tags/c#/">C#</a></h2>
-		<p class="post-excerpt">&hellip;</p>
-		<span class="post-more"><a href="https://hugorocaproyectos.js.org/tags/c#/">Leer más<i class="icon-arrow-right"></i></a></span>
-	</div>
-</article>
+        INSERT INTO @IDTable (Item)
+        VALUES (@Item)
 
-			
-			  
-<article class="tags">
+        IF @i = 0
+            SET @tempItemList = ''
+        ELSE
+            SET @tempItemList = RIGHT(@tempItemList, LEN(@tempItemList) - @i)
 
-	<div class="inner">
-		<a class="post-link" href="https://hugorocaproyectos.js.org/tags/css3/"></a>
-		
-		<span class="post-meta">
-			<span class="post-date">30 March 2018</span>
-		</span>
-		<h2 class="post-title"><a href="https://hugorocaproyectos.js.org/tags/css3/">Css3</a></h2>
-		<p class="post-excerpt">&hellip;</p>
-		<span class="post-more"><a href="https://hugorocaproyectos.js.org/tags/css3/">Leer más<i class="icon-arrow-right"></i></a></span>
-	</div>
-</article>
+        SET @i = CHARINDEX(@delimiter, @tempItemList)
+    END
 
-			
-			  
-<article class="tags">
+    RETURN
+END
+</code></pre>
 
-	<div class="inner">
-		<a class="post-link" href="https://hugorocaproyectos.js.org/tags/html5/"></a>
-		
-		<span class="post-meta">
-			<span class="post-date">30 March 2018</span>
-		</span>
-		<h2 class="post-title"><a href="https://hugorocaproyectos.js.org/tags/html5/">Html5</a></h2>
-		<p class="post-excerpt">&hellip;</p>
-		<span class="post-more"><a href="https://hugorocaproyectos.js.org/tags/html5/">Leer más<i class="icon-arrow-right"></i></a></span>
-	</div>
-</article>
+<h2 id="encriptación">Encriptación</h2>
 
-			
-			  
-<article class="tags">
+<p>Recomendado para contraseñas y/o datos sensibles.</p>
 
-	<div class="inner">
-		<a class="post-link" href="https://hugorocaproyectos.js.org/tags/js/"></a>
-		
-		<span class="post-meta">
-			<span class="post-date">30 March 2018</span>
-		</span>
-		<h2 class="post-title"><a href="https://hugorocaproyectos.js.org/tags/js/">Js</a></h2>
-		<p class="post-excerpt">&hellip;</p>
-		<span class="post-more"><a href="https://hugorocaproyectos.js.org/tags/js/">Leer más<i class="icon-arrow-right"></i></a></span>
-	</div>
-</article>
+<pre><code>CREATE FUNCTION dbo.EncriptarClave (@Clave NVARCHAR(MAX))
+RETURNS NVARCHAR(MAX)
+AS
+BEGIN
+    SET @Clave = UPPER(@Clave)
 
-			
-			  
-<article class="tags">
+    DECLARE @ClaveEncriptada NVARCHAR(MAX);
 
-	<div class="inner">
-		<a class="post-link" href="https://hugorocaproyectos.js.org/tags/sqlserver/"></a>
-		
-		<span class="post-meta">
-			<span class="post-date">20 May 2018</span>
-		</span>
-		<h2 class="post-title"><a href="https://hugorocaproyectos.js.org/tags/sqlserver/">Sqlserver</a></h2>
-		<p class="post-excerpt">&hellip;</p>
-		<span class="post-more"><a href="https://hugorocaproyectos.js.org/tags/sqlserver/">Leer más<i class="icon-arrow-right"></i></a></span>
-	</div>
-</article>
+    SELECT
+        @ClaveEncriptada = UPPER(
+            SUBSTRING(master.dbo.fn_varbintohexstr(HASHBYTES('SHA1', @Clave)), 3, 40)
+            );
 
-			
+    RETURN @ClaveEncriptada;
+END
+/*SELECT dbo.EncriptarClave('HUGO')
+Esto no es reversible, una vez encriptada ya no se puede desencriptar, se recomienda guardar log.
+*/
+</code></pre>
 
-				</div>
+<h2 id="exists-store-function-index">Exists store, function, index</h2>
+
+<pre><code>IF EXISTS(SELECT * FROM sys.SYSOBJECTS A INNER JOIN SYS.SCHEMAS B ON A.uid =B.schema_id 
+    WHERE A.NAME='Gen_SelBandejaProducto_SP' 
+        AND B.name='dbo')
+ DROP PROCEDURE Gen_SelBandejaProducto_SP 
+GO
+
+-- para indeces 
+IF EXISTS (SELECT * FROM sys.indexes 
+    WHERE name='Cedula_INDEX' 
+        AND object_id = OBJECT_ID('CertificadoTributarioDetalle'))
+BEGIN
+    DROP INDEX Cedula_INDEX ON dbo.CertificadoTributarioDetalle; 
+END
+</code></pre>
+
+<h2 id="formato-miles">Formato miles</h2>
+
+<pre><code>select CONVERT(varchar(50), CONVERT(money, 12345.6), 1)
+</code></pre>
+
+<h2 id="try-catch">Try Catch</h2>
+
+<pre><code>BEGIN
+BEGIN TRY
+BEGIN TRANSACTION  
+BEGIN
+&lt;&lt;Cuerpo de procedimiento&gt;&gt;
+END
+COMMIT TRAN
+END TRY
+BEGIN CATCH
+    IF @@TRANCOUNT &gt; 0
+    BEGIN
+        ROLLBACK TRAN
+    END
+DECLARE @nLinea INT=ERROR_LINE()                            
+DECLARE @cError VARCHAR(8000)=ERROR_MESSAGE()                            
+DECLARE @cStored varchar(500)=(SELECT TOP 1 name FROM sys.objects 
+                                WHERE object_id=@@PROCID)                                           
+    EXEC SIS_RegitrarError @nLinea, @cError, @cStored
+END CATCH
+END 
+
+/**************************/
+CREATE PROCEDURE [dbo].[SIS_RegitrarError] @nLineaError INT
+    ,@cDescrip VARCHAR(8000)
+    ,@cNombreStore VARCHAR(500)
+AS
+BEGIN
+    INSERT INTO Errores (
+        dFecha
+        ,nLineaError
+        ,cDescrip
+        ,cDatos
+        ,cStore
+        )
+    VALUES (
+        GETDATE()
+        ,@nLineaError
+        ,@cDescrip
+        ,CONVERT(VARCHAR(50), HOST_NAME() + ' - ' + SUSER_SNAME(SUSER_SID()))
+        ,@cNombreStore
+        )     
+END
+</code></pre>
+
+<h2 id="select-xml">Select XML</h2>
+
+<pre><code>DECLARE @oData XML = '&lt;GENESYS&gt;&lt;DATA nombre=&quot;Hugo&quot; apellido=&quot;Roca&quot; /&gt;&lt;/GENESYS&gt;'
+DECLARE @nDoc int
+EXEC sp_xml_preparedocument @nDoc OUTPUT,@oData
+SELECT *    
+FROM openxml(@nDoc, '/GENESYS/DATA', 1) 
+WITH (
+    nombre varchar(50), 
+    apellido varchar(50)
+)
+</code></pre>
+
+<h2 id="buscar-tabla-en-store">Buscar tabla en store</h2>
+
+<pre><code>SELECT Name
+FROM sys.procedures
+WHERE OBJECT_DEFINITION(OBJECT_ID) LIKE '%table%'
+Go
+
+------
+SELECT DISTINCT so.name
+FROM syscomments sc
+INNER JOIN sysobjects so ON sc.id=so.id
+WHERE sc.TEXT LIKE '%table%'
+Go
+
+----- Con tipo, si es store o function
+SELECT DISTINCT o.name, o.xtype
+FROM syscomments c
+INNER JOIN sysobjects o ON c.id=o.id
+WHERE c.TEXT LIKE '%SolicitudCredito%'
+go
+</code></pre>
+
+<h2 id="ceros-a-la-izquierda">Ceros a la izquierda</h2>
+
+<pre><code>select RIGHT('0000000000' + Ltrim(Rtrim('987654')),10)
+</code></pre>
+
+<h2 id="enviar-correo">Enviar correo</h2>
+
+<pre><code>CREATE PROCEDURE [dbo].[PA_EnviarCorreoDBA] @pcTo AS VARCHAR(255)
+    ,@pcCC AS VARCHAR(255)
+    ,@pcSubject AS VARCHAR(255)
+    ,@pcMessage AS VARCHAR(max)
+AS
+BEGIN
+    EXEC msdb..sp_send_dbmail @profile_name = 'Database Management'
+        ,@recipients = @pcTo
+        ,@copy_recipients = @pcCC
+        ,@subject = @pcSubject
+        ,@body = @pcMessage
+END
+</code></pre>
+
+<h2 id="config-de-parametros">Config de parametros</h2>
+
+<pre><code>CREATE PROCEDURE dbo.SCC_Configurar_Parametros
+AS
+--ACTIVAR VOLCADO DE DATOS A ARCHIVOS PLANOS  
+EXEC sp_configure 'show advanced options',1;
+
+-- To update the currently configured value for advanced options.  
+RECONFIGURE
+WITH OVERRIDE;
+
+-- To enable the feature.  
+EXEC sp_configure 'xp_cmdshell',1;
+
+-- To update the currently configured value for this feature.  
+RECONFIGURE
+WITH OVERRIDE;
+
+/************************/
+CREATE PROCEDURE dbo.SCC_Configurar_Parametros_Cerrar
+AS
+-- To enable the feature.  
+EXEC sp_configure 'xp_cmdshell',0;
+
+-- To update the currently configured value for this feature.  
+RECONFIGURE
+WITH OVERRIDE;
+
+--ACTIVAR VOLCADO DE DATOS A ARCHIVOS PLANOS  
+EXEC sp_configure 'show advanced options',0;
+
+-- To update the currently configured value for advanced options.  
+RECONFIGURE
+WITH OVERRIDE;
+</code></pre>
+
+<p>Comenta, disfruta y comparte!</p>
+
+  			</section>
+
+  			<footer class="post-footer">
+  				<div class="post-tags">
+            
+            
+                <a href="https://hugorocaproyectos.js.org//tags/sqlserver/">SQLSERVER</a>
+            
+            
+  				</div>
+  				<div class="post-share">
+  					<a class="icon-twitter" href="https://twitter.com/share?text=Scripts%20SQLServer&url=https%3a%2f%2fhugorocaproyectos.js.org%2fpost%2f2018%2f04%2f29%2f2018-04-29-scripts-sqlserver%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+  						<span>Twitter</span>
+  					</a>
+  					<a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fhugorocaproyectos.js.org%2fpost%2f2018%2f04%2f29%2f2018-04-29-scripts-sqlserver%2f" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+  						<span>Facebook</span>
+  					</a>
+  					<a class="icon-gplus" href="https://plus.google.com/share?url=https%3a%2f%2fhugorocaproyectos.js.org%2fpost%2f2018%2f04%2f29%2f2018-04-29-scripts-sqlserver%2f" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+  						<span>Google+</span>
+  					</a>
+  				</div>
+			  </footer>
+
+  			<aside class="post-comments">
+    
+    
+    
+    
+</aside>
+
+
 			</div>
 
-			<nav id="pagination" class="pagination" role="pagination">
-	<div class="inner">
-	
-		<span class="pagination-info">Página 1 de 1</span>
-	
-		<div class="clear"></div>
-	</div>
-</nav>
+			<nav class="post-nav">
+				
+					<a class="post-nav-item post-nav-next" href="https://hugorocaproyectos.js.org/post/2018/04/15/2018-04-15-portafolioproyecto/">
+						<section class="post-nav-teaser">
+							<span class="post-nav-icon"><i class="icon-arrow-left"></i></span>
+							<span class="post-nav-info">
+								<h4 class="post-nav-title">Portafolio Profesional</h4>
+								<p class="post-nav-excerpt">¿Alguna véz haz querido hacer un curriculum profesional usando algo diferente? En esta ocación te traigo el siguiente sistema.&hellip;</p>
+							</span>
+						</section>
+					</a>
+				
+				
+					<a class="post-nav-item post-nav-prev" href="https://hugorocaproyectos.js.org/post/2018/05/06/2018-05-06-entityframework/">
+						<section class="post-nav-teaser">
+							<span class="post-nav-icon"><i class="icon-arrow-right"></i></span>
+							<span class="post-nav-info">
+								<h4 class="post-nav-title">Entity Framework Básico</h4>
+								<p class="post-nav-excerpt">Una forma mas rápida de realizar CRUD&#39;s, a tan solo unos clicks. Este es el poderosisimo Entity Framework&hellip;</p>
+							</span>
+						</section>
+					</a>
+				
+				<div class="clear"></div>
+			</nav>
 
-
-		</main>
-
-	</div>
+		</div>
+	</article>
+</main>
 
 				<div id="body-class" style="display: none;"></div>
 				<footer id="footer">

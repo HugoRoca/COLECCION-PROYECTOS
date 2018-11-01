@@ -3,23 +3,44 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://hugorocaproyectos.js.org/post/2018/04/29/scripts-sqlserver/</loc>
+    <loc>https://hugorocaproyectos.js.org/post/2018/05/20/2018-05-20-registro-errores-log4net/</loc>
+    <lastmod>2018-05-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hugorocaproyectos.js.org/post/2018/05/06/2018-05-06-entityframework/</loc>
+    <lastmod>2018-05-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hugorocaproyectos.js.org/post/2018/04/29/2018-04-29-scripts-sqlserver/</loc>
     <lastmod>2018-04-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hugorocaproyectos.js.org/post/2018/03/30/sigenven2.0/</loc>
+    <loc>https://hugorocaproyectos.js.org/post/2018/04/15/2018-04-15-portafolioproyecto/</loc>
+    <lastmod>2018-04-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hugorocaproyectos.js.org/post/2018/03/30/2018-03-30-sigenven2.0/</loc>
     <lastmod>2018-03-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hugorocaproyectos.js.org/post/2018/03/04/sigenven1.0/</loc>
+    <loc>https://hugorocaproyectos.js.org/post/2018/03/04/2018-03-04-sigenven1.0/</loc>
     <lastmod>2018-03-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://hugorocaproyectos.js.org/tags/angularjs/</loc>
     <lastmod>2018-03-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hugorocaproyectos.js.org/tags/c#/</loc>
+    <lastmod>2018-05-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -37,7 +58,7 @@
   
   <url>
     <loc>https://hugorocaproyectos.js.org/</loc>
-    <lastmod>2018-04-29T00:00:00+00:00</lastmod>
+    <lastmod>2018-05-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -49,13 +70,13 @@
   
   <url>
     <loc>https://hugorocaproyectos.js.org/post/</loc>
-    <lastmod>2018-04-29T00:00:00+00:00</lastmod>
+    <lastmod>2018-05-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://hugorocaproyectos.js.org/tags/sqlserver/</loc>
-    <lastmod>2018-04-29T00:00:00+00:00</lastmod>
+    <lastmod>2018-05-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
