@@ -6,7 +6,7 @@ title: "Scripts SQLServer"
 description: "Les comparto algunos scripts que me sirvieron de mucho durante el tiempo que llevo trabajando, y es más aún los sigo usando."
 slug: Scripts-SqlServer
 author: "Hugo Roca"
-
+image: images/post/scripts-sql.jpg
 share: true
 tags:
  - SQLSERVER
