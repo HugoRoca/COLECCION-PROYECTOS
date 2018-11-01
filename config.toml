@@ -21,6 +21,7 @@ publishdir      = "docs"
 
 [params]
   # Warning Keys are case sensitives
+  title2 = "Blog"
   Subtitle = "El rincón de la información y comunicación sobre la red, programación, arquitectura y más.."
   description = "El rincón de la información y comunicación sobre la red, programación, arquitectura y más..."
 
