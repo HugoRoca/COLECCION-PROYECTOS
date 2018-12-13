@@ -1,85 +1,94 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Hugo Roca Proyectos | Blog</title>
-    <link>https://hugorocaproyectos.js.org/tags/</link>
-    <description>Recent content in Tags on Hugo Roca Proyectos | Blog</description>
+    <title>Tags on Hugo Roca | Proyectos - Web</title>
+    <link>http://example.com/tags/</link>
+    <description>Recent content in Tags on Hugo Roca | Proyectos - Web</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-PE</language>
     <lastBuildDate>Fri, 30 Mar 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://hugorocaproyectos.js.org/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://example.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Angularjs</title>
-      <link>https://hugorocaproyectos.js.org/tags/angularjs/</link>
+      <link>http://example.com/tags/angularjs/</link>
       <pubDate>Fri, 30 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://hugorocaproyectos.js.org/tags/angularjs/</guid>
+      <guid>http://example.com/tags/angularjs/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>C#</title>
-      <link>https://hugorocaproyectos.js.org/tags/c#/</link>
+      <title>Csharp</title>
+      <link>http://example.com/tags/csharp/</link>
       <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://hugorocaproyectos.js.org/tags/c#/</guid>
+      <guid>http://example.com/tags/csharp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Css3</title>
-      <link>https://hugorocaproyectos.js.org/tags/css3/</link>
+      <link>http://example.com/tags/css3/</link>
       <pubDate>Tue, 02 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://hugorocaproyectos.js.org/tags/css3/</guid>
+      <guid>http://example.com/tags/css3/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Html5</title>
-      <link>https://hugorocaproyectos.js.org/tags/html5/</link>
+      <link>http://example.com/tags/html5/</link>
       <pubDate>Fri, 30 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://hugorocaproyectos.js.org/tags/html5/</guid>
+      <guid>http://example.com/tags/html5/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Jquery</title>
-      <link>https://hugorocaproyectos.js.org/tags/jquery/</link>
+      <link>http://example.com/tags/jquery/</link>
       <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://hugorocaproyectos.js.org/tags/jquery/</guid>
+      <guid>http://example.com/tags/jquery/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Js</title>
-      <link>https://hugorocaproyectos.js.org/tags/js/</link>
+      <link>http://example.com/tags/js/</link>
       <pubDate>Tue, 02 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://hugorocaproyectos.js.org/tags/js/</guid>
+      <guid>http://example.com/tags/js/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Php</title>
+      <link>http://example.com/tags/php/</link>
+      <pubDate>Fri, 30 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.com/tags/php/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Poo</title>
-      <link>https://hugorocaproyectos.js.org/tags/poo/</link>
+      <link>http://example.com/tags/poo/</link>
       <pubDate>Sat, 15 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://hugorocaproyectos.js.org/tags/poo/</guid>
+      <guid>http://example.com/tags/poo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Sqlserver</title>
-      <link>https://hugorocaproyectos.js.org/tags/sqlserver/</link>
+      <link>http://example.com/tags/sqlserver/</link>
       <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://hugorocaproyectos.js.org/tags/sqlserver/</guid>
+      <guid>http://example.com/tags/sqlserver/</guid>
       <description></description>
     </item>
     

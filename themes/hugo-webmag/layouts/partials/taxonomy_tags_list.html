@@ -1,0 +1,43 @@
+<div class="section section-grey">
+    <div class="container">
+        <div class="row">
+            {{ $tag := lower .Title }}
+            {{ range $key, $value := .Site.Taxonomies.tags }}
+                {{ if eq $key $tag }}
+                    {{ range $value.Pages }}
+                    <div class="col-md-4">
+                        <div class="post">
+                            <a class="post-img" href="{{ .RelPermalink }}"><img src="{{ .Params.image }}" alt=""></a>
+                            <div class="post-body">
+                                <div class="post-meta">
+                                    {{ if isset .Params "categories" }}
+                                        {{ range .Params.categories }}
+                                            {{ if eq . "JavaScript"}}
+                                            <a class="post-category cat-javascript" href="{{ "/categories/" | absURL }}{{ . | urlize | lower }}/">{{ . }} </a>
+                                            {{ end }}
+                                            {{ if eq . "Sistemas"}}
+                                            <a class="post-category cat-sistemas" href="{{ "/categories/" | absURL }}{{ . | urlize | lower }}/">{{ . }} </a>
+                                            {{ end }}
+                                            {{ if eq . "C Sharp"}}
+                                            <a class="post-category cat-csharp" href="{{ "/categories/" | absURL }}{{ . | urlize | lower }}/">{{ . }} </a>
+                                            {{ end }}
+                                            {{ if eq . "Base de datos"}}
+                                            <a class="post-category cat-basedatos" href="{{ "/categories/" | absURL }}{{ . | urlize | lower }}/">{{ . }} </a>
+                                            {{ end }}
+                                            {{ if eq . "PHP"}}
+                                            <a class="post-category cat-php" href="{{ "/categories/" | absURL }}{{ . | urlize | lower }}/">{{ . }} </a>
+                                            {{ end }}
+                                        {{ end }}
+                                    {{ end }}
+                                    <span class="post-date">{{ .Date.Format "Jan 2, 2006" }}</span>
+                                </div>
+                                <h3 class="post-title"><a href="blog-post.html">{{ .LinkTitle }}</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    {{ end }}
+                {{ end }}
+            {{ end }}
+        </div>
+    </div>
+</div>

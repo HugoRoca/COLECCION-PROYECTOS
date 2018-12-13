@@ -3,118 +3,159 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://hugorocaproyectos.js.org/post/2018/10/02/2018-10-02-graficosd3js/</loc>
+    <loc>http://example.com/blog/2018-10-02-gr%C3%A1ficos-con-d3js/</loc>
     <lastmod>2018-10-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hugorocaproyectos.js.org/post/2018/09/15/2018-09-15-poo/</loc>
+    <loc>http://example.com/blog/2018-09-15-programaci%C3%B3n-orientada-a-objetos/</loc>
     <lastmod>2018-09-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hugorocaproyectos.js.org/post/2018/09/01/2018-09-01-apprestaurante/</loc>
+    <loc>http://example.com/blog/2018-09-01-app-restaurante/</loc>
     <lastmod>2018-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hugorocaproyectos.js.org/post/2018/05/20/2018-05-20-registro-errores-log4net/</loc>
+    <loc>http://example.com/blog/2018-05-20-registro-de-errores-con-log4net/</loc>
     <lastmod>2018-05-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hugorocaproyectos.js.org/post/2018/05/06/2018-05-06-entityframework/</loc>
+    <loc>http://example.com/blog/2018-05-06-entity-framework-b%C3%A1sico/</loc>
     <lastmod>2018-05-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hugorocaproyectos.js.org/post/2018/04/29/2018-04-29-scripts-sqlserver/</loc>
+    <loc>http://example.com/blog/2018-04-29-scripts-sqlserver/</loc>
     <lastmod>2018-04-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hugorocaproyectos.js.org/post/2018/04/15/2018-04-15-portafolioproyecto/</loc>
+    <loc>http://example.com/blog/2018-04-15-portafolio-profesional/</loc>
     <lastmod>2018-04-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hugorocaproyectos.js.org/post/2018/03/30/2018-03-30-sigenven2.0/</loc>
+    <loc>http://example.com/blog/2018-03-30-sigeven-2.0/</loc>
     <lastmod>2018-03-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hugorocaproyectos.js.org/post/2018/03/04/2018-03-04-sigenven1.0/</loc>
+    <loc>http://example.com/blog/2018-03-04-sigeven-1.0/</loc>
     <lastmod>2018-03-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hugorocaproyectos.js.org/tags/angularjs/</loc>
+    <loc>http://example.com/contact/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/angularjs/</loc>
     <lastmod>2018-03-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://hugorocaproyectos.js.org/tags/c#/</loc>
+    <loc>http://example.com/categories/base-de-datos/</loc>
+    <lastmod>2018-05-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/categories/c-sharp/</loc>
     <lastmod>2018-09-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://hugorocaproyectos.js.org/tags/css3/</loc>
+    <loc>http://example.com/categories/</loc>
+    <lastmod>2018-05-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/csharp/</loc>
+    <lastmod>2018-09-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/css3/</loc>
     <lastmod>2018-10-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://hugorocaproyectos.js.org/tags/html5/</loc>
+    <loc>http://example.com/tags/html5/</loc>
     <lastmod>2018-03-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://hugorocaproyectos.js.org/</loc>
+    <loc>http://example.com/</loc>
     <lastmod>2018-10-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://hugorocaproyectos.js.org/tags/jquery/</loc>
+    <loc>http://example.com/categories/javascript/</loc>
+    <lastmod>2018-10-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/jquery/</loc>
     <lastmod>2018-09-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://hugorocaproyectos.js.org/tags/js/</loc>
+    <loc>http://example.com/tags/js/</loc>
     <lastmod>2018-10-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://hugorocaproyectos.js.org/tags/poo/</loc>
+    <loc>http://example.com/categories/php/</loc>
+    <lastmod>2018-03-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/php/</loc>
+    <lastmod>2018-03-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/poo/</loc>
     <lastmod>2018-09-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://hugorocaproyectos.js.org/post/</loc>
+    <loc>http://example.com/post/</loc>
     <lastmod>2018-10-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://hugorocaproyectos.js.org/tags/sqlserver/</loc>
+    <loc>http://example.com/categories/sistemas/</loc>
     <lastmod>2018-09-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://hugorocaproyectos.js.org/tags/</loc>
-    <lastmod>2018-03-30T00:00:00+00:00</lastmod>
+    <loc>http://example.com/tags/sqlserver/</loc>
+    <lastmod>2018-09-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://hugorocaproyectos.js.org/topics/</loc>
+    <loc>http://example.com/tags/</loc>
+    <lastmod>2018-03-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

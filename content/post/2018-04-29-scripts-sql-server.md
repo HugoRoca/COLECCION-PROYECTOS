@@ -1,15 +1,13 @@
 ---
-section: post
 date: "2018-04-29"
-featured: true
 title: "Scripts SQLServer"
 description: "Les comparto algunos scripts que me sirvieron de mucho durante el tiempo que llevo trabajando, y es más aún los sigo usando."
-slug: 2018-04-29-Scripts-SqlServer
 author: "Hugo Roca"
-image: images/post/scripts-sql.jpg
-share: true
+image: /images/post/scripts-sql.jpg
 tags:
  - SQLSERVER
+categories:
+ - Base de datos
 ---
 
 Les comparto algunos scripts que me sirvieron de mucho durante el tiempo que llevo trabajando, y es más aún los sigo usando.

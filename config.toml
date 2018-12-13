@@ -1,52 +1,108 @@
-baseURL = "https://hugorocaproyectos.js.org/"
+baseurl = "http://example.com"
+disablePathToLower = false
 languageCode = "es-PE"
-title = "Hugo Roca Proyectos | Blog"
-summerization = "html_firstparagraph"
-paginate = 9 
-theme = "bleak"
+theme = "hugo-webmag"
+title = "Hugo Roca | Proyectos - Web"
+contentdir = "content"
+datadir = "data"
+layoutdir = "layouts"
+publishdir = "docs"
+# Disqus
 disqusShortname = "hugorocaproyectos"
-contentdir      = "content"
-datadir         = "data"
-layoutdir       = "layouts"
-publishdir      = "docs"
+# Tamaño de paginación
+paginate = 5
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
 
 [permalinks]
-  post = "/post/:year/:month/:day/:slug"
-  project = "/project/:year/:month/:day/:slug"
-
-[indexes]
-  tag = "tags"
-  topic = "topics"
-
+  post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the old ones
 
 [params]
-  # Warning Keys are case sensitives
-  title2 = "Blog"
-  Subtitle = "El rincón de la información y comunicación sobre la red, programación, arquitectura y más.."
-  description = "El rincón de la información y comunicación sobre la red, programación, arquitectura y más..."
+  # Disabled/Enabled buscador
+  search = false
+  # Number of last posts that will be displayed in the sidebar - set to 0 or remove to hide this section
+  sidebarRecentLimit = 4
+  siebarSingleRecentLimit = 2
 
-  # Google analytics
-  ga = "UA-125594168-1"
-  twitter = "xxxxx"
-  github = "hugoroca"
-  facebook = "xxxxx"
-  linkedin = "xxxxx"
-  instagram = "xxxxxxx"
-  gplus = ""
-  logo = "/images/logo.png"
+  # sidebar links
+  github = "https://github.com/HugoRoca"
+  bitbucket = ""
+  twitter = "https://twitter.com/HuugooRoca"
+  stackoverflow = ""
+  linkedin = "https://www.linkedin.com/in/hugoroca/"
+  googleplus = ""
+  youtube = ""
+  facebook = ""
+  instagram = ""
 
-[author]
-  FirstName = "Hugo"
-  LastName = "Roca"
-  Gender = "male"
-  UserName = "hugo.roca"
-  Image = "/images/hugo.jpeg"
-  Website = "https://hugoroca.github.io"
+  # --- End sidebar options ---
+
+  # Author's name (appears in meta tags and under posts)
+  author = "Hugo Roca"
+
+  # Search engine URL
+  searchEngineURL = "https://www.google.com/search"
+
+  # Google analytics code - remove if you do not have/want Google Analytics - needs JavaScript
+  googleAnalytics = "UA-125594168-1"
+
+  # Website's default description
+  defaultDescription = ""
+
+  # Populate with your search keywords - these will appear in meta tags
+  defaultKeywords = ["JavaScript","jquery", "C#", "PHP", "SQLServer", "Sistemas", "Codigo fuente", "Código fuente"]
+
+  # Generate taxonomy pages
+  generateTaxonomyList = true
+
+  # Twitter card config
+  # Enable with this.
+   twitterCardEnabled = true
+  # Don't include the @.
+  twitterCardSite = "https://hugorocaproyectos.js.org"
+  twitterCardDomain = "parsiya.net"
+  # Don't include the @.
+  twitterCardAuthor = "HuugooRoca"
+
+# Menu ----------------------------------------------------------------------
+[[menu.main]]
+  Name = "Inicio"
+  URL = "/"
+  weight = 1
 
 [[menu.main]]
-  name = "Acerca de mí"
-  url = "https://hugoroca.github.io/"
+  Name = "JavaScript"
+  URL = "/categories/javascript/"
+  weight = 2
 
 [[menu.main]]
-  name = "Tags"
-  url = "/tags"
+  Name = "C Sharp"
+  URL = "/categories/c-sharp/"
+  weight = 3
+
+[[menu.main]]
+  Name = "PHP"
+  URL = "/categories/php"
+  weight = 4
+
+[[menu.main]]
+  Name = "Base de datos"
+  URL = "/categories/base-de-datos"
+  weight = 5
+
+[[menu.main]]
+  Name = "Sistemas"
+  URL = "/categories/sistemas/"
+  weight = 6
+# Sidebar menus ---------------------------------------------------------------
+
+[[menu.sidebar]]
+  Name = "Inicio"
+  URL = "/"
+
+[[menu.sidebar]]
+  Name = "Acerca de mí"
+  URL = "https://hugoroca.github.io"
+  weight = 0

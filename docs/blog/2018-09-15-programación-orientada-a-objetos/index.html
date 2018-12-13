@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="description" content="POO es un paradigna de programación que comenzó a desarrollarse en los años 80, en ese momento se dieron cuenta que esta forma de programación facilitaba el desarrollo de sistemas de gran tamaño.">
+    <meta name="keywords" content="[JavaScript jquery C# PHP SQLServer Sistemas Codigo fuente Código fuente]">
+    <meta name="author" content="Hugo Roca">
+    
+    <title>Programación Orientada a Objetos</title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/webmag.css">
+    
+    <link href="//fonts.googleapis.com/css?family=Nunito+Sans:700%7CNunito:300,600" rel="stylesheet"> 
+    
+    <link href="http://example.com/favicon.png" rel="icon">
+    
+    <meta name="generator" content="Hugo 0.48" />
+    
+    
+    
+    
+    
+
+  
+    <meta name="twitter:card" content="summary"/>
+  
+  
+  <meta name="twitter:title" content="Programación Orientada a Objetos"/>
+  <meta name="twitter:description" content="POO es un paradigna de programación que comenzó a desarrollarse en los años 80, en ese momento se dieron cuenta que esta forma de programación facilitaba el desarrollo de sistemas de gran tamaño."/>
+  <meta name="twitter:site" content="@https://hugorocaproyectos.js.org"/>
+  <meta name="twitter:domain" content="parsiya.net"/>
+  <meta name="twitter:creator" content="@HuugooRoca"/>
+
+    
+</head>
+
+<body>
+    <header id="header">
+        <div id="nav">
+    <div id="nav-fixed">
+        <div class="container">
+            <div class="nav-logo">
+                <a href="index.html" class="logo"><img src="/logo.png" alt=""></a>
+            </div>
+
+            <ul class="nav-menu nav navbar-nav">
+    
+    
+    <li>
+    
+    
+    
+    
+    
+    
+        <a href="http://example.com/" title="Inicio">Inicio</a>
+    </li>
+    
+    
+    
+    <li class="cat-javascript">
+    
+    
+    
+    
+    
+        <a href="http://example.com/categories/javascript/" title="JavaScript">JavaScript</a>
+    </li>
+    
+    
+    
+    
+    
+    <li class="cat-csharp">
+    
+    
+    
+        <a href="http://example.com/categories/c-sharp/" title="C Sharp">C Sharp</a>
+    </li>
+    
+    
+    
+    
+    
+    
+    
+    <li class="cat-php">
+    
+        <a href="http://example.com/categories/php" title="PHP">PHP</a>
+    </li>
+    
+    
+    
+    
+    
+    
+    <li class="cat-basedatos">
+    
+    
+        <a href="http://example.com/categories/base-de-datos" title="Base de datos">Base de datos</a>
+    </li>
+    
+    
+    
+    
+    <li class="cat-sistemas">
+    
+    
+    
+    
+        <a href="http://example.com/categories/sistemas/" title="Sistemas">Sistemas</a>
+    </li>
+    
+</ul>
+
+<div class="nav-btns">
+    <button class="aside-btn"><i class="fa fa-bars"></i></button>
+    
+</div>
+
+        </div>
+    </div>
+
+    <div id="nav-aside">
+        <div class="section-row">
+    <ul class="nav-aside-menu">
+        
+        
+        <li><a href="https://hugoroca.github.io" target="_blank" title="Acerca de mí">Acerca de mí</a></li>
+        
+        
+        
+        <li><a href="http://example.com/" title="Inicio">Inicio</a></li>
+        
+        
+    </ul>
+</div>
+
+        
+
+
+    <div class="section-row">
+        <h3>Post Recientes</h3>
+        
+        
+            
+                <div class="post post-widget">
+                    <a class="post-img" href="/blog/2018-10-02-gr%C3%A1ficos-con-d3js/"><img src="/images/post/d3js.jpg" alt=""></a>
+                    <div class="post-body">
+                        <h3 class="post-title"><a href="/blog/2018-10-02-gr%C3%A1ficos-con-d3js/">Gráficos con D3JS</a></h3>
+                    </div>
+                </div>
+            
+        
+            
+                <div class="post post-widget">
+                    <a class="post-img" href="/blog/2018-09-15-programaci%C3%B3n-orientada-a-objetos/"><img src="/images/post/POO.jpg" alt=""></a>
+                    <div class="post-body">
+                        <h3 class="post-title"><a href="/blog/2018-09-15-programaci%C3%B3n-orientada-a-objetos/">Programación Orientada a Objetos</a></h3>
+                    </div>
+                </div>
+            
+        
+            
+                <div class="post post-widget">
+                    <a class="post-img" href="/blog/2018-09-01-app-restaurante/"><img src="/images/post/apprestaurante.jpg" alt=""></a>
+                    <div class="post-body">
+                        <h3 class="post-title"><a href="/blog/2018-09-01-app-restaurante/">APP Restaurante</a></h3>
+                    </div>
+                </div>
+            
+        
+            
+                <div class="post post-widget">
+                    <a class="post-img" href="/blog/2018-05-20-registro-de-errores-con-log4net/"><img src="/images/post/log4net.jpg" alt=""></a>
+                    <div class="post-body">
+                        <h3 class="post-title"><a href="/blog/2018-05-20-registro-de-errores-con-log4net/">Registro de errores con Log4Net</a></h3>
+                    </div>
+                </div>
+            
+        
+    </div>
+
+
+
+        <div class="section-row">
+            <h3>Sigueme</h3>
+            <ul class="nav-aside-social">
+                
+                <li><a target="_blank" href="https://github.com/HugoRoca" title="https://github.com/HugoRoca"><i class="fa fa-github"></i></a></li>
+                
+
+                
+
+                
+
+                
+                <li><a target="_blank" href="https://twitter.com/HuugooRoca" title="https://twitter.com/HuugooRoca"><i class="fa fa-twitter"></i></a></li>
+                
+
+                
+                <li><a target="_blank" href="https://www.linkedin.com/in/hugoroca/" title="https://www.linkedin.com/in/hugoroca/"><i class="fa fa-linkedin"></i></a></li>
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+            </ul>
+        </div>
+
+        <button class="nav-aside-close"><i class="fa fa-times"></i></button>
+    </div>
+</div>
+
+        <div id="post-header" class="page-header">
+            <div class="background-img" style="background-image: url('/images/post/POO.jpg');"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10">
+                        <div class="post-meta">
+                            
+                            <span class="post-date">Sep 15, 2018</span>
+                        </div>
+                        <h1>Programación Orientada a Objetos</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="section-row sticky-container">
+                    <div class="main-post">
+                        
+                        
+                        
+                        
+
+<p>POO es un paradigna de programación que comenzó a desarrollarse en los años 80, en ese momento se dieron cuenta que esta forma de programación facilitaba el desarrollo de sistemas de gran tamaño.</p>
+
+<p>De hecho actualmente este paradigma de programación es el más utilizado, los grandes sistemas que conocemos han sido desarrollados en base a este paradigma.</p>
+
+<h3 id="las-ventajas-de-poo">Las ventajas de poo</h3>
+
+<ul>
+<li>Es reutilizable, esto quiero decir que si desarrollamos nuestro código de forma adecuada, las clases y lo que creemos se puede reutilizar, en distintas partes del programa la cual nos va a permitir no duplicar código.</li>
+<li>Mantenibilidad, un sistema orientado a objetos va ser mucho mas fácil de leer y comprender para los programadores, ya que para ellos no vas ser necesario adentrarse demasiado al código, basta con ver las clases generales para darse cuenta como funciona .</li>
+<li>Modificable, si nuestro código esta bien implementado va ser muy fácil añadir, modificar  o incluso eliminar las clases u objetos que ya existan en el código.</li>
+<li>Un sistema orientado a objetos también es fiable, es mas fácil detectar errores en este tipo de programas, podemos dividir el sistema en partes e ir las probando de manera independiente</li>
+</ul>
+
+<h3 id="característica-principales">Característica principales</h3>
+
+<ul>
+<li>Abstracción</li>
+<li>Encapsulamiento</li>
+<li>Herencia</li>
+<li>Polimorfismo</li>
+</ul>
+
+<p>Para poder desarrollar aplicaciones orientas a objetos de la mejor manera, debemos analizar y entender cada uno de estos conceptos.</p>
+
+<h2 id="la-abstracción">La abstracción</h2>
+
+<p>Es un pilar o característica de la programación orienta a objetos, que va permitir que los objetos puedan interactuar sin necesidad de conocer los detalles del funcionamiento, de esta forma el enfoque se centra en aspectos relevantes de las entidades, podemos decir de hecho que estos aspectos son relativos ya que van a depender del enfoque en que se analice. Para entender el concepto vamos a modelar una escuela.
+Una escuela puede tener muchas características, pero con la abstracciones me voy a centar o enfocar únicamente en las características que yo necesito, para ellos debo de pensar de que como quiero modelar la escuela, lo puedo modelas desde el punto de vista administrativo, por ejemplo:</p>
+
+<ul>
+<li>Control de alumnos</li>
+<li>Control de empleados</li>
+<li>Control de asignaturas</li>
+</ul>
+
+<p>Este seria el caso de un sistema de administración para escuela, también podemos enfocarnos de otra forma en las escuelas; podría ser que yo quisiera un sistema para una constructora,  en este caso puedo ver el enfoque de la escuela es muy diferente; a una constructora le van a interesar las características de la escuela las cuales pueden ser, ventanas, puertas, pisos entre otras aspectos.
+Como podemos ver una misma entidad puede analizarse desde varias puntos de vista o enfoque, ademas de acuerdo de este enfoque se van a definir las características o comportamientos.</p>
+
+<p>La abstraccion tambien nos va a permitir eliminar todos aquellos aspectos que forman parte del objeto o entidad pero que no son significatios para el caso que estamos analizando.</p>
+
+<h2 id="encapsulamiento">Encapsulamiento</h2>
+
+<p>Esta es una de las características más fáciles de entender de la programación orientada a objetos ya que la vamos a poder apreciar a simple vista en nuestro código, el encapsulamiento nos va a permitir empaquetar en un mismo contenedor o plantilla tanto las características de las entidades u objetos como sus comportamientos.</p>
+
+<p>Si has desarrollado con otros paradigmas de programación como la ‘programación estructurada’, podrás recordar que los datos y los módulos estaban separados, en cambio en la programación orientada a objetos estas características y atributos o comportamientos se van a mantener empaquetados en una misma plantilla.</p>
+
+<p>El encapsulamiento también va a permitir establecer niveles de acceso, de esta forma podemos indicar la manera en que los objetos van a poder interactuar entre si.</p>
+
+<p>Si continuamos con el ejemplo de la escuela o el sistema administrativo para la escuela, podríamos tener la clase empleado y un comportamiento que calcule el pago, suponiendo que no queremos que otro elemento conozca el detalle de esta calculo, podríamos entonces ocultarlo y de esta forma estaríamos marcando su nivel de acceso</p>
+
+<h2 id="herencia">Herencia</h2>
+
+<p>La herencia es otro pilar de la programación orientada a objetos que vamos a entender fácilmente, ya que la herencia en sí es parte de la naturaleza humana.</p>
+
+<p>En un sistema, la herencia va ayudarnos a clasificar los elementos y su vez nos va a permitir reutilizar el código, regularmente en un sistema vamos a encontrar que sus elementos pueden ser organizados de manera jerárquica, de tal forma que las clases o elementos de nivel superior pueda compartir sus características y acciones con las entidades de nivel superior.</p>
+
+<p>Si pensamos en los empleados para el sistema que hemos planteado para la administración de una escuela, estos empleados pueden clasificarse en profesor, director y secretaria por ejemplo.</p>
+
+<p>Podríamos entonces definir estas clases como derivadas de la clase empleado, de esta forma estaríamos aplicando la herencia y las clases derivadas profesor, director y secretaria estarán heredando las características y comportamientos de la clase empleado.</p>
+
+<p>Podemos analizarlo de la siguiente forma, un empleado puede ser un profesor, un director o una secretaria, cabe mencionar que un sistema puede tener &lsquo;n&rsquo; niveles de herencia, en nuestro sistema podríamos pensar por ejemplo en una clasificación adicional para el profesor, para ellos podríamos añadir las clases <code>tiempo_completo</code> y <code>por_horas</code>, estas clases serian entonces derivadas de la clase profesor.</p>
+
+<p>Es así como la herencia nos ha ayudado hacer una estructura jerárquica que nos va servir para desarrollar nuestro sistema.</p>
+
+<p>El ultimo nivel jerárquico en este caso <code>tiempo_completo</code> y <code>por_horas</code> van a adquirir las características de todas las clases de las cuales heredan, es decir que <code>tiempo_completo</code> va adquirir las características y comportamiento tanto de la clase profesor como de la clase empleado, las clases director, profesor y secretaría son clases derivadas únicamente de la clase empleado por la tanto solo van a adquirir las características y comportamientos de esta clase.</p>
+
+<h2 id="polimorfismo">Polimorfismo</h2>
+
+<p>Es la característica de la programación orientada a objetos que va a permitir que un objeto presente diferentes comportamientos de acuerdo al contexto en el que se encuentre.</p>
+
+<p>Existen diversas formas de implementar el polimorfismo, la implementación que podemos encontrar más comúnmente en un sistema es la que permite definir un comportamiento para que una clase que a su vez va ser heredado a sus clases derivadas y cada una de ellas va poder adaptar este comportamiento e implementarlo de acuerdo a sus necesidades.</p>
+
+<p>Retomando el ejemplo que aviamos planteado de la escuela, vamos a suponer que quiero definir un comportamiento para los empleado, yo se todos los empleados van a tener que recibir un pago, para ello voy a utilizar el comportamiento o método <code>CalcularPago</code>, el problema en este caso que vamos a encontrar es que no todos los empleado van a recibir un mismo pago y su pago no se va a calcular de la misma forma, es entonces que mediante el poliformismo voy a permitir que el método <code>CalcularPago</code> sea implementado por cada clase dependiendo de sus necesidades.</p>
+
+<p>Por ejemplo para la clase profesor de tiempo completo haría que el calculo de pago sea de acuerdo a sus prestaciones y a su quincena, en cambio para un profesor por hora implementaría el método <code>CalcularPago</code> de acuerdo a las horas que a trabajado durante el mes. También la clase director va heredar el método o comportamiento de la clase empleado y la clase derivada secretaria también lo va hacer, cada una de estas clases va implementar el comportamiento de acuerdo a sus necesidades.</p>
+
+                    </div>
+                    <div class="post-shares sticky-shares">
+                        <a href="#" class="share-facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="share-twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="share-google-plus"><i class="fa fa-google-plus"></i></a>
+                        <a href="#" class="share-pinterest"><i class="fa fa-pinterest"></i></a>
+                        <a href="#" class="share-linkedin"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <div class="section-row">
+                    
+                    <div class="post-comments">
+                        <div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+      
+      
+      
+      if (window.location.hostname == "localhost")
+          return;
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var disqus_shortname = 'hugorocaproyectos';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4">
+                <div class="aside-widget text-center">
+    <a href="#" style="display: inline-block;margin: auto;">
+        <img class="img-responsive" src="/ad-1.jpg" alt="">
+    </a>
+</div>
+
+
+    
+        <div class="aside-widget">
+            <div class="section-title">
+                <h2>Post Recientes</h2>
+            </div>
+            
+            
+                
+                    <div class="post post-thumb">
+                            <a class="post-img" href="/blog/2018-10-02-gr%C3%A1ficos-con-d3js/"><img src="/images/post/d3js.jpg" alt=""></a>
+                        <div class="post-body">
+                            <div class="post-meta">
+                                
+    
+        
+        <a class="post-category cat-javascript" href="http://example.com/categories/javascript/">JavaScript </a>
+        
+        
+        
+        
+        
+    
+
+                                <span class="post-date">Oct 2, 2018</span>
+                            </div>
+                            <h3 class="post-title"><a href="/blog/2018-10-02-gr%C3%A1ficos-con-d3js/">Gráficos con D3JS</a></h3>
+                        </div>
+                    </div>
+                
+            
+                
+                    <div class="post post-thumb">
+                            <a class="post-img" href="/blog/2018-09-15-programaci%C3%B3n-orientada-a-objetos/"><img src="/images/post/POO.jpg" alt=""></a>
+                        <div class="post-body">
+                            <div class="post-meta">
+                                
+                                <span class="post-date">Sep 15, 2018</span>
+                            </div>
+                            <h3 class="post-title"><a href="/blog/2018-09-15-programaci%C3%B3n-orientada-a-objetos/">Programación Orientada a Objetos</a></h3>
+                        </div>
+                    </div>
+                
+            
+        </div>
+    
+
+
+<div class="aside-widget">
+    <div class="section-title">
+        <h2>Categorías</h2>
+    </div>
+    <div class="category-widget">
+        <ul>
+            
+            
+                
+                
+                
+                
+                <li><a class="cat-basedatos" href="http://example.com/categories/base-de-datos">Base de datos<span>3</span></a></li>
+                
+                
+            
+            
+                
+                
+                
+                <li><a class="cat-csharp" href="http://example.com/categories/c-sharp">C Sharp<span>4</span></a></li>
+                
+                
+                
+            
+            
+                
+                <li><a class="cat-javascript" href="http://example.com/categories/javascript">JavaScript<span>5</span></a></li>
+                
+                
+                
+                
+                
+            
+            
+                
+                
+                
+                
+                
+                <li><a class="cat-php" href="http://example.com/categories/php">PHP<span>2</span></a></li>
+                
+            
+            
+                
+                
+                <li><a class="cat-sistemas" href="http://example.com/categories/sistemas">Sistemas<span>4</span></a></li>
+                
+                
+                
+                
+            
+        </ul>
+    </div>
+</div>
+
+<div class="aside-widget">
+    <div class="section-title">
+        <h2>Tags</h2>
+    </div>
+    <div class="tags-widget">
+        <ul>
+            
+                <li>
+                    <a href="http://example.com/tags/angularjs">angularjs</a>
+                </li>
+            
+                <li>
+                    <a href="http://example.com/tags/csharp">csharp</a>
+                </li>
+            
+                <li>
+                    <a href="http://example.com/tags/css3">css3</a>
+                </li>
+            
+                <li>
+                    <a href="http://example.com/tags/html5">html5</a>
+                </li>
+            
+                <li>
+                    <a href="http://example.com/tags/jquery">jquery</a>
+                </li>
+            
+                <li>
+                    <a href="http://example.com/tags/js">js</a>
+                </li>
+            
+                <li>
+                    <a href="http://example.com/tags/php">php</a>
+                </li>
+            
+                <li>
+                    <a href="http://example.com/tags/poo">poo</a>
+                </li>
+            
+                <li>
+                    <a href="http://example.com/tags/sqlserver">sqlserver</a>
+                </li>
+            
+        </ul>
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="footer-widget">
+                    <div class="footer-logo">
+                        <a href="/" class="logo"><img src="/logo.png" alt=""></a>
+                    </div>
+                    <div class="footer-copyright">
+                        <span>&copy;
+                            Copyright &copy;
+                            <script>document.write(new Date().getFullYear());</script> 
+                            Todos los derechos reservados <br>
+                            Esta plantilla fue hecha <i class="fa fa-heart-o" aria-hidden="true"></i> 
+                            por <a href="https://colorlib.com" target="_blank">Colorlib</a> 
+                            y modificada <a href="https://gohugo.io/news/" target="_blank"> por goHugo</a> y <a href="https://hugoroca.github.io" target="_blank">Hugo Roca</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="footer-widget">
+                            <h3 class="footer-title">Acerca de mi</h3>
+                            <ul class="footer-links">
+                                <li><a href="about.html">Acerca de mi</a></li>
+                                <li><a href="contact.html">Contacts</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="footer-widget">
+                            <h3 class="footer-title">Categorias</h3>
+                            <ul class="footer-links">
+                                
+                                    
+                                    
+                                    
+                                        <li><a href="http://example.com/categories/base-de-datos">Base de datos</a></li>
+                                    
+                                    
+                                    
+                                    
+                                
+                                    
+                                    
+                                    
+                                    
+                                        <li><a href="http://example.com/categories/c-sharp">C Sharp</a></li>
+                                    
+                                    
+                                    
+                                
+                                    
+                                    
+                                        <li><a href="http://example.com/categories/javascript">JavaScript</a></li>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                        <li><a href="http://example.com/categories/php">PHP</a></li>
+                                    
+                                    
+                                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                        <li><a href="http://example.com/categories/sistemas">Sistemas</a></li>
+                                    
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="footer-widget">
+                    <h3 class="footer-title">Sigueme</h3>
+                    <ul class="footer-social">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+    
+</footer>
+
+
+
+<script src="/js/jquery.js"></script>
+<script src="/js/bootstrap.js"></script>
+<script src="/js/main.js"></script>
+
+</body>
+
+</html>

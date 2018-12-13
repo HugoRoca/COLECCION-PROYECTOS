@@ -1,15 +1,15 @@
 ---
-section: post
 date: "2018-05-06"
 title: "Entity Framework Básico"
 description: "Una forma mas rápida de realizar CRUD's, a tan solo unos clicks. Este es el poderosisimo Entity Framework"
-slug: 2018-05-06-EntityFramework
 author: "Hugo Roca"
-image: images/post/entity-framework-basico.jpg
-share: true
+image: /images/post/entity-framework-basico.jpg
 tags:
  - SQLSERVER
- - C#
+ - CSharp
+categories:
+ - C Sharp
+ - Base de datos
 ---
 
 Una forma mas rápida de realizar CRUD's, a tan solo unos clicks. Este es el poderosisimo Entity Framework

@@ -1,0 +1,86 @@
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="footer-widget">
+                    <div class="footer-logo">
+                        <a href="/" class="logo"><img src="/logo.png" alt=""></a>
+                    </div>
+                    <div class="footer-copyright">
+                        <span>&copy;
+                            Copyright &copy;
+                            <script>document.write(new Date().getFullYear());</script> 
+                            Todos los derechos reservados <br>
+                            Esta plantilla fue hecha <i class="fa fa-heart-o" aria-hidden="true"></i> 
+                            por <a href="https://colorlib.com" target="_blank">Colorlib</a> 
+                            y modificada <a href="https://gohugo.io/news/" target="_blank"> por goHugo</a> y <a href="https://hugoroca.github.io" target="_blank">Hugo Roca</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="footer-widget">
+                            <h3 class="footer-title">Acerca de mi</h3>
+                            <ul class="footer-links">
+                                <li><a href="about.html">Acerca de mi</a></li>
+                                <li><a href="contact.html">Contacts</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="footer-widget">
+                            <h3 class="footer-title">Categorias</h3>
+                            <ul class="footer-links">
+                                {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+                                    {{ $term := urlize $name }}
+                                    {{ if eq $term "javascript"}}
+                                        <li><a href="{{ "categories" | absURL }}/{{ $name | urlize }}">JavaScript</a></li>
+                                    {{ end }}
+                                    {{ if eq $term "base-de-datos"}}
+                                        <li><a href="{{ "categories" | absURL }}/{{ $name | urlize }}">Base de datos</a></li>
+                                    {{ end }}
+                                    {{ if eq $term "c-sharp"}}
+                                        <li><a href="{{ "categories" | absURL }}/{{ $name | urlize }}">C Sharp</a></li>
+                                    {{ end }}
+                                    {{ if eq $term "php"}}
+                                        <li><a href="{{ "categories" | absURL }}/{{ $name | urlize }}">PHP</a></li>
+                                    {{ end }}
+                                    {{ if eq $term "sistemas"}}
+                                        <li><a href="{{ "categories" | absURL }}/{{ $name | urlize }}">Sistemas</a></li>
+                                    {{ end }}
+                                {{ end }}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="footer-widget">
+                    <h3 class="footer-title">Sigueme</h3>
+                    <ul class="footer-social">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <!-- /row -->
+    </div>
+    <!-- /container -->
+</footer>
+<!-- /Footer -->
+
+<!-- jQuery Plugins -->
+<script src="/js/jquery.js"></script>
+<script src="/js/bootstrap.js"></script>
+<script src="/js/main.js"></script>
+
+</body>
+
+</html>

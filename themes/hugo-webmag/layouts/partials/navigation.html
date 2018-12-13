@@ -1,0 +1,35 @@
+<ul class="nav-menu nav navbar-nav">
+    {{ range .Site.Menus.main.ByWeight }}
+    {{ if eq .Name "Inicio"}}
+    <li>
+    {{ end }}
+    {{ if eq .Name "JavaScript"}}
+    <li class="cat-javascript">
+    {{ end }}
+    {{ if eq .Name "Sistemas"}}
+    <li class="cat-sistemas">
+    {{ end }}
+    {{ if eq .Name "C Sharp"}}
+    <li class="cat-csharp">
+    {{ end }}
+    {{ if eq .Name "Base de datos"}}
+    <li class="cat-basedatos">
+    {{ end }}
+    {{ if eq .Name "PHP"}}
+    <li class="cat-php">
+    {{ end }}
+        <a href="{{ .URL | absURL }}" title="{{ .Name}}">{{ .Name }}</a>
+    </li>
+    {{ end }}
+</ul>
+
+<div class="nav-btns">
+    <button class="aside-btn"><i class="fa fa-bars"></i></button>
+    {{ if .Site.Params.search}}
+    <button class="search-btn"><i class="fa fa-search"></i></button>
+    <div class="search-form">
+        <input class="search-input" type="text" name="search" placeholder="Enter Your Search ...">
+        <button class="search-close"><i class="fa fa-times"></i></button>
+    </div>
+    {{ end }}
+</div>

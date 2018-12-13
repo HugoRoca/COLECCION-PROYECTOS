@@ -1,0 +1,71 @@
+<div id="nav">
+    <div id="nav-fixed">
+        <div class="container">
+            <div class="nav-logo">
+                <a href="index.html" class="logo"><img src="/logo.png" alt=""></a>
+            </div>
+
+            {{ partial "navigation.html" . }}
+
+        </div>
+    </div>
+
+    <div id="nav-aside">
+        {{ partial "navigation_sidebar.html" . }}
+
+        {{ partial "recent_post.html" . }}
+
+        <div class="section-row">
+            <h3>Sigueme</h3>
+            <ul class="nav-aside-social">
+                {{ with .Site.Params.github }}
+                <li><a target="_blank" href="{{ . }}" title="{{ . }}"><i class="fa fa-github"></i></a></li>
+                {{ end }}
+
+                {{ with .Site.Params.bitbucket }}
+                <li><a target="_blank" href="{{ . }}" title="{{ . }}"><i class="fa fa-bitbucket"></i></a></li>
+                {{ end }}
+
+                {{ with .Site.Params.gitlab }}
+                <li><a target="_blank" href="{{ . }}" title="{{ . }}"><i class="fa fa-gitlab"></i></a></li>
+                {{ end }}
+
+                {{ with .Site.Params.twitter }}
+                <li><a target="_blank" href="{{ . }}" title="{{ . }}"><i class="fa fa-twitter"></i></a></li>
+                {{ end }}
+
+                {{ with .Site.Params.linkedin }}
+                <li><a target="_blank" href="{{ . }}" title="{{ . }}"><i class="fa fa-linkedin"></i></a></li>
+                {{ end }}
+
+                {{ with .Site.Params.stackOverflow }}
+                <li><a target="_blank" href="{{ . }}" title="{{ . }}"><i class="fa fa-stack-overflow"></i></a></li>
+                {{ end }}
+
+                {{ with .Site.Params.googleplus }}
+                <li><a target="_blank" href="{{ . }}" title="{{ . }}"><i class="fa fa-google-plus"></i></a></li>
+                {{ end }}
+
+                {{ with .Site.Params.facebook }}
+                <li><a target="_blank" href="{{ . }}" title="{{ . }}"><i class="fa fa-facebook"></i></a></li>
+                {{ end }}
+
+                {{ with .Site.Params.youtube }}
+                <li><a target="_blank" href="{{ . }}" title="{{ . }}"><i class="fa fa-youtube"></i></a></li>
+                {{ end }}
+
+                {{ with .Site.Params.instagram }}
+                <li><a target="_blank" href="{{ . }}" title="{{ . }}"><i class="fa fa-instagram"></i></a></li>
+                {{ end }}
+
+                {{ with .Site.Params.bitcoin }}
+                <li><a target="_blank" href="{{ . }}" title="{{ . }}"><i class="fa fa-bitcoin"></i></a></li>
+                {{ end }}
+
+                
+            </ul>
+        </div>
+
+        <button class="nav-aside-close"><i class="fa fa-times"></i></button>
+    </div>
+</div>

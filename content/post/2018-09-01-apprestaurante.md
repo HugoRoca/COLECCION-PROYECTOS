@@ -1,18 +1,18 @@
 ---
-section: post
 date: "2018-09-01"
 title: "APP Restaurante"
 description: "En estas oportunidad les presento un nuevo sistema de restaurante, cuenta con dos formas de ver, una para los pedidos que se configura dentro del sistema y la otra la parte administrativa."
-slug: 2018-09-01-APPRestaurante
 author: "Hugo Roca"
-image: images/post/apprestaurante.jpg
-share: true
-featured: true
+image: /images/post/apprestaurante.jpg
 tags:
  - SQLSERVER
- - C#
+ - CSharp
  - JS
  - JQUERY
+categories:
+ - JavaScript
+ - C Sharp
+ - Sistemas
 ---
 
 En estas oportunidad les presento un nuevo sistema de restaurante, cuenta con dos formas de ver, una para los pedidos que se configura dentro del sistema y la otra la parte administrativa.

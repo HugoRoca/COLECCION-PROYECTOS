@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Hugo Roca | Proyectos - Web</title>
+    <link>http://example.com/categories/</link>
+    <description>Recent content in Categories on Hugo Roca | Proyectos - Web</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-PE</language>
+    <lastBuildDate>Sun, 20 May 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Base De Datos</title>
+      <link>http://example.com/categories/base-de-datos/</link>
+      <pubDate>Sun, 20 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.com/categories/base-de-datos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>C Sharp</title>
+      <link>http://example.com/categories/c-sharp/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.com/categories/c-sharp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Javascript</title>
+      <link>http://example.com/categories/javascript/</link>
+      <pubDate>Tue, 02 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.com/categories/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Php</title>
+      <link>http://example.com/categories/php/</link>
+      <pubDate>Fri, 30 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.com/categories/php/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sistemas</title>
+      <link>http://example.com/categories/sistemas/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.com/categories/sistemas/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
