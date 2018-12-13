@@ -1,4 +1,4 @@
-baseurl = "http://example.com"
+baseurl = "http://hugorocaproyectos.js.org"
 disablePathToLower = false
 languageCode = "es-PE"
 theme = "hugo-webmag"
