@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sistemas on Hugo Roca | Proyectos - Web</title>
-    <link>http://hugorocaproyectos.js.org/categories/sistemas/</link>
+    <link>https://hugorocaproyectos.js.org/categories/sistemas/</link>
     <description>Recent content in Sistemas on Hugo Roca | Proyectos - Web</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-PE</language>
     <lastBuildDate>Sat, 01 Sep 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://hugorocaproyectos.js.org/categories/sistemas/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hugorocaproyectos.js.org/categories/sistemas/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>APP Restaurante</title>
-      <link>http://hugorocaproyectos.js.org/blog/2018-09-01-app-restaurante/</link>
+      <link>https://hugorocaproyectos.js.org/blog/2018-09-01-app-restaurante/</link>
       <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://hugorocaproyectos.js.org/blog/2018-09-01-app-restaurante/</guid>
+      <guid>https://hugorocaproyectos.js.org/blog/2018-09-01-app-restaurante/</guid>
       <description>En estas oportunidad les presento un nuevo sistema de restaurante, cuenta con dos formas de ver, una para los pedidos que se configura dentro del sistema y la otra la parte administrativa.
 Contenido  Registro del menú del día Registro de empleados Control de acceso de usuario Cobranza Genera PDF del Cobro Registro de imagenes Vista rápida en dashboard  Paso 1 Puedes obtener el codigo fuente de la siguiente forma:</description>
     </item>
     
     <item>
       <title>Portafolio Profesional</title>
-      <link>http://hugorocaproyectos.js.org/blog/2018-04-15-portafolio-profesional/</link>
+      <link>https://hugorocaproyectos.js.org/blog/2018-04-15-portafolio-profesional/</link>
       <pubDate>Sun, 15 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://hugorocaproyectos.js.org/blog/2018-04-15-portafolio-profesional/</guid>
+      <guid>https://hugorocaproyectos.js.org/blog/2018-04-15-portafolio-profesional/</guid>
       <description>¿Alguna véz haz querido hacer un curriculum profesional usando algo diferente? En esta ocación te traigo el siguiente sistema.
 Sistema de administración de portafolio desarrollado en C#, MVC5, Entity Framework, JQuery, Bootstrap. Esta formado en dos partes:
  Lo que se muestra al usuario final (Front) Parte administrable  Edición de datos Registro y edición de estudios Registro y eliminación de hablidades Registro y edición de experiencia Edición de testimonios   Paso 1 Debes de tener instalado visual studio y sqlsever.</description>
@@ -34,10 +34,10 @@ Sistema de administración de portafolio desarrollado en C#, MVC5, Entity Framew
     
     <item>
       <title>SIGEVEN 2.0</title>
-      <link>http://hugorocaproyectos.js.org/blog/2018-03-30-sigeven-2.0/</link>
+      <link>https://hugorocaproyectos.js.org/blog/2018-03-30-sigeven-2.0/</link>
       <pubDate>Fri, 30 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://hugorocaproyectos.js.org/blog/2018-03-30-sigeven-2.0/</guid>
+      <guid>https://hugorocaproyectos.js.org/blog/2018-03-30-sigeven-2.0/</guid>
       <description>Como dicen, si hay &amp;lsquo;1.0&amp;rsquo; un &amp;lsquo;2.0&amp;rsquo; va haber, en esta oportunidad les muestro otro sistema de ventas mas completo en full PHP con jquery y ajax.
 Sistema para el contol de ventas e ingreso de stock, impresion de facturas, boletas y tickets, control de usuarios y permisos. Desarrollado en PHP7, JQuery y la plantilla AdminLTE.
 CONTENIDO  Login Dashboard ▾ Almacen/ Registro de artículo Registro de categorías ▾ Compras/ Registro de Ingresos Registro de Proveedor ▾ Ventas/ Registro de Cliente Registro de Ventas ▾ Impresion en PDF/ Factura Boleta ticket ▾ Acceso/ Permisos Registro de usuario Consulta de Compras Consulta de Ventas  Paso 1 Puedes obtener el codigo fuente de la siguiente forma:</description>
@@ -45,10 +45,10 @@ CONTENIDO  Login Dashboard ▾ Almacen/ Registro de artículo Registro de catego
     
     <item>
       <title>SIGEVEN 1.0</title>
-      <link>http://hugorocaproyectos.js.org/blog/2018-03-04-sigeven-1.0/</link>
+      <link>https://hugorocaproyectos.js.org/blog/2018-03-04-sigeven-1.0/</link>
       <pubDate>Sun, 04 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://hugorocaproyectos.js.org/blog/2018-03-04-sigeven-1.0/</guid>
+      <guid>https://hugorocaproyectos.js.org/blog/2018-03-04-sigeven-1.0/</guid>
       <description>En esta oportunidad les presento un sistema de gestión de ventas para un puesto de ventas, podrás registrar ventas diarias, gastos, ingresos, registro de proveedores e incluso realizar reportes. Desarrollado en AngularJS, PHP y MySql, maquetado con bootstrap.
 Paso 1 Puedes obtener el codigo fuente de la siguiente forma:
  Clonar Sigeven 1.0 Copiarlo a un server WAMP, XAMPP o APACHE  Árbol de archivos
