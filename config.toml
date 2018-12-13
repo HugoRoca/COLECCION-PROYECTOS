@@ -36,7 +36,6 @@ paginate = 5
   youtube = ""
   facebook = ""
   instagram = ""
-
   # --- End sidebar options ---
 
   # Author's name (appears in meta tags and under posts)
@@ -49,7 +48,7 @@ paginate = 5
   googleAnalytics = "UA-125594168-1"
 
   # Website's default description
-  defaultDescription = ""
+  defaultDescription = "El rincon de la informática"
 
   # Populate with your search keywords - these will appear in meta tags
   defaultKeywords = ["JavaScript","jquery", "C#", "PHP", "SQLServer", "Sistemas", "Codigo fuente", "Código fuente"]
