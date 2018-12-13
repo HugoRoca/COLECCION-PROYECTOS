@@ -19,12 +19,13 @@
     <link href="//fonts.googleapis.com/css?family=Nunito+Sans:700%7CNunito:300,600" rel="stylesheet"> 
     <!-- Favicon -->
     <link href="{{ "/favicon.png" | absURL }}" rel="icon">
+
+    {{ partial "meta-twitter" . }}
+
+    {{ partial "meta-facebook" . }}
+
     <!-- Generator version for usage tacking -->
     {{ .Hugo.Generator }}
     <!-- Google Analytics -->
     {{ template "_internal/google_analytics.html" . }}
-    <!-- Enable Twitter card -->
-    {{ with .Site.Params.twitterCardEnabled }}
-    {{ partial "custom_twitter_card.html" $ }}
-    {{ end }}
 </head>

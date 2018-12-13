@@ -25,6 +25,9 @@ paginate = 5
   # Number of last posts that will be displayed in the sidebar - set to 0 or remove to hide this section
   sidebarRecentLimit = 4
   siebarSingleRecentLimit = 2
+  fbName = "huugooroca.Huugoo"
+  twitterName = "HuugooRoca"
+  cover = "logo.png"
 
   # sidebar links
   github = "https://github.com/HugoRoca"
@@ -55,15 +58,6 @@ paginate = 5
 
   # Generate taxonomy pages
   generateTaxonomyList = true
-
-  # Twitter card config
-  # Enable with this.
-   twitterCardEnabled = true
-  # Don't include the @.
-  twitterCardSite = "https://hugorocaproyectos.js.org"
-  twitterCardDomain = "parsiya.net"
-  # Don't include the @.
-  twitterCardAuthor = "HuugooRoca"
 
 # Menu ----------------------------------------------------------------------
 [[menu.main]]
