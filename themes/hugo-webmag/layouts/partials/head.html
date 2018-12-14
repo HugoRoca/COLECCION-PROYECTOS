@@ -20,13 +20,13 @@
     <!-- Favicon -->
     <link href="{{ "/favicon.png" | absURL }}" rel="icon">
 
+    <!-- Google Analytics -->
+    {{ template "_internal/google_analytics.html" . }}
+    
     {{ partial "meta-twitter" . }}
 
     {{ partial "meta-facebook" . }}
 
     <!-- Generator version for usage tacking -->
     {{ .Hugo.Generator }}
-    <!-- Google Analytics -->
-    
-    {{ template "_internal/google_analytics.html" . }}
 </head>
