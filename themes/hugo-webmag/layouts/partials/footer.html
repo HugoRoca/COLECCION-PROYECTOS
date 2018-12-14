@@ -76,6 +76,16 @@
 </footer>
 <!-- /Footer -->
 
+{{ with .Site.Params.googleAnalytics }}
+  {{ "<!-- Google Analytics -->" | safeHTML }}
+  <script>
+    var _gaq=[['_setAccount','{{ . }}'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+{{ end }}
+
 <!-- jQuery Plugins -->
 <script src="/js/jquery.js"></script>
 <script src="/js/bootstrap.js"></script>
