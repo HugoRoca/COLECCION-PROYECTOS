@@ -61,10 +61,49 @@
                 <div class="footer-widget">
                     <h3 class="footer-title">Sigueme</h3>
                     <ul class="footer-social">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                        {{ with .Site.Params.github }}
+                        <li><a target="_blank" href="{{ . }}" title="{{ . }}"><i class="fa fa-github"></i></a></li>
+                        {{ end }}
+
+                        {{ with .Site.Params.bitbucket }}
+                        <li><a target="_blank" href="{{ . }}" title="{{ . }}"><i class="fa fa-bitbucket"></i></a></li>
+                        {{ end }}
+
+                        {{ with .Site.Params.gitlab }}
+                        <li><a target="_blank" href="{{ . }}" title="{{ . }}"><i class="fa fa-gitlab"></i></a></li>
+                        {{ end }}
+
+                        {{ with .Site.Params.twitter }}
+                        <li><a target="_blank" href="{{ . }}" title="{{ . }}"><i class="fa fa-twitter"></i></a></li>
+                        {{ end }}
+
+                        {{ with .Site.Params.linkedin }}
+                        <li><a target="_blank" href="{{ . }}" title="{{ . }}"><i class="fa fa-linkedin"></i></a></li>
+                        {{ end }}
+
+                        {{ with .Site.Params.stackOverflow }}
+                        <li><a target="_blank" href="{{ . }}" title="{{ . }}"><i class="fa fa-stack-overflow"></i></a></li>
+                        {{ end }}
+
+                        {{ with .Site.Params.googleplus }}
+                        <li><a target="_blank" href="{{ . }}" title="{{ . }}"><i class="fa fa-google-plus"></i></a></li>
+                        {{ end }}
+
+                        {{ with .Site.Params.facebook }}
+                        <li><a target="_blank" href="{{ . }}" title="{{ . }}"><i class="fa fa-facebook"></i></a></li>
+                        {{ end }}
+
+                        {{ with .Site.Params.youtube }}
+                        <li><a target="_blank" href="{{ . }}" title="{{ . }}"><i class="fa fa-youtube"></i></a></li>
+                        {{ end }}
+
+                        {{ with .Site.Params.instagram }}
+                        <li><a target="_blank" href="{{ . }}" title="{{ . }}"><i class="fa fa-instagram"></i></a></li>
+                        {{ end }}
+
+                        {{ with .Site.Params.bitcoin }}
+                        <li><a target="_blank" href="{{ . }}" title="{{ . }}"><i class="fa fa-bitcoin"></i></a></li>
+                        {{ end }}
                     </ul>
                 </div>
             </div>
