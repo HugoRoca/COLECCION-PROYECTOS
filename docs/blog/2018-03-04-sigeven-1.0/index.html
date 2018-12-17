@@ -639,11 +639,13 @@ function DB()
                     <div class="footer-copyright">
                         <span>&copy;
                             Copyright &copy;
-                            <script>document.write(new Date().getFullYear());</script> 
+                            <b id="anioFooter"></b>
                             Todos los derechos reservados <br>
                             Esta plantilla fue hecha <i class="fa fa-heart-o" aria-hidden="true"></i> 
                             por <a href="https://colorlib.com" rel="nofollow noopener noreferrer" target="_blank">Colorlib</a> 
-                            y modificada <a href="https://gohugo.io/news/" rel="nofollow noopener noreferrer" target="_blank"> por goHugo</a> y <a href="https://hugoroca.github.io" rel="nofollow noopener noreferrer" target="_blank">Hugo Roca</a>
+                            y modificada <a href="https://gohugo.io/news/" rel="nofollow noopener noreferrer" target="_blank"> por goHugo</a> y 
+                            <a href="https://hugoroca.github.io" rel="nofollow noopener noreferrer" target="_blank">Hugo Roca</a>
+                            </span>
                     </div>
                 </div>
             </div>
@@ -768,9 +770,14 @@ function DB()
 
 
 
-<script src="/js/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 <script src="/js/bootstrap.js"></script>
 <script src="/js/main.js"></script>
+
+<script>
+$("#anioFooter").html(new Date().getFullYear());
+</script>
 
 </body>
 
