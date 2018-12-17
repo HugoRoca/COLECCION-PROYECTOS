@@ -3,7 +3,7 @@
     {{ range $paginator.Pages }}
         <div class="col-md-12">            
             <div class="post post-row">
-                <a class="post-img" href="{{ .Permalink }}"><img src="{{ .Params.image }}" alt="" style="border: 1px solid"></a>
+                <a class="post-img" href="{{ .Permalink }}" aria-label="{{ .Title }}"><img src="{{ .Params.image }}" alt="" style="border: 1px solid"></a>
                 <div class="post-body">
                     <div class="post-meta">
                         {{ partial "categories.html" . }}
