@@ -13,7 +13,7 @@ categories:
  - Base de datos
 ---
 
-Una forma mas rápida de realizar CRUD's, a tan solo unos clicks. Este es el poderosisimo Entity Framework
+> Una forma mas rápida de realizar CRUD's, a tan solo unos clicks. Este es el poderosisimo Entity Framework
 
 ## Paso 1
 Puedes obtener el codigo fuente de la siguiente forma:
