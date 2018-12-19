@@ -4,6 +4,7 @@ title: "Entity Framework Básico"
 description: "Una forma mas rápida de realizar CRUD's, a tan solo unos clicks. Este es el poderosisimo Entity Framework"
 author: "Hugo Roca"
 image: /images/post/entity-framework-basico.svg
+imageShared: /images/shared/entity-framework-basico.jpg
 tags:
  - SQLSERVER
  - CSharp

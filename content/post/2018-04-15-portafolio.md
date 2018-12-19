@@ -4,6 +4,7 @@ title: "Portafolio Profesional"
 description: "¿Alguna véz haz querido hacer un curriculum profesional usando algo diferente? En esta ocación te traigo el siguiente sistema."
 author: "Hugo Roca"
 image: /images/post/portafolio.svg
+imageShared: /images/shared/portafolio.jpg
 tag:
  - CSharp
  - JQuery
