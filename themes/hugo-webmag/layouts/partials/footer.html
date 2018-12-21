@@ -26,8 +26,8 @@
                         <div class="footer-widget">
                             <h3 class="footer-title">Acerca de mi</h3>
                             <ul class="footer-links">
-                                <li><a href="about.html">Acerca de mi</a></li>
-                                <li><a href="contact.html">Contacts</a></li>
+                                <li><a href="https://hugoroca.github.io/" target="_blank">Acerca de mi</a></li>
+                                <!-- <li><a href="contact.html">Contacts</a></li> -->
                             </ul>
                         </div>
                     </div>
@@ -131,10 +131,16 @@
 <script src="/js/jquery.min.js"></script>
 <script src="/js/bootstrap.min.js"></script>
 <script src="/js/main.js"></script>
+
 <script>
-$("#anioFooter").html(new Date().getFullYear());
+    $("#anioFooter").html(new Date().getFullYear());
 </script>
 
-</body>
+<!-- <script>
+    $("pre").html(function (index, html) {
+        console.log(html.replace(/^(.*)$/mg, "<span class=\"line\">$1</span>"));
+        return html.replace(/^(.*)$/mg, "<span class=\"line\">$1</span>")
+    });
+    </script> -->
 
 </html>
