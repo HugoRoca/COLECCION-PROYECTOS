@@ -83,6 +83,7 @@ a:focus {
 p {
     margin: 0px 0px 20px;
 }
+<<<<<<< HEAD
 
 ul,
 ol {
@@ -93,6 +94,14 @@ ol {
 
 ul.list-style,
 ol.list-style {
+=======
+/* ul,ol{
+    margin: 0;
+    padding: 0;
+    list-style: none 
+} */
+ul.list-style, ol.list-style {
+>>>>>>> c26de314049d263e1d1e1e917347e9a4db410a3a
     padding-left: 15px;
     margin-bottom: 10px;
 }
@@ -1306,6 +1315,7 @@ textarea.input {
     }
 
     .post.post-row .post-body p {
+<<<<<<< HEAD
         display: none;
     }
 }
@@ -1347,3 +1357,20 @@ pre {
     overflow: visible;
     overflow-x: auto;
 } */
+=======
+        display:none;
+   }
+}
+
+.aside-widget ul,ol{
+    margin: 0;
+    padding: 0;
+    list-style: none 
+}
+
+.footer-widget ul,ol{
+    margin: 0;
+    padding: 0;
+    list-style: none 
+}
+>>>>>>> c26de314049d263e1d1e1e917347e9a4db410a3a
