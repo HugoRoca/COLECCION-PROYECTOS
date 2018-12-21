@@ -31,6 +31,14 @@
     </div>
 </div>
 
+<script>
+$(document).ready(function() {
+  $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
 
 
 {{ partial "footer.html" . }}
