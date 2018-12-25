@@ -15,13 +15,14 @@ categories:
 
 Redis es una gran base de datos para usar con Node.js. Tanto Redis como Node.js comparten convenciones de tipo y modelos de subprocesos similares, lo que lo convierte en una experiencia de desarrollo muy predecible. Al asociar Node.js y Redis, puede lograr una plataforma de desarrollo escalable y productiva.   
 
-### Instalación de Redis en windows
-Para obtener Redis da click al siguiente enlace: https://github.com/dmajkic/redis/downloads
-
 ### Requisitos
 - NodeJS (https://nodejs.org/es/)
 - Redis (https://redis.io/)
 - NPM (https://www.npmjs.com/)
+
+----
+### Instalación de Redis en windows
+Para obtener Redis da click al siguiente enlace: https://github.com/dmajkic/redis/downloads
 
 ----
 ### Creando el Package.json
@@ -32,21 +33,21 @@ Antes de proceder con cualquier instalación de paquetes npm necesitamos crear n
 - Podemos personalizar o simplemente precionar la tecla enter hasta terminar.
 
 Al finalizar tendremos un archivo como este:
-```
-{
-  "name": "nodejs-redis-conecction",
-  "version": "1.0.0",
-  "description": "Connection nodejs with redis for querys",
-  "main": "",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Hugo Roca - hugo.rock20@hotmail.com",
-  "license": "MIT"
-}
-```
+
+<script src="https://gist.github.com/HugoRoca/8997425b507e737ddc2b395cd04491a6.js"></script>
+
 ----
 ### Instalando npm Redis
 Para este caso utilizaremos al paquete IORedis (https://www.npmjs.com/package/ioredis), en la consola de comandos copiamos y pegamos lo siquiente: `npm i ioredis`, una ves terminado se creará una carpeta por defecto `node_modules`, en donde se guardan todas las dependencias.
 
-### Creando la conexión
+### Creando la conexión (get, set)
+Empezaremos creando un archivo de configuración (config.js) en donde estará las credenciales y otras cosas:
+<script src="https://gist.github.com/HugoRoca/598080014996016233d3db17831e996c.js"></script>
+
+Luego, empezamos a crear la conexión, para esta ocación haremos uso de ES6, el nuevo archivo tendra el nombre de "redis-connection.js":
+<script src="https://gist.github.com/HugoRoca/bd8ea1b88ad9d8628d4e3a9a699be60e.js"></script>
+
+
+
+> Para obtener el código completo dar click [aquí](https://github.com/PORTAFOLIO-PROYECTOS/NODE_JS_REDIS_CACHE/archive/master.zip)
+#### Comenta, disfruta y comparte! 
