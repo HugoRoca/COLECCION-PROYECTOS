@@ -40,14 +40,22 @@ Al finalizar tendremos un archivo como este:
 ### Instalando npm Redis
 Para este caso utilizaremos al paquete IORedis (https://www.npmjs.com/package/ioredis), en la consola de comandos copiamos y pegamos lo siquiente: `npm i ioredis`, una ves terminado se creará una carpeta por defecto `node_modules`, en donde se guardan todas las dependencias.
 
+----
 ### Creando la conexión (get, set)
 Empezaremos creando un archivo de configuración (config.js) en donde estará las credenciales y otras cosas:
 <script src="https://gist.github.com/HugoRoca/598080014996016233d3db17831e996c.js"></script>
 
-Luego, empezamos a crear la conexión, para esta ocación haremos uso de ES6, el nuevo archivo tendra el nombre de "redis-connection.js":
+Luego, empezamos a crear la conexión, para esta ocación haremos uso de ES6, el nuevo archivo tendra el nombre de "redis-connection.js", adicional a esto agregaremos dos métodos más que serían asincronos, uno para obtener y el otro para asignar.
 <script src="https://gist.github.com/HugoRoca/bd8ea1b88ad9d8628d4e3a9a699be60e.js"></script>
 
+Creamos el siguiente archivo "redisSet.js" en donde se codificará una función autoejecutala asincrona instanciando al objeto "redis-connection.js".
+<script src="https://gist.github.com/HugoRoca/75570f290bc894011c307a497c07a52b.js"></script>
 
+Hacemos lo mismo que el código de arriba, pero esta vez vamos a obtener lo registrado. Este nuevo archivo tendrá de nombre "redisGet.js".
+<script src="https://gist.github.com/HugoRoca/4d0bb973312967393e3a1eeda675d106.js"></script>
+
+### Ejecutando lo codificado
+Para ejecutar solo hay que tener levantado el Redis, en caso que no sea el caso 
 
 > Para obtener el código completo dar click [aquí](https://github.com/PORTAFOLIO-PROYECTOS/NODE_JS_REDIS_CACHE/archive/master.zip)
 #### Comenta, disfruta y comparte! 
