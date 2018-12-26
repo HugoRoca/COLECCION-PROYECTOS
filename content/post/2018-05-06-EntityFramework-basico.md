@@ -18,7 +18,7 @@ categories:
 ## Paso 1
 Puedes obtener el codigo fuente de la siguiente forma:
 
-1. Clonar [ENTITY-FRAMEWORK-BASICO](https://github.com/PORTAFOLIO-PROYECTOS/ENTITY-FRAMEWORK-BASICO)
+1. Descargar el repositorio [ENTITY-FRAMEWORK-BASICO](https://github.com/PORTAFOLIO-PROYECTOS/ENTITY-FRAMEWORK-BASICO/archive/master.zip)
 2. Abrir la solución y explorar el código fuente
 
 ## Paso 2

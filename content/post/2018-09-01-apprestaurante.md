@@ -30,7 +30,7 @@ categories:
 ### Paso 1
 Puedes obtener el codigo fuente de la siguiente forma:
 
-- Clonar [APPRESTAURANTE](https://github.com/PORTAFOLIO-PROYECTOS/APPRESTAURANTE)
+- Descargar el repositorio [APPRESTAURANTE](https://github.com/PORTAFOLIO-PROYECTOS/APPRESTAURANTE/archive/master.zip)
 - Abrir Visual Studio
 - Buscar la solución y abrir
 - Tambien puedes hacer 'FORK' y abrirlo directo de GitHub

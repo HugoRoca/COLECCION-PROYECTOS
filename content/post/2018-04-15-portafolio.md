@@ -32,7 +32,7 @@ Debes de tener instalado visual studio y sqlsever.
 
 Puedes obtener el codigo fuente de la siguiente forma:
 
-1. Clonar [PORTAFOLIO PROFESIONAL](https://github.com/PORTAFOLIO-PROYECTOS/PORTAFOLIO-PROFESIONAL)
+1. Descargar el repositorio [PORTAFOLIO PROFESIONAL](https://github.com/PORTAFOLIO-PROYECTOS/PORTAFOLIO-PROFESIONAL/archive/master.zip)
 2. Abrir Visual Studio
 3. Buscar la solución y abrir
 4. Tambien puedes hacer 'FORK' y abrirlo directo de GitHub
