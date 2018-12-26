@@ -8,11 +8,11 @@
     <meta http-equiv="Cache-control" content="public">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
-    <meta name="description" content="El rincon de la informática">
+    <meta name="description" content="Redis se utiliza como base de datos y para caché, ya que es súper rápido debido a que los datos se almacenan &#39;en memoria&#39;, a diferencia de otras bases de datos en las que los datos generalmente se almacenan &#39;en disco&#39;.">
     <meta name="keywords" content="[JavaScript jquery C# PHP SQLServer Sistemas Codigo fuente Código fuente]">
     <meta name="author" content="Hugo Roca">
     
-    <title>Js</title>
+    <title>Conexión NodeJS con Redis Cache</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/font-awesome.min.css" />
     <link rel="stylesheet" href="/css/webmag.css">
@@ -21,30 +21,36 @@
     
     <link href="https://hugorocaproyectos.js.org/favicon.png" rel="icon">
 
+     
     
-    <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:image" content="https://hugorocaproyectos.js.org/logo-ban.jpg"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:image" content="https://hugorocaproyectos.js.org/images/shared/nodejs-redis.jpg"/>
+    
  
-    <meta name="twitter:title" content="Js"/>
-    <meta name="twitter:description" content="El rincon de la informática"/>
-    <meta name="twitter:url" content="https://hugorocaproyectos.js.org/tags/js/" />
+    <meta name="twitter:title" content="Conexión NodeJS con Redis Cache"/>
+    <meta name="twitter:description" content="Redis se utiliza como base de datos y para caché, ya que es súper rápido debido a que los datos se almacenan &#39;en memoria&#39;, a diferencia de otras bases de datos en las que los datos generalmente se almacenan &#39;en disco&#39;."/>
+    <meta name="twitter:url" content="https://hugorocaproyectos.js.org/blog/2018-11-01-conexi%C3%B3n-nodejs-con-redis-cache/" />
     <meta name="twitter:site" content="@HuugooRoca"/>
 
     <meta property="og:site_name" content="Hugo Roca | Proyectos - Web" />
-<meta property="og:title" content="Js &middot; " />
-<meta property="og:url" content="https://hugorocaproyectos.js.org/tags/js/" />
+<meta property="og:title" content="Conexión NodeJS con Redis Cache &middot; " />
+<meta property="og:url" content="https://hugorocaproyectos.js.org/blog/2018-11-01-conexi%C3%B3n-nodejs-con-redis-cache/" />
 
     <meta property="article:publisher" content="https://www.facebook.com/huugooroca.Huugoo" />
 
 
-    <meta property="og:type" content="website" />
-    <meta property="og:description" content="El rincon de la informática" />
-
-
-
+<meta property="og:type" content="article" />
+<meta property="og:description" content="Redis se utiliza como base de datos y para caché, ya que es súper rápido debido a que los datos se almacenan &#39;en memoria&#39;, a diferencia de otras bases de datos en las que los datos generalmente se almacenan &#39;en disco&#39;." />
+<meta property="article:published_time" content="2018-11-01T00:00:00Z" />
     
-    <meta property="og:image" content="https://hugorocaproyectos.js.org/logo-ban.jpg" />
+        <meta property="article:tag" content="JS" />
     
+        <meta property="article:tag" content="REDIS" />
+    
+
+
+
+    <meta property="og:image" content="https://hugorocaproyectos.js.org/images/shared/nodejs-redis.jpg" />
 
 
     
@@ -239,43 +245,170 @@
         <button class="nav-aside-close" role="none" aria-label="close-main"><i class="fa fa-times"></i></button>
     </div>
 </div>
-        <div class="page-header">
+
+        <div id="post-header" class="page-header">
+            <div class="background-img" style="background-image: url('/images/post/nodejs-redis.svg');"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-md-10">
-                        <ul class="page-header-breadcrumb">
-                            <li><a href="/">Inicio</a></li>
-                            <li>Js</li>
-                        </ul>
-                        <h1>JS</h1>
+                        <div class="post-meta">
+                            
+    
+        
+        <a class="post-category cat-javascript" href="https://hugorocaproyectos.js.org/categories/javascript/">JavaScript </a>
+        
+        
+        
+        
+        
+    
+
+                            <span class="post-date">Nov 1, 2018</span>
+                        </div>
+                        <h1>Conexión NodeJS con Redis Cache</h1>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-<div class="section section-grey">
+<div class="section">
     <div class="container">
         <div class="row">
-            
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
+            <div class="col-md-8">
+                <div class="section-row sticky-container">
+                    <div class="main-post">
+                        
+                        
+                        
+                        
+
+<blockquote>
+<p>Redis se utiliza como base de datos y para caché, ya que es súper rápido debido a que los datos se almacenan &ldquo;en memoria&rdquo;, a diferencia de otras bases de datos en las que los datos generalmente se almacenan &ldquo;en disco&rdquo;.</p>
+</blockquote>
+
+<p>Redis es una gran base de datos para usar con Node.js. Tanto Redis como Node.js comparten convenciones de tipo y modelos de subprocesos similares, lo que lo convierte en una experiencia de desarrollo muy predecible. Al asociar Node.js y Redis, puede lograr una plataforma de desarrollo escalable y productiva.</p>
+
+<h3 id="requisitos">Requisitos</h3>
+
+<ul>
+<li>NodeJS (<a href="https://nodejs.org/es/">https://nodejs.org/es/</a>)</li>
+<li>Redis (<a href="https://redis.io/">https://redis.io/</a>)</li>
+<li>NPM (<a href="https://www.npmjs.com/">https://www.npmjs.com/</a>)</li>
+</ul>
+
+<hr />
+
+<h3 id="instalación-de-redis-en-windows">Instalación de Redis en windows</h3>
+
+<p>Para obtener Redis da click al siguiente enlace: <a href="https://github.com/dmajkic/redis/downloads">https://github.com/dmajkic/redis/downloads</a></p>
+
+<hr />
+
+<h3 id="creando-el-package-json">Creando el Package.json</h3>
+
+<p>Antes de proceder con cualquier instalación de paquetes npm necesitamos crear nuestro package.json.</p>
+
+<ul>
+<li>Como primer paso creamos una carpeta donde estarán todos nuestros archivos.</li>
+<li>Luego, levantar la ventana de comandos dentro de la carpeta y ejecutar el siguiente comando <code>npm init</code>.</li>
+<li>Podemos personalizar o simplemente precionar la tecla enter hasta terminar.</li>
+</ul>
+
+<p>Al finalizar tendremos un archivo como este:</p>
+
+<script src="https://gist.github.com/HugoRoca/8997425b507e737ddc2b395cd04491a6.js"></script>
+
+<hr />
+
+<h3 id="instalando-npm-redis">Instalando npm Redis</h3>
+
+<p>Para este caso utilizaremos al paquete IORedis (<a href="https://www.npmjs.com/package/ioredis">https://www.npmjs.com/package/ioredis</a>), en la consola de comandos copiamos y pegamos lo siquiente: <code>npm i ioredis</code>, una ves terminado se creará una carpeta por defecto <code>node_modules</code>, en donde se guardan todas las dependencias.</p>
+
+<hr />
+
+<h3 id="creando-la-conexión-get-set">Creando la conexión (get, set)</h3>
+
+<p>Empezaremos creando un archivo de configuración (config.js) en donde estará las credenciales y otras cosas:
+<script src="https://gist.github.com/HugoRoca/598080014996016233d3db17831e996c.js"></script></p>
+
+<p>Luego, empezamos a crear la conexión, para esta ocación haremos uso de ES6, el nuevo archivo tendra el nombre de &ldquo;redis-connection.js&rdquo;, adicional a esto agregaremos dos métodos más que serían asincronos, uno para obtener y el otro para asignar.
+<script src="https://gist.github.com/HugoRoca/bd8ea1b88ad9d8628d4e3a9a699be60e.js"></script></p>
+
+<p>Creamos el siguiente archivo &ldquo;redisSet.js&rdquo; en donde se codificará una función autoejecutala asincrona instanciando al objeto &ldquo;redis-connection.js&rdquo;.
+<script src="https://gist.github.com/HugoRoca/75570f290bc894011c307a497c07a52b.js"></script></p>
+
+<p>Hacemos lo mismo que el código de arriba, pero esta vez vamos a obtener lo registrado. Este nuevo archivo tendrá de nombre &ldquo;redisGet.js&rdquo;.
+<script src="https://gist.github.com/HugoRoca/4d0bb973312967393e3a1eeda675d106.js"></script></p>
+
+<h3 id="ejecutando-lo-codificado">Ejecutando lo codificado</h3>
+
+<ul>
+<li>Para ejecutar solo hay que tener levantado el Redis.</li>
+<li>Ejecutar la siguiente línea <code>node redisSet.js</code> en la consola
+
+<ul>
+<li>Esto registrará en redis el JSON.</li>
+</ul></li>
+<li>Para obtener lo registrado ejecutar la siguiente línea <code>node redisGet.js</code>
+
+<ul>
+<li>Esto retornará el JSON registrado pero en formato STRING, simplemente formateamos a json(<code>JSON.parse()</code>) y listo!</li>
+</ul></li>
+</ul>
+
+<blockquote>
+<p>Para obtener el código completo dar click <a href="https://github.com/PORTAFOLIO-PROYECTOS/NODE_JS_REDIS_CACHE/archive/master.zip">aquí</a></p>
+
+<h4 id="comenta-disfruta-y-comparte">Comenta, disfruta y comparte!</h4>
+</blockquote>
+
+                    </div>
+                </div>
+
+                <div class="section-row">
                     
-                    <div class="col-md-4">
-                        <div class="post">
-                            <a class="post-img" href="/blog/2018-11-01-conexi%C3%B3n-nodejs-con-redis-cache/"><img src="/images/post/nodejs-redis.svg" alt=""></a>
-                            <div class="post-body">
-                                <div class="post-meta">
-                                    
+                    <div class="post-comments">
+                        <div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+      
+      
+      
+      if (window.location.hostname == "localhost")
+          return;
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var disqus_shortname = 'hugorocaproyectos';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4">
+                <div class="aside-widget text-center">
+    <a href="#" style="display: inline-block;margin: auto;">
+        <img class="img-responsive" src="/ad-1.svg" alt="">
+    </a>
+</div>
+
+
+    
+        <div class="aside-widget">
+            <div class="section-title">
+                <h2>Post Recientes</h2>
+            </div>
+            
+            
+                
+                    <div class="post post-thumb">
+                        <a class="post-img" href="/blog/2018-11-01-conexi%C3%B3n-nodejs-con-redis-cache/" aria-label="Conexión NodeJS con Redis Cache"><img src="/images/post/nodejs-redis.svg" alt=""></a>
+                        <div class="post-body">
+                            <div class="post-meta">
+                                
     
         
         <a class="post-category cat-javascript" href="https://hugorocaproyectos.js.org/categories/javascript/">JavaScript </a>
@@ -286,19 +419,19 @@
         
     
 
-                                    <span class="post-date">Nov 1, 2018</span>
-                                </div>
-                                <h3 class="post-title"><a href="blog-post.html">Conexión NodeJS con Redis Cache</a></h3>
+                                <span class="post-date">Nov 1, 2018</span>
                             </div>
+                            <h3 class="post-title"><a href="/blog/2018-11-01-conexi%C3%B3n-nodejs-con-redis-cache/">Conexión NodeJS con Redis Cache</a></h3>
                         </div>
                     </div>
-                    
-                    <div class="col-md-4">
-                        <div class="post">
-                            <a class="post-img" href="/blog/2018-10-02-gr%C3%A1ficos-con-d3js/"><img src="/images/post/d3js.svg" alt=""></a>
-                            <div class="post-body">
-                                <div class="post-meta">
-                                    
+                
+            
+                
+                    <div class="post post-thumb">
+                        <a class="post-img" href="/blog/2018-10-02-gr%C3%A1ficos-con-d3js/" aria-label="Gráficos con D3JS"><img src="/images/post/d3js.svg" alt=""></a>
+                        <div class="post-body">
+                            <div class="post-meta">
+                                
     
         
         <a class="post-category cat-javascript" href="https://hugorocaproyectos.js.org/categories/javascript/">JavaScript </a>
@@ -309,143 +442,128 @@
         
     
 
-                                    <span class="post-date">Oct 2, 2018</span>
-                                </div>
-                                <h3 class="post-title"><a href="blog-post.html">Gráficos con D3JS</a></h3>
+                                <span class="post-date">Oct 2, 2018</span>
                             </div>
+                            <h3 class="post-title"><a href="/blog/2018-10-02-gr%C3%A1ficos-con-d3js/">Gráficos con D3JS</a></h3>
                         </div>
                     </div>
-                    
-                    <div class="col-md-4">
-                        <div class="post">
-                            <a class="post-img" href="/blog/2018-09-01-app-restaurante/"><img src="/images/post/apprestaurante.svg" alt=""></a>
-                            <div class="post-body">
-                                <div class="post-meta">
-                                    
-    
-        
-        <a class="post-category cat-javascript" href="https://hugorocaproyectos.js.org/categories/javascript/">JavaScript </a>
-        
-        
-        
-        
-        
-    
-        
-        
-        
-        <a class="post-category cat-csharp" href="https://hugorocaproyectos.js.org/categories/c-sharp/">C Sharp </a>
-        
-        
-        
-    
-        
-        
-        <a class="post-category cat-sistemas" href="https://hugorocaproyectos.js.org/categories/sistemas/">Sistemas</a>
-        
-        
-        
-        
-    
-
-                                    <span class="post-date">Sep 1, 2018</span>
-                                </div>
-                                <h3 class="post-title"><a href="blog-post.html">APP Restaurante</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-4">
-                        <div class="post">
-                            <a class="post-img" href="/blog/2018-03-30-sigeven-2.0/"><img src="/images/post/sigeven2.0.svg" alt=""></a>
-                            <div class="post-body">
-                                <div class="post-meta">
-                                    
-    
-        
-        <a class="post-category cat-javascript" href="https://hugorocaproyectos.js.org/categories/javascript/">JavaScript </a>
-        
-        
-        
-        
-        
-    
-        
-        
-        
-        
-        
-        <a class="post-category cat-php" href="https://hugorocaproyectos.js.org/categories/php/">PHP </a>
-        
-    
-        
-        
-        <a class="post-category cat-sistemas" href="https://hugorocaproyectos.js.org/categories/sistemas/">Sistemas</a>
-        
-        
-        
-        
-    
-
-                                    <span class="post-date">Mar 30, 2018</span>
-                                </div>
-                                <h3 class="post-title"><a href="blog-post.html">SIGEVEN 2.0</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-4">
-                        <div class="post">
-                            <a class="post-img" href="/blog/2018-03-04-sigeven-1.0/"><img src="/images/post/sigeven1.0.svg" alt=""></a>
-                            <div class="post-body">
-                                <div class="post-meta">
-                                    
-    
-        
-        <a class="post-category cat-javascript" href="https://hugorocaproyectos.js.org/categories/javascript/">JavaScript </a>
-        
-        
-        
-        
-        
-    
-        
-        
-        
-        
-        
-        <a class="post-category cat-php" href="https://hugorocaproyectos.js.org/categories/php/">PHP </a>
-        
-    
-        
-        
-        <a class="post-category cat-sistemas" href="https://hugorocaproyectos.js.org/categories/sistemas/">Sistemas</a>
-        
-        
-        
-        
-    
-
-                                    <span class="post-date">Mar 4, 2018</span>
-                                </div>
-                                <h3 class="post-title"><a href="blog-post.html">SIGEVEN 1.0</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                    
-                
-            
-                
-            
-                
-            
-                
-            
                 
             
         </div>
+    
+
+
+<div class="aside-widget">
+    <div class="section-title">
+        <h2>Categorías</h2>
+    </div>
+    <div class="category-widget">
+        <ul>
+            
+            
+                
+                
+                
+                
+                <li><a class="cat-basedatos" href="https://hugorocaproyectos.js.org/categories/base-de-datos">Base de datos<span>3</span></a></li>
+                
+                
+            
+            
+                
+                
+                
+                <li><a class="cat-csharp" href="https://hugorocaproyectos.js.org/categories/c-sharp">C Sharp<span>4</span></a></li>
+                
+                
+                
+            
+            
+                
+                <li><a class="cat-javascript" href="https://hugorocaproyectos.js.org/categories/javascript">JavaScript<span>6</span></a></li>
+                
+                
+                
+                
+                
+            
+            
+                
+                
+                
+                
+                
+                <li><a class="cat-php" href="https://hugorocaproyectos.js.org/categories/php">PHP<span>2</span></a></li>
+                
+            
+            
+                
+                
+                <li><a class="cat-sistemas" href="https://hugorocaproyectos.js.org/categories/sistemas">Sistemas<span>4</span></a></li>
+                
+                
+                
+                
+            
+        </ul>
     </div>
 </div>
+
+<div class="aside-widget">
+    <div class="section-title">
+        <h2>Tags</h2>
+    </div>
+    <div class="tags-widget">
+        <ul>
+            
+                <li>
+                    <a href="https://hugorocaproyectos.js.org/tags/angularjs">angularjs</a>
+                </li>
+            
+                <li>
+                    <a href="https://hugorocaproyectos.js.org/tags/csharp">csharp</a>
+                </li>
+            
+                <li>
+                    <a href="https://hugorocaproyectos.js.org/tags/css3">css3</a>
+                </li>
+            
+                <li>
+                    <a href="https://hugorocaproyectos.js.org/tags/html5">html5</a>
+                </li>
+            
+                <li>
+                    <a href="https://hugorocaproyectos.js.org/tags/jquery">jquery</a>
+                </li>
+            
+                <li>
+                    <a href="https://hugorocaproyectos.js.org/tags/js">js</a>
+                </li>
+            
+                <li>
+                    <a href="https://hugorocaproyectos.js.org/tags/php">php</a>
+                </li>
+            
+                <li>
+                    <a href="https://hugorocaproyectos.js.org/tags/poo">poo</a>
+                </li>
+            
+                <li>
+                    <a href="https://hugorocaproyectos.js.org/tags/redis">redis</a>
+                </li>
+            
+                <li>
+                    <a href="https://hugorocaproyectos.js.org/tags/sqlserver">sqlserver</a>
+                </li>
+            
+        </ul>
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <footer id="footer">
     <div class="container">
         <div class="row">

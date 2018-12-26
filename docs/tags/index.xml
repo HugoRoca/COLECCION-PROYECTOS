@@ -59,7 +59,7 @@
     <item>
       <title>Js</title>
       <link>https://hugorocaproyectos.js.org/tags/js/</link>
-      <pubDate>Tue, 02 Oct 2018 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 01 Nov 2018 00:00:00 +0000</pubDate>
       
       <guid>https://hugorocaproyectos.js.org/tags/js/</guid>
       <description></description>
@@ -80,6 +80,15 @@
       <pubDate>Sat, 15 Sep 2018 00:00:00 +0000</pubDate>
       
       <guid>https://hugorocaproyectos.js.org/tags/poo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Redis</title>
+      <link>https://hugorocaproyectos.js.org/tags/redis/</link>
+      <pubDate>Thu, 01 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://hugorocaproyectos.js.org/tags/redis/</guid>
       <description></description>
     </item>
     

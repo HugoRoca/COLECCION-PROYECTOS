@@ -55,7 +55,11 @@ Hacemos lo mismo que el código de arriba, pero esta vez vamos a obtener lo regi
 <script src="https://gist.github.com/HugoRoca/4d0bb973312967393e3a1eeda675d106.js"></script>
 
 ### Ejecutando lo codificado
-Para ejecutar solo hay que tener levantado el Redis, en caso que no sea el caso 
+- Para ejecutar solo hay que tener levantado el Redis.
+- Ejecutar la siguiente línea `node redisSet.js` en la consola
+    - Esto registrará en redis el JSON.
+- Para obtener lo registrado ejecutar la siguiente línea `node redisGet.js`
+    - Esto retornará el JSON registrado pero en formato STRING, simplemente formateamos a json(`JSON.parse()`) y listo!
 
 > Para obtener el código completo dar click [aquí](https://github.com/PORTAFOLIO-PROYECTOS/NODE_JS_REDIS_CACHE/archive/master.zip)
 #### Comenta, disfruta y comparte! 
