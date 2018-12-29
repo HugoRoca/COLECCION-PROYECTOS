@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-md-8">
                 <div class="section-row sticky-container">
-                    <div class="main-post">
+                    <div class="main-post" id="main-post">
                         {{ .Scratch.Set "isHome" false }}
                         {{ $.Scratch.Set "pagetoc" .TableOfContents }}
                         {{ if or (and (isset .Params "toc") (eq .Params.toc true)) (and (not (isset .Params "toc")) (eq .Site.Params.tableOfContents true)) }}
@@ -30,5 +30,11 @@
         </div>
     </div>
 </div>
+<script>
+    var anchors = document.getElementById('main-post').getElementsByTagName('a');
+    for (var i = 0; i < anchors.length; i++) {
+        anchors[i].setAttribute('target', '_blank');
+    }
+</script>
 
 {{ partial "footer.html" . }}

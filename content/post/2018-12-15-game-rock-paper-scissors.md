@@ -12,9 +12,9 @@ categories:
 ---
 > En esta oportunidad crearemos un juego del clásico piedra, papel o tijeras. Utilizaremos JavaScript puro y HTML5 y CSS3 para el diseño.
 
-#### El diseño final del juego es el siguiente:
-![](https://i.ibb.co/306TGPz/Captura.png)
+### &#128512; [Click aquí para ver la Demo](https://hugoroca.github.io/game-n1/index.html) &#129299;
 
+----
 ### Recursos (Imagenes)
 - [Puño](https://www.significadoemojis.es/img/emojis-es/puno-alto-whatsapp-270A.png)
 - [Mano](https://www.significadoemojis.es/img/emojis-es/mano-levantada-whatsapp-270B.png)
