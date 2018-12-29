@@ -6,10 +6,21 @@
     <description>Recent content in Posts on Hugo Roca | Proyectos - Web</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-PE</language>
-    <lastBuildDate>Thu, 01 Nov 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 15 Dec 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://hugorocaproyectos.js.org/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Creación de un juego con JavaScript puro N° 1</title>
+      <link>https://hugorocaproyectos.js.org/blog/2018-12-15-creaci%C3%B3n-de-un-juego-con-javascript-puro-n-1/</link>
+      <pubDate>Sat, 15 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://hugorocaproyectos.js.org/blog/2018-12-15-creaci%C3%B3n-de-un-juego-con-javascript-puro-n-1/</guid>
+      <description>En esta oportunidad crearemos un juego del clásico piedra, papel o tijeras. Utilizaremos JavaScript puro y HTML5 y CSS3 para el diseño.
+ El diseño final del juego es el siguiente: Recursos (Imagenes)  Puño Mano Tijera  Paso 1 (Estructura del diseño) Empezaremos creando el archivo index.html y codificamos lo siguiente: 
+Paso 2 (Estilos) Crearemos una carpeta &amp;ldquo;css&amp;rdquo; para llevar un orden y no tener los archivos sueltos.</description>
+    </item>
     
     <item>
       <title>Conexión NodeJS con Redis Cache</title>
@@ -72,7 +83,7 @@ namespace Log4Net { public class LogHelper { public static log4net.ILog GetLogge
       <guid>https://hugorocaproyectos.js.org/blog/2018-05-06-entity-framework-b%C3%A1sico/</guid>
       <description>Una forma mas rápida de realizar CRUD&amp;rsquo;s, a tan solo unos clicks. Este es el poderosisimo Entity Framework
  Paso 1 Puedes obtener el codigo fuente de la siguiente forma:
- Clonar ENTITY-FRAMEWORK-BASICO Abrir la solución y explorar el código fuente  Paso 2 Ejecutar lo siguiente en SQLServer
+ Descargar el repositorio ENTITY-FRAMEWORK-BASICO Abrir la solución y explorar el código fuente  Paso 2 Ejecutar lo siguiente en SQLServer
 CREATE DATABASE Test GO USE Test GO CREATE TABLE [dbo].[Alumno]( [id] [int] IDENTITY(1,1) NOT NULL, [Nombre] [varchar](50) NOT NULL, [Apellido] [varchar](100) NOT NULL, [Sexo] [int] NOT NULL, [FechaNacimiento] [varchar](10) NOT NULL primary key (id)) GO  Paso 3 Una vez ejecutado el script, abrir el archivo App.</description>
     </item>
     
@@ -116,7 +127,7 @@ CONTENIDO  Login Dashboard ▾ Almacen/ Registro de artículo Registro de catego
       <guid>https://hugorocaproyectos.js.org/blog/2018-03-04-sigeven-1.0/</guid>
       <description>En esta oportunidad les presento un sistema de gestión de ventas para un puesto de ventas, podrás registrar ventas diarias, gastos, ingresos, registro de proveedores e incluso realizar reportes. Desarrollado en AngularJS, PHP y MySql, maquetado con bootstrap.
 Paso 1 Puedes obtener el codigo fuente de la siguiente forma:
- Clonar Sigeven 1.0 Copiarlo a un server WAMP, XAMPP o APACHE  Árbol de archivos
+ Descargar el repositorio Sigeven 1.0 Copiarlo a un server WAMP, XAMPP o APACHE  Árbol de archivos
 ▾ App/ ▾ private/ ▾ articulo/ articulo.</description>
     </item>
     

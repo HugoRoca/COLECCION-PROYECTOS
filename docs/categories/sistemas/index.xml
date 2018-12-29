@@ -51,7 +51,7 @@ CONTENIDO  Login Dashboard ▾ Almacen/ Registro de artículo Registro de catego
       <guid>https://hugorocaproyectos.js.org/blog/2018-03-04-sigeven-1.0/</guid>
       <description>En esta oportunidad les presento un sistema de gestión de ventas para un puesto de ventas, podrás registrar ventas diarias, gastos, ingresos, registro de proveedores e incluso realizar reportes. Desarrollado en AngularJS, PHP y MySql, maquetado con bootstrap.
 Paso 1 Puedes obtener el codigo fuente de la siguiente forma:
- Clonar Sigeven 1.0 Copiarlo a un server WAMP, XAMPP o APACHE  Árbol de archivos
+ Descargar el repositorio Sigeven 1.0 Copiarlo a un server WAMP, XAMPP o APACHE  Árbol de archivos
 ▾ App/ ▾ private/ ▾ articulo/ articulo.</description>
     </item>
     
