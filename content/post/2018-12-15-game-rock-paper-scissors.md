@@ -42,7 +42,11 @@ Agregar archivo `game.js`, aquí estará la funcionalidad general del juego.
 Y para terminar, agregaremos un archivo `app.js`, aquí crearemos un funcion autoejecutable:
 <script src="https://gist.github.com/HugoRoca/400e23f5de176ef6099794d884eb0601.js"></script>
 
+Para probar el resultado final, no esta de más decir que solo hay que dar doble click a `index.html` y listo!
+
 ### Creditos 
 - whatsdev [(YouTube)](https://www.youtube.com/channel/UC0tRdbXVDbhaRvZPKsRgmxg)
 
 > Para obtener el código completo dar click [aquí.](https://github.com/PORTAFOLIO-PROYECTOS/JAVASCRIPT-GAME-ROCK-PAPER-SCISSORS/archive/master.zip)
+
+#### Comenta, disfruta y comparte! 
