@@ -24,89 +24,25 @@ categories:
 
 ## Paso 1 (Estructura del diseño)
 Empezaremos creando el archivo `index.html` y codificamos lo siguiente:
-
-```
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Rock Paper Scissors Game</title>
-</head>
-<body>
-    <header>
-        <h1>Rock Paper Scissors</h1>  
-    </header>
-
-    <div class="score-board">
-        <div id="user-label" class="badge">user</div>
-        <div id="computer-label" class="badge">comp</div>
-        <span id="user-score">0</span>&nbsp;:&nbsp;<span id="computer-score">0</span>
-    </div>
-
-    <div class="result">
-        <p>Paper covers rock. You win!</p>
-    </div>
-
-    <div class="choices">
-        <div class="choice" id="r">
-            <img src="images/rock.png" alt="">
-        </div>
-        <div class="choice" id="p">
-            <img src="images/paper.png" alt="">
-        </div>
-        <div class="choice" id="s">
-            <img src="images/scissors.png" alt="">
-        </div>
-    </div>
-
-    <p id="action-message">Make your move</p>
-
-    <script src="js/util.js"></script>
-    <script src="js/game.js"></script>
-    <script src="js/app.js"></script>
-</body>
-</html>
-```
+<script src="https://gist.github.com/HugoRoca/fe41000f0b4c632a504660fb8c026be7.js"></script>
 
 ----
 ## Paso 2 (Estilos)
-Para 
+Crearemos una carpeta "css" para llevar un orden y no tener los archivos sueltos. Dentro de la carpeta agregar un archivo `style.css` y codificar lo siguiente:
+<script src="https://gist.github.com/HugoRoca/e6a806ce99d15889c20ac9f5919876f5.js"></script>
 
-
+----
+## Paso 3 (funcionalidad)
 Luego, agregamos una carpeta a la cual llamaremos "js" que es en donde se crearán los archivos javaScript, el primer archivo que crearemos sera `utils.js". En este archivo estarán todos los recursos que reutilizaremos.
-```
-"use strict";
+<script src="https://gist.github.com/HugoRoca/fb8f1ebf90cc501fe9ffaf3bcae97086.js"></script>
 
-class Utils {
-    getElement(value) {
-        return document.getElementById(value);
-    }
+Agregar archivo `game.js`, aquí estará la funcionalidad general del juego.
+<script src="https://gist.github.com/HugoRoca/0b59031305017d28929096716b66e95f.js"></script>
 
-    getQuerySelector(value) {
-        return document.querySelector(value);
-    }
+Y para terminar, agregaremos un archivo `app.js`, aquí crearemos un funcion autoejecutable:
+<script src="https://gist.github.com/HugoRoca/400e23f5de176ef6099794d884eb0601.js"></script>
 
-    getComputerChoice() {
-        const choices = ["r", "p", "s"];
-        const randonNumber = Math.floor(Math.random() * 3);
-        return choices[randonNumber];
-    }
+### Creditos 
+- whatsdev [(YouTube)](https://www.youtube.com/channel/UC0tRdbXVDbhaRvZPKsRgmxg)
 
-    convertToWord(letter) {
-        if (letter === "r") return "Rock";
-        if (letter === "p") return "Paper";
-        return "Scissors"
-    }
-
-    addClassEffect(choice, _class) {
-        const etiq = this.getElement(choice);
-        etiq.classList.add(_class);
-        setTimeout(() => {
-            etiq.classList.remove(_class);
-        }, 300);
-    }
-}
-```
+> Para obtener el código completo dar click [aquí.](https://github.com/PORTAFOLIO-PROYECTOS/JAVASCRIPT-GAME-ROCK-PAPER-SCISSORS/archive/master.zip)
