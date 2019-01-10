@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://hugorocaproyectos.js.org/blog/2019-01-10-conexi%C3%B3n-nodejs-con-sqlserver/</loc>
+    <lastmod>2019-01-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://hugorocaproyectos.js.org/blog/2018-12-15-creaci%C3%B3n-de-un-juego-con-javascript-puro-n-1/</loc>
     <lastmod>2018-12-15T00:00:00+00:00</lastmod>
   </url>
@@ -105,13 +110,13 @@
   
   <url>
     <loc>https://hugorocaproyectos.js.org/</loc>
-    <lastmod>2018-12-15T00:00:00+00:00</lastmod>
+    <lastmod>2019-01-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://hugorocaproyectos.js.org/categories/javascript/</loc>
-    <lastmod>2018-12-15T00:00:00+00:00</lastmod>
+    <lastmod>2019-01-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -123,18 +128,18 @@
   
   <url>
     <loc>https://hugorocaproyectos.js.org/tags/js/</loc>
-    <lastmod>2018-12-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hugorocaproyectos.js.org/categories/php/</loc>
-    <lastmod>2018-03-30T00:00:00+00:00</lastmod>
+    <lastmod>2019-01-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://hugorocaproyectos.js.org/tags/php/</loc>
+    <lastmod>2018-03-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hugorocaproyectos.js.org/categories/php/</loc>
     <lastmod>2018-03-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -147,7 +152,7 @@
   
   <url>
     <loc>https://hugorocaproyectos.js.org/post/</loc>
-    <lastmod>2018-12-15T00:00:00+00:00</lastmod>
+    <lastmod>2019-01-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -165,7 +170,7 @@
   
   <url>
     <loc>https://hugorocaproyectos.js.org/tags/sqlserver/</loc>
-    <lastmod>2018-09-01T00:00:00+00:00</lastmod>
+    <lastmod>2019-01-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -6,10 +6,21 @@
     <description>Recent content in Js on Hugo Roca | Proyectos - Web</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-PE</language>
-    <lastBuildDate>Sat, 15 Dec 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 10 Jan 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://hugorocaproyectos.js.org/tags/js/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Conexión NodeJS con SQLServer</title>
+      <link>https://hugorocaproyectos.js.org/blog/2019-01-10-conexi%C3%B3n-nodejs-con-sqlserver/</link>
+      <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://hugorocaproyectos.js.org/blog/2019-01-10-conexi%C3%B3n-nodejs-con-sqlserver/</guid>
+      <description>Microsoft SQL Server es un sistema de gestión de base de datos relacional (RDBMS) producido por Microsoft. Su principal lenguaje de consulta es Transact-SQL, una aplicación de las normas ANSI / ISO estándar Structured Query Language (SQL) utilizado por ambas Microsoft y Sybase.
+ Usaremos clases y funcion asincronas con promesas en javascript ES6.
+Creando el Package.json Antes de proceder con cualquier instalación de paquetes npm necesitamos crear nuestro package.</description>
+    </item>
     
     <item>
       <title>Creación de un juego con JavaScript puro N° 1</title>
