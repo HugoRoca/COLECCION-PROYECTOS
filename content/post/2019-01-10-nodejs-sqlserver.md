@@ -50,6 +50,9 @@ Creamos un nuevo archivo al cual nombraremos como `sql.js`, en este archivo crea
 Para ejecutar crearemos una funcion asincrona autoejecutable de la siguiente manera:
 <script src="https://gist.github.com/HugoRoca/696e0b9876e7da91c70e8bb8915ff88c.js"></script>
 
+Ejecución de store procedure.
+<script src="https://gist.github.com/HugoRoca/e565c778dfa40a3b67e69669b5819e57.js"></script>
+
 - Para verlo en acción solo debemos de ejecutar lo siguiente en la consola: `node [nombre-archivo].js` 
 - El retorno siempre es en formato JSON
 
