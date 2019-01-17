@@ -8,11 +8,11 @@
     <meta http-equiv="Cache-control" content="public">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
-    <meta name="description" content="¿Alguna véz haz querido hacer un curriculum profesional usando algo diferente? En esta ocación te traigo el siguiente sistema.">
+    <meta name="description" content="Microsoft SQL Server es un sistema de gestión de base de datos relacional (RDBMS) producido por Microsoft. Su principal lenguaje de consulta es Transact-SQL, una aplicación de las normas ANSI / ISO estándar Structured Query Language (SQL) utilizado por ambas Microsoft y Sybase.">
     <meta name="keywords" content="[JavaScript jquery C# PHP SQLServer Sistemas Codigo fuente Código fuente]">
     <meta name="author" content="Hugo Roca">
     
-    <title>Portafolio Profesional</title>
+    <title>Conexión NodeJS con SQLServer</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/font-awesome.min.css" />
     <link rel="stylesheet" href="/css/webmag.css">
@@ -24,29 +24,33 @@
      
     
     <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:image" content="https://hugorocaproyectos.js.org/images/shared/portafolio.jpg"/>
+    <meta name="twitter:image" content="https://hugorocaproyectos.js.org/images/shared/nodejs-sqlserver.jpg"/>
     
  
-    <meta name="twitter:title" content="Portafolio Profesional"/>
-    <meta name="twitter:description" content="¿Alguna véz haz querido hacer un curriculum profesional usando algo diferente? En esta ocación te traigo el siguiente sistema."/>
-    <meta name="twitter:url" content="https://hugorocaproyectos.js.org/blog/2018-04-15-portafolio-profesional/" />
+    <meta name="twitter:title" content="Conexión NodeJS con SQLServer"/>
+    <meta name="twitter:description" content="Microsoft SQL Server es un sistema de gestión de base de datos relacional (RDBMS) producido por Microsoft. Su principal lenguaje de consulta es Transact-SQL, una aplicación de las normas ANSI / ISO estándar Structured Query Language (SQL) utilizado por ambas Microsoft y Sybase."/>
+    <meta name="twitter:url" content="https://hugorocaproyectos.js.org/blog/2019-01-10-conexi%C3%B3n-nodejs-con-sqlserver/" />
     <meta name="twitter:site" content="@HuugooRoca"/>
 
     <meta property="og:site_name" content="Hugo Roca | Proyectos - Web" />
-<meta property="og:title" content="Portafolio Profesional &middot; " />
-<meta property="og:url" content="https://hugorocaproyectos.js.org/blog/2018-04-15-portafolio-profesional/" />
+<meta property="og:title" content="Conexión NodeJS con SQLServer &middot; " />
+<meta property="og:url" content="https://hugorocaproyectos.js.org/blog/2019-01-10-conexi%C3%B3n-nodejs-con-sqlserver/" />
 
     <meta property="article:publisher" content="https://www.facebook.com/huugooroca.Huugoo" />
 
 
 <meta property="og:type" content="article" />
-<meta property="og:description" content="¿Alguna véz haz querido hacer un curriculum profesional usando algo diferente? En esta ocación te traigo el siguiente sistema." />
-<meta property="article:published_time" content="2018-04-15T00:00:00Z" />
+<meta property="og:description" content="Microsoft SQL Server es un sistema de gestión de base de datos relacional (RDBMS) producido por Microsoft. Su principal lenguaje de consulta es Transact-SQL, una aplicación de las normas ANSI / ISO estándar Structured Query Language (SQL) utilizado por ambas Microsoft y Sybase." />
+<meta property="article:published_time" content="2019-01-10T00:00:00Z" />
+    
+        <meta property="article:tag" content="JS" />
+    
+        <meta property="article:tag" content="SQLSERVER" />
     
 
 
 
-    <meta property="og:image" content="https://hugorocaproyectos.js.org/images/shared/portafolio.jpg" />
+    <meta property="og:image" content="https://hugorocaproyectos.js.org/images/shared/nodejs-sqlserver.jpg" />
 
 
     
@@ -243,7 +247,7 @@
 </div>
 
         <div id="post-header" class="page-header">
-            <div class="background-img" style="background-image: url('/images/post/portafolio.svg');"></div>
+            <div class="background-img" style="background-image: url('/images/post/nodejs-sqlserver.svg');"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-md-10">
@@ -258,26 +262,10 @@
         
         
     
-        
-        
-        
-        <a class="post-category cat-csharp" href="https://hugorocaproyectos.js.org/categories/c-sharp/">C Sharp </a>
-        
-        
-        
-    
-        
-        
-        <a class="post-category cat-sistemas" href="https://hugorocaproyectos.js.org/categories/sistemas/">Sistemas</a>
-        
-        
-        
-        
-    
 
-                            <span class="post-date">Apr 15, 2018</span>
+                            <span class="post-date">Jan 10, 2019</span>
                         </div>
-                        <h1>Portafolio Profesional</h1>
+                        <h1>Conexión NodeJS con SQLServer</h1>
                     </div>
                 </div>
             </div>
@@ -294,69 +282,73 @@
                         
                         
 
-<p>¿Alguna véz haz querido hacer un curriculum profesional usando algo diferente? En esta ocación te traigo el siguiente sistema.</p>
+<blockquote>
+<p>Microsoft SQL Server es un sistema de gestión de base de datos relacional (RDBMS) producido por Microsoft. Su principal lenguaje de consulta es Transact-SQL, una aplicación de las normas ANSI / ISO estándar Structured Query Language (SQL) utilizado por ambas Microsoft y Sybase.</p>
+</blockquote>
 
-<p>Sistema de administración de portafolio desarrollado en C#, MVC5, Entity Framework, JQuery, Bootstrap. Esta formado en dos partes:</p>
+<p>Usaremos clases y funcion asincronas con promesas en javascript ES6.</p>
+
+<h3 id="creando-el-package-json">Creando el Package.json</h3>
+
+<p>Antes de proceder con cualquier instalación de paquetes npm necesitamos crear nuestro package.json.</p>
 
 <ul>
-<li>Lo que se muestra al usuario final (Front)</li>
-<li>Parte administrable
-
-<ul>
-<li>Edición de datos</li>
-<li>Registro y edición de estudios</li>
-<li>Registro y eliminación de hablidades</li>
-<li>Registro y edición de experiencia</li>
-<li>Edición de testimonios</li>
-</ul></li>
+<li>Como primer paso creamos una carpeta donde estarán todos nuestros archivos.</li>
+<li>Luego, levantar la ventana de comandos dentro de la carpeta y ejecutar el siguiente comando <code>npm init</code>.</li>
+<li>Podemos personalizar o simplemente precionar la tecla enter hasta terminar.</li>
 </ul>
 
-<h2 id="paso-1">Paso 1</h2>
+<p>Al finalizar tendremos un archivo como este:</p>
 
-<p>Debes de tener instalado visual studio y sqlsever.</p>
+<script src="https://gist.github.com/HugoRoca/8997425b507e737ddc2b395cd04491a6.js"></script>
 
-<p>Puedes obtener el codigo fuente de la siguiente forma:</p>
+<hr />
 
-<ol>
-<li>Descargar el repositorio <a href="https://github.com/PORTAFOLIO-PROYECTOS/PORTAFOLIO-PROFESIONAL/archive/master.zip">PORTAFOLIO PROFESIONAL</a></li>
-<li>Abrir Visual Studio</li>
-<li>Buscar la solución y abrir</li>
-<li>Tambien puedes hacer &lsquo;FORK&rsquo; y abrirlo directo de GitHub</li>
-</ol>
+<h3 id="instalando-npm-mssql">Instalando npm mssql</h3>
 
-<h2 id="paso-2">Paso 2</h2>
+<p>Para este caso utilizaremos al paquete mssql (<a href="https://www.npmjs.com/package/mssql">https://www.npmjs.com/package/mssql</a>), en la consola de comandos copiamos y pegamos lo siquiente: <code>npm i mssql</code>, una ves terminado se creará una carpeta por defecto <code>node_modules</code>, en donde se guardan todas las dependencias.</p>
 
-<p>Ejecutar el script de base de datos <code>App/dataBase/base_de_datos.sql.sql</code> en SQLServer.</p>
+<hr />
 
-<h2 id="paso-3">Paso 3</h2>
+<h3 id="creando-tabla-y-store-procedure">Creando tabla y store procedure</h3>
 
-<p>Configurar el archivo <code>App/Portafolio.Web/Web.config</code></p>
+<p>En SQLServer ejecutamos el siguiente script, que nos creará las tablas, creará datos y store procedures.
+<script src="https://gist.github.com/HugoRoca/22520d52596da23f5645efc3d2d64932.js"></script></p>
 
-<pre><code>&lt;!-- 
-Si tienes configurado el sqlserver con windows autentication solo debes de 
-cambiar el data source por =&gt; &quot;.&quot;; En caso que tenga un usuario y contraseña 
-solamente agregarlo
---&gt;
-&lt;connectionStrings&gt;
-    &lt;add name=&quot;PortafolioContext&quot; 
-        connectionString=&quot;
-            data source=HUGOROCA;
-            initial catalog=portafolio;
-            integrated security=True;
-            MultipleActiveResultSets=True;
-            App=EntityFramework&quot; 
-        providerName=&quot;System.Data.SqlClient&quot; /&gt;
-&lt;/connectionStrings&gt;
-</code></pre>
+<hr />
 
-<h2 id="paso-4">Paso 4</h2>
+<h3 id="paso-1-archivo-de-configuración">Paso 1: Archivo de configuración</h3>
 
-<p>Ejecutar el proyecto, para acceder al administrador solamente debes de agregar a la URL &ldquo;/Admin&rdquo;</p>
+<p>Empezaremos creando un archivo al cual nombraremos como <code>config.js</code>, en este archivo se encontrará la cadena de conexión.
+<script src="https://gist.github.com/HugoRoca/4a810876a78cd81d6af38a971ba1fc4a.js"></script></p>
 
-<pre><code>Ejemplo: http://localhost:666/admin
-</code></pre>
+<hr />
 
-<p>Comenta, disfruta y comparte!</p>
+<h3 id="paso-2-conexión-y-operaciones">Paso 2: Conexión y operaciones</h3>
+
+<p>Creamos un nuevo archivo al cual nombraremos como <code>sql.js</code>, en este archivo crearemos la conexión y las operaciones básicas (select, exec store-procedure).
+<script src="https://gist.github.com/HugoRoca/20e7fcc9f5f06d5a04e0b6ab7d5163ae.js"></script></p>
+
+<hr />
+
+<h3 id="paso-3-ejecuciones">Paso 3: Ejecuciones</h3>
+
+<p>Para ejecutar crearemos una funcion asincrona autoejecutable de la siguiente manera:
+<script src="https://gist.github.com/HugoRoca/696e0b9876e7da91c70e8bb8915ff88c.js"></script></p>
+
+<p>Ejecución de store procedure.
+<script src="https://gist.github.com/HugoRoca/e565c778dfa40a3b67e69669b5819e57.js"></script></p>
+
+<ul>
+<li>Para verlo en acción solo debemos de ejecutar lo siguiente en la consola: <code>node [nombre-archivo].js</code></li>
+<li>El retorno siempre es en formato JSON</li>
+</ul>
+
+<blockquote>
+<p>Para obtener el código completo dar click <a href="https://github.com/PORTAFOLIO-PROYECTOS/NODE_JS_SQLSERVER/archive/master.zip">aquí</a></p>
+
+<h4 id="comenta-disfruta-y-comparte">Comenta, disfruta y comparte!</h4>
+</blockquote>
 
                     </div>
                 </div>
