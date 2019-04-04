@@ -13,7 +13,38 @@ categories:
 
 > A una promesa, como su propio nombre lo dice, es simplemente un objeto que puede o no devolver algún valor en la línea de tiempo presente y futuro. Me gusta describir una promesa como una especie de Karma: Tú haces algo, y en consecuencia obtendrás algo, ahora o en un futuro. Esto aplica igual a las promesas, tu ejecutas código asíncrono y obtienes la promesa de que obtendrás una respuesta, que puede ser en ese instante o en un futuro.
 
-Tenemos el siguiente código que muestra por consola la lista de post y comentario por cada una de ellas.
+```
+// sintaxis de una promesa
+let promise = new Promise(function(resolve, reject) {
+  // executor (the producing code, "singer")
+});
+```
+
+El `promise` objeto resultante tiene propiedades internas:
+
+- `state` - inicialmente "pendiente", luego cambia a "cumplido" o "rechazado",
+- `result` - Un valor arbitrario de su elección, inicialmente undefined.
+
+Cuando el ejecutor finaliza el trabajo, debe llamar a una de las funciones que obtiene como argumentos:
+
+- `resolve(value)` - para indicar que el trabajo terminó con éxito:
+    - establece stateque "fulfilled",
+    - establece resulta value.
+- `reject(error)` - para indicar que ocurrió un error:
+    - establece stateque "rejected",
+    - establece resulta error.
+
+
+![promise](https://i.ibb.co/QD7GSkd/promise-resolve-reject.png)
+
+### Problema
+
+Se requiere mostrar por consola los post con sus respectivos comentarios consumiendo la siguientes urls:
+
+ - https://jsonplaceholder.typicode.com/posts
+ - https://jsonplaceholder.typicode.com/comments?postId={id}
+
+La posible solucion que se nos viene a la mente es la siguiente:
 
 ```
 "use strict";
@@ -40,16 +71,52 @@ const request = require("request");
     });
 })();
 ```
-Pero tenemos un problema, el request que esta dentro del bucle `for` no esperara a que responda, eso causaría un enredo, la solución que se plantea será la siguiente en la cual usaremos promesas con funciones asincronas y un forEach asincrono.
+Pero tenemos un problema, el request que esta dentro del bucle `for` no esperara a que responda, eso causaría un enredo, la solución que se plantea será la siguiente en la cual usaremos promesas con funciones asincronas.
 
 ```
 "use strict";
 
 const request = require("request");
 
-async function asyncForEach(array, callback) {
-    for (let index = 0; index < array.length; index++) {
-        await callback(array[index], index, array);
+const config = {
+    url: {
+        post: "https://jsonplaceholder.typicode.com/posts",
+        comments: "https://jsonplaceholder.typicode.com/comments?postId={id}"
     }
 }
+
+async function getPost() {
+    return new Promise((resolve, reject) => {
+        request(config.url.post, (err, res, body) => {
+            if (err) reject(err);
+            resolve(body);
+        })
+    });
+}
+
+async function getComments(id) {
+    let url = config.url.comments.replace("{id}", id);
+    return new Promise((resolve, reject) => {
+        request(url, (err, res, body) => {
+            if (err) reject(err);
+            resolve(body);
+        })
+    });
+}
+
+(async () => {
+    let posts = await getPost();
+
+    for (const key in posts) {
+        const element = posts[key];
+
+        console.log("post", element);
+
+        let comments = await getComments(element.id);
+        console.log("comments", comments);
+    }
+
+})();
 ```
+
+#### Comenta, disfruta y comparte! 
