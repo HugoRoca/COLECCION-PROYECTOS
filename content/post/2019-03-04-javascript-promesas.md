@@ -40,4 +40,16 @@ const request = require("request");
     });
 })();
 ```
-Pero tenemos un problema, el request que esta dentro del bucle `for` no esperara a que responda, eso causará un enredo, la solución que se plantea sera la siguiente usando promesas con funciones asincronas.
+Pero tenemos un problema, el request que esta dentro del bucle `for` no esperara a que responda, eso causaría un enredo, la solución que se plantea será la siguiente en la cual usaremos promesas con funciones asincronas y un forEach asincrono.
+
+```
+"use strict";
+
+const request = require("request");
+
+async function asyncForEach(array, callback) {
+    for (let index = 0; index < array.length; index++) {
+        await callback(array[index], index, array);
+    }
+}
+```
