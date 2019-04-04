@@ -9,7 +9,8 @@
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="description" content="{{ if ne .Description "" }}{{ .Description }}{{ else }}{{ .Site.Params.defaultDescription }}{{ end }}">
-    <meta name="keywords" content="{{ range $index, $element := .Keywords }}{{ if gt $index 0 }},{{ end }}{{ . }}{{ else }}{{ .Site.Params.defaultKeywords }}{{ end }}">
+    <meta name="keywords" 
+        content="{{ range $index, $element := .Keywords }}{{ if gt $index 0 }},{{ end }}{{ . }}{{ else }}{{ .Site.Params.defaultKeywords }}{{ end }}">
     <meta name="author" content="{{ .Site.Params.author }}">
     <!--Titulo-->
     <title>{{ .Title }}</title>
@@ -17,7 +18,7 @@
     <link rel="stylesheet" href="/css/font-awesome.min.css" />
     <link rel="stylesheet" href="/css/webmag.css">
     <link rel="stylesheet" href="/css/nunito.css">
-    
+
     <!-- Favicon -->
     <link href="{{ "/favicon.png" | absURL }}" rel="icon">
 
@@ -28,4 +29,8 @@
     <!-- Generator version for usage tacking -->
     {{ .Hugo.Generator }}
     <script src="//platform-api.sharethis.com/js/sharethis.js#property=5c19d3a913338200118dbadd&product=sticky-share-buttons"></script>
+    
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </head>
