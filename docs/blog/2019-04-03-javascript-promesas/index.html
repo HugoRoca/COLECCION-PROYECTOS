@@ -53,7 +53,7 @@
 
 
     
-    <meta name="generator" content="Hugo 0.42.1" />
+    <meta name="generator" content="Hugo 0.48" />
     <script src="//platform-api.sharethis.com/js/sharethis.js#property=5c19d3a913338200118dbadd&product=sticky-share-buttons"></script>
 </head>
 
@@ -285,11 +285,7 @@
 <p>A una promesa, como su propio nombre lo dice, es simplemente un objeto que puede o no devolver algún valor en la línea de tiempo presente y futuro. Me gusta describir una promesa como una especie de Karma: Tú haces algo, y en consecuencia obtendrás algo, ahora o en un futuro. Esto aplica igual a las promesas, tu ejecutas código asíncrono y obtienes la promesa de que obtendrás una respuesta, que puede ser en ese instante o en un futuro.</p>
 </blockquote>
 
-<pre><code>// sintaxis de una promesa
-let promise = new Promise(function(resolve, reject) {
-  // executor (the producing code, &quot;singer&quot;)
-});
-</code></pre>
+<script src="https://gist.github.com/HugoRoca/1a10f65a97445fa25f23a1dc8e1afc4f.js"></script>
 
 <p>El <code>promise</code> objeto resultante tiene propiedades internas:</p>
 
@@ -321,85 +317,15 @@ let promise = new Promise(function(resolve, reject) {
 
 <p>Se requiere mostrar por consola los post con sus respectivos comentarios consumiendo la siguientes urls:</p>
 
-<pre><code>/*
-post: https://jsonplaceholder.typicode.com/posts
-commets: https://jsonplaceholder.typicode.com/comments?postId={id}
-*/
-</code></pre>
+<script src="https://gist.github.com/HugoRoca/7747acc3bc930d5c05b00d47761a8ae4.js"></script>
 
 <p>La posible solucion que se nos viene a la mente es la siguiente:</p>
 
-<pre><code>&quot;use strict&quot;;
-
-const request = require(&quot;request&quot;);
-
-(async () =&gt; {
-    let url1 = &quot;https://jsonplaceholder.typicode.com/posts&quot;;
-    let url2 = &quot;https://jsonplaceholder.typicode.com/comments?postId={id}&quot;;
-
-    request(url1, (err, res, bodyPost) =&gt; {
-        if (err) console.error(err);
-        console.log(&quot;bodyPost&quot;, bodyPost);
-
-        for (const key in bodyPost) {
-            const element = bodyPost[key];
-            let url = url2.replace(&quot;{id}&quot;, element.id);
-
-            request(url, (e, r, bodyComments) =&gt; {
-                if (e) console.error(e);
-                console.log(&quot;bodyComments&quot;, bodyComments);
-            })
-        }
-    });
-})();
-</code></pre>
+<script src="https://gist.github.com/HugoRoca/3666fb89bbe1789a90708a1be8f8232b.js"></script>
 
 <p>Pero tenemos un problema, el request que esta dentro del bucle <code>for</code> no esperara a que responda, eso causaría un enredo, la solución que se plantea será la siguiente en la cual usaremos promesas con funciones asincronas.</p>
 
-<pre><code>&quot;use strict&quot;;
-
-const request = require(&quot;request&quot;);
-
-const config = {
-    url: {
-        post: &quot;https://jsonplaceholder.typicode.com/posts&quot;,
-        comments: &quot;https://jsonplaceholder.typicode.com/comments?postId={id}&quot;
-    }
-}
-
-async function getPost() {
-    return new Promise((resolve, reject) =&gt; {
-        request(config.url.post, (err, res, body) =&gt; {
-            if (err) reject(err);
-            resolve(body);
-        })
-    });
-}
-
-async function getComments(id) {
-    let url = config.url.comments.replace(&quot;{id}&quot;, id);
-    return new Promise((resolve, reject) =&gt; {
-        request(url, (err, res, body) =&gt; {
-            if (err) reject(err);
-            resolve(body);
-        })
-    });
-}
-
-(async () =&gt; {
-    let posts = JSON.parse(await getPost());
-    
-    for (const key in posts) {
-        const element = posts[key];
-
-        console.log(&quot;post&quot;, element);
-
-        let comments = await getComments(element.id);
-        console.log(&quot;comments&quot;, comments);
-    }
-
-})();
-</code></pre>
+<script src="https://gist.github.com/HugoRoca/a460bd24314e90ff0965e22c137f1ee1.js"></script>
 
 <h4 id="comenta-disfruta-y-comparte">Comenta, disfruta y comparte!</h4>
 
