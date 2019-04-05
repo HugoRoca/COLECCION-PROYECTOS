@@ -41,8 +41,12 @@ Cuando el ejecutor finaliza el trabajo, debe llamar a una de las funciones que o
 
 Se requiere mostrar por consola los post con sus respectivos comentarios consumiendo la siguientes urls:
 
- - https://jsonplaceholder.typicode.com/posts
- - https://jsonplaceholder.typicode.com/comments?postId={id}
+```
+/*
+post: https://jsonplaceholder.typicode.com/posts
+commets: https://jsonplaceholder.typicode.com/comments?postId={id}
+*/
+```
 
 La posible solucion que se nos viene a la mente es la siguiente:
 

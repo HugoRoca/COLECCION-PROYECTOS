@@ -55,11 +55,6 @@
     
     <meta name="generator" content="Hugo 0.42.1" />
     <script src="//platform-api.sharethis.com/js/sharethis.js#property=5c19d3a913338200118dbadd&product=sticky-share-buttons"></script>
-    
-    <link rel="stylesheet" href="/css/hljs.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
-    
-    <script>hljs.initHighlightingOnLoad();</script>
 </head>
 
 <body>
@@ -326,10 +321,11 @@ let promise = new Promise(function(resolve, reject) {
 
 <p>Se requiere mostrar por consola los post con sus respectivos comentarios consumiendo la siguientes urls:</p>
 
-<ul>
-<li><a href="https://jsonplaceholder.typicode.com/posts">https://jsonplaceholder.typicode.com/posts</a></li>
-<li><a href="https://jsonplaceholder.typicode.com/comments?postId={id">https://jsonplaceholder.typicode.com/comments?postId={id</a>}</li>
-</ul>
+<pre><code>/*
+post: https://jsonplaceholder.typicode.com/posts
+commets: https://jsonplaceholder.typicode.com/comments?postId={id}
+*/
+</code></pre>
 
 <p>La posible solucion que se nos viene a la mente es la siguiente:</p>
 
