@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Hugo Roca | Proyectos - Web</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-PE</language>
-    <lastBuildDate>Thu, 10 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 03 Apr 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://hugorocaproyectos.js.org/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Javascript: Promesas</title>
+      <link>https://hugorocaproyectos.js.org/blog/2019-04-03-javascript-promesas/</link>
+      <pubDate>Wed, 03 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://hugorocaproyectos.js.org/blog/2019-04-03-javascript-promesas/</guid>
+      <description>A una promesa, como su propio nombre lo dice, es simplemente un objeto que puede o no devolver algún valor en la línea de tiempo presente y futuro. Me gusta describir una promesa como una especie de Karma: Tú haces algo, y en consecuencia obtendrás algo, ahora o en un futuro. Esto aplica igual a las promesas, tu ejecutas código asíncrono y obtienes la promesa de que obtendrás una respuesta, que puede ser en ese instante o en un futuro.</description>
+    </item>
     
     <item>
       <title>Conexión NodeJS con SQLServer</title>
