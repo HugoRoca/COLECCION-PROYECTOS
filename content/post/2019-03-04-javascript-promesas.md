@@ -105,8 +105,8 @@ async function getComments(id) {
 }
 
 (async () => {
-    let posts = await getPost();
-
+    let posts = JSON.parse(await getPost());
+    
     for (const key in posts) {
         const element = posts[key];
 
