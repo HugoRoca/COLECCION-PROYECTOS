@@ -10,7 +10,7 @@ publishdir = "docs"
 # Disqus
 disqusShortname = "hugorocaproyectos"
 # Tamaño de paginación
-paginate = 4
+paginate = 5
 
 [taxonomies]
   tag = "tags"
