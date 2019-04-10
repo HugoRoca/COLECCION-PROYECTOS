@@ -7,9 +7,9 @@
     {{ if not (eq . 0) }}
         <div class="aside-widget">
             <div class="section-title">
-                <h2>Post Recientes</h2>
+                <h2>Otros temas</h2>
             </div>
-            {{ $pages := where $.Site.Pages "Type" "post" }}
+            {{ $pages := shuffle (where $.Site.Pages "Type" "post") }}
             {{ range first . $pages }}
                 {{ if .IsPage }}
                     <div class="post post-thumb">
