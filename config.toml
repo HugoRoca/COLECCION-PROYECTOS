@@ -1,7 +1,7 @@
 baseurl = "https://hugorocaproyectos.js.org"
 disablePathToLower = false
 languageCode = "es-PE"
-theme = "hugo-webmag"
+theme = "hugo-casper-two"
 title = "Hugo Roca | Proyectos - Web"
 contentdir = "content"
 datadir = "data"
@@ -12,90 +12,64 @@ disqusShortname = "hugorocaproyectos"
 # Tamaño de paginación
 paginate = 5
 
-[taxonomies]
-  tag = "tags"
-  category = "categories"
-
-[permalinks]
-  post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the old ones
 
 [params]
-  # Disabled/Enabled buscador
-  search = false
-  # Number of last posts that will be displayed in the sidebar - set to 0 or remove to hide this section
-  sidebarRecentLimit = 4
-  siebarSingleRecentLimit = 2
-  fbName = "huugooroca.Huugoo"
-  twitterName = "HuugooRoca"
-  cover = "logo-ban.jpg"
+  title       = "Hugo Casper Two"
+  subtitle    = "Port of Casper 2.x for Hugo"
+  copyright   = "© 2018"
 
-  # sidebar links
-  github = "https://github.com/HugoRoca"
-  bitbucket = ""
-  twitter = "https://twitter.com/HuugooRoca"
-  stackoverflow = ""
-  linkedin = "https://www.linkedin.com/in/hugoroca/"
-  googleplus = ""
-  youtube = ""
-  facebook = ""
-  instagram = ""
-  # --- End sidebar options ---
+  cover       = "img/blog-cover.jpg"
+  description = "Here is a description of your site."
+  metaDescription = ""
+  googleAnalytics = ""
+  customCSS = []
+  RSSLink = ""
 
-  # Author's name (appears in meta tags and under posts)
-  author = "Hugo Roca"
+  twitterName = "faketryghost"
+  fbName = "fakeghost"
+  githubName = "eueung"
+  linkedinName = "eueung"
+  mediumName = ""
 
-  # Search engine URL
-  searchEngineURL = "https://www.google.com/search"
+  logo = "hugo-logo.png"
+  orgName = "EM"
+  orgWebsite = "https://www.telematika.org"
+  orgDescription = "Here is a description placeholder for your org"
 
-  # Google analytics code - remove if you do not have/want Google Analytics - needs JavaScript
-  googleAnalytics = "UA-125594168-1"
+  showSupport = true
 
-  # Website's default description
-  defaultDescription = "El rincon de la informática"
+  author = "EM"
+  authorAvatar = "img/ghost-icon.png"
+  authorLocation = "Bandung, ID"
+  authorWebsite = "https://eueung.github.io"
+  authorDescription = "Your description here"
 
-  # Populate with your search keywords - these will appear in meta tags
-  defaultKeywords = ["JavaScript","jquery", "C#", "PHP", "SQLServer", "Sistemas", "Codigo fuente", "Código fuente"]
+  pageNotFoundTitle = "404 - Page not found"
 
-  # Generate taxonomy pages
-  generateTaxonomyList = true
+  #casper or caspertwo
+  singleViewStyle = "casper"
 
-# Menu ----------------------------------------------------------------------
-[[menu.main]]
-  Name = "Inicio"
-  URL = "/"
-  weight = 1
+[permalinks]
+  post = "/post/:slug/"
 
 [[menu.main]]
-  Name = "JavaScript"
-  URL = "/categories/javascript/"
-  weight = 2
+  name = "Home"
+  url = "/"
+  weight = 200
 
 [[menu.main]]
-  Name = "C Sharp"
-  URL = "/categories/c-sharp/"
-  weight = 3
+  name = "Go"
+  url = "/tags/golang/"
+  weight = 100
 
 [[menu.main]]
-  Name = "PHP"
-  URL = "/categories/php"
-  weight = 4
+  name = "Categories"
+  url = "/categories/"
+  weight = 99
 
 [[menu.main]]
-  Name = "Base de datos"
-  URL = "/categories/base-de-datos"
-  weight = 5
+  name = "External"
+  url = "https://google.com/"
+  weight = 95
 
-[[menu.main]]
-  Name = "Sistemas"
-  URL = "/categories/sistemas/"
-  weight = 6
-# Sidebar menus ---------------------------------------------------------------
 
-[[menu.sidebar]]
-  Name = "Inicio"
-  URL = "/"
-
-[[menu.sidebar]]
-  Name = "Acerca de mí"
-  URL = "https://hugoroca.github.io"
-  weight = 0
