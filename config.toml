@@ -10,12 +10,12 @@ publishdir = "docs"
 # Disqus
 disqusShortname = "hugorocaproyectos"
 # Tamaño de paginación
-paginate = 5
+paginate = 10
 
 
 [params]
   title       = "Hugo Casper Two"
-  subtitle    = "Port of Casper 2.x for Hugo"
+  subtitle    = "Aprende • Piensa • Diseña • Codifica"
   copyright   = "© 2018"
 
   cover       = "img/blog-cover.jpg"
