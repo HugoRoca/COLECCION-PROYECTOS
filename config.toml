@@ -40,10 +40,10 @@ paginate = 10
   showSupport = true
 
   author = "HR"
-  authorAvatar = "img/ghost-icon.png"
-  authorLocation = "Bandung, ID"
+  authorAvatar = "img/profile.jpg"
+  authorLocation = "Lima - Perú"
   authorWebsite = "https://eueung.github.io"
-  authorDescription = "Your description here"
+  authorDescription = "Analista Programador Senior"
 
   pageNotFoundTitle = "404 - Page not found"
 

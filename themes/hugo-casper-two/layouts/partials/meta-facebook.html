@@ -13,5 +13,5 @@
     <meta property="og:description" content="{{ .Site.Params.description }}" />
 {{ end }}{{if .Params.imageShared }}
     <meta property="og:image" content="{{ .Params.imageShared | absURL}}"/>
-{{else}}{{if .Site.Params.cover}}
+{{else}}{{if .Site.Params.shared}}
     <meta property="og:image" content="{{ .Site.Params.shared | absURL}}"/>{{end}}{{end}}
