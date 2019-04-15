@@ -90,7 +90,7 @@
   
   <url>
     <loc>https://hugorocaproyectos.js.org/categories/c-sharp/</loc>
-    <lastmod>2018-09-01T00:00:00+00:00</lastmod>
+    <lastmod>2018-05-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -161,12 +161,6 @@
   </url>
   
   <url>
-    <loc>https://hugorocaproyectos.js.org/categories/php/</loc>
-    <lastmod>2018-03-30T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://hugorocaproyectos.js.org/tags/poo/</loc>
     <lastmod>2018-09-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -186,12 +180,6 @@
   
   <url>
     <loc>https://hugorocaproyectos.js.org/tags/sistemas/</loc>
-    <lastmod>2018-03-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hugorocaproyectos.js.org/categories/sistemas/</loc>
     <lastmod>2018-09-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>

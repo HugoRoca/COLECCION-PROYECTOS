@@ -10,9 +10,6 @@ tags:
  - CSharp
  - JS
  - JQUERY
-categories:
- - JavaScript
- - C Sharp
  - Sistemas
 ---
 

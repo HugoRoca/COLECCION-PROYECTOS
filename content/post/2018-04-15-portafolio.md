@@ -9,9 +9,6 @@ tag:
  - CSharp
  - JQuery
  - SQLServer
-categories:
- - JavaScript
- - C Sharp
  - Sistemas
 ---
 

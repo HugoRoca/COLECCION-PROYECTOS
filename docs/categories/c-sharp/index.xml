@@ -6,20 +6,10 @@
     <description>Recent content in C Sharp on Hugo Roca Proyectos</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-PE</language>
-    <lastBuildDate>Sat, 01 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 20 May 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://hugorocaproyectos.js.org/categories/c-sharp/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>APP Restaurante</title>
-      <link>https://hugorocaproyectos.js.org/app-restaurante/</link>
-      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://hugorocaproyectos.js.org/app-restaurante/</guid>
-      <description>En esta oportunidad les presento un nuevo sistema de restaurante, cuenta con dos formas de ver, una para los pedidos que se configura dentro del sistema y la otra la parte administrativa.
- Contenido  Registro del menú del día Registro de empleados Control de acceso de usuario Cobranza Genera PDF del Cobro Registro de imagenes Vista rápida en dashboard  Paso 1 Puedes obtener el codigo fuente de la siguiente forma:</description>
-    </item>
     
     <item>
       <title>Registro de errores con Log4Net</title>
@@ -43,17 +33,6 @@ namespace Log4Net { public class LogHelper { public static log4net.ILog GetLogge
  Paso 1 Puedes obtener el codigo fuente de la siguiente forma:
  Descargar el repositorio ENTITY-FRAMEWORK-BASICO Abrir la solución y explorar el código fuente  Paso 2 Ejecutar lo siguiente en SQLServer
 CREATE DATABASE Test GO USE Test GO CREATE TABLE [dbo].[Alumno]( [id] [int] IDENTITY(1,1) NOT NULL, [Nombre] [varchar](50) NOT NULL, [Apellido] [varchar](100) NOT NULL, [Sexo] [int] NOT NULL, [FechaNacimiento] [varchar](10) NOT NULL primary key (id)) GO  Paso 3 Una vez ejecutado el script, abrir el archivo App.</description>
-    </item>
-    
-    <item>
-      <title>Portafolio Profesional</title>
-      <link>https://hugorocaproyectos.js.org/portafolio-profesional/</link>
-      <pubDate>Sun, 15 Apr 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://hugorocaproyectos.js.org/portafolio-profesional/</guid>
-      <description>¿Alguna véz haz querido hacer un curriculum profesional usando algo diferente? En esta ocación te traigo el siguiente sistema.
-Sistema de administración de portafolio desarrollado en C#, MVC5, Entity Framework, JQuery, Bootstrap. Esta formado en dos partes:
- Lo que se muestra al usuario final (Front) Parte administrable  Edición de datos Registro y edición de estudios Registro y eliminación de hablidades Registro y edición de experiencia Edición de testimonios   Paso 1 Debes de tener instalado visual studio y sqlsever.</description>
     </item>
     
   </channel>
