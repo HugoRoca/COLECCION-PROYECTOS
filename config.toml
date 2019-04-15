@@ -2,7 +2,7 @@ baseurl = "https://hugorocaproyectos.js.org"
 disablePathToLower = false
 languageCode = "es-PE"
 theme = "hugo-casper-two"
-title = "Hugo Roca | Proyectos - Web"
+title = "Hugo Roca Proyectos"
 contentdir = "content"
 datadir = "data"
 layoutdir = "layouts"
@@ -14,31 +14,31 @@ paginate = 10
 
 
 [params]
-  title       = "Hugo Casper Two"
+  title       = "HR Proyectos"
   subtitle    = "Aprende • Piensa • Diseña • Codifica"
-  copyright   = "© 2018"
+  copyright   = "© 2019"
 
-  cover       = "img/blog-cover.jpg"
-  description = "Here is a description of your site."
+  cover       = ""
+  description = "Aprende • Piensa • Diseña • Codifica"
   metaDescription = ""
-  googleAnalytics = ""
+  googleAnalytics = "UA-125594168-1"
   customCSS = []
   RSSLink = ""
 
-  twitterName = "faketryghost"
-  fbName = "fakeghost"
-  githubName = "eueung"
-  linkedinName = "eueung"
+  twitterName = "HuugooRoca"
+  fbName = ""
+  githubName = "hugoroca"
+  linkedinName = "hugoroca"
   mediumName = ""
 
   logo = "hugo-logo.png"
-  orgName = "EM"
-  orgWebsite = "https://www.telematika.org"
-  orgDescription = "Here is a description placeholder for your org"
+  orgName = "HR"
+  orgWebsite = "https://hugorocaproyectos.js.org"
+  orgDescription = "Aprende • Piensa • Diseña • Codifica"
 
   showSupport = true
 
-  author = "EM"
+  author = "HR"
   authorAvatar = "img/ghost-icon.png"
   authorLocation = "Bandung, ID"
   authorWebsite = "https://eueung.github.io"
@@ -50,26 +50,39 @@ paginate = 10
   singleViewStyle = "casper"
 
 [permalinks]
-  post = "/post/:slug/"
+  post = "/:slug/"
 
 [[menu.main]]
-  name = "Home"
+  name = "Inicio"
   url = "/"
   weight = 200
 
 [[menu.main]]
-  name = "Go"
-  url = "/tags/golang/"
+  name = "Acerca de mi"
+  url = "https://hugoroca.github.io/"
   weight = 100
 
 [[menu.main]]
-  name = "Categories"
-  url = "/categories/"
+  name = "C#"
+  url = "/tags/csharp/"
   weight = 99
 
 [[menu.main]]
-  name = "External"
-  url = "https://google.com/"
+  name = "Javascript"
+  url = "/tags/js/"
   weight = 95
 
+[[menu.main]]
+  name = "SQLServer"
+  url = "/tags/sqlserver/"
+  weight = 95
 
+[[menu.main]]
+  name = "PHP"
+  url = "/tags/php/"
+  weight = 95
+
+[[menu.main]]
+  name = "Sistemas"
+  url= "/tags/Sistemas"
+  weight = 95
