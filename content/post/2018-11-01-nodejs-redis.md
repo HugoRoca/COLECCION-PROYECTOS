@@ -34,7 +34,19 @@ Antes de proceder con cualquier instalación de paquetes npm necesitamos crear n
 
 Al finalizar tendremos un archivo como este:
 
-<script src="https://gist.github.com/HugoRoca/8997425b507e737ddc2b395cd04491a6.js"></script>
+```
+{
+  "name": "[nombre]",
+  "version": "[versión]",
+  "description": "[descripción]",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hugo Roca - hugo.rock20@hotmail.com",
+  "license": "[licencia]"
+}
+```
 
 ----
 ### Instalando npm Redis
@@ -43,16 +55,139 @@ Para este caso utilizaremos al paquete IORedis (https://www.npmjs.com/package/io
 ----
 ### Creando la conexión (get, set)
 Empezaremos creando un archivo de configuración (config.js) en donde estará las credenciales y otras cosas:
-<script src="https://gist.github.com/HugoRoca/598080014996016233d3db17831e996c.js"></script>
+
+```
+const config = {
+    redis: {
+        port: 6379,
+        host: "localhost",
+        retries: 3,
+        time_to_retry: 100,
+        time_live: 3600 // tiempo de vida en segundos
+    }
+}
+
+module.exports = config;
+```
 
 Luego, empezamos a crear la conexión, para esta ocación haremos uso de ES6, el nuevo archivo tendra el nombre de "redis-connection.js", adicional a esto agregaremos dos métodos más que serían asincronos, uno para obtener y el otro para asignar.
-<script src="https://gist.github.com/HugoRoca/bd8ea1b88ad9d8628d4e3a9a699be60e.js"></script>
+
+```
+"use strict";
+
+const redis = require("ioredis");
+const config = require("./config");
+
+module.exports = class RedisConnection {
+    constructor() {
+        this.client = this.connect();
+    }
+
+    connect() {
+        let client = new redis({
+            host: config.redis.host,
+            port: config.redis.port,
+            retryStrategy(times){
+                let delay = Math.min(times * config.redis.time_to_retry, 200);
+                return delay;
+            },
+            maxRetriesPerRequest: config.redis.retries
+        });
+
+        client.on("connect", () => {
+            console.log("Connectado a redis");
+        });
+
+        client.on("error", err => {
+            console.log(`Redis error: ${err}`);
+        });
+
+        return client;
+    }
+
+    async get(key){
+        return await this.client.get(key);
+    }
+
+    async set(key, value){
+        return await this.client.set(key, value);
+    }
+}
+```
 
 Creamos el siguiente archivo "redisSet.js" en donde se codificará una función autoejecutala asincrona instanciando al objeto "redis-connection.js".
-<script src="https://gist.github.com/HugoRoca/75570f290bc894011c307a497c07a52b.js"></script>
+
+```
+"use strict";
+
+const redisConnection = require("./redis-connection");
+const redis = new redisConnection();
+
+(async () => {
+    try {
+        // Para este caso haremos uso de un JSON, tambien se puede guardar string, int, double, etc.
+        let data = [{
+                "_id": "5c21d04d34b4a04750f9aa6f",
+                "index": 0,
+                "guid": "c9f32788-0116-48e9-86d5-9c7649f70c58",
+                "friends": [{
+                        "id": 0,
+                        "name": "Tania Cardenas"
+                    },
+                    {
+                        "id": 1,
+                        "name": "Cherry Bishop"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Simpson French"
+                    }
+                ]
+            },
+            {
+                "_id": "5c21d04db527f89279d44902",
+                "index": 1,
+                "guid": "144ef286-f059-4a62-98ca-b54c5130a4d7",
+                "friends": [{
+                        "id": 0,
+                        "name": "Vaughn Ratliff"
+                    },
+                    {
+                        "id": 1,
+                        "name": "Delores Glover"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Jayne Puckett"
+                    }
+                ]
+            }
+        ];
+        // NOTA: cuando lo que se quiere registrar es un json o array, debemos de usar el JSON.strinify 
+        await redis.set("dataPrueba", JSON.stringify(data));
+    } catch (error) {
+        console.log(`Error al procesar: ${error}`);
+    }
+})();
+```
 
 Hacemos lo mismo que el código de arriba, pero esta vez vamos a obtener lo registrado. Este nuevo archivo tendrá de nombre "redisGet.js".
-<script src="https://gist.github.com/HugoRoca/4d0bb973312967393e3a1eeda675d106.js"></script>
+
+```
+"use strict";
+
+const redisConnection = require("./redis-connection");
+const redis = new redisConnection();
+
+(async () => {
+    try {
+        let rr = await redis.get("dataPrueba");
+        console.log(rr);
+    } catch (error) {
+        console.log(`Error al procesar: ${error}`);
+    }
+})();
+```
 
 ### Ejecutando lo codificado
 - Para ejecutar solo hay que tener levantado el Redis.
