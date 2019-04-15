@@ -12,11 +12,11 @@
     
     
     <item>
-      <title>Handlebars</title>
-      <link>https://hugorocaproyectos.js.org/handlebars/</link>
+      <title>Handlebars | Parte 1</title>
+      <link>https://hugorocaproyectos.js.org/handlebars--parte-1/</link>
       <pubDate>Tue, 09 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://hugorocaproyectos.js.org/handlebars/</guid>
+      <guid>https://hugorocaproyectos.js.org/handlebars--parte-1/</guid>
       <description>Handlebars.js es un motor de plantillas muy popular que es potente, fácil de utilizar y que cuenta con una gran comunidad. Se basa en el lenguaje de plantillas Mustache, pero lo mejora de distintas maneras.
 Los sistemas de plantillas son muy importantes, porque nos permiten separar el código por responsabilidades y crear la salida de las aplicaciones de una manera sencilla, manteniendo el código HTML separado del código Javascript.</description>
     </item>
