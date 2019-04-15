@@ -168,7 +168,18 @@
 
 <p>Al finalizar tendremos un archivo como este:</p>
 
-<script src="https://gist.github.com/HugoRoca/8997425b507e737ddc2b395cd04491a6.js"></script>
+<pre><code>{
+  &quot;name&quot;: &quot;[nombre]&quot;,
+  &quot;version&quot;: &quot;[versión]&quot;,
+  &quot;description&quot;: &quot;[descripción]&quot;,
+  &quot;main&quot;: &quot;&quot;,
+  &quot;scripts&quot;: {
+    &quot;test&quot;: &quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;
+  },
+  &quot;author&quot;: &quot;Hugo Roca - hugo.rock20@hotmail.com&quot;,
+  &quot;license&quot;: &quot;[licencia]&quot;
+}
+</code></pre>
 
 <hr />
 
@@ -180,17 +191,136 @@
 
 <h3 id="creando-la-conexión-get-set">Creando la conexión (get, set)</h3>
 
-<p>Empezaremos creando un archivo de configuración (config.js) en donde estará las credenciales y otras cosas:
-<script src="https://gist.github.com/HugoRoca/598080014996016233d3db17831e996c.js"></script></p>
+<p>Empezaremos creando un archivo de configuración (config.js) en donde estará las credenciales y otras cosas:</p>
 
-<p>Luego, empezamos a crear la conexión, para esta ocación haremos uso de ES6, el nuevo archivo tendra el nombre de &ldquo;redis-connection.js&rdquo;, adicional a esto agregaremos dos métodos más que serían asincronos, uno para obtener y el otro para asignar.
-<script src="https://gist.github.com/HugoRoca/bd8ea1b88ad9d8628d4e3a9a699be60e.js"></script></p>
+<pre><code>const config = {
+    redis: {
+        port: 6379,
+        host: &quot;localhost&quot;,
+        retries: 3,
+        time_to_retry: 100,
+        time_live: 3600 // tiempo de vida en segundos
+    }
+}
 
-<p>Creamos el siguiente archivo &ldquo;redisSet.js&rdquo; en donde se codificará una función autoejecutala asincrona instanciando al objeto &ldquo;redis-connection.js&rdquo;.
-<script src="https://gist.github.com/HugoRoca/75570f290bc894011c307a497c07a52b.js"></script></p>
+module.exports = config;
+</code></pre>
 
-<p>Hacemos lo mismo que el código de arriba, pero esta vez vamos a obtener lo registrado. Este nuevo archivo tendrá de nombre &ldquo;redisGet.js&rdquo;.
-<script src="https://gist.github.com/HugoRoca/4d0bb973312967393e3a1eeda675d106.js"></script></p>
+<p>Luego, empezamos a crear la conexión, para esta ocación haremos uso de ES6, el nuevo archivo tendra el nombre de &ldquo;redis-connection.js&rdquo;, adicional a esto agregaremos dos métodos más que serían asincronos, uno para obtener y el otro para asignar.</p>
+
+<pre><code>&quot;use strict&quot;;
+
+const redis = require(&quot;ioredis&quot;);
+const config = require(&quot;./config&quot;);
+
+module.exports = class RedisConnection {
+    constructor() {
+        this.client = this.connect();
+    }
+
+    connect() {
+        let client = new redis({
+            host: config.redis.host,
+            port: config.redis.port,
+            retryStrategy(times){
+                let delay = Math.min(times * config.redis.time_to_retry, 200);
+                return delay;
+            },
+            maxRetriesPerRequest: config.redis.retries
+        });
+
+        client.on(&quot;connect&quot;, () =&gt; {
+            console.log(&quot;Connectado a redis&quot;);
+        });
+
+        client.on(&quot;error&quot;, err =&gt; {
+            console.log(`Redis error: ${err}`);
+        });
+
+        return client;
+    }
+
+    async get(key){
+        return await this.client.get(key);
+    }
+
+    async set(key, value){
+        return await this.client.set(key, value);
+    }
+}
+</code></pre>
+
+<p>Creamos el siguiente archivo &ldquo;redisSet.js&rdquo; en donde se codificará una función autoejecutala asincrona instanciando al objeto &ldquo;redis-connection.js&rdquo;.</p>
+
+<pre><code>&quot;use strict&quot;;
+
+const redisConnection = require(&quot;./redis-connection&quot;);
+const redis = new redisConnection();
+
+(async () =&gt; {
+    try {
+        // Para este caso haremos uso de un JSON, tambien se puede guardar string, int, double, etc.
+        let data = [{
+                &quot;_id&quot;: &quot;5c21d04d34b4a04750f9aa6f&quot;,
+                &quot;index&quot;: 0,
+                &quot;guid&quot;: &quot;c9f32788-0116-48e9-86d5-9c7649f70c58&quot;,
+                &quot;friends&quot;: [{
+                        &quot;id&quot;: 0,
+                        &quot;name&quot;: &quot;Tania Cardenas&quot;
+                    },
+                    {
+                        &quot;id&quot;: 1,
+                        &quot;name&quot;: &quot;Cherry Bishop&quot;
+                    },
+                    {
+                        &quot;id&quot;: 2,
+                        &quot;name&quot;: &quot;Simpson French&quot;
+                    }
+                ]
+            },
+            {
+                &quot;_id&quot;: &quot;5c21d04db527f89279d44902&quot;,
+                &quot;index&quot;: 1,
+                &quot;guid&quot;: &quot;144ef286-f059-4a62-98ca-b54c5130a4d7&quot;,
+                &quot;friends&quot;: [{
+                        &quot;id&quot;: 0,
+                        &quot;name&quot;: &quot;Vaughn Ratliff&quot;
+                    },
+                    {
+                        &quot;id&quot;: 1,
+                        &quot;name&quot;: &quot;Delores Glover&quot;
+                    },
+                    {
+                        &quot;id&quot;: 2,
+                        &quot;name&quot;: &quot;Jayne Puckett&quot;
+                    }
+                ]
+            }
+        ];
+        // NOTA: cuando lo que se quiere registrar es un json o array, debemos de usar el JSON.strinify 
+        await redis.set(&quot;dataPrueba&quot;, JSON.stringify(data));
+    } catch (error) {
+        console.log(`Error al procesar: ${error}`);
+    }
+})();
+</code></pre>
+
+<p>Hacemos lo mismo que el código de arriba, pero esta vez vamos a obtener lo registrado. Este nuevo archivo tendrá de nombre &ldquo;redisGet.js&rdquo;.</p>
+
+<pre><code>&quot;use strict&quot;;
+
+const redisConnection = require(&quot;./redis-connection&quot;);
+const redis = new redisConnection();
+
+(async () =&gt; {
+    try {
+        let rr = await redis.get(&quot;dataPrueba&quot;);
+        console.log(rr);
+    } catch (error) {
+        console.log(`Error al procesar: ${error}`);
+    }
+})();
+</code></pre>
 
 <h3 id="ejecutando-lo-codificado">Ejecutando lo codificado</h3>
 
@@ -272,15 +402,15 @@ s.setAttribute('data-timestamp', +new Date());
     <div class="read-next-card-content">
       
         <ul>
-          <li><a href="https://hugorocaproyectos.js.org/javascript-promesas/">Javascript: Promesas</a></li>            
+          <li><a href="https://hugorocaproyectos.js.org/entity-framework-b%C3%A1sico/">Entity Framework Básico</a></li>            
         
           <li><a href="https://hugorocaproyectos.js.org/portafolio-profesional/">Portafolio Profesional</a></li>            
         
                       
         
-          <li><a href="https://hugorocaproyectos.js.org/app-restaurante/">APP Restaurante</a></li>            
+          <li><a href="https://hugorocaproyectos.js.org/programaci%C3%B3n-orientada-a-objetos/">Programación Orientada a Objetos</a></li>            
         
-          <li><a href="https://hugorocaproyectos.js.org/conexi%C3%B3n-nodejs-con-sqlserver/">Conexión NodeJS con SQLServer</a></li>            
+          <li><a href="https://hugorocaproyectos.js.org/handlebars/">Handlebars</a></li>            
         </ul>
     </div>
     <footer class="read-next-card-footer">

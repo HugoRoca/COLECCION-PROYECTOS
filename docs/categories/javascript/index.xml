@@ -31,25 +31,14 @@ Los sistemas de plantillas son muy importantes, porque nos permiten separar el c
     </item>
     
     <item>
-      <title>Conexión NodeJS con SQLServer</title>
-      <link>https://hugorocaproyectos.js.org/conexi%C3%B3n-nodejs-con-sqlserver/</link>
-      <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://hugorocaproyectos.js.org/conexi%C3%B3n-nodejs-con-sqlserver/</guid>
-      <description>Microsoft SQL Server es un sistema de gestión de base de datos relacional (RDBMS) producido por Microsoft. Su principal lenguaje de consulta es Transact-SQL, una aplicación de las normas ANSI / ISO estándar Structured Query Language (SQL) utilizado por ambas Microsoft y Sybase.
- Usaremos clases y funcion asincronas con promesas en javascript ES6.
-Creando el Package.json Antes de proceder con cualquier instalación de paquetes npm necesitamos crear nuestro package.</description>
-    </item>
-    
-    <item>
       <title>Creación de un juego con JavaScript puro N° 1</title>
       <link>https://hugorocaproyectos.js.org/creaci%C3%B3n-de-un-juego-con-javascript-puro-n-1/</link>
       <pubDate>Sat, 15 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://hugorocaproyectos.js.org/creaci%C3%B3n-de-un-juego-con-javascript-puro-n-1/</guid>
       <description>En esta oportunidad crearemos un juego del clásico piedra, papel o tijeras. Utilizaremos JavaScript puro y HTML5 y CSS3 para el diseño.
- &amp;#128512; Click aquí para ver la Demo &amp;#129299; Recursos (Imagenes)  Puño Mano Tijera  Paso 1 (Estructura del diseño) Empezaremos creando el archivo index.html y codificamos lo siguiente: 
-Paso 2 (Estilos) Crearemos una carpeta &amp;ldquo;css&amp;rdquo; para llevar un orden y no tener los archivos sueltos.</description>
+ &amp;#128512; Click aquí para ver la Demo &amp;#129299; Recursos (Imagenes)  Puño Mano Tijera  Paso 1 (Estructura del diseño) Empezaremos creando el archivo index.html y codificamos lo siguiente:
+&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;quot;es&amp;quot;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt; &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot;&amp;gt; &amp;lt;meta http-equiv=&amp;quot;X-UA-Compatible&amp;quot; content=&amp;quot;ie=edge&amp;quot;&amp;gt; &amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/style.</description>
     </item>
     
     <item>

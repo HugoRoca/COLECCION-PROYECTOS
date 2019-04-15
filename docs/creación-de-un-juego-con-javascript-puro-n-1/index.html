@@ -154,28 +154,302 @@
 
 <h2 id="paso-1-estructura-del-diseño">Paso 1 (Estructura del diseño)</h2>
 
-<p>Empezaremos creando el archivo <code>index.html</code> y codificamos lo siguiente:
-<script src="https://gist.github.com/HugoRoca/fe41000f0b4c632a504660fb8c026be7.js"></script></p>
+<p>Empezaremos creando el archivo <code>index.html</code> y codificamos lo siguiente:</p>
+
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;es&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/style.css&quot;&gt;
+    &lt;title&gt;Rock Paper Scissors Game&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Rock Paper Scissors&lt;/h1&gt;  
+    &lt;/header&gt;
+
+    &lt;div class=&quot;score-board&quot;&gt;
+        &lt;div id=&quot;user-label&quot; class=&quot;badge&quot;&gt;user&lt;/div&gt;
+        &lt;div id=&quot;computer-label&quot; class=&quot;badge&quot;&gt;comp&lt;/div&gt;
+        &lt;span id=&quot;user-score&quot;&gt;0&lt;/span&gt;&amp;nbsp;:&amp;nbsp;&lt;span id=&quot;computer-score&quot;&gt;0&lt;/span&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;result&quot;&gt;
+        &lt;p&gt;Paper covers rock. You win!&lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;choices&quot;&gt;
+        &lt;div class=&quot;choice&quot; id=&quot;r&quot;&gt;
+            &lt;img src=&quot;images/rock.png&quot; alt=&quot;&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;choice&quot; id=&quot;p&quot;&gt;
+            &lt;img src=&quot;images/paper.png&quot; alt=&quot;&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;choice&quot; id=&quot;s&quot;&gt;
+            &lt;img src=&quot;images/scissors.png&quot; alt=&quot;&quot;&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;p id=&quot;action-message&quot;&gt;Make your move&lt;/p&gt;
+
+    &lt;script src=&quot;js/util.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;js/game.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;js/app.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
 
 <hr />
 
 <h2 id="paso-2-estilos">Paso 2 (Estilos)</h2>
 
-<p>Crearemos una carpeta &ldquo;css&rdquo; para llevar un orden y no tener los archivos sueltos. Dentro de la carpeta agregar un archivo <code>style.css</code> y codificar lo siguiente:
-<script src="https://gist.github.com/HugoRoca/e6a806ce99d15889c20ac9f5919876f5.js"></script></p>
+<p>Crearemos una carpeta &ldquo;css&rdquo; para llevar un orden y no tener los archivos sueltos. Dentro de la carpeta agregar un archivo <code>style.css</code> y codificar lo siguiente:</p>
+
+<pre><code>@import url('https://fonts.googleapis.com/css?family=Asap:400,500,700');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #292C34;
+}
+
+header {
+    background: white;
+    padding: 20px;
+}
+
+header&gt;h1 {
+    color: #25272E;
+    text-align: center;
+    font-family: Asap, sans-serif;
+}
+
+.score-board {
+    margin: 20px auto;
+    border: 3px solid white;
+    border-radius: 4px;
+    text-align: center;
+    width: 200px;
+    color: white;
+    font-size: 46px;
+    padding: 15px 20px;
+    font-family: Asap, sans-serif;
+    position: relative;
+}
+
+.badge {
+    background-color: #E2584D;
+    color: white;
+    font-size: 14px;
+    padding: 2px 10px;
+    font-family: Asap, sans-serif;
+}
+
+#user-label {
+    position: absolute;
+    top:30px;
+    left: -25px;
+}
+
+#computer-label{
+    position: absolute;
+    top: 30px;
+    right: -25px;
+}
+
+.result{
+    font-size: 40px;
+    color: white;
+}
+
+.result &gt; p{
+    text-align: center;
+    font-weight: bold;
+    font-family: Asap, sans-serif;
+}
+
+.choices{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.choice{
+    border: 4px solid white;
+    border-radius: 50%;
+    margin: 0 20px;
+    padding: 10px;
+    display: inline-block;
+    transition: all 0.3 ease;
+    width: 100px;
+}
+
+.choice:hover{
+    cursor: pointer;
+    background: #24272E;
+}
+
+#action-message{
+    text-align: center;
+    color: white;
+    font-family: Asap, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+img{
+    width: 80%;
+}
+
+.green-glow{
+    border: 4px solid #4dcc7d !important;
+    box-shadow: 0 0 10px #31b43a;
+}
+
+.red-glow{
+    border: 4px solid #fc121b !important;
+    box-shadow: 0 0 10px #d01115;
+}
+
+.gray-glow{
+    border: 4px solid #ff8000  !important;
+    box-shadow: 0 0 10px #ff8000 ;
+}
+</code></pre>
 
 <hr />
 
 <h2 id="paso-3-funcionalidad">Paso 3 (funcionalidad)</h2>
 
-<p>Luego, agregamos una carpeta a la cual llamaremos &ldquo;js&rdquo; que es en donde se crearán los archivos javaScript, el primer archivo que crearemos sera `utils.js&rdquo;. En este archivo estarán todos los recursos que reutilizaremos.
-<script src="https://gist.github.com/HugoRoca/fb8f1ebf90cc501fe9ffaf3bcae97086.js"></script></p>
+<p>Luego, agregamos una carpeta a la cual llamaremos &ldquo;js&rdquo; que es en donde se crearán los archivos javaScript, el primer archivo que crearemos sera `utils.js&rdquo;. En este archivo estarán todos los recursos que reutilizaremos.</p>
 
-<p>Agregar archivo <code>game.js</code>, aquí estará la funcionalidad general del juego.
-<script src="https://gist.github.com/HugoRoca/0b59031305017d28929096716b66e95f.js"></script></p>
+<pre><code>&quot;use strict&quot;;
 
-<p>Y para terminar, agregaremos un archivo <code>app.js</code>, aquí crearemos un funcion autoejecutable:
-<script src="https://gist.github.com/HugoRoca/400e23f5de176ef6099794d884eb0601.js"></script></p>
+class Utils {
+    getElement(value) {
+        return document.getElementById(value);
+    }
+
+    getQuerySelector(value) {
+        return document.querySelector(value);
+    }
+
+    getComputerChoice() {
+        const choices = [&quot;r&quot;, &quot;p&quot;, &quot;s&quot;];
+        const randonNumber = Math.floor(Math.random() * 3);
+        return choices[randonNumber];
+    }
+
+    convertToWord(letter) {
+        if (letter === &quot;r&quot;) return &quot;Rock&quot;;
+        if (letter === &quot;p&quot;) return &quot;Paper&quot;;
+        return &quot;Scissors&quot;
+    }
+
+    addClassEffect(choice, _class) {
+        const etiq = this.getElement(choice);
+        etiq.classList.add(_class);
+        setTimeout(() =&gt; {
+            etiq.classList.remove(_class);
+        }, 300);
+    }
+}
+</code></pre>
+
+<p>Agregar archivo <code>game.js</code>, aquí estará la funcionalidad general del juego.</p>
+
+<pre><code>&quot;use strict&quot;
+
+const utils = new Utils();
+
+class Game {
+    constructor(userScore_span, computerScore_span, result_p) {
+        this.scoreWin = 0;
+        this.scoreLose = 0;
+        this.userScore_span = utils.getElement(userScore_span);
+        this.computerScore_span = utils.getElement(computerScore_span);
+        this.result_p = utils.getQuerySelector(result_p);
+    }
+
+    main(userChoice) {
+
+        const computerChoices = utils.getComputerChoice();
+
+        switch (userChoice + computerChoices) {
+            case &quot;rs&quot;:
+            case &quot;pr&quot;:
+            case &quot;sp&quot;:
+                this.win(userChoice, computerChoices);
+                break;
+            case &quot;rp&quot;:
+            case &quot;ps&quot;:
+            case &quot;sr&quot;:
+                this.lose(userChoice, computerChoices);
+                break;
+            case &quot;rr&quot;:
+            case &quot;pp&quot;:
+            case &quot;ss&quot;:
+                this.draw(userChoice, computerChoices);
+                break;
+        }
+    }
+
+    win(userChoice, computerChoice) {
+        this.scoreWin++;
+        const text = `${utils.convertToWord(userChoice)} wins ${utils.convertToWord(computerChoice)}&lt;br&gt;You win! :)`;
+        this.paint(userChoice, &quot;green-glow&quot;, text);
+    }
+
+    lose(userChoice, computerChoice) {
+        this.scoreLose++;
+        const text = `${utils.convertToWord(userChoice)} loses to ${utils.convertToWord(computerChoice)}&lt;br&gt;You lost! :(`;
+        this.paint(userChoice, &quot;red-glow&quot;, text);
+    }
+
+    draw(userChoice, computerChoice) {
+        const text = `${utils.convertToWord(userChoice)} equals ${utils.convertToWord(computerChoice)}&lt;br&gt;It´s a draw!`;
+        this.paint(userChoice, &quot;gray-glow&quot;, text);
+    }
+
+    paint(userChoice, _class, text) {
+        this.userScore_span.innerHTML = this.scoreWin;
+        this.computerScore_span.innerHTML = this.scoreLose;
+        this.result_p.innerHTML = text;
+        utils.addClassEffect(userChoice, _class);
+    }
+}
+</code></pre>
+
+<p>Y para terminar, agregaremos un archivo <code>app.js</code>, aquí crearemos un funcion autoejecutable:</p>
+
+<pre><code>&quot;use strict&quot;;
+
+const userScore_span = &quot;user-score&quot;;
+const computerScore_span = &quot;computer-score&quot;;
+const result_p = &quot;.result &gt; p&quot;;
+
+const game = new Game(userScore_span, computerScore_span, result_p);
+
+(() =&gt; {
+    document.getElementById(&quot;r&quot;).addEventListener(&quot;click&quot;, () =&gt; {
+        game.main(&quot;r&quot;);
+    });
+
+    document.getElementById(&quot;p&quot;).addEventListener(&quot;click&quot;, () =&gt; {
+        game.main(&quot;p&quot;);
+    });
+
+    document.getElementById(&quot;s&quot;).addEventListener(&quot;click&quot;, () =&gt; {
+        game.main(&quot;s&quot;);
+    });
+})();
+</code></pre>
 
 <p>Para probar el resultado final, no esta de más decir que solo hay que dar doble click a <code>index.html</code> y listo!</p>
 
@@ -251,11 +525,13 @@ s.setAttribute('data-timestamp', +new Date());
         <ul>
           <li><a href="https://hugorocaproyectos.js.org/portafolio-profesional/">Portafolio Profesional</a></li>            
         
-          <li><a href="https://hugorocaproyectos.js.org/conexi%C3%B3n-nodejs-con-sqlserver/">Conexión NodeJS con SQLServer</a></li>            
+          <li><a href="https://hugorocaproyectos.js.org/2018-03-04-sigenven1.0/">SIGEVEN 1.0</a></li>            
+        
+                      
         
           <li><a href="https://hugorocaproyectos.js.org/handlebars/">Handlebars</a></li>            
         
-          <li><a href="https://hugorocaproyectos.js.org/app-restaurante/">APP Restaurante</a></li>            
+          <li><a href="https://hugorocaproyectos.js.org/programaci%C3%B3n-orientada-a-objetos/">Programación Orientada a Objetos</a></li>            
         </ul>
     </div>
     <footer class="read-next-card-footer">
@@ -278,7 +554,8 @@ s.setAttribute('data-timestamp', +new Date());
           <header class="post-card-header">
               <span class="post-card-tags">
               #JS 
-              #SQLSERVER  </span>
+              #SQLSERVER 
+              #JavaScript  </span>
               
               <h2 class="post-card-title">Conexión NodeJS con SQLServer</h2>
           </header>
