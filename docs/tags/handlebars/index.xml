@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Handlebars on Hugo Roca Proyectos</title>
+    <link>https://hugorocaproyectos.js.org/tags/handlebars/</link>
+    <description>Recent content in Handlebars on Hugo Roca Proyectos</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-PE</language>
+    <lastBuildDate>Tue, 09 Apr 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://hugorocaproyectos.js.org/tags/handlebars/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Handlebars</title>
+      <link>https://hugorocaproyectos.js.org/handlebars/</link>
+      <pubDate>Tue, 09 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://hugorocaproyectos.js.org/handlebars/</guid>
+      <description>Handlebars.js es un motor de plantillas muy popular que es potente, fácil de utilizar y que cuenta con una gran comunidad. Se basa en el lenguaje de plantillas Mustache, pero lo mejora de distintas maneras.
+Los sistemas de plantillas son muy importantes, porque nos permiten separar el código por responsabilidades y crear la salida de las aplicaciones de una manera sencilla, manteniendo el código HTML separado del código Javascript.</description>
+    </item>
+    
+  </channel>
+</rss>

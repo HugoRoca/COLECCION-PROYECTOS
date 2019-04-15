@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Js on Hugo Roca | Proyectos - Web</title>
+    <title>Js on Hugo Roca Proyectos</title>
     <link>https://hugorocaproyectos.js.org/tags/js/</link>
-    <description>Recent content in Js on Hugo Roca | Proyectos - Web</description>
+    <description>Recent content in Js on Hugo Roca Proyectos</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-PE</language>
     <lastBuildDate>Wed, 03 Apr 2019 00:00:00 +0000</lastBuildDate>
@@ -13,19 +13,19 @@
     
     <item>
       <title>Javascript: Promesas</title>
-      <link>https://hugorocaproyectos.js.org/blog/2019-04-03-javascript-promesas/</link>
+      <link>https://hugorocaproyectos.js.org/javascript-promesas/</link>
       <pubDate>Wed, 03 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://hugorocaproyectos.js.org/blog/2019-04-03-javascript-promesas/</guid>
+      <guid>https://hugorocaproyectos.js.org/javascript-promesas/</guid>
       <description>A una promesa, como su propio nombre lo dice, es simplemente un objeto que puede o no devolver algún valor en la línea de tiempo presente y futuro. Me gusta describir una promesa como una especie de Karma: Tú haces algo, y en consecuencia obtendrás algo, ahora o en un futuro. Esto aplica igual a las promesas, tu ejecutas código asíncrono y obtienes la promesa de que obtendrás una respuesta, que puede ser en ese instante o en un futuro.</description>
     </item>
     
     <item>
       <title>Conexión NodeJS con SQLServer</title>
-      <link>https://hugorocaproyectos.js.org/blog/2019-01-10-conexi%C3%B3n-nodejs-con-sqlserver/</link>
+      <link>https://hugorocaproyectos.js.org/conexi%C3%B3n-nodejs-con-sqlserver/</link>
       <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://hugorocaproyectos.js.org/blog/2019-01-10-conexi%C3%B3n-nodejs-con-sqlserver/</guid>
+      <guid>https://hugorocaproyectos.js.org/conexi%C3%B3n-nodejs-con-sqlserver/</guid>
       <description>Microsoft SQL Server es un sistema de gestión de base de datos relacional (RDBMS) producido por Microsoft. Su principal lenguaje de consulta es Transact-SQL, una aplicación de las normas ANSI / ISO estándar Structured Query Language (SQL) utilizado por ambas Microsoft y Sybase.
  Usaremos clases y funcion asincronas con promesas en javascript ES6.
 Creando el Package.json Antes de proceder con cualquier instalación de paquetes npm necesitamos crear nuestro package.</description>
@@ -33,10 +33,10 @@ Creando el Package.json Antes de proceder con cualquier instalación de paquetes
     
     <item>
       <title>Creación de un juego con JavaScript puro N° 1</title>
-      <link>https://hugorocaproyectos.js.org/blog/2018-12-15-creaci%C3%B3n-de-un-juego-con-javascript-puro-n-1/</link>
+      <link>https://hugorocaproyectos.js.org/creaci%C3%B3n-de-un-juego-con-javascript-puro-n-1/</link>
       <pubDate>Sat, 15 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://hugorocaproyectos.js.org/blog/2018-12-15-creaci%C3%B3n-de-un-juego-con-javascript-puro-n-1/</guid>
+      <guid>https://hugorocaproyectos.js.org/creaci%C3%B3n-de-un-juego-con-javascript-puro-n-1/</guid>
       <description>En esta oportunidad crearemos un juego del clásico piedra, papel o tijeras. Utilizaremos JavaScript puro y HTML5 y CSS3 para el diseño.
  &amp;#128512; Click aquí para ver la Demo &amp;#129299; Recursos (Imagenes)  Puño Mano Tijera  Paso 1 (Estructura del diseño) Empezaremos creando el archivo index.html y codificamos lo siguiente: 
 Paso 2 (Estilos) Crearemos una carpeta &amp;ldquo;css&amp;rdquo; para llevar un orden y no tener los archivos sueltos.</description>
@@ -44,20 +44,20 @@ Paso 2 (Estilos) Crearemos una carpeta &amp;ldquo;css&amp;rdquo; para llevar un 
     
     <item>
       <title>Conexión NodeJS con Redis Cache</title>
-      <link>https://hugorocaproyectos.js.org/blog/2018-11-01-conexi%C3%B3n-nodejs-con-redis-cache/</link>
+      <link>https://hugorocaproyectos.js.org/conexi%C3%B3n-nodejs-con-redis-cache/</link>
       <pubDate>Thu, 01 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://hugorocaproyectos.js.org/blog/2018-11-01-conexi%C3%B3n-nodejs-con-redis-cache/</guid>
+      <guid>https://hugorocaproyectos.js.org/conexi%C3%B3n-nodejs-con-redis-cache/</guid>
       <description>Redis se utiliza como base de datos y para caché, ya que es súper rápido debido a que los datos se almacenan &amp;ldquo;en memoria&amp;rdquo;, a diferencia de otras bases de datos en las que los datos generalmente se almacenan &amp;ldquo;en disco&amp;rdquo;.
  Redis es una gran base de datos para usar con Node.js. Tanto Redis como Node.js comparten convenciones de tipo y modelos de subprocesos similares, lo que lo convierte en una experiencia de desarrollo muy predecible.</description>
     </item>
     
     <item>
       <title>Gráficos con D3JS</title>
-      <link>https://hugorocaproyectos.js.org/blog/2018-10-02-gr%C3%A1ficos-con-d3js/</link>
+      <link>https://hugorocaproyectos.js.org/gr%C3%A1ficos-con-d3js/</link>
       <pubDate>Tue, 02 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://hugorocaproyectos.js.org/blog/2018-10-02-gr%C3%A1ficos-con-d3js/</guid>
+      <guid>https://hugorocaproyectos.js.org/gr%C3%A1ficos-con-d3js/</guid>
       <description>D3.js es una biblioteca de JavaScript para manipular documentos basados ​​en datos. D3 te ayuda a dar vida a los datos usando HTML, SVG y CSS.
  El énfasis de D3 en los estándares web le brinda todas las capacidades de los navegadores modernos sin vincularse a un marco propietario, combinando poderosos componentes de visualización y un enfoque basado en datos para la manipulación de DOM.
 Te dejo algunos ejemplos en GITHUB de como empezar a desarrollar gráficos con datos reales.</description>
@@ -65,20 +65,20 @@ Te dejo algunos ejemplos en GITHUB de como empezar a desarrollar gráficos con d
     
     <item>
       <title>APP Restaurante</title>
-      <link>https://hugorocaproyectos.js.org/blog/2018-09-01-app-restaurante/</link>
+      <link>https://hugorocaproyectos.js.org/app-restaurante/</link>
       <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://hugorocaproyectos.js.org/blog/2018-09-01-app-restaurante/</guid>
+      <guid>https://hugorocaproyectos.js.org/app-restaurante/</guid>
       <description>En esta oportunidad les presento un nuevo sistema de restaurante, cuenta con dos formas de ver, una para los pedidos que se configura dentro del sistema y la otra la parte administrativa.
  Contenido  Registro del menú del día Registro de empleados Control de acceso de usuario Cobranza Genera PDF del Cobro Registro de imagenes Vista rápida en dashboard  Paso 1 Puedes obtener el codigo fuente de la siguiente forma:</description>
     </item>
     
     <item>
       <title>SIGEVEN 2.0</title>
-      <link>https://hugorocaproyectos.js.org/blog/2018-03-30-sigeven-2.0/</link>
+      <link>https://hugorocaproyectos.js.org/sigeven-2.0/</link>
       <pubDate>Fri, 30 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://hugorocaproyectos.js.org/blog/2018-03-30-sigeven-2.0/</guid>
+      <guid>https://hugorocaproyectos.js.org/sigeven-2.0/</guid>
       <description>Como dicen, si hay &amp;lsquo;1.0&amp;rsquo; un &amp;lsquo;2.0&amp;rsquo; va haber, en esta oportunidad les muestro otro sistema de ventas mas completo en full PHP con jquery y ajax.
 Sistema para el contol de ventas e ingreso de stock, impresion de facturas, boletas y tickets, control de usuarios y permisos. Desarrollado en PHP7, JQuery y la plantilla AdminLTE.
 CONTENIDO  Login Dashboard ▾ Almacen/ Registro de artículo Registro de categorías ▾ Compras/ Registro de Ingresos Registro de Proveedor ▾ Ventas/ Registro de Cliente Registro de Ventas ▾ Impresion en PDF/ Factura Boleta ticket ▾ Acceso/ Permisos Registro de usuario Consulta de Compras Consulta de Ventas  Paso 1 Puedes obtener el codigo fuente de la siguiente forma:</description>
@@ -86,10 +86,10 @@ CONTENIDO  Login Dashboard ▾ Almacen/ Registro de artículo Registro de catego
     
     <item>
       <title>SIGEVEN 1.0</title>
-      <link>https://hugorocaproyectos.js.org/blog/2018-03-04-sigeven-1.0/</link>
+      <link>https://hugorocaproyectos.js.org/2018-03-04-sigenven1.0/</link>
       <pubDate>Sun, 04 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://hugorocaproyectos.js.org/blog/2018-03-04-sigeven-1.0/</guid>
+      <guid>https://hugorocaproyectos.js.org/2018-03-04-sigenven1.0/</guid>
       <description>En esta oportunidad les presento un sistema de gestión de ventas para un puesto de ventas, podrás registrar ventas diarias, gastos, ingresos, registro de proveedores e incluso realizar reportes. Desarrollado en AngularJS, PHP y MySql, maquetado con bootstrap.
 Paso 1 Puedes obtener el codigo fuente de la siguiente forma:
  Descargar el repositorio Sigeven 1.0 Copiarlo a un server WAMP, XAMPP o APACHE  Árbol de archivos

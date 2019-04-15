@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Hugo Roca | Proyectos - Web</title>
+    <title>Tags on Hugo Roca Proyectos</title>
     <link>https://hugorocaproyectos.js.org/tags/</link>
-    <description>Recent content in Tags on Hugo Roca | Proyectos - Web</description>
+    <description>Recent content in Tags on Hugo Roca Proyectos</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-PE</language>
     <lastBuildDate>Fri, 30 Mar 2018 00:00:00 +0000</lastBuildDate>
@@ -35,6 +35,15 @@
       <pubDate>Tue, 02 Oct 2018 00:00:00 +0000</pubDate>
       
       <guid>https://hugorocaproyectos.js.org/tags/css3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Handlebars</title>
+      <link>https://hugorocaproyectos.js.org/tags/handlebars/</link>
+      <pubDate>Tue, 09 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://hugorocaproyectos.js.org/tags/handlebars/</guid>
       <description></description>
     </item>
     
@@ -89,6 +98,15 @@
       <pubDate>Thu, 01 Nov 2018 00:00:00 +0000</pubDate>
       
       <guid>https://hugorocaproyectos.js.org/tags/redis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sistemas</title>
+      <link>https://hugorocaproyectos.js.org/tags/sistemas/</link>
+      <pubDate>Sun, 04 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://hugorocaproyectos.js.org/tags/sistemas/</guid>
       <description></description>
     </item>
     

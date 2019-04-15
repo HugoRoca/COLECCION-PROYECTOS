@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="es-PE" />
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Programación Orientada a Objetos &middot; Hugo Roca Proyectos</title>
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="https://hugorocaproyectos.js.org/favicon.png" />
+    <link rel="canonical" href="https://hugorocaproyectos.js.org/programaci%C3%B3n-orientada-a-objetos/" />
+
+     <meta name="description" content="POO es un paradigna de programación que comenzó a desarrollarse en los años 80, en ese momento se dieron cuenta que esta forma de programación facilitaba el desarrollo de sistemas de gran tamaño." /> 
+
+     
+    
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:image" content="https://hugorocaproyectos.js.org/images/post/POO.svg"/>
+    
+ 
+    <meta name="twitter:title" content="Programación Orientada a Objetos"/>
+    <meta name="twitter:description" content="POO es un paradigna de programación que comenzó a desarrollarse en los años 80, en ese momento se dieron cuenta que esta forma de programación facilitaba el desarrollo de sistemas de gran tamaño."/>
+    <meta name="twitter:url" content="https://hugorocaproyectos.js.org/programaci%C3%B3n-orientada-a-objetos/" />
+    <meta name="twitter:site" content="@HuugooRoca"/>
+
+    <meta property="og:site_name" content="Hugo Roca Proyectos" />
+    <meta property="og:title" content="Programación Orientada a Objetos &middot; HR Proyectos" />
+    <meta property="og:url" content="https://hugorocaproyectos.js.org/programaci%C3%B3n-orientada-a-objetos/" />
+    
+
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="POO es un paradigna de programación que comenzó a desarrollarse en los años 80, en ese momento se dieron cuenta que esta forma de programación facilitaba el desarrollo de sistemas de gran tamaño." />
+
+    <meta property="article:published_time" content="2018-09-15T00:00:00Z" />
+    <meta property="article:tag" content="POO" />
+
+    <meta property="og:image" content="https://hugorocaproyectos.js.org/images/post/POO.svg"/>
+
+
+    <meta name="generator" content="Hugo 0.42.1" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="https://hugorocaproyectos.js.org/built/screen.css" /> 
+    <link rel="stylesheet" type="text/css" href="https://hugorocaproyectos.js.org/css/casper-two.css" /> 
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css" />
+    
+
+     
+
+</head>
+
+
+<body class="post-template">
+  <div class="site-wrapper"> 
+
+<header class="site-header outer">
+  <div class="inner">
+    <nav class="site-nav">
+      <div class="site-nav-left">
+        <a class="site-nav-logo" href="#"><img src="https://hugorocaproyectos.js.org/hugo-logo.png" alt="HR Proyectos" /></a>
+
+        <ul class="nav" role="menu">
+        
+        
+        
+            <li class="" role="menuitem">
+              <a href="/">Inicio</a>
+            </li>
+        
+            <li class="" role="menuitem">
+              <a href="https://hugoroca.github.io/">Acerca de mi</a>
+            </li>
+        
+            <li class="" role="menuitem">
+              <a href="/tags/csharp/">C#</a>
+            </li>
+        
+            <li class="" role="menuitem">
+              <a href="/tags/php/">PHP</a>
+            </li>
+        
+            <li class="" role="menuitem">
+              <a href="/tags/sqlserver/">SQLServer</a>
+            </li>
+        
+            <li class="" role="menuitem">
+              <a href="/tags/sistemas">Sistemas</a>
+            </li>
+        
+            <li class="" role="menuitem">
+              <a href="/tags/js/">Javascript</a>
+            </li>
+        
+      </ul></div>
+
+      <div class="site-nav-right">
+        <div class="social-links">
+                    
+
+                    <a class="social-link social-link-tw" href="https://twitter.com/HuugooRoca" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg></a>
+
+                    <a class="social-link" href="https://github.com/hugoroca" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+
+                    <a class="social-link" href="https://www.linkedin.com/in/hugoroca" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 50 512 512"><path d="M150.65,100.682c0,27.992-22.508,50.683-50.273,50.683c-27.765,0-50.273-22.691-50.273-50.683 C50.104,72.691,72.612,50,100.377,50C128.143,50,150.65,72.691,150.65,100.682z M143.294,187.333H58.277V462h85.017V187.333z M279.195,187.333h-81.541V462h81.541c0,0,0-101.877,0-144.181c0-38.624,17.779-61.615,51.807-61.615 c31.268,0,46.289,22.071,46.289,61.615c0,39.545,0,144.181,0,144.181h84.605c0,0,0-100.344,0-173.915 s-41.689-109.131-99.934-109.131s-82.768,45.369-82.768,45.369V187.333z" /></svg></a>
+
+                    
+        </div>  
+            
+      </div>
+
+    </nav>  
+
+  </div>
+</header>
+
+<main id="site-main" class="site-main outer" role="main">
+  <div class="inner">
+    
+      <article class="post-full post"> 
+    <header class="post-full-header">
+        <section class="post-full-meta">
+            <time class="post-full-meta-date" datetime="2018-09-15">15 September 2018</time>
+                <span class="date-divider">/</span> <a href="https://hugorocaproyectos.js.orgtags/poo/">#POO</a>&nbsp;
+        </section>
+        <h1 class="post-full-title">Programación Orientada a Objetos</h1>
+    </header>
+    
+    <figure class="post-full-image" style="background-image: url(https://hugorocaproyectos.js.org/images/post/POO.svg)">
+    </figure>
+
+    <section class="post-full-content">
+        <div class="kg-card-markdown">
+        
+
+<blockquote>
+<p>POO es un paradigna de programación que comenzó a desarrollarse en los años 80, en ese momento se dieron cuenta que esta forma de programación facilitaba el desarrollo de sistemas de gran tamaño. De hecho actualmente este paradigma de programación es el más utilizado, los grandes sistemas que conocemos han sido desarrollados en base a este paradigma.</p>
+</blockquote>
+
+<h3 id="las-ventajas-de-poo">Las ventajas de poo</h3>
+
+<p>Es reutilizable, esto quiero decir que si desarrollamos nuestro código de forma adecuada, las clases y lo que creemos se puede reutilizar, en distintas partes del programa la cual nos va a permitir no duplicar código.
+Mantenibilidad, un sistema orientado a objetos va ser mucho mas fácil de leer y comprender para los programadores, ya que para ellos no vas ser necesario adentrarse demasiado al código, basta con ver las clases generales para darse cuenta como funciona .
+Modificable, si nuestro código esta bien implementado va ser muy fácil añadir, modificar  o incluso eliminar las clases u objetos que ya existan en el código.
+Un sistema orientado a objetos también es fiable, es mas fácil detectar errores en este tipo de programas, podemos dividir el sistema en partes e ir las probando de manera independiente</p>
+
+<h3 id="característica-principales">Característica principales</h3>
+
+<ul>
+<li>Abstracción</li>
+<li>Encapsulamiento</li>
+<li>Herencia</li>
+<li>Polimorfismo</li>
+</ul>
+
+<p>Para poder desarrollar aplicaciones orientas a objetos de la mejor manera, debemos analizar y entender cada uno de estos conceptos.</p>
+
+<h2 id="la-abstracción">La abstracción</h2>
+
+<p>Es un pilar o característica de la programación orienta a objetos, que va permitir que los objetos puedan interactuar sin necesidad de conocer los detalles del funcionamiento, de esta forma el enfoque se centra en aspectos relevantes de las entidades, podemos decir de hecho que estos aspectos son relativos ya que van a depender del enfoque en que se analice. Para entender el concepto vamos a modelar una escuela.
+Una escuela puede tener muchas características, pero con la abstracciones me voy a centar o enfocar únicamente en las características que yo necesito, para ellos debo de pensar de que como quiero modelar la escuela, lo puedo modelas desde el punto de vista administrativo, por ejemplo:</p>
+
+<ul>
+<li>Control de alumnos</li>
+<li>Control de empleados</li>
+<li>Control de asignaturas</li>
+</ul>
+
+<p>Este seria el caso de un sistema de administración para escuela, también podemos enfocarnos de otra forma en las escuelas; podría ser que yo quisiera un sistema para una constructora,  en este caso puedo ver el enfoque de la escuela es muy diferente; a una constructora le van a interesar las características de la escuela las cuales pueden ser, ventanas, puertas, pisos entre otras aspectos.
+Como podemos ver una misma entidad puede analizarse desde varias puntos de vista o enfoque, ademas de acuerdo de este enfoque se van a definir las características o comportamientos.</p>
+
+<p>La abstraccion tambien nos va a permitir eliminar todos aquellos aspectos que forman parte del objeto o entidad pero que no son significatios para el caso que estamos analizando.</p>
+
+<h2 id="encapsulamiento">Encapsulamiento</h2>
+
+<p>Esta es una de las características más fáciles de entender de la programación orientada a objetos ya que la vamos a poder apreciar a simple vista en nuestro código, el encapsulamiento nos va a permitir empaquetar en un mismo contenedor o plantilla tanto las características de las entidades u objetos como sus comportamientos.</p>
+
+<p>Si has desarrollado con otros paradigmas de programación como la ‘programación estructurada’, podrás recordar que los datos y los módulos estaban separados, en cambio en la programación orientada a objetos estas características y atributos o comportamientos se van a mantener empaquetados en una misma plantilla.</p>
+
+<p>El encapsulamiento también va a permitir establecer niveles de acceso, de esta forma podemos indicar la manera en que los objetos van a poder interactuar entre si.</p>
+
+<p>Si continuamos con el ejemplo de la escuela o el sistema administrativo para la escuela, podríamos tener la clase empleado y un comportamiento que calcule el pago, suponiendo que no queremos que otro elemento conozca el detalle de esta calculo, podríamos entonces ocultarlo y de esta forma estaríamos marcando su nivel de acceso</p>
+
+<h2 id="herencia">Herencia</h2>
+
+<p>La herencia es otro pilar de la programación orientada a objetos que vamos a entender fácilmente, ya que la herencia en sí es parte de la naturaleza humana.</p>
+
+<p>En un sistema, la herencia va ayudarnos a clasificar los elementos y su vez nos va a permitir reutilizar el código, regularmente en un sistema vamos a encontrar que sus elementos pueden ser organizados de manera jerárquica, de tal forma que las clases o elementos de nivel superior pueda compartir sus características y acciones con las entidades de nivel superior.</p>
+
+<p>Si pensamos en los empleados para el sistema que hemos planteado para la administración de una escuela, estos empleados pueden clasificarse en profesor, director y secretaria por ejemplo.</p>
+
+<p>Podríamos entonces definir estas clases como derivadas de la clase empleado, de esta forma estaríamos aplicando la herencia y las clases derivadas profesor, director y secretaria estarán heredando las características y comportamientos de la clase empleado.</p>
+
+<p>Podemos analizarlo de la siguiente forma, un empleado puede ser un profesor, un director o una secretaria, cabe mencionar que un sistema puede tener &lsquo;n&rsquo; niveles de herencia, en nuestro sistema podríamos pensar por ejemplo en una clasificación adicional para el profesor, para ellos podríamos añadir las clases <code>tiempo_completo</code> y <code>por_horas</code>, estas clases serian entonces derivadas de la clase profesor.</p>
+
+<p>Es así como la herencia nos ha ayudado hacer una estructura jerárquica que nos va servir para desarrollar nuestro sistema.</p>
+
+<p>El ultimo nivel jerárquico en este caso <code>tiempo_completo</code> y <code>por_horas</code> van a adquirir las características de todas las clases de las cuales heredan, es decir que <code>tiempo_completo</code> va adquirir las características y comportamiento tanto de la clase profesor como de la clase empleado, las clases director, profesor y secretaría son clases derivadas únicamente de la clase empleado por la tanto solo van a adquirir las características y comportamientos de esta clase.</p>
+
+<h2 id="polimorfismo">Polimorfismo</h2>
+
+<p>Es la característica de la programación orientada a objetos que va a permitir que un objeto presente diferentes comportamientos de acuerdo al contexto en el que se encuentre.</p>
+
+<p>Existen diversas formas de implementar el polimorfismo, la implementación que podemos encontrar más comúnmente en un sistema es la que permite definir un comportamiento para que una clase que a su vez va ser heredado a sus clases derivadas y cada una de ellas va poder adaptar este comportamiento e implementarlo de acuerdo a sus necesidades.</p>
+
+<p>Retomando el ejemplo que aviamos planteado de la escuela, vamos a suponer que quiero definir un comportamiento para los empleado, yo se todos los empleados van a tener que recibir un pago, para ello voy a utilizar el comportamiento o método <code>CalcularPago</code>, el problema en este caso que vamos a encontrar es que no todos los empleado van a recibir un mismo pago y su pago no se va a calcular de la misma forma, es entonces que mediante el poliformismo voy a permitir que el método <code>CalcularPago</code> sea implementado por cada clase dependiendo de sus necesidades.</p>
+
+<p>Por ejemplo para la clase profesor de tiempo completo haría que el calculo de pago sea de acuerdo a sus prestaciones y a su quincena, en cambio para un profesor por hora implementaría el método <code>CalcularPago</code> de acuerdo a las horas que a trabajado durante el mes. También la clase director va heredar el método o comportamiento de la clase empleado y la clase derivada secretaria también lo va hacer, cada una de estas clases va implementar el comportamiento de acuerdo a sus necesidades.</p>
+    
+        </div>
+    </section>
+
+    <footer class="post-full-footer">
+      <section class="author-card">
+        <img class="author-profile-image" src="https://hugorocaproyectos.js.org/img/ghost-icon.png" alt="Author" />
+        <section class="author-card-content">
+            <h4 class="author-card-name"><a href="https://hugorocaproyectos.js.org/">Hugo Roca</a></h4>
+                <p>Your description here</p>
+        </section>
+      </section>
+    </footer>
+</article>
+    
+    
+    
+
+<div id="disqus_thread"></div>
+<script>
+
+
+
+
+var disqus_config = function () {
+this.page.url = "https:\/\/hugorocaproyectos.js.org\/programaci%C3%B3n-orientada-a-objetos\/";  
+this.page.identifier = "https:\/\/hugorocaproyectos.js.org\/programaci%C3%B3n-orientada-a-objetos\/"; 
+};
+
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://hugorocaproyectos.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  </div>
+</main>
+
+
+<aside class="read-next outer">
+  <div class="inner">
+    <div class="read-next-feed">      
+      
+<article class="read-next-card" style="background-color: #090a0b;">
+    <header class="read-next-card-header">
+        <small class="read-next-card-header-sitetitle">&mdash; HR Proyectos &mdash;</small>
+        
+        <h3 class="read-next-card-header-title"><a href="https://hugorocaproyectos.js.orgtags/poo/">#POO</a></h3>
+    </header>
+    <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/></svg>
+    </div>
+
+    <div class="read-next-card-content">
+      
+        <ul>
+          <li><a href="https://hugorocaproyectos.js.org/app-restaurante/">APP Restaurante</a></li>            
+        
+          <li><a href="https://hugorocaproyectos.js.org/conexi%C3%B3n-nodejs-con-sqlserver/">Conexión NodeJS con SQLServer</a></li>            
+        
+          <li><a href="https://hugorocaproyectos.js.org/registro-de-errores-con-log4net/">Registro de errores con Log4Net</a></li>            
+        
+          <li><a href="https://hugorocaproyectos.js.org/gr%C3%A1ficos-con-d3js/">Gráficos con D3JS</a></li>            
+        </ul>
+    </div>
+    <footer class="read-next-card-footer">
+      
+        <a href="https://hugorocaproyectos.js.orgtags/poo/">Ver todos los posts relacionados →</a>
+    </footer>
+</article>
+
+
+      
+      <article class="post-card post"> 
+    
+    <a class="post-card-image-link" href="https://hugorocaproyectos.js.org/gr%C3%A1ficos-con-d3js/">
+      <div class="post-card-image" style="background-image: url(https://hugorocaproyectos.js.org/images/post/d3js.svg)"></div>
+    </a>
+    
+
+    <div class="post-card-content">
+      <a class="post-card-content-link" href="https://hugorocaproyectos.js.org/gr%C3%A1ficos-con-d3js/">
+          <header class="post-card-header">
+              <span class="post-card-tags">
+              #JS 
+              #CSS3  </span>
+              
+              <h2 class="post-card-title">Gráficos con D3JS</h2>
+          </header>
+          <section class="post-card-excerpt">
+               
+                <p>D3.js es una biblioteca de JavaScript para manipular documentos basados ​​en datos. D3 te ayuda a dar vida a los datos usando HTML, SVG y CSS.</p>
+              
+          </section>
+      </a>
+
+      
+    </div>
+</article>
+      
+      
+      <article class="post-card post"> 
+    
+    <a class="post-card-image-link" href="https://hugorocaproyectos.js.org/app-restaurante/">
+      <div class="post-card-image" style="background-image: url(https://hugorocaproyectos.js.org/images/post/apprestaurante.svg)"></div>
+    </a>
+    
+
+    <div class="post-card-content">
+      <a class="post-card-content-link" href="https://hugorocaproyectos.js.org/app-restaurante/">
+          <header class="post-card-header">
+              <span class="post-card-tags">
+              #SQLSERVER 
+              #CSharp 
+              #JS 
+              #JQUERY  </span>
+              
+              <h2 class="post-card-title">APP Restaurante</h2>
+          </header>
+          <section class="post-card-excerpt">
+               
+                <p>En estas oportunidad les presento un nuevo sistema de restaurante, cuenta con dos formas de ver, una para los pedidos que se configura dentro del sistema y la otra la parte administrativa.</p>
+              
+          </section>
+      </a>
+
+      
+    </div>
+</article>
+      
+    </div>
+  </div>
+</aside>
+
+<div class="floating-header">
+  <div class="floating-header-logo">
+    <a href="https://hugorocaproyectos.js.org/">
+      
+      <span>Hugo Roca Proyectos</span>
+    </a>
+  </div>
+  <span class="floating-header-divider">&mdash;</span>
+  <div class="floating-header-title">Programación Orientada a Objetos</div>
+  <div class="floating-header-share">
+    <div class="floating-header-share-label">Comparte <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+     <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/></svg>
+    </div>
+
+    <a class="floating-header-share-tw" href="https://twitter.com/share?text=Programaci%c3%b3n%20Orientada%20a%20Objetos&amp;url=https%3a%2f%2fhugorocaproyectos.js.org%2fprogramaci%25C3%25B3n-orientada-a-objetos%2f"
+        onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
+    </a>
+
+    <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fhugorocaproyectos.js.org%2fprogramaci%25C3%25B3n-orientada-a-objetos%2f"
+        onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
+    </a>
+      
+  </div>
+
+  <progress class="progress" value="0">
+    <div class="progress-container">
+      <span class="progress-bar"></span>
+    </div>
+  </progress>
+</div>
+
+
+
+<footer class="site-footer outer">
+  <div class="site-footer-content inner">
+    <section class="copyright" style="line-height: 1.3em;">
+      <a href="/">HR</a> © 2019 <br>
+      <span style="font-size: 0.8em; color: #555;">Hugo port of <a href="https://github.com/TryGhost/Casper">Casper 2.1.7</a> by <a href="https://www.telematika.org">EM</a></span>
+    </section>
+    <nav class="site-footer-nav">
+        <a href="/">Latest Posts</a>
+        
+        <a href="https://twitter.com/HuugooRoca" target="_blank" rel="noopener">Twitter</a>
+        <a href="https://github.com/hugoroca" target="_blank" rel="noopener">Github</a>
+        <a href="https://www.linkedin.com/in/hugoroca" target="_blank" rel="noopener">LinkedIn</a>
+        
+    </nav>  
+  </div>
+</footer>
+
+</div>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://hugorocaproyectos.js.org/js/jquery.fitvids.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+  <!-- Google Analytics -->
+  <script>
+    var _gaq=[['_setAccount','UA-125594168-1'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+
+
+    <script>
+
+
+
+
+
+$(document).ready(function () {
+    
+    var $postContent = $(".post-full-content");
+    $postContent.fitVids();
+    
+
+    var progressBar = document.querySelector('progress');
+    var header = document.querySelector('.floating-header');
+    var title = document.querySelector('.post-full-title');
+
+    var lastScrollY = window.scrollY;
+    var lastWindowHeight = window.innerHeight;
+    var lastDocumentHeight = $(document).height();
+    var ticking = false;
+
+    function onScroll() {
+        lastScrollY = window.scrollY;
+        requestTick();
+    }
+
+    function onResize() {
+        lastWindowHeight = window.innerHeight;
+        lastDocumentHeight = $(document).height();
+        requestTick();
+    }
+
+    function requestTick() {
+        if (!ticking) {
+            requestAnimationFrame(update);
+        }
+        ticking = true;
+    }
+
+    function update() {
+        var trigger = title.getBoundingClientRect().top + window.scrollY;
+        var triggerOffset = title.offsetHeight + 35;
+        var progressMax = lastDocumentHeight - lastWindowHeight;
+
+        
+        if (lastScrollY >= trigger + triggerOffset) {
+            header.classList.add('floating-active');
+        } else {
+            header.classList.remove('floating-active');
+        }
+
+        progressBar.setAttribute('max', progressMax);
+        progressBar.setAttribute('value', lastScrollY);
+
+        ticking = false;
+    }
+
+    window.addEventListener('scroll', onScroll, {passive: true});
+    window.addEventListener('resize', onResize, false);
+
+    update();
+});
+</script>
+</body></html>
