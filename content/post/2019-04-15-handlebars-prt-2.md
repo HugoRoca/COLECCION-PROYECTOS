@@ -46,14 +46,14 @@ El `if` trabajando sobre una propiedad se cumple solo cuando la propiedad existe
     <p>(unless) Te has conectado desde: {{dispositivo}}</p>
 {{/unless}}
 ```
-La expreción `unless` es los contrario del `if`, es decir, se ejecuta igual que el `if`, tiene el mismo formato que el `if` hasta incluso soporta el `else` tambien pero en lugar de comprabar que la condición se cumple, esta se ejecuta cuando la condición no se cumple.
+La expreción `unless` es lo contrario del `if`, es decir, se ejecuta igual que el `if`, tiene el mismo formato que el `if` hasta incluso soporta el `else` tambien pero en lugar de comprabar que la condición se cumple, esta se ejecuta cuando la condición no se cumple.
 
 ### Bucles
 ```html
 <script id="lista-indice" type="text/x-handlebars-template">
     <h1>Índice</h1>
     <ul class="list-unstyled">
-    {{#each elementos}}
+    {{#each this}}
         <li><a href="{{enlace}}"><span class="glyphicon glyphicon-ok"></span> {{nombre}}</a></li>
     {{/each}}
     </ul>
@@ -94,7 +94,7 @@ La expreción `unless` es los contrario del `if`, es decir, se ejecuta igual que
 </script>
 
 ```
-Esta plantilla arranca con un h1 estático con el texto que no coge contenido dinámico también inicializa una lista y la cierra, es una lista desordenada que forma parte del índice, y finalmente tenemos la parte de iteración a través de el array que se le pasa a la plantilla, si nos fijamos en la plantilla se le está pasando el `índice`, el índice es una variable en javascript que directamente es una array por lo tanto la única manera de referencia el contexto de tipo array que queremos recorrer es mediante la palabra `this`, this es una palabra que existe en handlebars y en esta caso `this` tomará el valor del `indice` que es precisamente un array por lo tanto si funcionará la instrucción `each` sobre `this`.
+Esta plantilla arranca con un h1 estático con el texto que no coge contenido dinámico también inicializa una lista y la cierra, es una lista desordenada que forma parte del índice, y finalmente tenemos la parte de iteración a través de el array que se le pasa a la plantilla, si nos fijamos en la plantilla se le está pasando el `índice`, el índice es una variable en javascript que directamente es una array por lo tanto la única manera de referencia el contexto de tipo array que queremos recorrer es mediante la palabra `this`, this es una palabra que existe en handlebars y en este caso `this` tomará el valor del `indice` que es precisamente un array por lo tanto si funcionará la instrucción `each` sobre `this`.
 
 La instrucción `each` se contruye muy parecido a la instrucción `if`.
 
