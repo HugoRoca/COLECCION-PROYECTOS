@@ -12,7 +12,7 @@
     <link rel="shortcut icon" href="https://hugorocaproyectos.js.org/favicon.png" />
     <link rel="canonical" href="https://hugorocaproyectos.js.org/handlebars--parte-2/" />
 
-     <meta name="description" content="Continuando con handlebars, esta vez construiremos plantillas mas avanzadas usando condiciones y bucles." /> 
+     <meta name="description" content="Continuando con handlebars, esta vez construiremos plantillas mas avanzadas usando condiciones, bucles, with y variables de datos" /> 
 
      
     
@@ -21,7 +21,7 @@
     
  
     <meta name="twitter:title" content="Handlebars | Parte 2"/>
-    <meta name="twitter:description" content="Continuando con handlebars, esta vez construiremos plantillas mas avanzadas usando condiciones y bucles."/>
+    <meta name="twitter:description" content="Continuando con handlebars, esta vez construiremos plantillas mas avanzadas usando condiciones, bucles, with y variables de datos"/>
     <meta name="twitter:url" content="https://hugorocaproyectos.js.org/handlebars--parte-2/" />
     <meta name="twitter:site" content="@HuugooRoca"/>
 
@@ -31,7 +31,7 @@
     
 
     <meta property="og:type" content="article" />
-    <meta property="og:description" content="Continuando con handlebars, esta vez construiremos plantillas mas avanzadas usando condiciones y bucles." />
+    <meta property="og:description" content="Continuando con handlebars, esta vez construiremos plantillas mas avanzadas usando condiciones, bucles, with y variables de datos" />
 
     <meta property="article:published_time" content="2019-04-15T00:00:00Z" />
     <meta property="article:tag" content="Handlebars" />
@@ -134,7 +134,22 @@
         <div class="kg-card-markdown">
         
 
-<h3 id="condiciones">Condiciones</h3>
+<blockquote>
+<p>Continuando con handlebars, esta vez construiremos plantillas mas avanzadas usando condiciones, bucles, with y variables de datos</p>
+</blockquote>
+
+<p>Contenido:</p>
+
+<ol>
+<li>Condiciones</li>
+<li>Bucles</li>
+<li>Propiedades anidadas</li>
+<li>Variables de datos FIRTS y LAST</li>
+<li>Variables de datos INDEX y KEY</li>
+<li>Variables de datos ROOT</li>
+</ol>
+
+<h2 id="1-condiciones">1. Condiciones</h2>
 
 <pre><code class="language-html">&lt;script id=&quot;mi-plantilla&quot; type=&quot;text/x-handlebars-template&quot;&gt;
     &lt;h1&gt;¡Hola {{nick}}!&lt;/h1&gt;
@@ -172,7 +187,7 @@
 
 <p>La expreción <code>unless</code> es lo contrario del <code>if</code>, es decir, se ejecuta igual que el <code>if</code>, tiene el mismo formato que el <code>if</code> hasta incluso soporta el <code>else</code> tambien pero en lugar de comprabar que la condición se cumple, esta se ejecuta cuando la condición no se cumple.</p>
 
-<h3 id="bucles">Bucles</h3>
+<h2 id="2-bucles">2. Bucles</h2>
 
 <pre><code class="language-html">&lt;script id=&quot;lista-indice&quot; type=&quot;text/x-handlebars-template&quot;&gt;
     &lt;h1&gt;Índice&lt;/h1&gt;
@@ -223,7 +238,7 @@
 
 <p>La instrucción <code>each</code> se contruye muy parecido a la instrucción <code>if</code>.</p>
 
-<h3 id="propiedades-anidadas">Propiedades anidadas</h3>
+<h2 id="3-propiedades-anidadas">3. Propiedades anidadas</h2>
 
 <pre><code class="language-html">&lt;script id=&quot;mi-plantilla&quot; type=&quot;text/x-handlebars-template&quot;&gt;
     &lt;h1&gt;{{apellidos}}, {{nombre}}&lt;/h1&gt;
@@ -280,7 +295,7 @@
 
 <p><code>with</code> se construye muy parecido a las instrucción <code>each</code>.</p>
 
-<h3 id="variables-de-datos-firts-y-last">Variables de datos FIRTS y LAST</h3>
+<h2 id="4-variables-de-datos-firts-y-last">4. Variables de datos FIRTS y LAST</h2>
 
 <pre><code class="language-handlebars">&lt;h1&gt;{{apellidos}}, {{nombre}}&lt;/h1&gt;
 &lt;p&gt;Edad: {{edad}}&lt;/p&gt;
@@ -299,7 +314,7 @@
 
 <p>Handlebars nos ofrece una serie de variables predefinidas en el sistema que nos dan determinada información dependiendo del contexto en el que se están usando, en este caso vamos a ver dos de ellas (<code>first y last</code>), que nos van a servir para conocer cuando estamos en el primer o último elemento de un bucle que estamos recorriendo mediante <code>each</code>, esto su aplicación directa es en un escenario de maquetacion web por lo tanto la aplicación de estas dos variables se suele usar dentro de lo que es la plantilla de handlebars, la plantilla que es la parte dedicada en específico a la presentación y por lo tanto como decimos vamos a tener un mecanismo de diferenciar el primer elemento del último y del resto de los elementos de esa iteración y eso nos va a permitir por lo que en muchas situaciones nos encontramos que tenemos que aplicar por ejemplo una clase diferente al primer elemento de una lista o al último como podría ser en el caso de un menú web.</p>
 
-<h3 id="variables-de-datos-index-y-key">Variables de datos INDEX y KEY</h3>
+<h2 id="5-variables-de-datos-index-y-key">5. Variables de datos INDEX y KEY</h2>
 
 <pre><code class="language-handlebars">&lt;h1&gt;{{apellidos}}, {{nombre}}&lt;/h1&gt;
 &lt;p&gt;Edad: {{edad}}&lt;/p&gt;
@@ -338,7 +353,7 @@ social --&gt;
 
 <p>Y vemos que por tanto podemos saber en qué interacción nos encontramos en cuanto a número y también podemos saber qué propiedad estamos recorriendo de un objeto que a priori no tenemos porque conocer, por lo tanto estas dos variables predefinidas son muy útiles a la hora de utilizar bucles <code>each</code> porque nos dan un dinamismo y una flexibilidad muy interesante a la hora de interpretar como renderizar nuestra plantilla para cada uno de los elementos que recorremos pero sí que es cierto que estas dos variables predefinidas más que en un <code>each</code> de una plantilla convencional de handlebars van a tener mucho más sentido en un <code>each</code> que empleemos en un helper que es una estructura especial que nos permite renderizar la plantilla totalmente adaptada a nuestras necesidades.</p>
 
-<h3 id="variables-de-datos-root">Variables de datos ROOT</h3>
+<h2 id="6-variables-de-datos-root">6. Variables de datos ROOT</h2>
 
 <p><code>Root</code> es una variable predefinida que nos ofrece handlebars que es realmente útil para acceder a la raíz del contexto en el que estamos trabajando no obstante tiene alguna particularidad que es muy interesante tener en conocimiento porque nos puede ahorrar unos cuantos dolores de cabeza cuando trabajamos con ella.</p>
 
@@ -440,13 +455,13 @@ s.setAttribute('data-timestamp', +new Date());
     <div class="read-next-card-content">
       
         <ul>
-          <li><a href="https://hugorocaproyectos.js.org/portafolio-profesional/">Portafolio Profesional</a></li>            
-        
-          <li><a href="https://hugorocaproyectos.js.org/scripts-sqlserver/">Scripts SQLServer</a></li>            
-        
-          <li><a href="https://hugorocaproyectos.js.org/conexi%C3%B3n-nodejs-con-redis-cache/">Conexión NodeJS con Redis Cache</a></li>            
-        
           <li><a href="https://hugorocaproyectos.js.org/programaci%C3%B3n-orientada-a-objetos/">Programación Orientada a Objetos</a></li>            
+        
+          <li><a href="https://hugorocaproyectos.js.org/conexi%C3%B3n-nodejs-con-sqlserver/">Conexión NodeJS con SQLServer</a></li>            
+        
+          <li><a href="https://hugorocaproyectos.js.org/javascript-promesas/">Javascript: Promesas</a></li>            
+        
+          <li><a href="https://hugorocaproyectos.js.org/sigeven-2.0/">SIGEVEN 2.0</a></li>            
         </ul>
     </div>
     <footer class="read-next-card-footer">

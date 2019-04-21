@@ -17,7 +17,9 @@
       <pubDate>Mon, 15 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>https://hugorocaproyectos.js.org/handlebars--parte-2/</guid>
-      <description>Condiciones &amp;lt;script id=&amp;quot;mi-plantilla&amp;quot; type=&amp;quot;text/x-handlebars-template&amp;quot;&amp;gt; &amp;lt;h1&amp;gt;¡Hola {{nick}}!&amp;lt;/h1&amp;gt; {{#if dispositivo}} &amp;lt;p&amp;gt;Te has conectado desde: {{dispositivo}}&amp;lt;/p&amp;gt; {{else}} &amp;lt;p&amp;gt;No hemos identificado desde dónde te conectas.&amp;lt;/p&amp;gt; {{/if}} &amp;lt;/script&amp;gt; &amp;lt;div id=&amp;quot;contenedor&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;script&amp;gt; $(document).ready(function() { let source = $(&amp;quot;#mi-plantilla&amp;quot;).html(); let plantilla = Handlebars.compile(source); let usuarioDispositivo = { nick: &#39;Carlos&#39;, dispositivo: &#39;WEB&#39; }; let usuarioSinIdentificar = { nick: &#39;Carlos&#39;}; let usuarioSinDefinir = { nick: &#39;Carlos&#39;, dispositivo: &#39;&#39; }; $(&#39;#contenedor&#39;).html( plantilla( usuarioDispositivo ) ); }) &amp;lt;/script&amp;gt;  El if trabajando sobre una propiedad se cumple solo cuando la propiedad existe y tiene un valor que no es vacio y en caso que sea vacio o que no exita lo interpreta como inexistente.</description>
+      <description>Continuando con handlebars, esta vez construiremos plantillas mas avanzadas usando condiciones, bucles, with y variables de datos
+ Contenido:
+ Condiciones Bucles Propiedades anidadas Variables de datos FIRTS y LAST Variables de datos INDEX y KEY Variables de datos ROOT  1. Condiciones &amp;lt;script id=&amp;quot;mi-plantilla&amp;quot; type=&amp;quot;text/x-handlebars-template&amp;quot;&amp;gt; &amp;lt;h1&amp;gt;¡Hola {{nick}}!&amp;lt;/h1&amp;gt; {{#if dispositivo}} &amp;lt;p&amp;gt;Te has conectado desde: {{dispositivo}}&amp;lt;/p&amp;gt; {{else}} &amp;lt;p&amp;gt;No hemos identificado desde dónde te conectas.&amp;lt;/p&amp;gt; {{/if}} &amp;lt;/script&amp;gt; &amp;lt;div id=&amp;quot;contenedor&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;script&amp;gt; $(document).</description>
     </item>
     
     <item>
@@ -27,7 +29,7 @@
       
       <guid>https://hugorocaproyectos.js.org/handlebars--parte-1/</guid>
       <description>Handlebars.js es un motor de plantillas muy popular que es potente, fácil de utilizar y que cuenta con una gran comunidad. Se basa en el lenguaje de plantillas Mustache, pero lo mejora de distintas maneras.
-Los sistemas de plantillas son muy importantes, porque nos permiten separar el código por responsabilidades y crear la salida de las aplicaciones de una manera sencilla, manteniendo el código HTML separado del código Javascript.</description>
+ Los sistemas de plantillas son muy importantes, porque nos permiten separar el código por responsabilidades y crear la salida de las aplicaciones de una manera sencilla, manteniendo el código HTML separado del código Javascript.</description>
     </item>
     
     <item>
