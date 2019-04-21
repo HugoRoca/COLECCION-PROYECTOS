@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="es-PE" />
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Handlebars | Parte 2 &middot; Hugo Roca Proyectos</title>
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="https://hugorocaproyectos.js.org/favicon.png" />
+    <link rel="canonical" href="https://hugorocaproyectos.js.org/handlebars--parte-2/" />
+
+     <meta name="description" content="Continuando con handlebars, esta vez construiremos plantillas mas avanzadas usando condiciones y bucles." /> 
+
+     
+    
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:image" content="https://hugorocaproyectos.js.org/images/shared/handlebars-prt-2.jpg"/>
+    
+ 
+    <meta name="twitter:title" content="Handlebars | Parte 2"/>
+    <meta name="twitter:description" content="Continuando con handlebars, esta vez construiremos plantillas mas avanzadas usando condiciones y bucles."/>
+    <meta name="twitter:url" content="https://hugorocaproyectos.js.org/handlebars--parte-2/" />
+    <meta name="twitter:site" content="@HuugooRoca"/>
+
+    <meta property="og:site_name" content="Hugo Roca Proyectos" />
+    <meta property="og:title" content="Handlebars | Parte 2 &middot; HR Proyectos" />
+    <meta property="og:url" content="https://hugorocaproyectos.js.org/handlebars--parte-2/" />
+    
+
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="Continuando con handlebars, esta vez construiremos plantillas mas avanzadas usando condiciones y bucles." />
+
+    <meta property="article:published_time" content="2019-04-15T00:00:00Z" />
+    <meta property="article:tag" content="Handlebars" />
+
+    <meta property="og:image" content="https://hugorocaproyectos.js.org/images/shared/handlebars-prt-2.jpg"/>
+
+
+    <meta name="generator" content="Hugo 0.42.1" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="https://hugorocaproyectos.js.org/built/screen.css" /> 
+    <link rel="stylesheet" type="text/css" href="https://hugorocaproyectos.js.org/css/casper-two.css" /> 
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css" />
+    
+
+     
+
+</head>
+
+
+<body class="post-template">
+  <div class="site-wrapper"> 
+
+<header class="site-header outer">
+  <div class="inner">
+    <nav class="site-nav">
+      <div class="site-nav-left">
+        <a class="site-nav-logo" href="#"><img src="https://hugorocaproyectos.js.org/hugo-logo.png" alt="HR Proyectos" /></a>
+
+        <ul class="nav" role="menu">
+        
+        
+        
+            <li class="" role="menuitem">
+              <a href="/">Inicio</a>
+            </li>
+        
+            <li class="" role="menuitem">
+              <a href="https://hugoroca.github.io/">Acerca de mi</a>
+            </li>
+        
+            <li class="" role="menuitem">
+              <a href="/tags/csharp/">C#</a>
+            </li>
+        
+            <li class="" role="menuitem">
+              <a href="/tags/php/">PHP</a>
+            </li>
+        
+            <li class="" role="menuitem">
+              <a href="/tags/sqlserver/">SQLServer</a>
+            </li>
+        
+            <li class="" role="menuitem">
+              <a href="/tags/sistemas">Sistemas</a>
+            </li>
+        
+            <li class="" role="menuitem">
+              <a href="/tags/js/">Javascript</a>
+            </li>
+        
+      </ul></div>
+
+      <div class="site-nav-right">
+        <div class="social-links">
+                    
+
+                    <a class="social-link social-link-tw" href="https://twitter.com/HuugooRoca" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg></a>
+
+                    <a class="social-link" href="https://github.com/hugoroca" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+
+                    <a class="social-link" href="https://www.linkedin.com/in/hugoroca" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 50 512 512"><path d="M150.65,100.682c0,27.992-22.508,50.683-50.273,50.683c-27.765,0-50.273-22.691-50.273-50.683 C50.104,72.691,72.612,50,100.377,50C128.143,50,150.65,72.691,150.65,100.682z M143.294,187.333H58.277V462h85.017V187.333z M279.195,187.333h-81.541V462h81.541c0,0,0-101.877,0-144.181c0-38.624,17.779-61.615,51.807-61.615 c31.268,0,46.289,22.071,46.289,61.615c0,39.545,0,144.181,0,144.181h84.605c0,0,0-100.344,0-173.915 s-41.689-109.131-99.934-109.131s-82.768,45.369-82.768,45.369V187.333z" /></svg></a>
+
+                    
+        </div>  
+            
+      </div>
+
+    </nav>  
+
+  </div>
+</header>
+
+<main id="site-main" class="site-main outer" role="main">
+  <div class="inner">
+    
+      <article class="post-full post"> 
+    <header class="post-full-header">
+        <section class="post-full-meta">
+            <time class="post-full-meta-date" datetime="2019-04-15">15 April 2019</time>
+                <span class="date-divider">/</span> <a href="https://hugorocaproyectos.js.orgtags/handlebars/">#Handlebars</a>&nbsp;
+        </section>
+        <h1 class="post-full-title">Handlebars | Parte 2</h1>
+    </header>
+    
+    <figure class="post-full-image" style="background-image: url(https://hugorocaproyectos.js.org/images/post/handlebars-prt-2.svg)">
+    </figure>
+
+    <section class="post-full-content">
+        <div class="kg-card-markdown">
+        
+
+<h3 id="condiciones">Condiciones</h3>
+
+<pre><code class="language-html">&lt;script id=&quot;mi-plantilla&quot; type=&quot;text/x-handlebars-template&quot;&gt;
+    &lt;h1&gt;¡Hola {{nick}}!&lt;/h1&gt;
+    {{#if dispositivo}}
+        &lt;p&gt;Te has conectado desde: {{dispositivo}}&lt;/p&gt;
+    {{else}}
+        &lt;p&gt;No hemos identificado desde dónde te conectas.&lt;/p&gt;
+    {{/if}}
+&lt;/script&gt;
+
+&lt;div id=&quot;contenedor&quot;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+    $(document).ready(function() {
+        let source   = $(&quot;#mi-plantilla&quot;).html();       
+        let plantilla = Handlebars.compile(source);
+
+        let usuarioDispositivo = { nick: 'Carlos', dispositivo: 'WEB' };            
+        let usuarioSinIdentificar = { nick: 'Carlos'};
+        let usuarioSinDefinir = { nick: 'Carlos', dispositivo: '' };
+        
+        $('#contenedor').html( plantilla( usuarioDispositivo ) );
+    })
+&lt;/script&gt;
+</code></pre>
+
+<p>El <code>if</code> trabajando sobre una propiedad se cumple solo cuando la propiedad existe y tiene un valor que no es vacio y en caso que sea vacio o que no exita lo interpreta como inexistente.</p>
+
+<pre><code class="language-handlebars">{{#unless dispositivo}}
+    &lt;p&gt;(unless) No hemos identificado desde donde te contectas.&lt;/p&gt;
+{{else}}
+    &lt;p&gt;(unless) Te has conectado desde: {{dispositivo}}&lt;/p&gt;
+{{/unless}}
+</code></pre>
+
+<p>La expreción <code>unless</code> es lo contrario del <code>if</code>, es decir, se ejecuta igual que el <code>if</code>, tiene el mismo formato que el <code>if</code> hasta incluso soporta el <code>else</code> tambien pero en lugar de comprabar que la condición se cumple, esta se ejecuta cuando la condición no se cumple.</p>
+
+<h3 id="bucles">Bucles</h3>
+
+<pre><code class="language-html">&lt;script id=&quot;lista-indice&quot; type=&quot;text/x-handlebars-template&quot;&gt;
+    &lt;h1&gt;Índice&lt;/h1&gt;
+    &lt;ul class=&quot;list-unstyled&quot;&gt;
+    {{#each this}}
+        &lt;li&gt;&lt;a href=&quot;{{enlace}}&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-ok&quot;&gt;&lt;/span&gt; {{nombre}}&lt;/a&gt;&lt;/li&gt;
+    {{/each}}
+    &lt;/ul&gt;
+&lt;/script&gt;
+
+&lt;div id=&quot;contenedor&quot;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+    let indice = [
+            {nombre:'El problema', enlace:'problema.html'}, 
+            {nombre:'Expresiones, sintaxis básica', enlace:'expresiones.html'}, 
+            {nombre:'Uso básico', enlace:'usobasico.html'}, 
+            {nombre:'Datos o contexto', enlace:'datos.html'}, 
+            {nombre:'Comentarios', enlace:'comentarios.html'}, 
+            {nombre:'Datos con contenido HTML', enlace:'datoshtml.html'}, 
+            {nombre:'Mi primera plantilla', enlace:'miprimeraplantilla.html'}, 
+            {nombre:'Estructuras condicionales', enlace:'condicional.html'},
+            {nombre:'Estructuras iterativas', enlace:'index.html'},
+            {nombre:'Propiedades anidadas', enlace:'propiedadesanidadas.html'},
+            {nombre:'Variables @first y @last', enlace:'variables_first_last.html'},
+            {nombre:'Variables @index y @key', enlace:'variables_index_key.html'},
+            {nombre:'Variable @root', enlace:'variables_root.html'},
+            {nombre:'Qué son los helpers', enlace:'quesonloshelpers.html'},
+            {nombre:'Trabajando con helpers', enlace:'helper.html'},
+            {nombre:'Helpers de bloque', enlace:'blockhelper.html'},
+            {nombre:'Partials', enlace:'partial.html'}
+        ];
+
+    $(document).ready(function() {
+        let origen;
+        let plantilla;
+
+        origen = document.getElementById('lista-indice').innerHTML;
+        plantilla = Handlebars.compile(origen);
+
+        $('#contenedor').html( plantilla(indice) );
+    });
+&lt;/script&gt;
+
+</code></pre>
+
+<p>Esta plantilla arranca con un h1 estático con el texto que no coge contenido dinámico también inicializa una lista y la cierra, es una lista desordenada que forma parte del índice, y finalmente tenemos la parte de iteración a través de el array que se le pasa a la plantilla, si nos fijamos en la plantilla se le está pasando el <code>índice</code>, el índice es una variable en javascript que directamente es una array por lo tanto la única manera de referencia el contexto de tipo array que queremos recorrer es mediante la palabra <code>this</code>, this es una palabra que existe en handlebars y en este caso <code>this</code> tomará el valor del <code>indice</code> que es precisamente un array por lo tanto si funcionará la instrucción <code>each</code> sobre <code>this</code>.</p>
+
+<p>La instrucción <code>each</code> se contruye muy parecido a la instrucción <code>if</code>.</p>
+
+<h3 id="propiedades-anidadas">Propiedades anidadas</h3>
+
+<pre><code class="language-html">&lt;script id=&quot;mi-plantilla&quot; type=&quot;text/x-handlebars-template&quot;&gt;
+    &lt;h1&gt;{{apellidos}}, {{nombre}}&lt;/h1&gt;
+    &lt;p&gt;Edad: {{edad}}&lt;/p&gt;
+    &lt;h2&gt;En la red:&lt;/h2&gt;
+    &lt;ul class=&quot;list-unstyled&quot;&gt;
+    {{#with social}}
+        {{#if twitter}}
+        &lt;li&gt;&lt;span class=&quot;glyphicon glyphicon-chevron-right&quot;&gt;&lt;/span&gt; &lt;a href=&quot;{{twitter}}&quot;&gt;En Twitter&lt;/a&gt;&lt;/li&gt;
+        {{/if}}
+        {{#if facebook}}
+        &lt;li&gt;&lt;span class=&quot;glyphicon glyphicon-chevron-right&quot;&gt;&lt;/span&gt; &lt;a href=&quot;{{facebook}}&quot;&gt;En Facebook&lt;/a&gt;&lt;/li&gt;
+        {{/if}}
+        {{#if web}}
+        &lt;li&gt;&lt;span class=&quot;glyphicon glyphicon-chevron-right&quot;&gt;&lt;/span&gt; &lt;a href=&quot;{{web}}&quot;&gt;Web&lt;/a&gt;&lt;/li&gt;
+        {{/if}}
+        {{#if blog}}
+        &lt;li&gt;&lt;span class=&quot;glyphicon glyphicon-chevron-right&quot;&gt;&lt;/span&gt; &lt;a href=&quot;{{blog}}&quot;&gt;Blog&lt;/a&gt;&lt;/li&gt;
+        {{/if}}
+    {{/with}}
+    &lt;/ul&gt;
+&lt;/script&gt;
+
+&lt;div id=&quot;contenedor&quot;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+    $(document).ready(function() {
+
+        let registro = {
+            nombre: 'Marcos',
+            apellidos: 'Gonzalez Sancho',
+            edad: '22',
+            social: {
+                twitter: 'https://twitter.com/qmarcos',
+                facebook: 'https://facebook.com/qinteractiva',
+                web: 'http://q-interactiva.com',
+                blog: 'http://blog.q-interactiva.com'
+            }
+        };          
+
+        let source   = $(&quot;#mi-plantilla&quot;).html();       
+        let plantilla = Handlebars.compile(source);
+        
+        $('#contenedor').html( plantilla( registro ) );
+    })
+&lt;/script&gt;
+</code></pre>
+
+<p>Todo ese bloque que acaba con el cierre de la instrucción <code>with</code> en su interior entiende que ya está accediendo al objeto social por lo tanto para acceder por ejemplo a la propiedad Facebook ya no hace falta poner el <code>social.</code> adelante y de hecho no sería correcto ponerlo delante simplemente ponemos <code>Facebook</code> y ya lo está buscando en el contexto de la propiedad <code>social</code>.</p>
+
+<p>Por lo tanto es equivalente haber puesto sin el <code>with =&gt; social.Twitter, social.Facebook, social.web, social.blog</code>. Porque una vez que ponemos <code>with</code> podemos ahorrarnos ese camino hasta la propiedad que estamos accediendo porque ya va implícita con el <code>with</code>, además en este caso hemos añadido unos condicionales para que podamos apreciar como se pueden mezclar entre ellas las instrucciones tanto el <code>with</code> con el <code>if</code> y se pueden combinar en base a nuestras necesidades. Por ejemplo, si quitamos el <code>blog</code> temporalmente de nuestro objeto de datos veremos como deja de salir debido al <code>if</code>.</p>
+
+<p>Por lo tanto <code>with</code> como decíamos sirve para facilitar el acceso a propiedades anidadas dentro del objeto contexto en el que nos encontramos.</p>
+
+<p><code>with</code> se construye muy parecido a las instrucción <code>each</code>.</p>
+
+<h3 id="variables-de-datos-firts-y-last">Variables de datos FIRTS y LAST</h3>
+
+<pre><code class="language-handlebars">&lt;h1&gt;{{apellidos}}, {{nombre}}&lt;/h1&gt;
+&lt;p&gt;Edad: {{edad}}&lt;/p&gt;
+&lt;h2&gt;En la red:&lt;/h2&gt;
+&lt;ul class=&quot;list-unstyled&quot;&gt;
+{{#each social}}
+    &lt;li&gt;&lt;a href=&quot;{{url}}&quot;&gt;
+        &lt;!-- @firts | @last --&gt;
+        {{#if @last}} &lt;span class=&quot;glyphicon glyphicon-chevron-right&quot;&gt;&lt;/span&gt; 
+            {{else}} &lt;span class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/span&gt; 
+        {{/if}}
+    {{nombre}}&lt;/a&gt;&lt;/li&gt;
+{{/each}}
+&lt;/ul&gt;
+</code></pre>
+
+<p>Handlebars nos ofrece una serie de variables predefinidas en el sistema que nos dan determinada información dependiendo del contexto en el que se están usando, en este caso vamos a ver dos de ellas (<code>first y last</code>), que nos van a servir para conocer cuando estamos en el primer o último elemento de un bucle que estamos recorriendo mediante <code>each</code>, esto su aplicación directa es en un escenario de maquetacion web por lo tanto la aplicación de estas dos variables se suele usar dentro de lo que es la plantilla de handlebars, la plantilla que es la parte dedicada en específico a la presentación y por lo tanto como decimos vamos a tener un mecanismo de diferenciar el primer elemento del último y del resto de los elementos de esa iteración y eso nos va a permitir por lo que en muchas situaciones nos encontramos que tenemos que aplicar por ejemplo una clase diferente al primer elemento de una lista o al último como podría ser en el caso de un menú web.</p>
+
+<h3 id="variables-de-datos-index-y-key">Variables de datos INDEX y KEY</h3>
+
+<pre><code class="language-handlebars">&lt;h1&gt;{{apellidos}}, {{nombre}}&lt;/h1&gt;
+&lt;p&gt;Edad: {{edad}}&lt;/p&gt;
+&lt;h2&gt;En la red:&lt;/h2&gt;
+&lt;ul class=&quot;list-unstyled&quot;&gt;
+{{#each social}}
+    &lt;li&gt;&lt;a href=&quot;{{url}}&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-chevron-right&quot;&gt;&lt;/span&gt; {{nombre}}&lt;/a&gt; ({{@index}})&lt;/li&gt;
+{{/each}}
+&lt;/ul&gt;
+
+&lt;!-- Resultado: 
+twitter (0)
+facebook (1)
+web (2)
+blog (3) --&gt;
+
+
+&lt;h2&gt;Propiedades del contexto:&lt;/h2&gt;
+&lt;ul class=&quot;list-unstyled&quot;&gt;
+{{#each this}}
+    &lt;li&gt;{{@key}}&lt;/li&gt;
+{{/each}}
+&lt;/ul&gt;
+
+&lt;!-- Resultado:
+nombre
+apellidos
+edad
+social --&gt;
+
+</code></pre>
+
+<p>Handlebars tambien nos ofrece a través de sus variables predefinidas <code>index</code> y <code>key</code> la posibilidad de tener más conocimiento cuando recorremos un objeto o un array mediante la estructura de iteración <code>each</code> esto es así porque nos va a permitir saber el índice en el que nos encontramos y nos va a permitir también en el caso de que no sea un array saber la propiedad en la que nos encontramos es decir mediante la estructura de iteración <code>each</code> no solamente podemos recorrer array sino que también podemos recorrer objetos a través de cada una de sus propiedades y precisamente estas variables predefinidas <code>index</code> y <code>key</code> nos van a servir para tener esa información.</p>
+
+<p><code>@key</code> esta variable va ir tomando como valores en la iteración los nombres de las propiedades sobre la que va iterando.</p>
+
+<p>Y vemos que por tanto podemos saber en qué interacción nos encontramos en cuanto a número y también podemos saber qué propiedad estamos recorriendo de un objeto que a priori no tenemos porque conocer, por lo tanto estas dos variables predefinidas son muy útiles a la hora de utilizar bucles <code>each</code> porque nos dan un dinamismo y una flexibilidad muy interesante a la hora de interpretar como renderizar nuestra plantilla para cada uno de los elementos que recorremos pero sí que es cierto que estas dos variables predefinidas más que en un <code>each</code> de una plantilla convencional de handlebars van a tener mucho más sentido en un <code>each</code> que empleemos en un helper que es una estructura especial que nos permite renderizar la plantilla totalmente adaptada a nuestras necesidades.</p>
+
+<h3 id="variables-de-datos-root">Variables de datos ROOT</h3>
+
+<p><code>Root</code> es una variable predefinida que nos ofrece handlebars que es realmente útil para acceder a la raíz del contexto en el que estamos trabajando no obstante tiene alguna particularidad que es muy interesante tener en conocimiento porque nos puede ahorrar unos cuantos dolores de cabeza cuando trabajamos con ella.</p>
+
+<pre><code class="language-html">&lt;script id=&quot;mi-plantilla&quot; type=&quot;text/x-handlebars-template&quot;&gt;
+    &lt;h1&gt;{{apellidos}}, {{nombre}}&lt;/h1&gt;
+    &lt;p&gt;Edad: {{edad}}&lt;/p&gt;
+    &lt;h2&gt;En la red:&lt;/h2&gt;
+    &lt;ul class=&quot;list-unstyled&quot;&gt;
+    &lt;p&gt;@root: {{@root.nombre}} / {{this.nombre}}&lt;/p&gt;
+    {{#each social}}
+        &lt;li&gt;&lt;a href=&quot;{{url}}&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-chevron-right&quot;&gt;&lt;/span&gt; {{nombre}}&lt;/a&gt; ({{@index}} - {{@root.nombre}} / {{this.nombre}}) &lt;/li&gt;
+    {{/each}}
+    &lt;/ul&gt;
+&lt;/script&gt;
+
+&lt;div id=&quot;contenedor&quot;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+    $(document).ready(function() {
+
+        var registro = {
+                nombre: 'Marcos',
+                apellidos: 'Gonzalez Sancho',
+                edad: '22',
+                social: [
+                    { nombre: 'twitter', url: 'https://twitter.com/qmarcos'},
+                    { nombre: 'facebook', url: 'https://facebook.com/qinteractiva'},
+                    { nombre: 'web', url: 'http://q-interactiva.com'},
+                    { nombre: 'blog', url: 'http://blog.q-interactiva.com'}
+                ]
+            };      
+
+        var source   = $(&quot;#mi-plantilla&quot;).html();       
+        var plantilla = Handlebars.compile(source);
+        
+        $('#contenedor').html( plantilla( registro ) );
+    })
+&lt;/script&gt;
+</code></pre>
+
+<p><code>root</code> es una variable predefinida que nos permite acceder siempre al contexto raíz de la plantilla estemos dentro de un bucle o estemos dentro de una instrucción with o en cualquier otro escenario, siempre nos va referenciar el objeto principal o contexto de la plantilla.</p>
+    
+        </div>
+    </section>
+
+    <footer class="post-full-footer">
+      <section class="author-card">
+        <img class="author-profile-image" src="https://hugorocaproyectos.js.org/img/profile.jpg" alt="Author" />
+        <section class="author-card-content">
+            <h4 class="author-card-name"><a href="https://hugorocaproyectos.js.org/">Hugo Roca</a></h4>
+                <p>Analista Programador Senior</p>
+        </section>
+      </section>
+    </footer>
+</article>
+    
+    
+    
+
+<div id="disqus_thread"></div>
+<script>
+
+
+
+
+var disqus_config = function () {
+this.page.url = "https:\/\/hugorocaproyectos.js.org\/handlebars--parte-2\/";  
+this.page.identifier = "https:\/\/hugorocaproyectos.js.org\/handlebars--parte-2\/"; 
+};
+
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://hugorocaproyectos.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  </div>
+</main>
+
+
+<aside class="read-next outer">
+  <div class="inner">
+    <div class="read-next-feed">      
+      
+<article class="read-next-card" 
+            style="background-image: url(https://hugorocaproyectos.js.org/img/blog-cover.jpg);" >
+    <header class="read-next-card-header">
+        <small class="read-next-card-header-sitetitle">&mdash; HR Proyectos &mdash;</small>
+        
+        <h3 class="read-next-card-header-title"><a href="https://hugorocaproyectos.js.orgtags/handlebars/">#Handlebars</a></h3>
+    </header>
+    <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/></svg>
+    </div>
+
+    <div class="read-next-card-content">
+      
+        <ul>
+          <li><a href="https://hugorocaproyectos.js.org/portafolio-profesional/">Portafolio Profesional</a></li>            
+        
+          <li><a href="https://hugorocaproyectos.js.org/scripts-sqlserver/">Scripts SQLServer</a></li>            
+        
+          <li><a href="https://hugorocaproyectos.js.org/conexi%C3%B3n-nodejs-con-redis-cache/">Conexión NodeJS con Redis Cache</a></li>            
+        
+          <li><a href="https://hugorocaproyectos.js.org/programaci%C3%B3n-orientada-a-objetos/">Programación Orientada a Objetos</a></li>            
+        </ul>
+    </div>
+    <footer class="read-next-card-footer">
+      
+        <a href="https://hugorocaproyectos.js.orgtags/handlebars/">Ver todos los posts relacionados →</a>
+    </footer>
+</article>
+
+
+      
+      
+      <article class="post-card post"> 
+    
+    <a class="post-card-image-link" href="https://hugorocaproyectos.js.org/handlebars--parte-1/">
+      <div class="post-card-image" style="background-image: url(https://hugorocaproyectos.js.org/images/post/handlebars.svg)"></div>
+    </a>
+    
+
+    <div class="post-card-content">
+      <a class="post-card-content-link" href="https://hugorocaproyectos.js.org/handlebars--parte-1/">
+          <header class="post-card-header">
+              <span class="post-card-tags">
+              #Handlebars  </span>
+              
+              <h2 class="post-card-title">Handlebars | Parte 1</h2>
+          </header>
+          <section class="post-card-excerpt">
+               
+                <p>Handlebars.js es un motor de plantillas muy popular que es potente, fácil de utilizar y que cuenta con una gran comunidad. Se basa en el lenguaje de plantillas Mustache, pero lo mejora de &hellip;</p>
+              
+          </section>
+      </a>
+
+      
+    </div>
+</article>
+      
+    </div>
+  </div>
+</aside>
+
+<div class="floating-header">
+  <div class="floating-header-logo">
+    <a href="https://hugorocaproyectos.js.org/">
+      
+      <span>Hugo Roca Proyectos</span>
+    </a>
+  </div>
+  <span class="floating-header-divider">&mdash;</span>
+  <div class="floating-header-title">Handlebars | Parte 2</div>
+  <div class="floating-header-share">
+    <div class="floating-header-share-label">Comparte <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+     <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/></svg>
+    </div>
+
+    <a class="floating-header-share-tw" href="https://twitter.com/share?text=Handlebars%20%7c%20Parte%202&amp;url=https%3a%2f%2fhugorocaproyectos.js.org%2fhandlebars--parte-2%2f"
+        onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
+    </a>
+
+    <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fhugorocaproyectos.js.org%2fhandlebars--parte-2%2f"
+        onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
+    </a>
+      
+  </div>
+
+  <progress class="progress" value="0">
+    <div class="progress-container">
+      <span class="progress-bar"></span>
+    </div>
+  </progress>
+</div>
+
+
+
+<footer class="site-footer outer">
+  <div class="site-footer-content inner">
+    <section class="copyright" style="line-height: 1.3em;">
+      <a href="/">HR</a> © 2019 <br>
+      <span style="font-size: 0.8em; color: #555;">Hugo port of <a href="https://github.com/TryGhost/Casper">Casper 2.1.7</a> by <a href="https://www.telematika.org">EM</a></span>
+    </section>
+    <nav class="site-footer-nav">
+        <a href="/">Latest Posts</a>
+        
+        <a href="https://twitter.com/HuugooRoca" target="_blank" rel="noopener">Twitter</a>
+        <a href="https://github.com/hugoroca" target="_blank" rel="noopener">Github</a>
+        <a href="https://www.linkedin.com/in/hugoroca" target="_blank" rel="noopener">LinkedIn</a>
+        
+    </nav>  
+  </div>
+</footer>
+
+</div>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://hugorocaproyectos.js.org/js/jquery.fitvids.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+  <!-- Google Analytics -->
+  <script>
+    var _gaq=[['_setAccount','UA-125594168-1'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+
+
+    <script>
+
+
+
+
+
+$(document).ready(function () {
+    
+    var $postContent = $(".post-full-content");
+    $postContent.fitVids();
+    
+
+    var progressBar = document.querySelector('progress');
+    var header = document.querySelector('.floating-header');
+    var title = document.querySelector('.post-full-title');
+
+    var lastScrollY = window.scrollY;
+    var lastWindowHeight = window.innerHeight;
+    var lastDocumentHeight = $(document).height();
+    var ticking = false;
+
+    function onScroll() {
+        lastScrollY = window.scrollY;
+        requestTick();
+    }
+
+    function onResize() {
+        lastWindowHeight = window.innerHeight;
+        lastDocumentHeight = $(document).height();
+        requestTick();
+    }
+
+    function requestTick() {
+        if (!ticking) {
+            requestAnimationFrame(update);
+        }
+        ticking = true;
+    }
+
+    function update() {
+        var trigger = title.getBoundingClientRect().top + window.scrollY;
+        var triggerOffset = title.offsetHeight + 35;
+        var progressMax = lastDocumentHeight - lastWindowHeight;
+
+        
+        if (lastScrollY >= trigger + triggerOffset) {
+            header.classList.add('floating-active');
+        } else {
+            header.classList.remove('floating-active');
+        }
+
+        progressBar.setAttribute('max', progressMax);
+        progressBar.setAttribute('value', lastScrollY);
+
+        ticking = false;
+    }
+
+    window.addEventListener('scroll', onScroll, {passive: true});
+    window.addEventListener('resize', onResize, false);
+
+    update();
+});
+</script>
+</body></html>
