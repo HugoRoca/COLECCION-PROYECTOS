@@ -1,7 +1,7 @@
 ---
 date: "2019-04-15"
 title: "Handlebars | Parte 2"
-description: "Continuando con handlebars, esta vez construiremos plantillas mas avanzadas usando condiciones y bucles."
+description: "Continuando con handlebars, esta vez construiremos plantillas mas avanzadas usando condiciones, bucles, with y variables de datos"
 author: "Hugo Roca"
 image: /images/post/handlebars-prt-2.svg
 imageShared: /images/shared/handlebars-prt-2.jpg
@@ -11,7 +11,18 @@ categories:
  - JavaScript
 ---
 
-### Condiciones
+> Continuando con handlebars, esta vez construiremos plantillas mas avanzadas usando condiciones, bucles, with y variables de datos
+
+Contenido:
+
+1. Condiciones
+2. Bucles
+3. Propiedades anidadas
+4. Variables de datos FIRTS y LAST
+5. Variables de datos INDEX y KEY
+6. Variables de datos ROOT
+
+## 1. Condiciones
 ```html
 <script id="mi-plantilla" type="text/x-handlebars-template">
     <h1>¡Hola {{nick}}!</h1>
@@ -48,7 +59,7 @@ El `if` trabajando sobre una propiedad se cumple solo cuando la propiedad existe
 ```
 La expreción `unless` es lo contrario del `if`, es decir, se ejecuta igual que el `if`, tiene el mismo formato que el `if` hasta incluso soporta el `else` tambien pero en lugar de comprabar que la condición se cumple, esta se ejecuta cuando la condición no se cumple.
 
-### Bucles
+## 2. Bucles
 ```html
 <script id="lista-indice" type="text/x-handlebars-template">
     <h1>Índice</h1>
@@ -98,7 +109,7 @@ Esta plantilla arranca con un h1 estático con el texto que no coge contenido di
 
 La instrucción `each` se contruye muy parecido a la instrucción `if`.
 
-### Propiedades anidadas
+## 3. Propiedades anidadas
 ```html
 <script id="mi-plantilla" type="text/x-handlebars-template">
     <h1>{{apellidos}}, {{nombre}}</h1>
@@ -155,7 +166,7 @@ Por lo tanto `with` como decíamos sirve para facilitar el acceso a propiedades 
 
 `with` se construye muy parecido a las instrucción `each`.
 
-### Variables de datos FIRTS y LAST
+## 4. Variables de datos FIRTS y LAST
 ```handlebars
 <h1>{{apellidos}}, {{nombre}}</h1>
 <p>Edad: {{edad}}</p>
@@ -174,7 +185,7 @@ Por lo tanto `with` como decíamos sirve para facilitar el acceso a propiedades 
 
 Handlebars nos ofrece una serie de variables predefinidas en el sistema que nos dan determinada información dependiendo del contexto en el que se están usando, en este caso vamos a ver dos de ellas (`first y last`), que nos van a servir para conocer cuando estamos en el primer o último elemento de un bucle que estamos recorriendo mediante `each`, esto su aplicación directa es en un escenario de maquetacion web por lo tanto la aplicación de estas dos variables se suele usar dentro de lo que es la plantilla de handlebars, la plantilla que es la parte dedicada en específico a la presentación y por lo tanto como decimos vamos a tener un mecanismo de diferenciar el primer elemento del último y del resto de los elementos de esa iteración y eso nos va a permitir por lo que en muchas situaciones nos encontramos que tenemos que aplicar por ejemplo una clase diferente al primer elemento de una lista o al último como podría ser en el caso de un menú web.
 
-### Variables de datos INDEX y KEY
+## 5. Variables de datos INDEX y KEY
 
 ```handlebars
 <h1>{{apellidos}}, {{nombre}}</h1>
@@ -214,7 +225,7 @@ Handlebars tambien nos ofrece a través de sus variables predefinidas `index` y 
 
 Y vemos que por tanto podemos saber en qué interacción nos encontramos en cuanto a número y también podemos saber qué propiedad estamos recorriendo de un objeto que a priori no tenemos porque conocer, por lo tanto estas dos variables predefinidas son muy útiles a la hora de utilizar bucles `each` porque nos dan un dinamismo y una flexibilidad muy interesante a la hora de interpretar como renderizar nuestra plantilla para cada uno de los elementos que recorremos pero sí que es cierto que estas dos variables predefinidas más que en un `each` de una plantilla convencional de handlebars van a tener mucho más sentido en un `each` que empleemos en un helper que es una estructura especial que nos permite renderizar la plantilla totalmente adaptada a nuestras necesidades.
 
-### Variables de datos ROOT
+## 6. Variables de datos ROOT
 
 `Root` es una variable predefinida que nos ofrece handlebars que es realmente útil para acceder a la raíz del contexto en el que estamos trabajando no obstante tiene alguna particularidad que es muy interesante tener en conocimiento porque nos puede ahorrar unos cuantos dolores de cabeza cuando trabajamos con ella.
 
