@@ -6,12 +6,12 @@ author: "Hugo Roca"
 image: /images/post/handlebars-prt-2.svg
 imageShared: /images/shared/handlebars-prt-2.jpg
 tags:
- - Handlebars
+  - Handlebars
 categories:
- - JavaScript
+  - JavaScript
 ---
 
-> Continuando con handlebars, esta vez construiremos plantillas mas avanzadas usando condiciones, bucles, with y variables de datos
+> Continuando con handlebars, esta vez construiremos plantillas mas avanzadas usando condiciones, bucles, with, variables de datos, helpers
 
 Contenido:
 
@@ -21,33 +21,37 @@ Contenido:
 4. Variables de datos FIRTS y LAST
 5. Variables de datos INDEX y KEY
 6. Variables de datos ROOT
+7. Helpers
+8. Helpers de bloque
 
 ## 1. Condiciones
+
 ```html
 <script id="mi-plantilla" type="text/x-handlebars-template">
-    <h1>¡Hola {{nick}}!</h1>
-    {{#if dispositivo}}
-        <p>Te has conectado desde: {{dispositivo}}</p>
-    {{else}}
-        <p>No hemos identificado desde dónde te conectas.</p>
-    {{/if}}
+  <h1>¡Hola {{nick}}!</h1>
+  {{#if dispositivo}}
+      <p>Te has conectado desde: {{dispositivo}}</p>
+  {{else}}
+      <p>No hemos identificado desde dónde te conectas.</p>
+  {{/if}}
 </script>
 
 <div id="contenedor"></div>
 
 <script>
-    $(document).ready(function() {
-        let source   = $("#mi-plantilla").html();		
-        let plantilla = Handlebars.compile(source);
+  $(document).ready(function() {
+    let source = $("#mi-plantilla").html();
+    let plantilla = Handlebars.compile(source);
 
-        let usuarioDispositivo = { nick: 'Carlos', dispositivo: 'WEB' };			
-        let usuarioSinIdentificar = { nick: 'Carlos'};
-        let usuarioSinDefinir = { nick: 'Carlos', dispositivo: '' };
-        
-        $('#contenedor').html( plantilla( usuarioDispositivo ) );
-    })
+    let usuarioDispositivo = { nick: "Carlos", dispositivo: "WEB" };
+    let usuarioSinIdentificar = { nick: "Carlos" };
+    let usuarioSinDefinir = { nick: "Carlos", dispositivo: "" };
+
+    $("#contenedor").html(plantilla(usuarioDispositivo));
+  });
 </script>
 ```
+
 El `if` trabajando sobre una propiedad se cumple solo cuando la propiedad existe y tiene un valor que no es vacio y en caso que sea vacio o que no exita lo interpreta como inexistente.
 
 ```handlebars
@@ -57,116 +61,119 @@ El `if` trabajando sobre una propiedad se cumple solo cuando la propiedad existe
     <p>(unless) Te has conectado desde: {{dispositivo}}</p>
 {{/unless}}
 ```
+
 La expreción `unless` es lo contrario del `if`, es decir, se ejecuta igual que el `if`, tiene el mismo formato que el `if` hasta incluso soporta el `else` tambien pero en lugar de comprabar que la condición se cumple, esta se ejecuta cuando la condición no se cumple.
 
 ## 2. Bucles
+
 ```html
 <script id="lista-indice" type="text/x-handlebars-template">
-    <h1>Índice</h1>
-    <ul class="list-unstyled">
-    {{#each this}}
-        <li><a href="{{enlace}}"><span class="glyphicon glyphicon-ok"></span> {{nombre}}</a></li>
-    {{/each}}
-    </ul>
+  <h1>Índice</h1>
+  <ul class="list-unstyled">
+  {{#each this}}
+      <li><a href="{{enlace}}"><span class="glyphicon glyphicon-ok"></span> {{nombre}}</a></li>
+  {{/each}}
+  </ul>
 </script>
 
 <div id="contenedor"></div>
 
 <script>
-    let indice = [
-            {nombre:'El problema', enlace:'problema.html'}, 
-            {nombre:'Expresiones, sintaxis básica', enlace:'expresiones.html'}, 
-            {nombre:'Uso básico', enlace:'usobasico.html'}, 
-            {nombre:'Datos o contexto', enlace:'datos.html'}, 
-            {nombre:'Comentarios', enlace:'comentarios.html'}, 
-            {nombre:'Datos con contenido HTML', enlace:'datoshtml.html'}, 
-            {nombre:'Mi primera plantilla', enlace:'miprimeraplantilla.html'}, 
-            {nombre:'Estructuras condicionales', enlace:'condicional.html'},
-            {nombre:'Estructuras iterativas', enlace:'index.html'},
-            {nombre:'Propiedades anidadas', enlace:'propiedadesanidadas.html'},
-            {nombre:'Variables @first y @last', enlace:'variables_first_last.html'},
-            {nombre:'Variables @index y @key', enlace:'variables_index_key.html'},
-            {nombre:'Variable @root', enlace:'variables_root.html'},
-            {nombre:'Qué son los helpers', enlace:'quesonloshelpers.html'},
-            {nombre:'Trabajando con helpers', enlace:'helper.html'},
-            {nombre:'Helpers de bloque', enlace:'blockhelper.html'},
-            {nombre:'Partials', enlace:'partial.html'}
-        ];
+  let indice = [
+    { nombre: "El problema", enlace: "problema.html" },
+    { nombre: "Expresiones, sintaxis básica", enlace: "expresiones.html" },
+    { nombre: "Uso básico", enlace: "usobasico.html" },
+    { nombre: "Datos o contexto", enlace: "datos.html" },
+    { nombre: "Comentarios", enlace: "comentarios.html" },
+    { nombre: "Datos con contenido HTML", enlace: "datoshtml.html" },
+    { nombre: "Mi primera plantilla", enlace: "miprimeraplantilla.html" },
+    { nombre: "Estructuras condicionales", enlace: "condicional.html" },
+    { nombre: "Estructuras iterativas", enlace: "index.html" },
+    { nombre: "Propiedades anidadas", enlace: "propiedadesanidadas.html" },
+    { nombre: "Variables @first y @last", enlace: "variables_first_last.html" },
+    { nombre: "Variables @index y @key", enlace: "variables_index_key.html" },
+    { nombre: "Variable @root", enlace: "variables_root.html" },
+    { nombre: "Qué son los helpers", enlace: "quesonloshelpers.html" },
+    { nombre: "Trabajando con helpers", enlace: "helper.html" },
+    { nombre: "Helpers de bloque", enlace: "blockhelper.html" },
+    { nombre: "Partials", enlace: "partial.html" }
+  ];
 
-    $(document).ready(function() {
-        let origen;
-        let plantilla;
+  $(document).ready(function() {
+    let origen;
+    let plantilla;
 
-        origen = document.getElementById('lista-indice').innerHTML;
-        plantilla = Handlebars.compile(origen);
+    origen = document.getElementById("lista-indice").innerHTML;
+    plantilla = Handlebars.compile(origen);
 
-        $('#contenedor').html( plantilla(indice) );
-    });
+    $("#contenedor").html(plantilla(indice));
+  });
 </script>
-
 ```
+
 Esta plantilla arranca con un h1 estático con el texto que no coge contenido dinámico también inicializa una lista y la cierra, es una lista desordenada que forma parte del índice, y finalmente tenemos la parte de iteración a través de el array que se le pasa a la plantilla, si nos fijamos en la plantilla se le está pasando el `índice`, el índice es una variable en javascript que directamente es una array por lo tanto la única manera de referencia el contexto de tipo array que queremos recorrer es mediante la palabra `this`, this es una palabra que existe en handlebars y en este caso `this` tomará el valor del `indice` que es precisamente un array por lo tanto si funcionará la instrucción `each` sobre `this`.
 
 La instrucción `each` se contruye muy parecido a la instrucción `if`.
 
 ## 3. Propiedades anidadas
+
 ```html
 <script id="mi-plantilla" type="text/x-handlebars-template">
-    <h1>{{apellidos}}, {{nombre}}</h1>
-    <p>Edad: {{edad}}</p>
-    <h2>En la red:</h2>
-    <ul class="list-unstyled">
-    {{#with social}}
-        {{#if twitter}}
-        <li><span class="glyphicon glyphicon-chevron-right"></span> <a href="{{twitter}}">En Twitter</a></li>
-        {{/if}}
-        {{#if facebook}}
-        <li><span class="glyphicon glyphicon-chevron-right"></span> <a href="{{facebook}}">En Facebook</a></li>
-        {{/if}}
-        {{#if web}}
-        <li><span class="glyphicon glyphicon-chevron-right"></span> <a href="{{web}}">Web</a></li>
-        {{/if}}
-        {{#if blog}}
-        <li><span class="glyphicon glyphicon-chevron-right"></span> <a href="{{blog}}">Blog</a></li>
-        {{/if}}
-    {{/with}}
-    </ul>
+  <h1>{{apellidos}}, {{nombre}}</h1>
+  <p>Edad: {{edad}}</p>
+  <h2>En la red:</h2>
+  <ul class="list-unstyled">
+  {{#with social}}
+      {{#if twitter}}
+      <li><span class="glyphicon glyphicon-chevron-right"></span> <a href="{{twitter}}">En Twitter</a></li>
+      {{/if}}
+      {{#if facebook}}
+      <li><span class="glyphicon glyphicon-chevron-right"></span> <a href="{{facebook}}">En Facebook</a></li>
+      {{/if}}
+      {{#if web}}
+      <li><span class="glyphicon glyphicon-chevron-right"></span> <a href="{{web}}">Web</a></li>
+      {{/if}}
+      {{#if blog}}
+      <li><span class="glyphicon glyphicon-chevron-right"></span> <a href="{{blog}}">Blog</a></li>
+      {{/if}}
+  {{/with}}
+  </ul>
 </script>
 
 <div id="contenedor"></div>
 
 <script>
-    $(document).ready(function() {
+  $(document).ready(function() {
+    let registro = {
+      nombre: "Marcos",
+      apellidos: "Gonzalez Sancho",
+      edad: "22",
+      social: {
+        twitter: "https://twitter.com/qmarcos",
+        facebook: "https://facebook.com/qinteractiva",
+        web: "http://q-interactiva.com",
+        blog: "http://blog.q-interactiva.com"
+      }
+    };
 
-        let registro = {
-            nombre: 'Marcos',
-            apellidos: 'Gonzalez Sancho',
-            edad: '22',
-            social: {
-                twitter: 'https://twitter.com/qmarcos',
-                facebook: 'https://facebook.com/qinteractiva',
-                web: 'http://q-interactiva.com',
-                blog: 'http://blog.q-interactiva.com'
-            }
-        };			
+    let source = $("#mi-plantilla").html();
+    let plantilla = Handlebars.compile(source);
 
-        let source   = $("#mi-plantilla").html();		
-        let plantilla = Handlebars.compile(source);
-        
-        $('#contenedor').html( plantilla( registro ) );
-    })
+    $("#contenedor").html(plantilla(registro));
+  });
 </script>
 ```
 
 Todo ese bloque que acaba con el cierre de la instrucción `with` en su interior entiende que ya está accediendo al objeto social por lo tanto para acceder por ejemplo a la propiedad Facebook ya no hace falta poner el `social.` adelante y de hecho no sería correcto ponerlo delante simplemente ponemos `Facebook` y ya lo está buscando en el contexto de la propiedad `social`.
 
-Por lo tanto es equivalente haber puesto sin el `with => social.Twitter, social.Facebook, social.web, social.blog`. Porque una vez que ponemos `with` podemos ahorrarnos ese camino hasta la propiedad que estamos accediendo porque ya va implícita con el `with`, además en este caso hemos añadido unos condicionales para que podamos apreciar como se pueden mezclar entre ellas las instrucciones tanto el `with` con el `if` y se pueden combinar en base a nuestras necesidades. Por ejemplo, si quitamos el `blog` temporalmente de nuestro objeto de datos veremos como deja de salir debido al `if`. 
+Por lo tanto es equivalente haber puesto sin el `with => social.Twitter, social.Facebook, social.web, social.blog`. Porque una vez que ponemos `with` podemos ahorrarnos ese camino hasta la propiedad que estamos accediendo porque ya va implícita con el `with`, además en este caso hemos añadido unos condicionales para que podamos apreciar como se pueden mezclar entre ellas las instrucciones tanto el `with` con el `if` y se pueden combinar en base a nuestras necesidades. Por ejemplo, si quitamos el `blog` temporalmente de nuestro objeto de datos veremos como deja de salir debido al `if`.
 
 Por lo tanto `with` como decíamos sirve para facilitar el acceso a propiedades anidadas dentro del objeto contexto en el que nos encontramos.
 
 `with` se construye muy parecido a las instrucción `each`.
 
 ## 4. Variables de datos FIRTS y LAST
+
 ```handlebars
 <h1>{{apellidos}}, {{nombre}}</h1>
 <p>Edad: {{edad}}</p>
@@ -175,8 +182,8 @@ Por lo tanto `with` como decíamos sirve para facilitar el acceso a propiedades 
 {{#each social}}
     <li><a href="{{url}}">
         <!-- @firts | @last -->
-        {{#if @last}} <span class="glyphicon glyphicon-chevron-right"></span> 
-            {{else}} <span class="glyphicon glyphicon-comment"></span> 
+        {{#if @last}} <span class="glyphicon glyphicon-chevron-right"></span>
+            {{else}} <span class="glyphicon glyphicon-comment"></span>
         {{/if}}
     {{nombre}}</a></li>
 {{/each}}
@@ -197,7 +204,7 @@ Handlebars nos ofrece una serie de variables predefinidas en el sistema que nos 
 {{/each}}
 </ul>
 
-<!-- Resultado: 
+<!-- Resultado:
 twitter (0)
 facebook (1)
 web (2)
@@ -231,15 +238,98 @@ Y vemos que por tanto podemos saber en qué interacción nos encontramos en cuan
 
 ```html
 <script id="mi-plantilla" type="text/x-handlebars-template">
+  <h1>{{apellidos}}, {{nombre}}</h1>
+  <p>Edad: {{edad}}</p>
+  <h2>En la red:</h2>
+  <ul class="list-unstyled">
+  <p>@root: {{@root.nombre}} / {{this.nombre}}</p>
+  {{#each social}}
+      <li><a href="{{url}}"><span class="glyphicon glyphicon-chevron-right"></span> {{nombre}}</a> ({{@index}} - {{@root.nombre}} / {{this.nombre}}) </li>
+  {{/each}}
+  </ul>
+</script>
+
+<div id="contenedor"></div>
+
+<script>
+  $(document).ready(function() {
+    var registro = {
+      nombre: "Marcos",
+      apellidos: "Gonzalez Sancho",
+      edad: "22",
+      social: [
+        { nombre: "twitter", url: "https://twitter.com/qmarcos" },
+        { nombre: "facebook", url: "https://facebook.com/qinteractiva" },
+        { nombre: "web", url: "http://q-interactiva.com" },
+        { nombre: "blog", url: "http://blog.q-interactiva.com" }
+      ]
+    };
+
+    var source = $("#mi-plantilla").html();
+    var plantilla = Handlebars.compile(source);
+
+    $("#contenedor").html(plantilla(registro));
+  });
+</script>
+```
+
+`root` es una variable predefinida que nos permite acceder siempre al contexto raíz de la plantilla estemos dentro de un bucle o estemos dentro de una instrucción with o en cualquier otro escenario, siempre nos va referenciar el objeto principal o contexto de la plantilla.
+
+## 7. Helpers
+
+Vamos a crear un helper que nos permita sumar dos valores, no es nada complicado, simplemente hay que realizar lo siguiente.
+
+```html
+<script id="mi-plantilla" type="text/x-handlebars-template">
+  <h1>{{apellidos}}, {{nombre}}</h1>
+  <p>Edad: {{edad}}</p>
+  <p>Salario: {{salario}}, Extras: {{extras}}</p>
+
+  <!-- aqui invocamos al helper -->
+  <strong>{{salarioTotal this}}</strong>
+</script>
+
+<script>
+  $(document).ready(function() {
+    let empleado = {
+      nombre: "Marcos",
+      apellidos: "Gonzalez Sancho",
+      edad: "22",
+      salario: 1500,
+      extras: 300
+    };
+
+    let source = $("#mi-plantilla").html();
+    let plantilla = Handlebars.compile(source);
+
+    $("#contenedor").html(plantilla(empleado));
+  });
+
+  // salarioTotal => nombre del helper
+  // object => parametros
+  Handlebars.registerHelper("salarioTotal", function(object) {
+    let respuesta = "TOTAL: " + (object.salario + object.extras);
+    return new Handlebars.SafeString(respuesta);
+  });
+</script>
+```
+#### Ejemplo 1
+Realizaremos otro ejemplo con helpers, esta vez crearemos un pequeño algoritno dentro de un `helper` el cual nos permitira obtener el importe mínimo, máximo y el promedio por año a partir de un array.
+![](https://i.ibb.co/SfgRtbf/Captura.png)
+
+```html
+<script id="mi-plantilla" type="text/x-handlebars-template">
     <h1>{{apellidos}}, {{nombre}}</h1>
     <p>Edad: {{edad}}</p>
-    <h2>En la red:</h2>
-    <ul class="list-unstyled">
-    <p>@root: {{@root.nombre}} / {{this.nombre}}</p>
-    {{#each social}}
-        <li><a href="{{url}}"><span class="glyphicon glyphicon-chevron-right"></span> {{nombre}}</a> ({{@index}} - {{@root.nombre}} / {{this.nombre}}) </li>
+    <h2>Histórico de salarios:</h2>	
+    <dl class="dl-horizontal">
+    {{#each salarios}}
+        <dt>{{anio}}</dt>
+
+        <!-- AQUI SE LLAMA A LOS HELPERS -->
+        <dd>Max: $ {{salarioMaximo importes}} / Min: $ {{salarioMinimo importes}}$ / Promedio: $ {{salarioPromedio importes}}</dd>
     {{/each}}
-    </ul>
+    </dl>
 </script>
 
 <div id="contenedor"></div>
@@ -247,23 +337,120 @@ Y vemos que por tanto podemos saber en qué interacción nos encontramos en cuan
 <script>
     $(document).ready(function() {
 
-        var registro = {
+        let empleado = {
                 nombre: 'Marcos',
                 apellidos: 'Gonzalez Sancho',
                 edad: '22',
-                social: [
-                    { nombre: 'twitter', url: 'https://twitter.com/qmarcos'},
-                    { nombre: 'facebook', url: 'https://facebook.com/qinteractiva'},
-                    { nombre: 'web', url: 'http://q-interactiva.com'},
-                    { nombre: 'blog', url: 'http://blog.q-interactiva.com'}
+                salarios: [
+                    { anio: '2013', importes:[1350,1500,1500,1500,1500,2000,1500,1500,1500,1500,1500,1500,2000]},
+                    { anio: '2012', importes:[1200,1350,1350,1350,1350,1500,1350,1350,1350,1350,1350,1350,1500]},
+                    { anio: '2011', importes:[1100,1200,1200,1200,1200,1350,1200,1200,1200,1200,1200,1200,1350]},
+                    { anio: '2010', importes:[900,1100,1100,1100,1100,1200,1100,1100,1100,1100,1100,1100,1200]},
                 ]
             };		
 
-        var source   = $("#mi-plantilla").html();		
-        var plantilla = Handlebars.compile(source);
+        let source   = $("#mi-plantilla").html();		
+        let plantilla = Handlebars.compile(source);
         
-        $('#contenedor').html( plantilla( registro ) );
-    })
+        $('#contenedor').html( plantilla( empleado ) );
+    });
+
+    // CREACIÓN DE HELPERS
+
+    Handlebars.registerHelper("salarioMaximo", function(salarios) {
+        let i;
+        let max = 0;
+
+        for (i = 0; i < salarios.length; i++) {
+            if (salarios[i] > max) {
+                max = salarios[i];
+            }
+        }
+        return max.toFixed(2);
+    });
+
+    Handlebars.registerHelper("salarioMinimo", function(salarios) {
+        let i;
+        let min = 0;
+
+        for (i = 0; i < salarios.length; i++) {
+            if (i == 0) {
+                min = salarios[i];
+            } else if (salarios[i] < min) {
+                min = salarios[i];
+            }
+        }
+        return min.toFixed(2);
+    });
+
+    Handlebars.registerHelper("salarioPromedio", function(salarios) {
+        let i;
+        let total = 0;
+        let periodos = salarios.length;
+
+        for (i = 0; i < periodos; i++) {
+            total += salarios[i];
+        }
+        return (total / periodos).toFixed(2);
+    });
 </script>
+
 ```
-`root` es una variable predefinida que nos permite acceder siempre al contexto raíz de la plantilla estemos dentro de un bucle o estemos dentro de una instrucción with o en cualquier otro escenario, siempre nos va referenciar el objeto principal o contexto de la plantilla.
+
+>Recordemos que los helpers son mecanismos que nos ofrecen handlebars para poder aplicar nuestra propia lógica de aplicación en los casos que nos interese y poder trabajar con los datos o el contexto que tiene nuestra plantilla de la manera más adecuada a nuestras necesidades.
+
+## Helpers de bloque
+```js
+Handlebars.registerHelper('negrita', function(opciones){
+	return '<strong>'+opciones.fn(this)+'</strong>';
+});
+```
+
+- `opciones.fn()` handlebar lo contiene siempre en todos los bloques que se pasa.
+- `this` es el contexto en el cual se esta ejectando el propio helper.
+
+La llamada un helper de bloque se realiza al igual que un if, with o each.
+
+```html
+<p>{{#negrita}}Edad: {{edad}}{{/negrita}}</p>
+```
+
+Ahora veremos un ejemplo mas avanzado donde pasaremos el contexto. Basicamente igual que un `#each`.
+
+```js
+Handlebars.registerHelper('historico', function(contexto, opciones)
+{
+	let i;
+	let max;
+	let respuesta = '';
+
+	max = contexto.length;
+    respuesta = '<dl class="dl-horizontal">';
+    
+	for (i=0; i<max; i++)
+	{
+		respuesta += opciones.fn(contexto[i]);
+    }
+    
+	respuesta += '</dl>';
+	return respuesta;
+});
+
+```
+Invocamos el nuevo helper de la siguiente manera.
+```html
+<!-- CON HELPER-->
+{{#historico salarios}}
+    <dt>Año: {{anio}}</dt>
+    <dd>Max: {{salarioMaximo importes}}€ / Min: {{salarioMinimo importes}}€ / Promedio: {{salarioPromedio importes}}€</dd>
+{{/historico}}
+
+<!-- SIN HELPER-->
+<dl class="dl-horizontal">
+    {{#each salarios}}
+        <dt>{{anio}}</dt>
+        <dd>Max: {{salarioMaximo importes}}€ / Min: {{salarioMinimo importes}}€ / Promedio: {{salarioPromedio importes}}€</dd>
+    {{/each}}
+</dl>
+
+```
