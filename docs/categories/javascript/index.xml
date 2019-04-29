@@ -17,9 +17,9 @@
       <pubDate>Mon, 15 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>https://hugorocaproyectos.js.org/handlebars--parte-2/</guid>
-      <description>Continuando con handlebars, esta vez construiremos plantillas mas avanzadas usando condiciones, bucles, with y variables de datos
+      <description>Continuando con handlebars, esta vez construiremos plantillas mas avanzadas usando condiciones, bucles, with, variables de datos, helpers y partials.
  Contenido:
- Condiciones Bucles Propiedades anidadas Variables de datos FIRTS y LAST Variables de datos INDEX y KEY Variables de datos ROOT  1. Condiciones &amp;lt;script id=&amp;quot;mi-plantilla&amp;quot; type=&amp;quot;text/x-handlebars-template&amp;quot;&amp;gt; &amp;lt;h1&amp;gt;¡Hola {{nick}}!&amp;lt;/h1&amp;gt; {{#if dispositivo}} &amp;lt;p&amp;gt;Te has conectado desde: {{dispositivo}}&amp;lt;/p&amp;gt; {{else}} &amp;lt;p&amp;gt;No hemos identificado desde dónde te conectas.&amp;lt;/p&amp;gt; {{/if}} &amp;lt;/script&amp;gt; &amp;lt;div id=&amp;quot;contenedor&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;script&amp;gt; $(document).</description>
+ Condiciones Bucles Propiedades anidadas Variables de datos FIRTS y LAST Variables de datos INDEX y KEY Variables de datos ROOT Helpers Helpers de bloque Partials  1. Condiciones &amp;lt;script id=&amp;quot;mi-plantilla&amp;quot; type=&amp;quot;text/x-handlebars-template&amp;quot;&amp;gt; &amp;lt;h1&amp;gt;¡Hola {{nick}}!&amp;lt;/h1&amp;gt; {{#if dispositivo}} &amp;lt;p&amp;gt;Te has conectado desde: {{dispositivo}}&amp;lt;/p&amp;gt; {{else}} &amp;lt;p&amp;gt;No hemos identificado desde dónde te conectas.</description>
     </item>
     
     <item>
