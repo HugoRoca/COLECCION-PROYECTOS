@@ -1,7 +1,7 @@
 ---
 date: "2019-04-15"
 title: "Handlebars | Parte 2"
-description: "Continuando con handlebars, esta vez construiremos plantillas mas avanzadas usando condiciones, bucles, with y variables de datos"
+description: "Continuando con handlebars, esta vez construiremos plantillas mas avanzadas usando condiciones, bucles, with, variables de datos, helpers, helpers de bloque y partials."
 author: "Hugo Roca"
 image: /images/post/handlebars-prt-2.svg
 imageShared: /images/shared/handlebars-prt-2.jpg
@@ -11,7 +11,7 @@ categories:
   - JavaScript
 ---
 
-> Continuando con handlebars, esta vez construiremos plantillas mas avanzadas usando condiciones, bucles, with, variables de datos, helpers
+> Continuando con handlebars, esta vez construiremos plantillas mas avanzadas usando condiciones, bucles, with, variables de datos, helpers y partials.
 
 Contenido:
 
@@ -23,6 +23,7 @@ Contenido:
 6. Variables de datos ROOT
 7. Helpers
 8. Helpers de bloque
+9. Partials
 
 ## 1. Condiciones
 
@@ -399,7 +400,7 @@ Realizaremos otro ejemplo con helpers, esta vez crearemos un pequeño algoritno 
 
 >Recordemos que los helpers son mecanismos que nos ofrecen handlebars para poder aplicar nuestra propia lógica de aplicación en los casos que nos interese y poder trabajar con los datos o el contexto que tiene nuestra plantilla de la manera más adecuada a nuestras necesidades.
 
-## Helpers de bloque
+## 8. Helpers de bloque
 ```js
 Handlebars.registerHelper('negrita', function(opciones){
 	return '<strong>'+opciones.fn(this)+'</strong>';
@@ -453,4 +454,30 @@ Invocamos el nuevo helper de la siguiente manera.
     {{/each}}
 </dl>
 
+```
+
+## 9. Partials
+Cuando desarrollamos una aplicación web es muy habitual encontrarse fragmentos de los elemento que utilizamos en la interfaz que se tienen que repetir en diferentes pantallas, es decir zonas de nuestro código que serían reutlizables en diferentes escenarios. Evidentemente cuando utilizamos un sistema de motor de plantillas como es el caso de handlebars es mas interesante tener la opción de que algunos fragmentos de la plantilla esten aislados y puedan ser reutilizados ya no solo dentro de la misma plantilla en varias ocaciones, si no incluso entre diferentes plantillas.
+
+Para lograr esta funcionalidad, handlebars dispone de un mecanismo que se denomina `partials`. Un `partial` no es otra cosa que un fragmento de plantilla que se saca fuera, concretamente a un función y por lo tanto puede ser invocados desde cualquier plantilla tantas veces como deseemos.
+
+Recibe dos parametros.
+
+- el primero es un string con el nombre del partial
+- el segundo es un string con el fragmento de plantilla que representa ese partial
+
+```js
+Handlebars.registerPartial('listadoSalariosAnual', '<h2>Histórico de salarios:</h2><dl class="dl-horizontal">{{#each salarios}}<dt>{{anio}}</dt><dd>Max: {{salarioMaximo importes}}€ / Min: {{salarioMinimo importes}}€ / Promedio: {{salarioPromedio importes}}€</dd>{{/each}}</dl>');
+
+```
+
+Nota: Al copiar y pegar la porcion de código que queremos que sea un partial, Javascript nos soporta en los string saltos de linea por lo que el segundo parametro debe de ser una sola linea.
+
+El partial se invoca de la siguiente manera:
+```html
+<script id="mi-plantilla" type="text/x-handlebars-template">
+    <h1>{{apellidos}}, {{nombre}}</h1>
+    <p>Edad: {{edad}}</p>
+    {{> listadoSalariosAnual}}
+</script>
 ```
