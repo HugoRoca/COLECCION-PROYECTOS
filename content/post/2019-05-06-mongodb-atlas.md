@@ -47,6 +47,19 @@ Ventajas de MongoDB Atlas
 La configuración se realizará desde una cuenta free, MongoDb Atlas tambien ofrece una versión de pago. 
 
 ### Paso 1
-Nos dirigimos a la página oficial de [MongoDB](https://www.mongodb.com/) y selecionamos ***TRY FREE***
+Nos dirigimos a la página oficial de [MongoDB](https://www.mongodb.com/) y selecionamos ***TRY FREE*** y nos registramos con un correo.
 
-![Sin titulo](/mongodb-atlas/paso1.JPG)
+![Sin titulo](/mongodb-atlas/paso1.jpg)
+
+Una vez puesto los datos y haber presionado en el botón **Get started free** redirrecionará a la siguiente ventana donde nos muestra lo que tendra nuestro clúster. 
+
+![Sin titulo](/mongodb-atlas/paso2.jpg)
+
+Continuamos dando clic en **Create clúster**
+
+![Sin titulo](/mongodb-atlas/paso3.jpg)
+
+Nos redireccionará a un dashboard donde el clúster aún se seguirá creando, pero podemos explorar mientras se crea en segundo plano. Una vez finalizado la creación realizamos lo siguiente:
+
+![Sin titulo](/mongodb-atlas/paso4.jpg)
+
