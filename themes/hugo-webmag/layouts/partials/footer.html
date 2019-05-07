@@ -11,11 +11,14 @@
                             Copyright &copy;
                             <b id="anioFooter"></b>
                             Todos los derechos reservados <br>
-                            Esta plantilla fue hecha <i class="fa fa-heart-o" aria-hidden="true"></i> 
-                            por <a href="https://colorlib.com" rel="nofollow noopener noreferrer" target="_blank">Colorlib</a> 
-                            y modificada <a href="https://gohugo.io/news/" rel="nofollow noopener noreferrer" target="_blank"> por goHugo</a> y 
-                            <a href="https://hugoroca.github.io" rel="nofollow noopener noreferrer" target="_blank">Hugo Roca</a>
-                            </span>
+                            Esta plantilla fue hecha <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            por <a href="https://colorlib.com" rel="nofollow noopener noreferrer"
+                                target="_blank">Colorlib</a>
+                            y modificada <a href="https://gohugo.io/news/" rel="nofollow noopener noreferrer"
+                                target="_blank"> por goHugo</a> y
+                            <a href="https://hugoroca.github.io" rel="nofollow noopener noreferrer" target="_blank">Hugo
+                                Roca</a>
+                        </span>
                     </div>
                 </div>
             </div>
@@ -36,22 +39,22 @@
                             <h3 class="footer-title">Categorias</h3>
                             <ul class="footer-links">
                                 {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
-                                    {{ $term := urlize $name }}
-                                    {{ if eq $term "javascript"}}
-                                        <li><a href="{{ "categories" | absURL }}/{{ $name | urlize }}">JavaScript</a></li>
-                                    {{ end }}
-                                    {{ if eq $term "base-de-datos"}}
-                                        <li><a href="{{ "categories" | absURL }}/{{ $name | urlize }}">Base de datos</a></li>
-                                    {{ end }}
-                                    {{ if eq $term "c-sharp"}}
-                                        <li><a href="{{ "categories" | absURL }}/{{ $name | urlize }}">C Sharp</a></li>
-                                    {{ end }}
-                                    {{ if eq $term "php"}}
-                                        <li><a href="{{ "categories" | absURL }}/{{ $name | urlize }}">PHP</a></li>
-                                    {{ end }}
-                                    {{ if eq $term "sistemas"}}
-                                        <li><a href="{{ "categories" | absURL }}/{{ $name | urlize }}">Sistemas</a></li>
-                                    {{ end }}
+                                {{ $term := urlize $name }}
+                                {{ if eq $term "javascript"}}
+                                <li><a href="{{ "categories" | absURL }}/{{ $name | urlize }}">JavaScript</a></li>
+                                {{ end }}
+                                {{ if eq $term "base-de-datos"}}
+                                <li><a href="{{ "categories" | absURL }}/{{ $name | urlize }}">Base de datos</a></li>
+                                {{ end }}
+                                {{ if eq $term "c-sharp"}}
+                                <li><a href="{{ "categories" | absURL }}/{{ $name | urlize }}">C Sharp</a></li>
+                                {{ end }}
+                                {{ if eq $term "php"}}
+                                <li><a href="{{ "categories" | absURL }}/{{ $name | urlize }}">PHP</a></li>
+                                {{ end }}
+                                {{ if eq $term "sistemas"}}
+                                <li><a href="{{ "categories" | absURL }}/{{ $name | urlize }}">Sistemas</a></li>
+                                {{ end }}
                                 {{ end }}
                             </ul>
                         </div>
@@ -64,47 +67,58 @@
                     <h3 class="footer-title">Sigueme</h3>
                     <ul class="footer-social">
                         {{ with .Site.Params.github }}
-                        <li><a rel="nofollow noopener noreferrer" target="_blank" href="{{ . }}" title="{{ . }}"><i class="fa fa-github"></i></a></li>
+                        <li><a rel="nofollow noopener noreferrer" target="_blank" href="{{ . }}" title="{{ . }}"><i
+                                    class="fa fa-github"></i></a></li>
                         {{ end }}
 
                         {{ with .Site.Params.bitbucket }}
-                        <li><a rel="nofollow noopener noreferrer" target="_blank" href="{{ . }}" title="{{ . }}"><i class="fa fa-bitbucket"></i></a></li>
+                        <li><a rel="nofollow noopener noreferrer" target="_blank" href="{{ . }}" title="{{ . }}"><i
+                                    class="fa fa-bitbucket"></i></a></li>
                         {{ end }}
 
                         {{ with .Site.Params.gitlab }}
-                        <li><a rel="nofollow noopener noreferrer" target="_blank" href="{{ . }}" title="{{ . }}"><i class="fa fa-gitlab"></i></a></li>
+                        <li><a rel="nofollow noopener noreferrer" target="_blank" href="{{ . }}" title="{{ . }}"><i
+                                    class="fa fa-gitlab"></i></a></li>
                         {{ end }}
 
                         {{ with .Site.Params.twitter }}
-                        <li><a rel="nofollow noopener noreferrer" target="_blank" href="{{ . }}" title="{{ . }}"><i class="fa fa-twitter"></i></a></li>
+                        <li><a rel="nofollow noopener noreferrer" target="_blank" href="{{ . }}" title="{{ . }}"><i
+                                    class="fa fa-twitter"></i></a></li>
                         {{ end }}
 
                         {{ with .Site.Params.linkedin }}
-                        <li><a rel="nofollow noopener noreferrer" target="_blank" href="{{ . }}" title="{{ . }}"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a rel="nofollow noopener noreferrer" target="_blank" href="{{ . }}" title="{{ . }}"><i
+                                    class="fa fa-linkedin"></i></a></li>
                         {{ end }}
 
                         {{ with .Site.Params.stackOverflow }}
-                        <li><a rel="nofollow noopener noreferrer" target="_blank" href="{{ . }}" title="{{ . }}"><i class="fa fa-stack-overflow"></i></a></li>
+                        <li><a rel="nofollow noopener noreferrer" target="_blank" href="{{ . }}" title="{{ . }}"><i
+                                    class="fa fa-stack-overflow"></i></a></li>
                         {{ end }}
 
                         {{ with .Site.Params.googleplus }}
-                        <li><a rel="nofollow noopener noreferrer" target="_blank" href="{{ . }}" title="{{ . }}"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a rel="nofollow noopener noreferrer" target="_blank" href="{{ . }}" title="{{ . }}"><i
+                                    class="fa fa-google-plus"></i></a></li>
                         {{ end }}
 
                         {{ with .Site.Params.facebook }}
-                        <li><a rel="nofollow noopener noreferrer" target="_blank" href="{{ . }}" title="{{ . }}"><i class="fa fa-facebook"></i></a></li>
+                        <li><a rel="nofollow noopener noreferrer" target="_blank" href="{{ . }}" title="{{ . }}"><i
+                                    class="fa fa-facebook"></i></a></li>
                         {{ end }}
 
                         {{ with .Site.Params.youtube }}
-                        <li><a rel="nofollow noopener noreferrer" target="_blank" href="{{ . }}" title="{{ . }}"><i class="fa fa-youtube"></i></a></li>
+                        <li><a rel="nofollow noopener noreferrer" target="_blank" href="{{ . }}" title="{{ . }}"><i
+                                    class="fa fa-youtube"></i></a></li>
                         {{ end }}
 
                         {{ with .Site.Params.instagram }}
-                        <li><a rel="nofollow noopener noreferrer" target="_blank" href="{{ . }}" title="{{ . }}"><i class="fa fa-instagram"></i></a></li>
+                        <li><a rel="nofollow noopener noreferrer" target="_blank" href="{{ . }}" title="{{ . }}"><i
+                                    class="fa fa-instagram"></i></a></li>
                         {{ end }}
 
                         {{ with .Site.Params.bitcoin }}
-                        <li><a rel="nofollow noopener noreferrer" target="_blank" href="{{ . }}" title="{{ . }}"><i class="fa fa-bitcoin"></i></a></li>
+                        <li><a rel="nofollow noopener noreferrer" target="_blank" href="{{ . }}" title="{{ . }}"><i
+                                    class="fa fa-bitcoin"></i></a></li>
                         {{ end }}
                     </ul>
                 </div>
@@ -117,14 +131,19 @@
 </footer>
 <!-- /Footer -->
 
+{{ if eq (getenv "HUGO_ENV") "production" }}
+        
 {{ with .Site.Params.googleAnalytics }}
-  {{ "<!-- Google Analytics -->" | safeHTML }}
-  <script>
-    var _gaq=[['_setAccount','{{ . }}'],['_trackPageview']];
-    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g,s)}(document,'script'));
-  </script>
+{{ "<!-- Google Analytics -->" | safeHTML }}
+<script>
+    var _gaq = [['_setAccount', '{{ . }}'], ['_trackPageview']];
+    (function (d, t) {
+        var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+        g.src = ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g, s)
+    }(document, 'script'));
+</script>
+{{ end }}
 {{ end }}
 
 <!-- jQuery Plugins -->
@@ -132,7 +151,7 @@
 <script src="/js/bootstrap.min.js"></script>
 <script src="/js/main.js"></script>
 
-<script>    
+<script>
     $("#anioFooter").html(new Date().getFullYear());
     $("blockquote").addClass("blockquote");
 </script>
