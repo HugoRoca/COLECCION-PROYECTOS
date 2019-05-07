@@ -3,7 +3,7 @@ date: "2019-05-06"
 title: "Configuración de una cuenta en MongoDB Atlas"
 description: "MongoDB Atlas ofrece la base de datos líder mundial para aplicaciones modernas como un servicio en la nube totalmente automatizado, diseñado y ejecutado por el mismo equipo que construye la base de datos."
 author: "Hugo Roca"
-image: /images/shared/mongodb-atlas.jpg
+image: /images/post/mongodb-atlas.svg
 imageShared: /images/shared/mongodb-atlas.jpg
 tags:
   - mongodb
@@ -13,7 +13,7 @@ categories:
 
 MongoDB Atlas ofrece la base de datos líder mundial para aplicaciones modernas como un servicio en la nube totalmente automatizado, diseñado y ejecutado por el mismo equipo que construye la base de datos.
 
-Antes de empezar la configuración debemos de entender que es MongoDB Atlas, que ventatajas y caracteristicas nos ofrece a comparación de tenerlo en modo local.
+Antes de empezar la configuración debemos de entender que es MongoDB Atlas, que ventajas y caracteristicas nos ofrece a comparación de tenerlo en modo local.
 
 > MongoDB Atlas es la base de datos como servicio que permite implementar, utilizar y escalar una base de datos de MongoDB con tan solo unos pocos clics.
 
@@ -46,7 +46,8 @@ Ventajas de MongoDB Atlas
 
 La configuración se realizará desde una cuenta free, MongoDb Atlas tambien ofrece una versión de pago. 
 
-### Paso 1
+### Configuración de cuenta
+
 Nos dirigimos a la página oficial de [MongoDB](https://www.mongodb.com/) y selecionamos ***TRY FREE*** y nos registramos con un correo.
 
 ![Sin titulo](/mongodb-atlas/paso1.jpg)
@@ -63,3 +64,29 @@ Nos redireccionará a un dashboard donde el clúster aún se seguirá creando, p
 
 ![Sin titulo](/mongodb-atlas/paso4.jpg)
 
+![Sin titulo](/mongodb-atlas/paso5.jpg)
+
+**Punto 1:** MongoDB Atlas nos ofrece una seguridad de conexión por IP, esto quiere decir que podemos configurarlo de 2 maneras.
+
+  - **Add You Current IP Address** con esta opcion podemos poner nuestra IP, lo malo de configurar esta opción es que cada vez que nos cambiamos de laptop o PC debemos de volver a configurarlo.
+  - **Add a Different IP Address** con esta opción podemos configurar una IP que permita las conexiones de cualquier laptop o PC, por ejemplo podemos colocar la siguiente IP **0.0.0.0/0**.
+
+![Sin titulo](/mongodb-atlas/paso6.jpg)
+
+**Punto 2** Configuración de usuario de acceso
+
+![Sin titulo](/mongodb-atlas/paso7.jpg)
+
+Al realizar todo lo anterior, va quedando así:
+
+![Sin titulo](/mongodb-atlas/paso8.jpg)
+
+Despues del paso anterior procedemos a obtener la cadena de conexión, nos mostrará 3 opciones de la cual seleccionamos la siguiente:
+
+![Sin titulo](/mongodb-atlas/paso9.jpg)
+
+![Sin titulo](/mongodb-atlas/paso10.jpg)
+
+Con la URI copiada podras acceder desde tu GUI para MongoDB preferida.
+
+Listo! ya tienes un servidor de MongoDB, ahora solo queda crear base de datos y colecciones.
