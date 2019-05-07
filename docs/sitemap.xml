@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://hugorocaproyectos.js.org/configuraci%C3%B3n-de-una-cuenta-en-mongodb-atlas/</loc>
+    <lastmod>2019-05-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://hugorocaproyectos.js.org/handlebars--parte-2/</loc>
     <lastmod>2019-04-15T00:00:00+00:00</lastmod>
   </url>
@@ -89,7 +94,7 @@
   
   <url>
     <loc>https://hugorocaproyectos.js.org/categories/base-de-datos/</loc>
-    <lastmod>2018-05-20T00:00:00+00:00</lastmod>
+    <lastmod>2019-05-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -101,7 +106,7 @@
   
   <url>
     <loc>https://hugorocaproyectos.js.org/categories/</loc>
-    <lastmod>2018-05-20T00:00:00+00:00</lastmod>
+    <lastmod>2019-05-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -131,7 +136,7 @@
   
   <url>
     <loc>https://hugorocaproyectos.js.org/</loc>
-    <lastmod>2019-04-15T00:00:00+00:00</lastmod>
+    <lastmod>2019-05-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -160,6 +165,12 @@
   </url>
   
   <url>
+    <loc>https://hugorocaproyectos.js.org/tags/mongodb/</loc>
+    <lastmod>2019-05-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://hugorocaproyectos.js.org/tags/php/</loc>
     <lastmod>2018-03-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -173,7 +184,7 @@
   
   <url>
     <loc>https://hugorocaproyectos.js.org/post/</loc>
-    <lastmod>2019-04-15T00:00:00+00:00</lastmod>
+    <lastmod>2019-05-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

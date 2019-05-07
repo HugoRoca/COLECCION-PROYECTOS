@@ -6,10 +6,21 @@
     <description>Recent content in Posts on Hugo Roca Proyectos</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-PE</language>
-    <lastBuildDate>Mon, 15 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 06 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://hugorocaproyectos.js.org/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Configuración de una cuenta en MongoDB Atlas</title>
+      <link>https://hugorocaproyectos.js.org/configuraci%C3%B3n-de-una-cuenta-en-mongodb-atlas/</link>
+      <pubDate>Mon, 06 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://hugorocaproyectos.js.org/configuraci%C3%B3n-de-una-cuenta-en-mongodb-atlas/</guid>
+      <description>MongoDB Atlas ofrece la base de datos líder mundial para aplicaciones modernas como un servicio en la nube totalmente automatizado, diseñado y ejecutado por el mismo equipo que construye la base de datos.
+Antes de empezar la configuración debemos de entender que es MongoDB Atlas, que ventajas y caracteristicas nos ofrece a comparación de tenerlo en modo local.
+ MongoDB Atlas es la base de datos como servicio que permite implementar, utilizar y escalar una base de datos de MongoDB con tan solo unos pocos clics.</description>
+    </item>
     
     <item>
       <title>Handlebars | Parte 2</title>
