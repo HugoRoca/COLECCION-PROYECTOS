@@ -19,7 +19,7 @@ paginate = 10
   copyright   = "© 2019"
 
   cover       = "img/blog-cover.jpg"
-  shared = "img/__blog-cover.jpg"
+  shared = "img/compartir.jpg"
   description = "Aprende • Piensa • Diseña • Codifica"
   metaDescription = ""
   googleAnalytics = "UA-125594168-1"
