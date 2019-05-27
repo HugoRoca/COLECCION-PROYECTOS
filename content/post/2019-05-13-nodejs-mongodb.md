@@ -43,3 +43,23 @@ Al finalizar tendremos un archivo como este:
 ### Instalando npm mongodb
 Para este caso utilizaremos al paquete mongodb (https://www.npmjs.com/package/mongodb), en la consola de comandos copiamos y pegamos lo siquiente: `npm i mongodb`, una ves terminado se creará una carpeta por defecto `node_modules`, en donde se guardan todas las dependencias.
 
+## Paso 1 
+Podemos crear la colección tanto por una GUI para mongo como por código. Dejate un ejemplo de como crearlo por código.
+
+```js
+let MongoClient = require('mongodb').MongoClient;
+let url = "mongodb://localhost:27017/";
+
+MongoClient.connect(url, function(err, db) {
+  if (err) throw err;
+  let dbo = db.db("mydb");
+  dbo.createCollection("customers", function(err, res) {
+    if (err) throw err;
+    console.log("Collection created!");
+    db.close();
+  });
+});
+/* esto es un ejemplo básico */
+```
+
+## Paso 2
