@@ -43,12 +43,12 @@ Al finalizar tendremos un archivo como este:
 ### Instalando npm mongodb
 Para este caso utilizaremos al paquete mongodb (https://www.npmjs.com/package/mongodb), en la consola de comandos copiamos y pegamos lo siquiente: `npm i mongodb`, una ves terminado se creará una carpeta por defecto `node_modules`, en donde se guardan todas las dependencias.
 
-## Paso 1 
-Podemos crear la colección tanto por una GUI para mongo como por código. Dejate un ejemplo de como crearlo por código.
+## Creando colección
+Podemos crear la colección tanto por una GUI para mongo como por código. Dejare un ejemplo de como crearlo por código.
 
 ```js
 let MongoClient = require('mongodb').MongoClient;
-let url = "mongodb://localhost:27017/";
+let url = "mongodb://localhost:27017/"; // => url de conexión mongo
 
 MongoClient.connect(url, function(err, db) {
   if (err) throw err;
@@ -62,4 +62,89 @@ MongoClient.connect(url, function(err, db) {
 /* esto es un ejemplo básico */
 ```
 
-## Paso 2
+## Creando el proyecto
+Empezaremos creando un archivo `config.js`, en donde se alojaran las configuraciones, conexiones, etc.
+
+```js
+const config = {
+    mongo: {
+        url: "mongodb://localhost:27017/", // => url de conexión mongo
+        database: "test",
+        collection: "nodejs_mongo_atlas"
+    }
+}
+
+module.exports = config;
+
+```
+
+Creamos otro archivo y lo nombraremos `mongoUtils.js`, este archivo tendrá funciones de configuración.
+
+```js
+const mongoClient = require("mongodb").MongoClient;
+const config = require("./config");
+
+module.exports = class MongoUtils {
+    getConnectionString() {
+        return config.mongo.url;
+    }
+
+    getDataBaseString() {
+        return config.mongo.database;
+    }
+
+    getCollectionString() {
+        return config.mongo.collection;
+    }
+
+    buildCollection(message) {
+        return {
+            message,
+            createdAt: new Date()
+        }
+    }
+
+    async insertData(data) {
+        return new Promise((resolve, reject) => {
+            mongoClient.connect(this.getConnectionString(), { useNewUrlParser: true }).then(client => {
+
+                const db = client.db(this.getDataBaseString());
+                const collection = db.collection(this.getCollectionString());
+
+                collection.insertOne(data, (insertError, insertResponse) => {
+                    if (insertError) reject(insertError);
+                    resolve(insertResponse);
+                });
+
+            }).catch(err => {
+                console.error("Error al conectarse con la base de datos: ", err);
+            });
+        });
+    }
+
+    async insert(message){
+        let data = this.buildCollection(message);
+        return await this.insertData(data);
+    }
+
+}
+
+```
+
+Para finalizar, creamos un archivo `index.js` en donde haremos el llamado a la funciones creadas en `mongoUtils.js`.
+
+```js
+const mongoUtils = require("./mongoUtils");
+const mongo = new mongoUtils();
+
+(async() => {
+    let insert = await mongo.insert("Ejecutando mongo desde nodeJS");
+    console.log(insert);
+})();
+
+
+```
+
+Para ejecutar, solamente basta ejecutar el siguiente comando en la consola `node index.js`
+
+![Sin titulo](/nodejs-mongodb-atlas/resultado.jpg)
