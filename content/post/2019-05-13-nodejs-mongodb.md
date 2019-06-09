@@ -3,8 +3,8 @@ date: "2019-05-13"
 title: "Conexión NodeJS con MongoDB Atlas"
 description: "MongoDB Atlas es la base de datos como servicio que permite implementar, utilizar y escalar una base de datos de MongoDB en la nube haciendo conexión con NodeJS."
 author: "Hugo Roca"
-image: /images/post/portafolio.svg
-imageShared: /images/shared/portafolio.jpg
+image: /images/post/nodejs-mongodb.svg
+imageShared: /images/shared/nodejs-mongodb.jpg
 tag:
  - JavaScript
  - JS
@@ -39,7 +39,6 @@ Al finalizar tendremos un archivo como este:
 }
 ```
 
-----
 ### Instalando npm mongodb
 Para este caso utilizaremos al paquete mongodb (https://www.npmjs.com/package/mongodb), en la consola de comandos copiamos y pegamos lo siquiente: `npm i mongodb`, una ves terminado se creará una carpeta por defecto `node_modules`, en donde se guardan todas las dependencias.
 
