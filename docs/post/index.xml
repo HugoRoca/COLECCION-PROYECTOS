@@ -6,10 +6,22 @@
     <description>Recent content in Posts on Hugo Roca Proyectos</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-PE</language>
-    <lastBuildDate>Mon, 06 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 13 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://hugorocaproyectos.js.org/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Conexión NodeJS con MongoDB Atlas</title>
+      <link>https://hugorocaproyectos.js.org/conexi%C3%B3n-nodejs-con-mongodb-atlas/</link>
+      <pubDate>Mon, 13 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://hugorocaproyectos.js.org/conexi%C3%B3n-nodejs-con-mongodb-atlas/</guid>
+      <description>MongoDB Atlas es la base de datos como servicio que permite implementar, utilizar y escalar una base de datos de MongoDB en la nube haciendo conexión con NodeJS.
+Usaremos clases y funcion asincronas con promesas en javascript ES6.
+Creando el Package.json Antes de proceder con cualquier instalación de paquetes npm necesitamos crear nuestro package.json.
+ Como primer paso creamos una carpeta donde estarán todos nuestros archivos. Luego, levantar la ventana de comandos dentro de la carpeta y ejecutar el siguiente comando npm init.</description>
+    </item>
     
     <item>
       <title>Configuración de una cuenta en MongoDB Atlas</title>
