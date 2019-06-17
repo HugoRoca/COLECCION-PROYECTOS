@@ -6,10 +6,20 @@
     <description>Recent content on Hugo Roca Proyectos</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-PE</language>
-    <lastBuildDate>Mon, 13 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 11 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://hugorocaproyectos.js.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>NGrok: Crea URLs públicas para exponer su servidor web local</title>
+      <link>https://hugorocaproyectos.js.org/ngrok-crea-urls-p%C3%BAblicas-para-exponer-su-servidor-web-local/</link>
+      <pubDate>Tue, 11 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://hugorocaproyectos.js.org/ngrok-crea-urls-p%C3%BAblicas-para-exponer-su-servidor-web-local/</guid>
+      <description>Ngrok es una herramienta útil que crea una URL de túnel segura y de acceso público a una aplicación que se ejecuta en localhost.
+ Hace algunos meses atras queria publicar un servicio hecho en nodeJS para que su consumo sea de una red diferente a la del trabajo, y como sucede en todos los centros laborales hay mucha burocracia. Asi que investigando me tope con dos herramientas muy utíles: ngrok y localtunel.</description>
+    </item>
     
     <item>
       <title>Conexión NodeJS con MongoDB Atlas</title>
