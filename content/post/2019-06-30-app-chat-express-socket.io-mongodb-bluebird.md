@@ -20,6 +20,14 @@ En la consola ejecutamos la siguiente linea: `npm init` esto quiere decir que es
 
 Utilizaremos **express** para crear nuestro servidor web que alojará nuestros archivos estáticos y **body-parser** para extraer todo el cuerpo de una solicitud entrante.
 
-```js
+```cmd
 npm install express body-parser --save
 ```
+
+A continuación, instalamos **mongoose**, esto es un ODM (Object Document Mapper) para MongoDB y hará que nuestro trabajo sea mucho más fácil. Vamos a instalarlo junto a **socket.io** y **bluebird**. Para tener algo de contexto de estas dos ultimas; **Socket.io** es una biblioteca de javascript para aplicaciones web en tiempo real. **Bluebird** es una biblioteca Promise con todas las funciones para javascript.
+
+```cmd
+npm install mongoose socket.io bluebird --save
+```
+
+> Puedes instalar nodemon para no estar iniciando el servidor con cualquier modificación que hagamos, esto es opcional. `npm install nodemon`
