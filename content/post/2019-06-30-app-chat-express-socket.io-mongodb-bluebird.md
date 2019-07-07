@@ -31,3 +31,26 @@ npm install mongoose socket.io bluebird --save
 ```
 
 > Puedes instalar nodemon para no estar iniciando el servidor con cualquier modificación que hagamos, esto es opcional. `npm install nodemon`
+
+Este será nuestro árbol de archivos para esta app.
+```
+.
+├── client
+|   ├── css
+|   |   └── style.css
+|   ├── js
+|   |   ├── chat.js
+|   |   ├── fortmatTimeStamp.js
+|   |   └── socket.io
+|   └── index.html      
+├── server
+|   ├── controllers
+|   |   └── chat.js
+|   ├── mongoDB
+|   |   ├── chatSchema.js
+|   |   └── dbconnection.js
+|   └── routes
+|       └── chat.js
+├── app.js
+└── package.json
+```
