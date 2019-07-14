@@ -54,3 +54,65 @@ Este será nuestro árbol de archivos para esta app.
 ├── app.js
 └── package.json
 ```
+
+### Creando el lado cliente
+```html
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chat</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-md-center mt-3">
+            <div class="col-md-7">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="text-center">CHAT</h4>
+                    </div>
+                    <div class="card-body">
+                        <ul class="chat" id="listaMensajes">
+
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <small id="escribiendo">&nbsp;</small>
+                        <form id="form">
+                            <div class="input-group">
+                                <input id="mensaje" type="text" class="form-control"
+                                    placeholder="Escribe tu mensaje aquí..." autocomplete="off" />
+                                <span class="input-group-append">
+                                    <button class="btn btn-warning" id="btn-chat">Enviar</button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/formatTimeStamp.js"></script>
+    <script src="./js/socket.io.js"></script>
+    <script src="./js/chat.js"></script>
+</body>
+
+</html>
+```
+
+Este será nuestro archivo HTML que servirá para la interfaz, para instanciar socket.io en el cliente, puedes obtener el código haciendo click [aquí](https://github.com/socketio/socket.io-client/blob/master/dist/socket.io.js).
+
+> formatTimeStamp.js nos servirá para obtener el momento en que se envio el mensaje, si fue hoy, ayer o la semana pasada. Puedes obtener el código dando click [aquí](https://cdn.jsdelivr.net/gh/rexeze/formatTimeStamp/src/index-cdn.js).
+
+Antes de configurar el archivo **chat.js** debemos de centrarnos en el desarrollo del backend.
+
+### Creando el lado servidor
