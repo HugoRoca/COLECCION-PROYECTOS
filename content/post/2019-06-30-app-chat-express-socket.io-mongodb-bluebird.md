@@ -116,3 +116,82 @@ Este será nuestro archivo HTML que servirá para la interfaz, para instanciar s
 Antes de configurar el archivo **chat.js** debemos de centrarnos en el desarrollo del backend.
 
 ### Creando el lado servidor
+
+Empezaremos creando la conexión con mongoDB, para ello crearemos dos archivos dentro de `./server/mongoDB/`.
+
+El primero lo llamaremos **chatSchema.js**, aquí crearemos un esquema de la colección que se creará. 
+```js
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
+
+const chatSchema = new Schema({
+    message: {
+        type: String
+    },
+    sender: {
+        type: String
+    }
+}, {
+    timestamps: true
+});
+
+let Chat = mongoose.model("chats", chatSchema);
+
+module.exports = Chat;
+```
+
+Luego creamos el archivo **dbconnection.js**, aquí tendremos la conexión con mongoDB a partir del esquema creado y tambien veremos como implementamos **bluebird.js**.
+```js
+const mongoose = require("mongoose");
+mongoose.Promise = require("bluebird");
+
+const url = "localhost:1111/test"; //conexion mongo
+
+const connect = mongoose.connect(url, { useNewUrlParser: true });
+
+module.exports = connect;
+```
+
+Luego de haber realizado la conexión, crearemos el controlador, para ellos creamos un archivo dentro de `./server/controller/`, este archivo tendrá el nombre de **chat.js**. En este archivo referenciaremos la conexión y el esquema de mongo para realizar lo siguiente:
+```js
+"use strict";
+
+const connectdb = require("../mongoDB/dbconnection");
+const chat = require("../mongoDB/chatSchema");
+
+exports.obtener = ((req, res, nect) => {
+    res.setHeader("Content-Type", "application/json");
+    res.statusCode = 200;
+
+    connectdb.then(db => {
+        chat.find({}).then(chat =>{
+            res.json(chat);
+        });
+    });
+});
+```
+
+Estamos a pocos pasos de terminar, ahora solo queda crear la ruta y configurar todo dentro del archivo **app.js**. Para realizar el routeo del controlador debemos de crear un archivo dentro de `./server/routes/` al cual llamaremos chat.js, realizamos lo siguiente:
+```js
+const express = require("express");
+const controller = require("../controllers/chat");
+const router = express.Router();
+
+router.route("/").get(controller.obtener);
+
+module.exports = router;
+```
+
+### Configurando app.js
+Empezaremos creando las referencias hacia los paquetes npm y los archivos creados asi como tambien el puerto donde se desplegará.
+```js
+const port = 2705;
+const express = require("express");
+const app = express();
+const bodyParser = require("body-parser");
+const http = require("http").Server(app);
+const io = require("socket.io");
+const socket = io(http);
+const chatRouter = require("./server/routes/chat");
+```
+
