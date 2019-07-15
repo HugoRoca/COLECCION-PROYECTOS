@@ -6,35 +6,17 @@
     <description>Recent content in Tags on Hugo Roca Proyectos</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-PE</language>
-    <lastBuildDate>Fri, 30 Mar 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 06 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://hugorocaproyectos.js.org/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Angularjs</title>
-      <link>https://hugorocaproyectos.js.org/tags/angularjs/</link>
-      <pubDate>Fri, 30 Mar 2018 00:00:00 +0000</pubDate>
+      <title>mongodb</title>
+      <link>https://hugorocaproyectos.js.org/tags/mongodb/</link>
+      <pubDate>Mon, 06 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://hugorocaproyectos.js.org/tags/angularjs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Csharp</title>
-      <link>https://hugorocaproyectos.js.org/tags/csharp/</link>
-      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://hugorocaproyectos.js.org/tags/csharp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Css3</title>
-      <link>https://hugorocaproyectos.js.org/tags/css3/</link>
-      <pubDate>Tue, 02 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://hugorocaproyectos.js.org/tags/css3/</guid>
+      <guid>https://hugorocaproyectos.js.org/tags/mongodb/</guid>
       <description></description>
     </item>
     
@@ -48,34 +30,7 @@
     </item>
     
     <item>
-      <title>Html5</title>
-      <link>https://hugorocaproyectos.js.org/tags/html5/</link>
-      <pubDate>Fri, 30 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://hugorocaproyectos.js.org/tags/html5/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Javascript</title>
-      <link>https://hugorocaproyectos.js.org/tags/javascript/</link>
-      <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://hugorocaproyectos.js.org/tags/javascript/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Jquery</title>
-      <link>https://hugorocaproyectos.js.org/tags/jquery/</link>
-      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://hugorocaproyectos.js.org/tags/jquery/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Js</title>
+      <title>JS</title>
       <link>https://hugorocaproyectos.js.org/tags/js/</link>
       <pubDate>Wed, 03 Apr 2019 00:00:00 +0000</pubDate>
       
@@ -84,25 +39,43 @@
     </item>
     
     <item>
-      <title>Mongodb</title>
-      <link>https://hugorocaproyectos.js.org/tags/mongodb/</link>
-      <pubDate>Mon, 06 May 2019 00:00:00 +0000</pubDate>
+      <title>JavaScript</title>
+      <link>https://hugorocaproyectos.js.org/tags/javascript/</link>
+      <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://hugorocaproyectos.js.org/tags/mongodb/</guid>
+      <guid>https://hugorocaproyectos.js.org/tags/javascript/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Php</title>
-      <link>https://hugorocaproyectos.js.org/tags/php/</link>
-      <pubDate>Fri, 30 Mar 2018 00:00:00 +0000</pubDate>
+      <title>SQLSERVER</title>
+      <link>https://hugorocaproyectos.js.org/tags/sqlserver/</link>
+      <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://hugorocaproyectos.js.org/tags/php/</guid>
+      <guid>https://hugorocaproyectos.js.org/tags/sqlserver/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Poo</title>
+      <title>REDIS</title>
+      <link>https://hugorocaproyectos.js.org/tags/redis/</link>
+      <pubDate>Thu, 01 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://hugorocaproyectos.js.org/tags/redis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CSS3</title>
+      <link>https://hugorocaproyectos.js.org/tags/css3/</link>
+      <pubDate>Tue, 02 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://hugorocaproyectos.js.org/tags/css3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>POO</title>
       <link>https://hugorocaproyectos.js.org/tags/poo/</link>
       <pubDate>Sat, 15 Sep 2018 00:00:00 +0000</pubDate>
       
@@ -111,11 +84,20 @@
     </item>
     
     <item>
-      <title>Redis</title>
-      <link>https://hugorocaproyectos.js.org/tags/redis/</link>
-      <pubDate>Thu, 01 Nov 2018 00:00:00 +0000</pubDate>
+      <title>CSharp</title>
+      <link>https://hugorocaproyectos.js.org/tags/csharp/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://hugorocaproyectos.js.org/tags/redis/</guid>
+      <guid>https://hugorocaproyectos.js.org/tags/csharp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>JQUERY</title>
+      <link>https://hugorocaproyectos.js.org/tags/jquery/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://hugorocaproyectos.js.org/tags/jquery/</guid>
       <description></description>
     </item>
     
@@ -129,11 +111,29 @@
     </item>
     
     <item>
-      <title>Sqlserver</title>
-      <link>https://hugorocaproyectos.js.org/tags/sqlserver/</link>
-      <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
+      <title>Angularjs</title>
+      <link>https://hugorocaproyectos.js.org/tags/angularjs/</link>
+      <pubDate>Fri, 30 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://hugorocaproyectos.js.org/tags/sqlserver/</guid>
+      <guid>https://hugorocaproyectos.js.org/tags/angularjs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HTML5</title>
+      <link>https://hugorocaproyectos.js.org/tags/html5/</link>
+      <pubDate>Fri, 30 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://hugorocaproyectos.js.org/tags/html5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>php</title>
+      <link>https://hugorocaproyectos.js.org/tags/php/</link>
+      <pubDate>Fri, 30 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://hugorocaproyectos.js.org/tags/php/</guid>
       <description></description>
     </item>
     

@@ -6,10 +6,20 @@
     <description>Recent content on Hugo Roca Proyectos</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-PE</language>
-    <lastBuildDate>Tue, 11 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 30 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://hugorocaproyectos.js.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CHAT en tiempo real con NodeJS, Express, BlueBirdJS, Socket.IO y mongoDB</title>
+      <link>https://hugorocaproyectos.js.org/chat-en-tiempo-real-con-nodejs-express-bluebirdjs-socket.io-y-mongodb/</link>
+      <pubDate>Sun, 30 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://hugorocaproyectos.js.org/chat-en-tiempo-real-con-nodejs-express-bluebirdjs-socket.io-y-mongodb/</guid>
+      <description>En este pequeño post te explicaré como crear una aplicación de chat en tiempo real paso a paso. Para entender todo este proceso se requiere que tengas conocimientos en nodeJS, mongoDB, javascript, html5 y css3.
+Instalando paquetes y configuración Lo primero que tenemos que hacer es crear un directorio en donde estarán todos nuestros archivos, puedes utilizar el editor de código que mas se adecue a tí. En mi caso usaré VSCode.</description>
+    </item>
     
     <item>
       <title>NGrok: Crea URLs públicas para exponer su servidor web local</title>
@@ -18,7 +28,7 @@
       
       <guid>https://hugorocaproyectos.js.org/ngrok-crea-urls-p%C3%BAblicas-para-exponer-su-servidor-web-local/</guid>
       <description>Ngrok es una herramienta útil que crea una URL de túnel segura y de acceso público a una aplicación que se ejecuta en localhost.
- Hace algunos meses atras queria publicar un servicio hecho en nodeJS para que su consumo sea de una red diferente a la del trabajo, y como sucede en todos los centros laborales hay mucha burocracia. Asi que investigando me tope con dos herramientas muy utíles: ngrok y localtunel.</description>
+ Hace algunos meses atrás quería publicar un servicio hecho en nodeJS para que su consumo sea de una red diferente a la del trabajo, y como sucede en todos los centros laborales hay mucha burocracia. Asi que investigando me tope con dos herramientas muy utíles: ngrok y localtunel.</description>
     </item>
     
     <item>
@@ -46,10 +56,10 @@ Antes de empezar la configuración debemos de entender que es MongoDB Atlas, que
     
     <item>
       <title>Handlebars | Parte 2</title>
-      <link>https://hugorocaproyectos.js.org/handlebars--parte-2/</link>
+      <link>https://hugorocaproyectos.js.org/handlebars-parte-2/</link>
       <pubDate>Mon, 15 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://hugorocaproyectos.js.org/handlebars--parte-2/</guid>
+      <guid>https://hugorocaproyectos.js.org/handlebars-parte-2/</guid>
       <description>Continuando con handlebars, esta vez construiremos plantillas mas avanzadas usando condiciones, bucles, with, variables de datos, helpers y partials.
  Contenido:
  Condiciones Bucles Propiedades anidadas Variables de datos FIRTS y LAST Variables de datos INDEX y KEY Variables de datos ROOT Helpers Helpers de bloque Partials  1. Condiciones &amp;lt;script id=&amp;quot;mi-plantilla&amp;quot; type=&amp;quot;text/x-handlebars-template&amp;quot;&amp;gt; &amp;lt;h1&amp;gt;¡Hola {{nick}}!&amp;lt;/h1&amp;gt; {{#if dispositivo}} &amp;lt;p&amp;gt;Te has conectado desde: {{dispositivo}}&amp;lt;/p&amp;gt; {{else}} &amp;lt;p&amp;gt;No hemos identificado desde dónde te conectas.</description>
@@ -57,10 +67,10 @@ Antes de empezar la configuración debemos de entender que es MongoDB Atlas, que
     
     <item>
       <title>Handlebars | Parte 1</title>
-      <link>https://hugorocaproyectos.js.org/handlebars--parte-1/</link>
+      <link>https://hugorocaproyectos.js.org/handlebars-parte-1/</link>
       <pubDate>Tue, 09 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://hugorocaproyectos.js.org/handlebars--parte-1/</guid>
+      <guid>https://hugorocaproyectos.js.org/handlebars-parte-1/</guid>
       <description>Handlebars.js es un motor de plantillas muy popular que es potente, fácil de utilizar y que cuenta con una gran comunidad. Se basa en el lenguaje de plantillas Mustache, pero lo mejora de distintas maneras.
  Los sistemas de plantillas son muy importantes, porque nos permiten separar el código por responsabilidades y crear la salida de las aplicaciones de una manera sencilla, manteniendo el código HTML separado del código Javascript.</description>
     </item>
@@ -203,15 +213,6 @@ CONTENIDO  Login Dashboard ▾ Almacen/ Registro de artículo Registro de catego
 Paso 1 Puedes obtener el codigo fuente de la siguiente forma:
  Descargar el repositorio Sigeven 1.0 Copiarlo a un server WAMP, XAMPP o APACHE  Árbol de archivos
 ▾ App/ ▾ private/ ▾ articulo/ articulo.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://hugorocaproyectos.js.org/contact/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://hugorocaproyectos.js.org/contact/</guid>
-      <description></description>
     </item>
     
   </channel>

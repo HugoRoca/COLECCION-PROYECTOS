@@ -3,6 +3,23 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://hugorocaproyectos.js.org/chat-en-tiempo-real-con-nodejs-express-bluebirdjs-socket.io-y-mongodb/</loc>
+    <lastmod>2019-06-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hugorocaproyectos.js.org/</loc>
+    <lastmod>2019-06-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hugorocaproyectos.js.org/post/</loc>
+    <lastmod>2019-06-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://hugorocaproyectos.js.org/ngrok-crea-urls-p%C3%BAblicas-para-exponer-su-servidor-web-local/</loc>
     <lastmod>2019-06-11T00:00:00+00:00</lastmod>
   </url>
@@ -13,18 +30,60 @@
   </url>
   
   <url>
+    <loc>https://hugorocaproyectos.js.org/categories/base-de-datos/</loc>
+    <lastmod>2019-05-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hugorocaproyectos.js.org/categories/</loc>
+    <lastmod>2019-05-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://hugorocaproyectos.js.org/configuraci%C3%B3n-de-una-cuenta-en-mongodb-atlas/</loc>
     <lastmod>2019-05-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hugorocaproyectos.js.org/handlebars--parte-2/</loc>
+    <loc>https://hugorocaproyectos.js.org/tags/</loc>
+    <lastmod>2019-05-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hugorocaproyectos.js.org/tags/mongodb/</loc>
+    <lastmod>2019-05-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hugorocaproyectos.js.org/tags/handlebars/</loc>
+    <lastmod>2019-04-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hugorocaproyectos.js.org/handlebars-parte-2/</loc>
     <lastmod>2019-04-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hugorocaproyectos.js.org/handlebars--parte-1/</loc>
+    <loc>https://hugorocaproyectos.js.org/categories/javascript/</loc>
+    <lastmod>2019-04-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hugorocaproyectos.js.org/handlebars-parte-1/</loc>
     <lastmod>2019-04-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hugorocaproyectos.js.org/tags/js/</loc>
+    <lastmod>2019-04-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -38,6 +97,18 @@
   </url>
   
   <url>
+    <loc>https://hugorocaproyectos.js.org/tags/javascript/</loc>
+    <lastmod>2019-01-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hugorocaproyectos.js.org/tags/sqlserver/</loc>
+    <lastmod>2019-01-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://hugorocaproyectos.js.org/creaci%C3%B3n-de-un-juego-con-javascript-puro-n-1/</loc>
     <lastmod>2018-12-15T00:00:00+00:00</lastmod>
   </url>
@@ -48,8 +119,26 @@
   </url>
   
   <url>
+    <loc>https://hugorocaproyectos.js.org/tags/redis/</loc>
+    <lastmod>2018-11-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hugorocaproyectos.js.org/tags/css3/</loc>
+    <lastmod>2018-10-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://hugorocaproyectos.js.org/gr%C3%A1ficos-con-d3js/</loc>
     <lastmod>2018-10-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hugorocaproyectos.js.org/tags/poo/</loc>
+    <lastmod>2018-09-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -60,6 +149,30 @@
   <url>
     <loc>https://hugorocaproyectos.js.org/app-restaurante/</loc>
     <lastmod>2018-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hugorocaproyectos.js.org/tags/csharp/</loc>
+    <lastmod>2018-09-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hugorocaproyectos.js.org/tags/jquery/</loc>
+    <lastmod>2018-09-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hugorocaproyectos.js.org/tags/sistemas/</loc>
+    <lastmod>2018-09-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hugorocaproyectos.js.org/categories/c-sharp/</loc>
+    <lastmod>2018-05-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -83,58 +196,8 @@
   </url>
   
   <url>
-    <loc>https://hugorocaproyectos.js.org/sigeven-2.0/</loc>
-    <lastmod>2018-03-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hugorocaproyectos.js.org/2018-03-04-sigenven1.0/</loc>
-    <lastmod>2018-03-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hugorocaproyectos.js.org/contact/</loc>
-  </url>
-  
-  <url>
     <loc>https://hugorocaproyectos.js.org/tags/angularjs/</loc>
     <lastmod>2018-03-30T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hugorocaproyectos.js.org/categories/base-de-datos/</loc>
-    <lastmod>2019-05-06T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hugorocaproyectos.js.org/categories/c-sharp/</loc>
-    <lastmod>2018-05-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hugorocaproyectos.js.org/categories/</loc>
-    <lastmod>2019-05-06T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hugorocaproyectos.js.org/tags/csharp/</loc>
-    <lastmod>2018-09-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hugorocaproyectos.js.org/tags/css3/</loc>
-    <lastmod>2018-10-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hugorocaproyectos.js.org/tags/handlebars/</loc>
-    <lastmod>2019-04-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -145,39 +208,8 @@
   </url>
   
   <url>
-    <loc>https://hugorocaproyectos.js.org/</loc>
-    <lastmod>2019-06-11T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hugorocaproyectos.js.org/categories/javascript/</loc>
-    <lastmod>2019-04-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hugorocaproyectos.js.org/tags/javascript/</loc>
-    <lastmod>2019-01-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hugorocaproyectos.js.org/tags/jquery/</loc>
-    <lastmod>2018-09-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hugorocaproyectos.js.org/tags/js/</loc>
-    <lastmod>2019-04-03T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hugorocaproyectos.js.org/tags/mongodb/</loc>
-    <lastmod>2019-05-06T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>https://hugorocaproyectos.js.org/sigeven-2.0/</loc>
+    <lastmod>2018-03-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -187,39 +219,8 @@
   </url>
   
   <url>
-    <loc>https://hugorocaproyectos.js.org/tags/poo/</loc>
-    <lastmod>2018-09-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hugorocaproyectos.js.org/post/</loc>
-    <lastmod>2019-06-11T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hugorocaproyectos.js.org/tags/redis/</loc>
-    <lastmod>2018-11-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hugorocaproyectos.js.org/tags/sistemas/</loc>
-    <lastmod>2018-09-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hugorocaproyectos.js.org/tags/sqlserver/</loc>
-    <lastmod>2019-01-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hugorocaproyectos.js.org/tags/</loc>
-    <lastmod>2018-03-30T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>https://hugorocaproyectos.js.org/2018-03-04-sigenven1.0/</loc>
+    <lastmod>2018-03-04T00:00:00+00:00</lastmod>
   </url>
   
 </urlset>
