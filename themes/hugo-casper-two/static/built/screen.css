@@ -1067,10 +1067,7 @@ body {
 }
 
 .post-full-content pre {
-    /* white-space: nowrap; */
-	overflow-y: hidden;
-	overflow-x: scroll;
-	-webkit-overflow-scrolling: touch;
+	overflow-x: auto;
     margin: 0.5em 0 3em;
     padding: 9.5px;
     max-width: 100%;
