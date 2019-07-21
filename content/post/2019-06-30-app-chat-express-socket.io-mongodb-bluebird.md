@@ -5,7 +5,7 @@ description: "En este pequeño post te explicaré como crear una aplicación de 
 author: "Hugo Roca"
 image: /images/post/app-chat-express-socket.io-mongodb-bluebird.svg
 imageShared: /images/shared/app-chat-express-socket.io-mongodb-bluebird.jpg
-tag:
+tags:
  - nodejs
  - mongodb
  - JS

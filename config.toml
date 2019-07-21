@@ -18,8 +18,8 @@ paginate = 10
   subtitle    = "Aprende • Piensa • Diseña • Codifica"
   copyright   = "© 2019"
 
-  cover       = "img/blog-cover.jpg"
-  shared = "img/compartir.jpg"
+  cover       = "images/blog-cover.jpg"
+  shared = "images/compartir.jpg"
   description = "Aprende • Piensa • Diseña • Codifica"
   metaDescription = ""
   googleAnalytics = "UA-125594168-1"
@@ -40,7 +40,7 @@ paginate = 10
   showSupport = true
 
   author = "HR"
-  authorAvatar = "img/profile.jpg"
+  authorAvatar = "images/profile.jpg"
   authorLocation = "Lima - Perú"
   authorWebsite = "https://eueung.github.io"
   authorDescription = "Analista Programador Senior"

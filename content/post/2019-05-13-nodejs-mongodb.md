@@ -5,7 +5,7 @@ description: "MongoDB Atlas es la base de datos como servicio que permite implem
 author: "Hugo Roca"
 image: /images/post/nodejs-mongodb.svg
 imageShared: /images/shared/nodejs-mongodb.jpg
-tag:
+tags:
  - JavaScript
  - JS
  - mongodb
