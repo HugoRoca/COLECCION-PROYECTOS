@@ -6,17 +6,62 @@
     <description>Recent content in Tags on Hugo Roca Proyectos</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-PE</language>
-    <lastBuildDate>Mon, 06 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 21 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://hugorocaproyectos.js.org/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>JS</title>
+      <link>https://hugorocaproyectos.js.org/tags/js/</link>
+      <pubDate>Sun, 21 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://hugorocaproyectos.js.org/tags/js/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>mongodb</title>
       <link>https://hugorocaproyectos.js.org/tags/mongodb/</link>
-      <pubDate>Mon, 06 May 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 21 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://hugorocaproyectos.js.org/tags/mongodb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nodejs</title>
+      <link>https://hugorocaproyectos.js.org/tags/nodejs/</link>
+      <pubDate>Sun, 21 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://hugorocaproyectos.js.org/tags/nodejs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tuneles</title>
+      <link>https://hugorocaproyectos.js.org/tags/tuneles/</link>
+      <pubDate>Tue, 11 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://hugorocaproyectos.js.org/tags/tuneles/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>JavaScript</title>
+      <link>https://hugorocaproyectos.js.org/tags/javascript/</link>
+      <pubDate>Mon, 13 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://hugorocaproyectos.js.org/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>base de datos</title>
+      <link>https://hugorocaproyectos.js.org/tags/base-de-datos/</link>
+      <pubDate>Mon, 13 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://hugorocaproyectos.js.org/tags/base-de-datos/</guid>
       <description></description>
     </item>
     
@@ -26,24 +71,6 @@
       <pubDate>Mon, 15 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>https://hugorocaproyectos.js.org/tags/handlebars/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>JS</title>
-      <link>https://hugorocaproyectos.js.org/tags/js/</link>
-      <pubDate>Wed, 03 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://hugorocaproyectos.js.org/tags/js/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>JavaScript</title>
-      <link>https://hugorocaproyectos.js.org/tags/javascript/</link>
-      <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://hugorocaproyectos.js.org/tags/javascript/</guid>
       <description></description>
     </item>
     

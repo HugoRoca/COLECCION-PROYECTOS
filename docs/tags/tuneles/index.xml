@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tuneles on Hugo Roca Proyectos</title>
+    <link>https://hugorocaproyectos.js.org/tags/tuneles/</link>
+    <description>Recent content in tuneles on Hugo Roca Proyectos</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-PE</language>
+    <lastBuildDate>Tue, 11 Jun 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://hugorocaproyectos.js.org/tags/tuneles/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>NGrok: Crea URLs públicas para exponer su servidor web local</title>
+      <link>https://hugorocaproyectos.js.org/ngrok-crea-urls-p%C3%BAblicas-para-exponer-su-servidor-web-local/</link>
+      <pubDate>Tue, 11 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://hugorocaproyectos.js.org/ngrok-crea-urls-p%C3%BAblicas-para-exponer-su-servidor-web-local/</guid>
+      <description>Ngrok es una herramienta útil que crea una URL de túnel segura y de acceso público a una aplicación que se ejecuta en localhost.
+ Hace algunos meses atrás quería publicar un servicio hecho en nodeJS para que su consumo sea de una red diferente a la del trabajo, y como sucede en todos los centros laborales hay mucha burocracia. Asi que investigando me tope con dos herramientas muy utíles: ngrok y localtunel.</description>
+    </item>
+    
+  </channel>
+</rss>

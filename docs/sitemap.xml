@@ -3,20 +3,49 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://hugorocaproyectos.js.org/chat-en-tiempo-real-con-nodejs-express-bluebirdjs-socket.io-y-mongodb/</loc>
-    <lastmod>2019-06-30T00:00:00+00:00</lastmod>
+    <loc>https://hugorocaproyectos.js.org/</loc>
+    <lastmod>2019-07-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://hugorocaproyectos.js.org/</loc>
-    <lastmod>2019-06-30T00:00:00+00:00</lastmod>
+    <loc>https://hugorocaproyectos.js.org/tags/js/</loc>
+    <lastmod>2019-07-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://hugorocaproyectos.js.org/post/</loc>
-    <lastmod>2019-06-30T00:00:00+00:00</lastmod>
+    <lastmod>2019-07-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hugorocaproyectos.js.org/tags/</loc>
+    <lastmod>2019-07-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hugorocaproyectos.js.org/tags/mongodb/</loc>
+    <lastmod>2019-07-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hugorocaproyectos.js.org/tags/nodejs/</loc>
+    <lastmod>2019-07-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hugorocaproyectos.js.org/que-son-las-aplicaciones-web-progresivas/</loc>
+    <lastmod>2019-07-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hugorocaproyectos.js.org/chat-en-tiempo-real-con-nodejs-express-bluebirdjs-socket.io-y-mongodb/</loc>
+    <lastmod>2019-06-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -25,13 +54,25 @@
   </url>
   
   <url>
+    <loc>https://hugorocaproyectos.js.org/tags/tuneles/</loc>
+    <lastmod>2019-06-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://hugorocaproyectos.js.org/conexi%C3%B3n-nodejs-con-mongodb-atlas/</loc>
     <lastmod>2019-05-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hugorocaproyectos.js.org/categories/base-de-datos/</loc>
-    <lastmod>2019-05-06T00:00:00+00:00</lastmod>
+    <loc>https://hugorocaproyectos.js.org/tags/javascript/</loc>
+    <lastmod>2019-05-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hugorocaproyectos.js.org/tags/base-de-datos/</loc>
+    <lastmod>2019-05-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -47,13 +88,7 @@
   </url>
   
   <url>
-    <loc>https://hugorocaproyectos.js.org/tags/</loc>
-    <lastmod>2019-05-06T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hugorocaproyectos.js.org/tags/mongodb/</loc>
+    <loc>https://hugorocaproyectos.js.org/categories/base-de-datos/</loc>
     <lastmod>2019-05-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -81,12 +116,6 @@
   </url>
   
   <url>
-    <loc>https://hugorocaproyectos.js.org/tags/js/</loc>
-    <lastmod>2019-04-03T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://hugorocaproyectos.js.org/javascript-promesas/</loc>
     <lastmod>2019-04-03T00:00:00+00:00</lastmod>
   </url>
@@ -94,12 +123,6 @@
   <url>
     <loc>https://hugorocaproyectos.js.org/conexi%C3%B3n-nodejs-con-sqlserver/</loc>
     <lastmod>2019-01-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hugorocaproyectos.js.org/tags/javascript/</loc>
-    <lastmod>2019-01-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>

@@ -6,10 +6,21 @@
     <description>Recent content in Posts on Hugo Roca Proyectos</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-PE</language>
-    <lastBuildDate>Sun, 30 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 21 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://hugorocaproyectos.js.org/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>¿Que son las aplicaciones web progresivas?</title>
+      <link>https://hugorocaproyectos.js.org/que-son-las-aplicaciones-web-progresivas/</link>
+      <pubDate>Sun, 21 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://hugorocaproyectos.js.org/que-son-las-aplicaciones-web-progresivas/</guid>
+      <description>En este pequeña publicación vamos a definir y entender que es una aplicación web progresiva.
+Empecemos hablando de los beneficios de crear una página web sobre una aplicación nativa.
+ Son linkeables, eso quiere decir que te puedes mover entre páginas con un simple y sencillo link. Son indexables, aquí hacemos referencia el hecho de que uno puede navegar y buscar entre páginas de manera simple a diferencia de las aplicaciones nativas.</description>
+    </item>
     
     <item>
       <title>CHAT en tiempo real con NodeJS, Express, BlueBirdJS, Socket.IO y mongoDB</title>

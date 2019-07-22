@@ -6,10 +6,43 @@
     <description>Recent content in mongodb on Hugo Roca Proyectos</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-PE</language>
-    <lastBuildDate>Mon, 06 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 21 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://hugorocaproyectos.js.org/tags/mongodb/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>¿Que son las aplicaciones web progresivas?</title>
+      <link>https://hugorocaproyectos.js.org/que-son-las-aplicaciones-web-progresivas/</link>
+      <pubDate>Sun, 21 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://hugorocaproyectos.js.org/que-son-las-aplicaciones-web-progresivas/</guid>
+      <description>En este pequeña publicación vamos a definir y entender que es una aplicación web progresiva.
+Empecemos hablando de los beneficios de crear una página web sobre una aplicación nativa.
+ Son linkeables, eso quiere decir que te puedes mover entre páginas con un simple y sencillo link. Son indexables, aquí hacemos referencia el hecho de que uno puede navegar y buscar entre páginas de manera simple a diferencia de las aplicaciones nativas.</description>
+    </item>
+    
+    <item>
+      <title>CHAT en tiempo real con NodeJS, Express, BlueBirdJS, Socket.IO y mongoDB</title>
+      <link>https://hugorocaproyectos.js.org/chat-en-tiempo-real-con-nodejs-express-bluebirdjs-socket.io-y-mongodb/</link>
+      <pubDate>Sun, 30 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://hugorocaproyectos.js.org/chat-en-tiempo-real-con-nodejs-express-bluebirdjs-socket.io-y-mongodb/</guid>
+      <description>En este pequeño post te explicaré como crear una aplicación de chat en tiempo real paso a paso. Para entender todo este proceso se requiere que tengas conocimientos en nodeJS, mongoDB, javascript, html5 y css3.
+Instalando paquetes y configuración Lo primero que tenemos que hacer es crear un directorio en donde estarán todos nuestros archivos, puedes utilizar el editor de código que mas se adecue a tí. En mi caso usaré VSCode.</description>
+    </item>
+    
+    <item>
+      <title>Conexión NodeJS con MongoDB Atlas</title>
+      <link>https://hugorocaproyectos.js.org/conexi%C3%B3n-nodejs-con-mongodb-atlas/</link>
+      <pubDate>Mon, 13 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://hugorocaproyectos.js.org/conexi%C3%B3n-nodejs-con-mongodb-atlas/</guid>
+      <description>MongoDB Atlas es la base de datos como servicio que permite implementar, utilizar y escalar una base de datos de MongoDB en la nube haciendo conexión con NodeJS.
+Usaremos clases y funcion asincronas con promesas en javascript ES6.
+Creando el Package.json Antes de proceder con cualquier instalación de paquetes npm necesitamos crear nuestro package.json.
+ Como primer paso creamos una carpeta donde estarán todos nuestros archivos. Luego, levantar la ventana de comandos dentro de la carpeta y ejecutar el siguiente comando npm init.</description>
+    </item>
     
     <item>
       <title>Configuración de una cuenta en MongoDB Atlas</title>
