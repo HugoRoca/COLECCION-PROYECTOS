@@ -11,7 +11,7 @@ tags:
  - JS
 ---
 
-En este pequeña publicación vamos a definir y entender que es una aplicación web progresiva. 
+En esta pequeña publicación vamos a definir y entender que es una aplicación web progresiva. 
 
 Empecemos hablando de los beneficios de crear una página web sobre una aplicación nativa. 
 
