@@ -1,15 +1,13 @@
----
-date: "2019-07-21"
-title: "¿Que son las aplicaciones web progresivas?"
-description: "En este pequeña publicación vamos a definir y entender que es una aplicación web progresiva. Empecemos hablando de los beneficios de crear una página web sobre una aplicación nativa. "
-author: "Hugo Roca"
-image: /images/post/AppWebProgresiva-que-es.svg
-imageShared: /images/shared/AppWebProgresiva-que-es.jpg
-tags:
- - nodejs
- - mongodb
- - JS
----
++++
+categories = ["nodejs", "mongodb", "javascript"]
+date = "2019-07-21"
+featured = "/AppWebProgresiva-que-es.jpg"
+featuredalt = "AppWebProgresiva-que-es"
+featuredpath = "post"
+linktitle = ""
+title = "¿Que son las aplicaciones web progresivas?"
+type = "post"
++++
 
 En esta pequeña publicación vamos a definir y entender que es una aplicación web progresiva. 
 

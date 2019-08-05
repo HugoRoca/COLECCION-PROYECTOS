@@ -12,11 +12,11 @@
 </div>
   <div class="meta">
     <time class="published" datetime="{{ .Date }}">
-      {{ default (i18n "date_format") | .Date.Format }}
+      {{ default ("02/01/2006") | .Date.Format }}
     </time>
     <span class="author">{{ .Params.author }}</span>
     {{ if .Site.Params.ReadingTime }}
-        <p>{{ .ReadingTime }} {{ i18n "postreadingtime" }}</p>
+        <p>{{ "Lectura de " }} {{ .ReadingTime }} {{ " min." }}</p>
     {{ end }}
   </div>
 </header>
