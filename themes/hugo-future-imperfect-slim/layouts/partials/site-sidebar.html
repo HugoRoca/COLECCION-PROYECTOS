@@ -2,7 +2,7 @@
   {{ if gt .Site.Params.sidebar.postAmount 0 }}
     <section id="recent-posts">
       <header>
-        <h1>{{ i18n "recent_posts" }}</h1>
+        <h1>{{ "Post recientes" }}</h1>
       </header>
       {{ range first (.Site.Params.sidebar.postAmount | default 5) (where .Site.Pages  "Type" "post") }}
       <article class="mini-post">
@@ -16,7 +16,7 @@
       </article>
       {{ end }}
       {{ if ge (len (where .Site.Pages "Type" "post")) (.Site.Params.sidebar.postAmount | default 5) }}
-        <a href="{{ with .Site.Params.viewMorePostsLink }}{{ . | relLangURL }}{{ else }}{{ "post" | relLangURL }}{{ end }}" class="button">{{ i18n "see_more" }}</a>
+        <a href="{{ with .Site.Params.viewMorePostsLink }}{{ . | relLangURL }}{{ else }}{{ "post" | relLangURL }}{{ end }}" class="button">{{ "Ver más" }}</a>
       {{ end }}
     </section>
   {{ end }}
