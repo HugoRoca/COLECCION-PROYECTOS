@@ -75,9 +75,9 @@ disableLanguages        = [""]
     # Sets the number of recent posts to show in the sidebar. The default value is 5.
     postAmount          = 5
     # set to show or to hide categories in the sidebar
-    categories          = true
+    categories          = false
     # Sets Categories to sort by number of posts instead of alphabetical
-    categoriesByCount   = true
+    categoriesByCount   = false
 
   [params.footer]
     # Sets RSS icons to appear on the sidebar with the social media buttons
