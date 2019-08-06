@@ -1,6 +1,6 @@
 baseurl                 = "https://example.com/"
 DefaultContentLanguage  = "es"
-title                   = "Hugo Future Imperfect Slim"
+title                   = "Hugo Roca Proyectos"
 theme                   = "hugo-future-imperfect-slim"
 preserveTaxonomyNames   = true
 paginate                = 4
@@ -31,9 +31,9 @@ disableLanguages        = [""]
 
   [params.meta]
     # Sets the meta tag description
-    description         = "A theme by HTML5 UP, ported by Julio Pescador. Slimmed and enhanced by Patrick Collins. Multilingual by StatnMap. Powered by Hugo."
+    description         = "Aprende • Piensa • Diseña • Codifica"
     # Sets the meta tag author
-    author              = "HTML5UP and Hugo"
+    author              = "Hugo Roca"
     # If you would like to add more comprehensive favicon support passed root
     # directory favicon.ico, utlize this funtion. It is recommened to use
     # https://realfavicongenerator.net to generate your icons as that is the basis
@@ -46,9 +46,9 @@ disableLanguages        = [""]
 
   [params.header]
     # Sets the navbarTitle that appears in the top left of the navigation bar
-    navbarTitle         = "Future Imperfect"
+    navbarTitle         = "HR Proyectos"
     # Sets navbarTitle to match the section of the website
-    dynamicTitles       = true
+    dynamicTitles       = false
     searchMenu          = true
     shareMenu           = true
     #languageMenu        = true
@@ -56,8 +56,8 @@ disableLanguages        = [""]
   # These are optional params related to the sidebar. They are recommended, but not
   # required for proper functionality. HTML is supported within the params.
   [params.intro]
-    header                = "Hugo Future Imperfect Slim"
-    paragraph             = "Another fine, responsive site template by <a href='http://html5up.net'>HTML5 UP</a>."
+    header                = "Hugo Roca"
+    paragraph             = "Aprende • Piensa • Diseña • Codifica"
     rssIntro              = true
     socialIntro           = true
 
@@ -109,31 +109,31 @@ disableLanguages        = [""]
   # Sets the menu items in the navigation bar
   # Identifier prepends a Font Awesome icon to the menu item
   [[menu.main]]
-    name              = "Home"
+    name              = "Inicio"
     url               = "/"
     identifier        = "fas fa-home"
     weight            = 1
 
   [[menu.main]]
-    name              = "About"
+    name              = "Acerca de mi"
     url               = "/about/"
     identifier        = "far fa-id-card"
     weight            = 2
 
-  [[menu.main]]
-    name              = "Blog"
-    url               = "/blog/"
-    identifier        = "far fa-newspaper"
-    weight            = 3
+  # [[menu.main]]
+  #   name              = "Blog"
+  #   url               = "/blog/"
+  #   identifier        = "far fa-newspaper"
+  #   weight            = 3
 
   [[menu.main]]
-    name              = "Categories"
+    name              = "Categorías"
     url               = "/categories/"
     identifier        = "fas fa-sitemap"
     weight            = 5
 
   [[menu.main]]
-    name              = "Contact"
+    name              = "Contacto"
     url               = "/contact/"
     identifier        = "far fa-envelope"
     weight            = 6
@@ -150,7 +150,7 @@ disableLanguages        = [""]
 # and socialAppearAtBottom.
 [social]
   # Coding Communities
-  github                = "pacollins/hugo-future-imperfect-slim"
+  github                = "HugoRoca"
   gitlab                = ""
   stackoverflow         = "" # User Number
   bitbucket             = ""
@@ -158,22 +158,22 @@ disableLanguages        = [""]
   codepen               = ""
   # Visual Art Communities
   deviantart            = ""
-  flickr                = "example"
+  flickr                = ""
   behance               = ""
   dribbble              = ""
   # Publishing Communities
   wordpress             = ""
   medium                = ""
   # Professional/Business Oriented Communities
-  linkedin              = "example"
-  linkedin_company      = "examplebusiness"
+  linkedin              = "hugoroca"
+  linkedin_company      = ""
   foursquare            = ""
   xing                  = ""
   slideshare            = ""
   # Social Networks
-  facebook              = "example"
+  facebook              = ""
   googleplus            = ""
-  reddit                = "example"
+  reddit                = ""
   quora                 = ""
   youtube               = ""
   vimeo                 = ""
@@ -181,21 +181,21 @@ disableLanguages        = [""]
     # WeChat and QQ need testing.
     wechat              = ""
     qq                  = "" # User ID Number
-  instagram             = "example"
+  instagram             = ""
   tumblr                = ""
   twitter               = "example"
   skype                 = ""
   snapchat              = ""
-  pinterest             = "example"
+  pinterest             = ""
   telegram              = "example"
   vine                  = ""
   googlescholar         = ""
   orcid                 = ""
-  researchgate          = "example"
-  keybase               = "example"
-  mastodon              = "example.com/@example"
+  researchgate          = ""
+  keybase               = ""
+  mastodon              = ""
   # Email
-  email                 = "example"
+  email                 = "hugo.rock20@hotmail.com"
 
 
 # *******************
