@@ -1,16 +1,14 @@
----
-date: "2019-06-30"
-title: "CHAT en tiempo real con NodeJS, Express, BlueBirdJS, Socket.IO y mongoDB"
-# description: "En este pequeño post te explicaré como crear una aplicación de chat en tiempo real paso a paso. Para entender todo este proceso se requiere que tengas conocimientos en nodeJS, mongoDB, javascript, html5 y css3."
-author: "Hugo Roca"
-image: /images/post/app-chat-express-socket.io-mongodb-bluebird.svg
-imageShared: /images/shared/app-chat-express-socket.io-mongodb-bluebird.jpg
-type: "post"
-tags:
- - nodejs
- - mongodb
- - JS
----
++++
+categories = ["Aplicación"]
+tags = ["nodejs","mongodb","javascript"]
+date = "2019-06-30"
+featured = "/app-chat-express-socket.io-mongodb-bluebird.jpg"
+featuredalt = "app-chat-express-socket.io-mongodb-bluebird"
+featuredpath = "post"
+linktitle = ""
+title = "CHAT en tiempo real con NodeJS, Express, BlueBirdJS, Socket.IO y mongoDB"
+type = "post"
++++
 
 En este pequeño post te explicaré como crear una aplicación de chat en tiempo real paso a paso. Para entender todo este proceso se requiere que tengas conocimientos en nodeJS, mongoDB, javascript, html5 y css3.
 
