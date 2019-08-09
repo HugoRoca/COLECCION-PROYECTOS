@@ -56,7 +56,7 @@ disableLanguages        = [""]
   # These are optional params related to the sidebar. They are recommended, but not
   # required for proper functionality. HTML is supported within the params.
   [params.intro]
-    header                = "Hugo Roca"
+    header                = "Hugo Roca Proyectos"
     paragraph             = "Aprende • Piensa • Diseña • Codifica"
     rssIntro              = true
     socialIntro           = true
