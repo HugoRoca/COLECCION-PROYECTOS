@@ -3,7 +3,7 @@ DefaultContentLanguage  = "es"
 title                   = "Hugo Roca Proyectos"
 theme                   = "hugo-future-imperfect-slim"
 preserveTaxonomyNames   = true
-paginate                = 5
+paginate                = 4
 disqusShortname         = "hugorocaproyectos"
 googleAnalytics         = ""
 # pluralizeListTitles     = false
@@ -73,7 +73,7 @@ disableLanguages        = [""]
   [params.sidebar]
     about               = "test"
     # Sets the number of recent posts to show in the sidebar. The default value is 5.
-    postAmount          = 10
+    postAmount          = 9
     # set to show or to hide categories in the sidebar
     categories          = false
     # Sets Categories to sort by number of posts instead of alphabetical
