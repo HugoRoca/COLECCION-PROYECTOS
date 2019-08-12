@@ -1,17 +1,15 @@
----
-date: "2018-05-06"
-title: "Entity Framework Básico"
-description: "Una forma mas rápida de realizar CRUD's, a tan solo unos clicks. Este es el poderosisimo Entity Framework"
-author: "Hugo Roca"
-image: /images/post/entity-framework-basico.svg
-imageShared: /images/shared/entity-framework-basico.jpg
-tags:
- - SQLSERVER
- - CSharp
-categories:
- - C Sharp
- - Base de datos
----
++++
+categories = []
+tags = ["javascript", "c-sharp", "sqlserver"]
+author = "Hugo Roca"
+date = "2018-05-06"
+title = "Entity Framework Básico"
+type = "post"
+featured = "/entity-framework-basico.jpg"
+featuredalt = "entity-framework-basico.jpg"
+featuredpath = "post"
+linktitle = ""
++++
 
 > Una forma mas rápida de realizar CRUD's, a tan solo unos clicks. Este es el poderosisimo Entity Framework
 

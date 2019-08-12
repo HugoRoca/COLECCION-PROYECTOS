@@ -1,16 +1,15 @@
----
-date: "2018-04-15"
-title: "Portafolio Profesional"
-description: "¿Alguna véz haz querido hacer un curriculum profesional usando algo diferente? En esta ocación te traigo el siguiente sistema."
-author: "Hugo Roca"
-image: /images/post/portafolio.svg
-imageShared: /images/shared/portafolio.jpg
-tag:
- - CSharp
- - JQuery
- - SQLServer
- - Sistemas
----
++++
+categories = ["aplicación"]
+tags = ["sqlserver", "sqlserver", "c-shrap"]
+author = "Hugo Roca"
+date = "2018-04-29"
+title = "Portafolio Profesional"
+type = "post"
+featured = "/portafolio.jpg"
+featuredalt = "portafolio.jpg"
+featuredpath = "post"
+linktitle = ""
++++
 
 ¿Alguna véz haz querido hacer un curriculum profesional usando algo diferente? En esta ocación te traigo el siguiente sistema.
 

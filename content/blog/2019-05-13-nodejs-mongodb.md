@@ -1,16 +1,15 @@
----
-date: "2019-05-13"
-title: "Conexión NodeJS con MongoDB Atlas"
-description: "MongoDB Atlas es la base de datos como servicio que permite implementar, utilizar y escalar una base de datos de MongoDB en la nube haciendo conexión con NodeJS."
-author: "Hugo Roca"
-image: /images/post/nodejs-mongodb.svg
-imageShared: /images/shared/nodejs-mongodb.jpg
-tags:
- - JavaScript
- - JS
- - mongodb
- - base de datos
----
++++
+categories = ["base de datos"]
+tags = ["javascript","mongodb"]
+author = "Hugo Roca"
+date = "2019-05-13"
+title = "Conexión NodeJS con MongoDB Atlas"
+type = "post"
+featured = "/nodejs-mongodb.jpg"
+featuredalt = "nodejs-mongodb.jpg"
+featuredpath = "post"
+linktitle = ""
++++
 
 MongoDB Atlas es la base de datos como servicio que permite implementar, utilizar y escalar una base de datos de MongoDB en la nube haciendo conexión con NodeJS.
 

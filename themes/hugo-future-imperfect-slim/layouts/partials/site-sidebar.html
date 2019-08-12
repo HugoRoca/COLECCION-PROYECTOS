@@ -15,9 +15,9 @@
         </header>
       </article>
       {{ end }}
-      {{ if ge (len (where .Site.Pages "Type" "post")) (.Site.Params.sidebar.postAmount | default 5) }}
+      <!-- {{ if ge (len (where .Site.Pages "Type" "post")) (.Site.Params.sidebar.postAmount | default 5) }}
         <a href="{{ with .Site.Params.viewMorePostsLink }}{{ . | relLangURL }}{{ else }}{{ "post" | relLangURL }}{{ end }}" class="button">{{ "Ver más" }}</a>
-      {{ end }}
+      {{ end }} -->
     </section>
   {{ end }}
 

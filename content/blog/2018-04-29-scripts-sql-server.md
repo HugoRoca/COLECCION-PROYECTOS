@@ -1,15 +1,15 @@
----
-date: "2018-04-29"
-title: "Scripts SQLServer"
-description: "Les comparto algunos scripts que me sirvieron de mucho durante el tiempo que llevo trabajando, y es más aún los sigo usando."
-author: "Hugo Roca"
-image: /images/post/scripts-sql.svg
-imageShared: /images/shared/scripts-sql.jpg
-tags:
- - SQLSERVER
-categories:
- - Base de datos
----
++++
+categories = []
+tags = ["sqlserver"]
+author = "Hugo Roca"
+date = "2018-04-29"
+title = "Scripts SQLServer"
+type = "post"
+featured = "/scripts-sql.jpg"
+featuredalt = "scripts-sql.jpg"
+featuredpath = "post"
+linktitle = ""
++++
 
 Les comparto algunos scripts que me sirvieron de mucho durante el tiempo que llevo trabajando, y es más aún los sigo usando.
 

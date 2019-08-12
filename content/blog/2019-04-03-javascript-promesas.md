@@ -1,17 +1,15 @@
----
-date: "2019-04-03"
-title: "Javascript: Promesas"
-description: "A una promesa, como su propio nombre lo dice, es simplemente un objeto que puede o no devolver algún valor en la línea de tiempo presente y futuro. Me gusta describir una promesa..."
-author: "Hugo Roca"
-image: /images/post/javascript-promesas.svg
-imageShared: /images/shared/javascript-promesas.jpg
-nomenu: main
-tags:
- - JS
-categories:
- - JavaScript
-
----
++++
+categories = []
+tags = ["javascript"]
+author = "Hugo Roca"
+date = "2019-04-03"
+title = "Javascript: Promesas"
+type = "post"
+featured = "/javascript-promesas.jpg"
+featuredalt = "javascript-promesas.jpg"
+featuredpath = "post"
+linktitle = ""
++++
 
 > A una promesa, como su propio nombre lo dice, es simplemente un objeto que puede o no devolver algún valor en la línea de tiempo presente y futuro. Me gusta describir una promesa como una especie de Karma: Tú haces algo, y en consecuencia obtendrás algo, ahora o en un futuro. Esto aplica igual a las promesas, tu ejecutas código asíncrono y obtienes la promesa de que obtendrás una respuesta, que puede ser en ese instante o en un futuro.
 

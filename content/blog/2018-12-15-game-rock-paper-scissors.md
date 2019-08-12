@@ -1,15 +1,16 @@
----
-date: "2018-12-15"
-title: "Creación de un juego con JavaScript puro N° 1"
-description: "En esta oportunidad crearemos un juego del clásico piedra, papel o tijeras. Utilizaremos JavaScript puro y HTML5 y CSS3 para el diseño."
-author: "Hugo Roca"
-image: /images/post/juego-piedra-papel-tijeras.svg
-imageShared: /images/shared/juego-piedra-papel-tijeras.jpg
-tags:
- - JS
-categories:
- - JavaScript
----
++++
+categories = ["juegos"]
+tags = ["javascript"]
+author = "Hugo Roca"
+date = "2018-12-15"
+title = "Creación de un juego con JavaScript puro N° 1"
+type = "post"
+featured = "/juego-piedra-papel-tijeras.jpg"
+featuredalt = "juego-piedra-papel-tijeras.jpg"
+featuredpath = "post"
+linktitle = ""
++++
+
 > En esta oportunidad crearemos un juego del clásico piedra, papel o tijeras. Utilizaremos JavaScript puro y HTML5 y CSS3 para el diseño.
 
 ### &#128512; [Click aquí para ver la Demo](https://hugoroca.github.io/game-n1/index.html) &#129299;

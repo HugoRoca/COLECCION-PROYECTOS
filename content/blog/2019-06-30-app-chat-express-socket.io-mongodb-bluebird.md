@@ -1,5 +1,5 @@
 +++
-categories = ["Aplicación"]
+categories = ["aplicación"]
 tags = ["nodejs","mongodb","javascript"]
 date = "2019-06-30"
 featured = "/app-chat-express-socket.io-mongodb-bluebird.jpg"
