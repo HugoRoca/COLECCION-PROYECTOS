@@ -2,7 +2,7 @@
 date: "2019-07-21"
 title: "¿Que son las aplicaciones web progresivas?"
 description: "En este pequeña publicación vamos a definir y entender que es una aplicación web progresiva. Empecemos hablando de los beneficios de crear una página web sobre una aplicación nativa. "
-author: "Hugo Roca"
+author: "hroca"
 image: post/AppWebProgresiva-que-es.svg
 imageShared: /shared/AppWebProgresiva-que-es.jpg
 tags:

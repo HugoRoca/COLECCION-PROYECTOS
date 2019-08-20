@@ -28,11 +28,11 @@
       <div class="paginator col-12 offset-0 col-md-10 offset-md-1">
         {{ if .Paginator.HasPrev }}
           <a class="paginator__active" href="{{ .Paginator.Prev.URL }}">
-              &lt;Prev Page
+              <i class="fa fa-arrow-left" aria-hidden="true"></i>
           </a>
         {{ else }}
           <a class="paginator__gray">
-              &lt;Prev Page
+              <i class="fa fa-arrow-left" aria-hidden="true"></i>
           </a>
         {{ end }}
 
@@ -46,11 +46,11 @@
 
         {{ if .Paginator.HasNext }}
           <a class="next paginator__active" href="{{ .Paginator.Next.URL }}">
-              Next Page&gt;
+              <i class="fa fa-arrow-right" aria-hidden="true"></i>
           </a>
         {{ else }}
           <a class="next paginator__gray">
-              Next Page&gt;
+              <i class="fa fa-arrow-right" aria-hidden="true"></i>
           </a>
         {{ end }}
       </div>

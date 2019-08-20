@@ -1,7 +1,7 @@
 <li class="article__item">
 	<div class="article__meta">
 		<span class="article__meta-item article__date">
-			{{ with .Site.Params.DateForm }}{{ $.Date.Format . }}{{ else }}{{ $.Date.Format "Mon, Jan 2, 2006" }}{{ end }} by {{partial "author_name.html" (dict "user" .Params.author)}}
+			{{ with .Site.Params.DateForm }}{{ $.Date.Format . }}{{ else }}{{ $.Date.Format "02/01/2006" }}{{ end }} por {{partial "author_name.html" (dict "user" .Params.author)}}
 		</span>
 	</div>
 	<a href="{{ .Permalink }}" class="clearfix">

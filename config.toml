@@ -1,11 +1,12 @@
-baseurl = "http://hugo.spf13.com/"
-title = "Hugo Themes"
-author = "Steve Francia"
+baseurl = "https://hugorocaproyectos.js.org"
+title = "Hugo Roca Proyectos"
 theme = "hugo-dgraph-theme"
+author = "hroca"
 
 # Number of blogs you want to list on a single page.
 paginate = 5
 paginatePath  ="page"
+disqusShortname = "hugorocaproyectos"
 
 [params]
   googleAnalytics = ""
@@ -35,5 +36,6 @@ paginatePath  ="page"
   angellist = "dgraph-labs"
 
   linkedin = "https://www.linkedin.com/in/hugoroca/"
+  telegram = "https://t.me/hugoroca"
 
 copyright = "Copyright (c) 2008 - 2014, Steve Francia; all rights reserved."

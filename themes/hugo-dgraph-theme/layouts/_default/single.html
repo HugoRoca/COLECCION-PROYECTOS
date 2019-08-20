@@ -335,7 +335,7 @@
             {{ partial "editor_profile.html" .}}
           </div>
           <div class="col-12">
-            <div id='discourse-comments'></div>
+            {{ partial "discus.html" .}}
           </div>
         </div>
       </div>
@@ -347,7 +347,7 @@
   {{ partial "footer.html" . }}
   <!-- / page-footer__wrapper-->
 
-  {{if .Site.Params.discourse}}
+  <!-- {{if .Site.Params.discourse}}
   <script type="text/javascript">
 DiscourseEmbed = {
   discourseUrl: "{{.Site.Params.discourse}}",
@@ -364,5 +364,5 @@ DiscourseEmbed = {
 })();
 </script>
   <noscript>Please enable JavaScript to view the comments on <a href="{{.Site.Params.discourse}}">discuss</a>.</noscript>
-  {{end}}
+  {{end}} -->
 </html>
