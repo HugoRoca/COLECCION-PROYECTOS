@@ -84,6 +84,7 @@
       hljs.initHighlightingOnLoad();
     </script>
 
+{{ if not (in (.Site.BaseURL | string) "localhost") }}
 {{ with .Site.Params.googleAnalytics }}
 <script>
 if (window.location.host.indexOf("dgraph.io") > -1) {
@@ -109,6 +110,7 @@ if (window.location.host.indexOf("dgraph.io") > -1) {
   ga("send", "pageview");
 }
 </script>
+{{ end }}
 {{ end }}
 
 {{ if .Site.Params.keenIoProjectId }}
