@@ -14,7 +14,7 @@ paginatePath  ="page"
   discourse = "https://discuss.dgraph.io"
 
   # The path of the repo excluding https://github.com. This would work only for public repos. It is used for displaying stars for the repo.
-  github = "dgraph-io/dgraph"
+  github = ""
 
   # Website url, used to have a link in the footer as well as on the top.
   website = "https://dgraph.io"
