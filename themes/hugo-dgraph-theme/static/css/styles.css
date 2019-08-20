@@ -1691,7 +1691,7 @@ nav.breadcrumbs ol li .article-count {
   }
 }
 .button--outline {
-  border: 2px solid #9fd3c7;
+  /* border: 2px solid #9fd3c7; */
   border-radius: 4px;
   background-color: transparent;
 }
