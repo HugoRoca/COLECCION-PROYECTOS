@@ -1282,10 +1282,10 @@ nav.breadcrumbs ol li .article-count {
   display: block;
 }
 .pagination__link:hover {
-  color: #f96315;
+  color: #385170;
 }
 .pagination__link.is-active {
-  color: #f96315;
+  color: #385170;
   background-color: #ffe8e1;
   border-radius: 2px;
 }
@@ -1691,13 +1691,13 @@ nav.breadcrumbs ol li .article-count {
   }
 }
 .button--outline {
-  border: 2px solid #f0f0f0;
+  border: 2px solid #9fd3c7;
   border-radius: 4px;
   background-color: transparent;
 }
 .button--outline:hover,
 .button--outline:focus {
-  color: #f96315;
+  color: #385170;
   background-color: transparent;
 }
 .button--link {
@@ -2159,13 +2159,15 @@ img[data-src] {
 }
 .page-logo img {
   display: block;
-  width: 233px;
+  width: 100%;
+  /* width: 233px; */
   height: 70px;
 }
 
 @media screen and (max-width:420px) {
    .page-header .page-logo img {
-     width: 80px;
+     /* width: 80px; */
+     width: 100%;
    }
    .page-header .topnav-stargazers-wrapper {
      margin-left: 10px;
@@ -2285,13 +2287,13 @@ img[data-src] {
   padding: 10px 15px;
   letter-spacing: 0.05em;
   font-weight: 700;
-  color: #107f20;
+  color: #142d4c;
 }
 /* ===========================================
    Footer styling
    =========================================== */
 .page-footer {
-  background: #ffffff;
+  background: #ececec;
   position: relative;
   z-index: 5;
   margin-top: 80px;
@@ -2317,7 +2319,7 @@ img[data-src] {
   width: 150vw;
   height: 100%;
   position: absolute;
-  background: #fff;
+  background: #ececec;
   transform: rotate(4deg);
   transform-origin: 100% 0%;
   right: 0;
