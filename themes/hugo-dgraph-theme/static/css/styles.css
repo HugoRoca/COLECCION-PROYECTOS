@@ -689,7 +689,7 @@ nav.breadcrumbs ol a {
   color: #333333;
 }
 nav.breadcrumbs ol a:hover {
-  color: #f96315;
+  color: #142d4c;
 }
 nav.breadcrumbs ol li .tag-name {
   color: #444;
@@ -739,7 +739,7 @@ nav.breadcrumbs ol li .article-count {
   color: #333333;
 }
 .article__title a:hover {
-  color: #f96315;
+  color: #142d4c;
 }
 .article__item .summary {
   margin-bottom: 18px;
@@ -768,7 +768,7 @@ nav.breadcrumbs ol li .article-count {
   text-decoration: underline;
 }
 .article-content a:hover {
-  background-color: #ffc3a3;
+  background-color: #142d4c;
   text-decoration: none;
   color: inherit;
 }
@@ -942,9 +942,9 @@ nav.breadcrumbs ol li .article-count {
   margin-right: 8px;
 }
 .article__item .tags a {
-  border: 1px solid #444;
+  border: 1px solid #9fd3c7;
   border-radius: 3px;
-  color: #444;
+  color: #385170;
   display: inline-block;
   font-size: 14px;
   padding: 4px 8px;
@@ -952,7 +952,7 @@ nav.breadcrumbs ol li .article-count {
   white-space: nowrap;
 }
 .article__item .tags a:hover {
-  border-color: #f96315;
+  border-color: #9fd3c7;
   text-decoration: none;
 }
 .article-footer {
@@ -1060,7 +1060,7 @@ nav.breadcrumbs ol li .article-count {
   display: block;
 }
 .similar-article__link:hover {
-  color: #f96315;
+  color: #9fd3c7;
 }
 /* ===========================================
    Blog navigation styling
@@ -1136,10 +1136,10 @@ nav.breadcrumbs ol li .article-count {
   color: #a4958c;
 }
 .blog-nav__dropdown.is-active {
-  color: #f96315;
+  color: #9fd3c7;
 }
 .blog-nav__dropdown.is-active .icon-dropdown {
-  fill: #f96315;
+  fill: #9fd3c7;
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }
@@ -1362,7 +1362,7 @@ nav.breadcrumbs ol li .article-count {
   margin-bottom: 0;
 }
 .cta__title.emphasis {
-  color: #f96315;
+  color: #9fd3c7;
 }
 .cta p {
   font-size: 16px;
@@ -2159,9 +2159,9 @@ img[data-src] {
 }
 .page-logo img {
   display: block;
-  width: 100%;
+  /* width: 100%; */
   /* width: 233px; */
-  height: 70px;
+  /* height: 70px; */
 }
 
 @media screen and (max-width:420px) {
@@ -2288,6 +2288,7 @@ img[data-src] {
   letter-spacing: 0.05em;
   font-weight: 700;
   color: #142d4c;
+  margin-left: 1px;
 }
 /* ===========================================
    Footer styling
@@ -2344,6 +2345,9 @@ img[data-src] {
   letter-spacing: 0.025em;
   text-transform: uppercase;
   margin-top: 18px;
+}
+.page-footer-nav__title a{
+  color: #142d4c;
 }
 .page-footer-nav__list {
   padding: 25px 0;
@@ -2557,9 +2561,10 @@ img[data-src] {
   text-align: center;
 }
 .paginator__selected {
-  background-color: #ffe8e1;
+  background-color: #9fd3c7;
   border-radius: 100%;
   text-align: center;
+  color: #142d4c;
 }
 
 /* Community CTA */
