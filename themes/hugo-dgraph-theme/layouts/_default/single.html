@@ -283,7 +283,8 @@
                 {{partial "author_name.html" (dict "user" .Params.author)}}
               </span>
               <div class="share">
-                <ul class="share__list">
+                  <div class="sharethis-inline-share-buttons"></div>
+                <!-- <ul class="share__list">
                   {{if .Site.Params.twitter}}
                   <li class="share__item">
                     <a href="https://twitter.com/share?text={{ .Title | safeHTML}}&amp;url={{ .Permalink }}&amp;via={{.Site.Params.twitter}}" class="share__link">
@@ -294,7 +295,7 @@
                     </a>
                   </li>
                   {{end}}
-                </ul>
+                </ul> -->
               </div>
             </div>
             <h1 class="page-intro__title page-intro__title--blog">{{ .Title }}</h1>
