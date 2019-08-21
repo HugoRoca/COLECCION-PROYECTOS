@@ -18,30 +18,14 @@
     
     <link rel="alternate" type="application/rss+xml" title="RSS" href="https://hugorocaproyectos.js.org/index.xml">
 
-    
-    <title>CHAT en tiempo real con NodeJS, Express, BlueBirdJS, Socket.IO y mongoDB - Hugo Roca Proyectos</title>
-    <meta property='og:title' content="CHAT en tiempo real con NodeJS, Express, BlueBirdJS, Socket.IO y mongoDB - Hugo Roca Proyectos">
-    <meta property="og:type" content="article">
-    
-
-    <meta property="og:url" content="https://hugorocaproyectos.js.org/post/2019-06-30-app-chat-express-socket.io-mongodb-bluebird/">
-    <meta name="description" content="En este pequeño post te explicaré como crear una aplicación de chat en tiempo real paso a paso. Para entender todo este proceso se requiere que tengas conocimientos en nodeJS, mongoDB, javascript, html5 y css3.">
-    <meta property="og:image" content="https://hugorocaproyectos.js.org/images/shared/app-chat-express-socket.io-mongodb-bluebird.jpg">
-
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Work+Sans:400,500,700,800" rel="stylesheet">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" integrity="sha256-0rguYS0qgS6L4qVzANq4kjxPLtvnp5nn2nB5G1lWRv4=" crossorigin="anonymous"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/styles/default.min.css" rel="stylesheet" integrity="sha256-Zd1icfZ72UBmsId/mUcagrmN7IN5Qkrvh75ICHIQVTk=" crossorigin="anonymous" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js" integrity="sha256-sNPiigbfSkqUzMc5rgrdztLnneCMAp6W9wetJUZu9Zw=" crossorigin="anonymous"></script>
 
-    <link
-      href='https://hugorocaproyectos.js.org//css/runnable.css?4024e2c313cea9abd4cad188f612e25c'
-      rel="stylesheet"
-    />
-    <link
-      href='https://hugorocaproyectos.js.org//css/runnable-custom.css?e3a7bf45ca185c40211474063f0e86d0'
-      rel="stylesheet"
-    />
+    <link href='https://hugorocaproyectos.js.org//css/runnable.css?4024e2c313cea9abd4cad188f612e25c' rel="stylesheet"/>
+    <link href='https://hugorocaproyectos.js.org//css/runnable-custom.css?e3a7bf45ca185c40211474063f0e86d0' rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -54,12 +38,8 @@
     
     
 
-    <link
-      rel="stylesheet"
-      href='https://hugorocaproyectos.js.org/css/styles.css?12646ef6287134bfdae61a4df0e734a1'>
-    <link
-      rel="stylesheet"
-      href='https://hugorocaproyectos.js.org/css/custom.css?140cf12e7b6472e3ea75043208c17556'>
+    <link rel="stylesheet" href='https://hugorocaproyectos.js.org/css/styles.css?12646ef6287134bfdae61a4df0e734a1'>
+    <link rel="stylesheet" href='https://hugorocaproyectos.js.org/css/custom.css?140cf12e7b6472e3ea75043208c17556'>
 
     
     
@@ -68,11 +48,21 @@
         <meta name="twitter:image" content="https://hugorocaproyectos.js.org/images/shared/app-chat-express-socket.io-mongodb-bluebird.jpg"/>
       
     
-
     <meta name="twitter:title" content="CHAT en tiempo real con NodeJS, Express, BlueBirdJS, Socket.IO y mongoDB"/>
     <meta name="twitter:description" content="En este pequeño post te explicaré como crear una aplicación de chat en tiempo real paso a paso. Para entender todo este proceso se requiere que tengas conocimientos en nodeJS, mongoDB, javascript, html5 y css3.
 Instalando paquetes y configuración Lo primero que tenemos que hacer es crear un directorio en donde estarán todos nuestros archivos, puedes utilizar el editor de código que mas se adecue a tí. En mi caso usaré VSCode."/>
     <meta name="twitter:site" content="@https://twitter.com/huugooroca"/>
+
+    
+    <title>CHAT en tiempo real con NodeJS, Express, BlueBirdJS, Socket.IO y mongoDB</title>
+    <meta property='og:title' content="CHAT en tiempo real con NodeJS, Express, BlueBirdJS, Socket.IO y mongoDB">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://hugorocaproyectos.js.org/images/shared/app-chat-express-socket.io-mongodb-bluebird.jpg">
+    
+
+    <meta property="og:url" content="https://hugorocaproyectos.js.org/post/2019-06-30-app-chat-express-socket.io-mongodb-bluebird/">
+    <meta name="og:description" content="En este pequeño post te explicaré como crear una aplicación de chat en tiempo real paso a paso. Para entender todo este proceso se requiere que tengas conocimientos en nodeJS, mongoDB, javascript, html5 y css3.
+Instalando paquetes y configuración Lo primero que tenemos que hacer es crear un directorio en donde estarán todos nuestros archivos, puedes utilizar el editor de código que mas se adecue a tí. En mi caso usaré VSCode.">
   </head>
 
 
@@ -711,7 +701,7 @@ s.setAttribute('data-timestamp', +new Date());
         </div>
       </div>
       <div class="row">
-        <span class="imprint__copyrights">&copy; 2019 Hugo Roca Proyectos</span>
+        <span class="imprint__copyrights">&copy; 2019 HR Proyectos</span>
       </div>
     </div>
 
