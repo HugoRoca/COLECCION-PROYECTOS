@@ -1,4 +1,4 @@
-baseurl = "https://hugorocaproyectos.js.org"
+baseurl = "https://hugorocaproyectos.js.org/"
 title = "Hugo Roca Proyectos"
 theme = "hugo-dgraph-theme"
 author = "hroca"
