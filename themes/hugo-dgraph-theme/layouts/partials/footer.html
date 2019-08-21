@@ -1,0 +1,177 @@
+<div class="page-footer__wrapper">
+  <footer id="page-footer" class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-3">
+          <figure class="page-logo-footer"><a href="/">
+            <img src="/images/logo_1.png"  alt="Company Logo"></a></figure>
+        </div>
+        <div class="col-4 col-md-2">
+          <nav class="page-footer-nav">
+            <h6 class="page-footer-nav__title"><a href="{{.Site.Params.linkedin}}">Linkedin</a></h6>
+            <!-- <ul class="page-footer-nav__list">
+              <li class="page-footer-nav__item"><a href="{{.Site.Params.website}}about.html" title="Learn More about us" target="_blank" class="page-footer-nav__link">About</a></li>
+              <li class="page-footer-nav__item"><a href="{{.Site.Params.website}}careers.html" title="See open positions" target="_blank" class="page-footer-nav__link">Careers</a></li>
+              <li class="page-footer-nav__item"><a href="{{.Site.Params.website}}contact.html" title="How can you reach us" target="_blank" class="page-footer-nav__link">Contact</a></li>
+              {{if .Site.Params.wiki}}
+              <li class="page-footer-nav__item"><a href="{{.Site.Params.wiki}}Beginners_Guide#Installation" title="Download" target="_blank" class="page-footer-nav__link page-footer-nav__link--download">Download</a></li>
+              {{end}}
+            </ul> -->
+          </nav>
+        </div>
+        <div class="col-4 col-md-2">
+          <nav class="page-footer-nav">
+            <h6 class="page-footer-nav__title"><a href="{{.Site.Params.twitter}}">Twitter</a></h6>
+          </nav>
+        </div>
+        <div class="col-4 col-md-2">
+          <nav class="page-footer-nav">
+            <h6 class="page-footer-nav__title"><a href="{{.Site.Params.github}}">GitHub</a></h6>
+          </nav>
+        </div>
+        <div class="col-4 col-md-2">
+          <nav class="page-footer-nav">
+            <h6 class="page-footer-nav__title"><a href="{{.Site.Params.telegram}}">Telegram</a></h6>
+          </nav>
+        </div>
+      </div>
+      <div class="row">
+        <span class="imprint__copyrights">{{ with .Site.Copyright | safeHTML }}{{ . }}{{ else }}&copy; {{ $.Site.LastChange.Year }} {{ if isset $.Site.Params "Author" }}{{ $.Site.Params.Author }}{{ else }}{{ .Site.Title }}{{ end }}{{ end }}</span>
+      </div>
+    </div>
+
+    <!-- <div class="github-engage">
+      <div class="line1">Do you like our blog?</div>
+      <a class="github-close" href="javascript:void(0)">
+        <i class="fa fas fa-times"></i>
+      </a>
+
+      <div id="star-us-wrapper">
+        <a
+            class="github-button"
+            href="https://github.com/dgraph-io/dgraph"
+            data-size="large" data-show-count="true"
+            aria-label="Star dgraph-io/dgraph on GitHub">
+          Star us on GitHub
+        </a>
+      </div>
+      <div class="love">
+        <div class="heart-wrapper">
+          <div class="heart">
+            <div class="tl"></div>
+            <div class="tr"></div>
+            <div class="bl"></div>
+            <div class="br"></div>
+          </div>
+          <div class="ring"></div>
+          <div class="circles"></div>
+        </div>
+
+        <div class="love-text">
+          We Love You!
+        </div>
+      </div>
+    </div> -->
+  </footer>
+  <!-- / page-footer-->
+</div>
+
+    <script src="{{ .Site.BaseURL }}/js/clipboard.min.js"></script>
+    <script
+      src='{{ .Site.BaseURL }}/js/runnable.js?{{ md5 (readFile "themes/hugo-dgraph-theme/static/js/runnable.js") }}'
+    ></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+
+{{ if not (in (.Site.BaseURL | string) "localhost") }}
+{{ with .Site.Params.googleAnalytics }}
+<script>
+if (window.location.host.indexOf("dgraph.io") > -1) {
+  (function(i, s, o, g, r, a, m) {
+    i["GoogleAnalyticsObject"] = r;
+    (i[r] =
+      i[r] ||
+      function() {
+        (i[r].q = i[r].q || []).push(arguments);
+      }), (i[r].l = 1 * new Date());
+    (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m);
+  })(
+    window,
+    document,
+    "script",
+    "//www.google-analytics.com/analytics.js",
+    "ga"
+  );
+  ga("create", "{{ . }}", "auto");
+  ga("send", "pageview");
+}
+</script>
+{{ end }}
+{{ end }}
+
+{{ if .Site.Params.keenIoProjectId }}
+<script crossorigin src="https://cdn.jsdelivr.net/npm/keen-tracking@4"></script>
+<script>
+  if (window.location.host.indexOf("dgraph.io") > -1) {
+  	var keenClient = new KeenTracking({
+  	  projectId: {{ .Site.Params.keenIoProjectId }},
+  	  writeKey: {{ .Site.Params.keenIoWriteKey }}
+  	});
+    keenClient.initAutoTracking();
+
+  	keenClient.recordEvent('blog-article-visit', {
+  		pathname: window.location.pathname,
+  	})
+  }
+</script>
+{{ end }}
+
+{{ if .Site.Params.countlyKey }}
+<script>
+  window.Countly = window.Countly || {};
+  Countly.q = Countly.q || [];
+
+  Countly.q.push(['track_sessions']);
+  Countly.q.push(['track_pageview']);
+  (function() {
+  	var cly = document.createElement('script');
+  	cly.type = 'text/javascript';
+  	cly.async = true;
+  	cly.src = {{ .Site.Params.countlyJs }};
+  	cly.onload = function() {
+      Countly.init({
+        app_key: {{ .Site.Params.countlyKey }},
+        url: {{ .Site.Params.countlyDomain }},
+        force_post: true,
+      })
+  	};
+  	document.body.appendChild(cly);
+  })();
+</script>
+{{ end }}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/visibility.js/1.2.4/visibility.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+<link
+  href='{{ .Site.BaseURL }}css/heart.css?{{ md5 (readFile "themes/hugo-dgraph-theme/static/css/heart.css") }}'
+  rel="stylesheet">
+<link
+  href='{{ .Site.BaseURL }}css/github-engage.css?{{ md5 (readFile "themes/hugo-dgraph-theme/static/css/github-engage.css") }}'
+  rel="stylesheet">
+
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.min.js"
+  integrity="sha256-7/yoZS3548fXSRXqc/xYzjsmuW3sFKzuvOCHd06Pmps="
+  crossorigin="anonymous"
+></script>
+<script
+  type="text/javascript"
+  src='/js/custom.js?{{ md5 (readFile "themes/hugo-dgraph-theme/static/js/custom.js") }}'
+></script>
+
+</body>
+</html>

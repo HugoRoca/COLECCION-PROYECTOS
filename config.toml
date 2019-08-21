@@ -1,0 +1,22 @@
+baseurl = "https://hugorocaproyectos.js.org"
+title = "Hugo Roca Proyectos"
+theme = "hugo-dgraph-theme"
+author = "hroca"
+contentdir = "content"
+datadir = "data"
+layoutdir = "layouts"
+publishdir = "docs"
+
+# Number of blogs you want to list on a single page.
+paginate = 7
+paginatePath  ="page"
+disqusShortname = "hugorocaproyectos"
+
+[params]
+  googleAnalytics = "UA-125594168-1"
+  github = "https://github.com/HugoRoca"
+  twitter = "https://twitter.com/huugooroca"
+  linkedin = "https://www.linkedin.com/in/hugoroca/"
+  telegram = "https://t.me/hugoroca"
+
+copyright = "Copyright (c) 2008 - 2014, Steve Francia; all rights reserved."
