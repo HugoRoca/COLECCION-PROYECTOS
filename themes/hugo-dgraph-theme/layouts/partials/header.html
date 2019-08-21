@@ -74,4 +74,5 @@
 
     <meta property="og:url" content="{{ .Permalink }}">
     <meta name="og:description" content="{{ if .IsPage }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    <meta name="description" content="{{ if .IsPage }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}">
   </head>
