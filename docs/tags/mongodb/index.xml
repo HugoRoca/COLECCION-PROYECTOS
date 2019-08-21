@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mongodb on Hugo Roca Proyectos</title>
+    <link>https://hugorocaproyectos.js.org/tags/mongodb/</link>
+    <description>Recent content in mongodb on Hugo Roca Proyectos</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 21 Jul 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://hugorocaproyectos.js.org/tags/mongodb/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>¿Que son las aplicaciones web progresivas?</title>
+      <link>https://hugorocaproyectos.js.org/post/2019-07-21-appwebprogresiva-que-es/</link>
+      <pubDate>Sun, 21 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://hugorocaproyectos.js.org/post/2019-07-21-appwebprogresiva-que-es/</guid>
+      <description>En esta pequeña publicación vamos a definir y entender que es una aplicación web progresiva.
+Empecemos hablando de los beneficios de crear una página web sobre una aplicación nativa.
+ Son linkeables, eso quiere decir que te puedes mover entre páginas con un simple y sencillo link. Son indexables, aquí hacemos referencia el hecho de que uno puede navegar y buscar entre páginas de manera simple a diferencia de las aplicaciones nativas.</description>
+    </item>
+    
+    <item>
+      <title>CHAT en tiempo real con NodeJS, Express, BlueBirdJS, Socket.IO y mongoDB</title>
+      <link>https://hugorocaproyectos.js.org/post/2019-06-30-app-chat-express-socket.io-mongodb-bluebird/</link>
+      <pubDate>Sun, 30 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://hugorocaproyectos.js.org/post/2019-06-30-app-chat-express-socket.io-mongodb-bluebird/</guid>
+      <description>En este pequeño post te explicaré como crear una aplicación de chat en tiempo real paso a paso. Para entender todo este proceso se requiere que tengas conocimientos en nodeJS, mongoDB, javascript, html5 y css3.
+Instalando paquetes y configuración Lo primero que tenemos que hacer es crear un directorio en donde estarán todos nuestros archivos, puedes utilizar el editor de código que mas se adecue a tí. En mi caso usaré VSCode.</description>
+    </item>
+    
+    <item>
+      <title>Conexión NodeJS con MongoDB Atlas</title>
+      <link>https://hugorocaproyectos.js.org/post/2019-05-13-nodejs-mongodb/</link>
+      <pubDate>Mon, 13 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://hugorocaproyectos.js.org/post/2019-05-13-nodejs-mongodb/</guid>
+      <description>MongoDB Atlas es la base de datos como servicio que permite implementar, utilizar y escalar una base de datos de MongoDB en la nube haciendo conexión con NodeJS.
+Usaremos clases y funcion asincronas con promesas en javascript ES6.
+Creando el Package.json Antes de proceder con cualquier instalación de paquetes npm necesitamos crear nuestro package.json.
+ Como primer paso creamos una carpeta donde estarán todos nuestros archivos. Luego, levantar la ventana de comandos dentro de la carpeta y ejecutar el siguiente comando npm init.</description>
+    </item>
+    
+    <item>
+      <title>Configuración de una cuenta en MongoDB Atlas</title>
+      <link>https://hugorocaproyectos.js.org/post/2019-05-06-mongodb-atlas/</link>
+      <pubDate>Mon, 06 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://hugorocaproyectos.js.org/post/2019-05-06-mongodb-atlas/</guid>
+      <description>MongoDB Atlas ofrece la base de datos líder mundial para aplicaciones modernas como un servicio en la nube totalmente automatizado, diseñado y ejecutado por el mismo equipo que construye la base de datos.
+Antes de empezar la configuración debemos de entender que es MongoDB Atlas, que ventajas y caracteristicas nos ofrece a comparación de tenerlo en modo local.
+ MongoDB Atlas es la base de datos como servicio que permite implementar, utilizar y escalar una base de datos de MongoDB con tan solo unos pocos clics.</description>
+    </item>
+    
+  </channel>
+</rss>

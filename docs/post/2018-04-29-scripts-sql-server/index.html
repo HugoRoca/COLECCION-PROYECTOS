@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+ <html class="ie" lang="en"> 
+  <head>
+    <meta charset="utf-8">
+      <meta name="generator" content="Hugo 0.55.6" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=1">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?v=1">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png?v=1">
+    <link rel="manifest" href="/favicon/site.webmanifest?v=1">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg?v=1" color="#ffffff">
+    <link rel="shortcut icon" href="/favicon/favicon.ico?v=1">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml?v=1">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="https://hugorocaproyectos.js.orgindex.xml">
+
+    
+    <title>Scripts SQLServer - Hugo Roca Proyectos</title>
+    <meta property='og:title' content="Scripts SQLServer - Hugo Roca Proyectos">
+    <meta property="og:type" content="article">
+    
+
+    <meta property="og:url" content="https://hugorocaproyectos.js.org/post/2018-04-29-scripts-sql-server/">
+    <meta name="description" content="Les comparto algunos scripts que me sirvieron de mucho durante el tiempo que llevo trabajando, y es más aún los sigo usando.">
+    <meta property="og:image" content="https://hugorocaproyectos.js.orgimages/shared/scripts-sql.jpg">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Work+Sans:400,500,700,800" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" integrity="sha256-0rguYS0qgS6L4qVzANq4kjxPLtvnp5nn2nB5G1lWRv4=" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/styles/default.min.css" rel="stylesheet" integrity="sha256-Zd1icfZ72UBmsId/mUcagrmN7IN5Qkrvh75ICHIQVTk=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js" integrity="sha256-sNPiigbfSkqUzMc5rgrdztLnneCMAp6W9wetJUZu9Zw=" crossorigin="anonymous"></script>
+
+    <link
+      href='https://hugorocaproyectos.js.org/css/runnable.css?4024e2c313cea9abd4cad188f612e25c'
+      rel="stylesheet"
+    />
+    <link
+      href='https://hugorocaproyectos.js.org/css/runnable-custom.css?e3a7bf45ca185c40211474063f0e86d0'
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.js" integrity="sha256-x3BtPVERvw1ozPlwivuFLZoViFCeAAs1Gt6SxEedmo8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.css" integrity="sha256-7sZe9dsqyNZC9Mk+WPRB7nVvPPPXyorzm2QKqlgXC4k=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/addon/edit/closebrackets.min.js" integrity="sha256-qhu2a7DSpQaammMaLw1iruxBpxmgdw8mdQaQWQUokcY=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/mode/javascript/javascript.min.js" integrity="sha256-7Bdg/UdDMmHDPafpQDYZNPCEbnRP7eAvu+2hEoqRCXs=" crossorigin="anonymous"></script>
+    
+
+    <link
+      rel="stylesheet"
+      href='https://hugorocaproyectos.js.orgcss/styles.css?6e4191c453e208f915d053eae6b3bd8a'>
+    <link
+      rel="stylesheet"
+      href='https://hugorocaproyectos.js.orgcss/custom.css?140cf12e7b6472e3ea75043208c17556'>
+
+    
+    
+      
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:image" content="https://hugorocaproyectos.js.orgimages/shared/scripts-sql.jpg"/>
+      
+    
+
+    <meta name="twitter:title" content="Scripts SQLServer"/>
+    <meta name="twitter:description" content="Les comparto algunos scripts que me sirvieron de mucho durante el tiempo que llevo trabajando, y es más aún los sigo usando.
+Split -- select * from dbo.[Split](&#39;1,2,3,4,5,6&#39;,&#39;,&#39;) CREATE FUNCTION [dbo].[Split] ( @ItemList NVARCHAR(MAX) ,@delimiter CHAR(1) ) RETURNS @IDTable TABLE ( nro INT identity(1, 1) ,Item VARCHAR(MAX) ) AS BEGIN DECLARE @tempItemList NVARCHAR(MAX) SET @tempItemList = @ItemList DECLARE @i INT DECLARE @Item NVARCHAR(MAX) SET @i = CHARINDEX(@delimiter, @tempItemList) WHILE (LEN(@tempItemList) &gt; 0) BEGIN IF @i = 0 SET @Item = @tempItemList ELSE SET @Item = LEFT(@tempItemList, @i - 1) INSERT INTO @IDTable (Item) VALUES (@Item) IF @i = 0 SET @tempItemList = &#39;&#39; ELSE SET @tempItemList = RIGHT(@tempItemList, LEN(@tempItemList) - @i) SET @i = CHARINDEX(@delimiter, @tempItemList) END RETURN END  Encriptación Recomendado para contraseñas y/o datos sensibles."/>
+    <meta name="twitter:site" content="@https://twitter.com/huugooroca"/>
+  </head>
+
+
+<body class="blog-article" data-gr-c-s-loaded="true">
+
+  
+  <header id="page-header" class="page-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 offset-0 col-md-10 offset-md-1">
+        <figure class="page-logo"><a href="/"><img src="/images/logo_1.png" alt="Hugo Logo"></a></figure>
+        <a href="https://t.me/hugoroca" title="linkedin" class="button button-dgraph-site button--outline pull-right">
+            <i class="fa fa-telegram" aria-hidden="true"></i>
+          </a>
+        <a href="https://github.com/HugoRoca" title="github" class="button button-dgraph-site button--outline pull-right">
+          <i class="fa fa-github" aria-hidden="true"></i>
+        </a>
+        <a href="https://twitter.com/huugooroca" title="twitter" class="button button-dgraph-site button--outline pull-right">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/hugoroca/" title="linkedin" class="button button-dgraph-site button--outline pull-right">
+          <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+  
+  <section class="page-intro page-intro--blog-article">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 offset-xs-0 col-md-10 offset-md-1">
+          <header class="page-intro__header">
+            <div class="article__meta">
+              <span class="article__meta-item article__date">
+                
+                  29/04/29046
+                 by
+                
+
+ Hugo Roca
+
+
+              </span>
+              <div class="share">
+                <div class="sharethis-inline-share-buttons"></div>
+                
+              </div>
+            </div>
+            <h1 class="page-intro__title page-intro__title--blog">Scripts SQLServer</h1>
+          </header>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <div class="page-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 offset-xs-0 col-md-10 offset-md-1">
+          <img
+            class="main__image"
+            src="https://hugorocaproyectos.js.orgimages/shared/scripts-sql.jpg"
+          >
+          <div class="article-content">
+
+<p>Les comparto algunos scripts que me sirvieron de mucho durante el tiempo que llevo trabajando, y es más aún los sigo usando.</p>
+
+<h2 id="split">Split</h2>
+
+<pre><code>-- select * from dbo.[Split]('1,2,3,4,5,6',',')
+CREATE FUNCTION [dbo].[Split] (
+    @ItemList NVARCHAR(MAX)
+    ,@delimiter CHAR(1)
+    )
+RETURNS @IDTable TABLE (
+    nro INT identity(1, 1)
+    ,Item VARCHAR(MAX)
+    )
+AS
+BEGIN
+    DECLARE @tempItemList NVARCHAR(MAX)
+    SET @tempItemList = @ItemList
+    DECLARE @i INT
+    DECLARE @Item NVARCHAR(MAX)
+         
+    SET @i = CHARINDEX(@delimiter, @tempItemList)
+
+    WHILE (LEN(@tempItemList) &gt; 0)
+    BEGIN
+        IF @i = 0
+            SET @Item = @tempItemList
+        ELSE
+            SET @Item = LEFT(@tempItemList, @i - 1)
+
+        INSERT INTO @IDTable (Item)
+        VALUES (@Item)
+
+        IF @i = 0
+            SET @tempItemList = ''
+        ELSE
+            SET @tempItemList = RIGHT(@tempItemList, LEN(@tempItemList) - @i)
+
+        SET @i = CHARINDEX(@delimiter, @tempItemList)
+    END
+
+    RETURN
+END
+</code></pre>
+
+<h2 id="encriptación">Encriptación</h2>
+
+<p>Recomendado para contraseñas y/o datos sensibles.</p>
+
+<pre><code>CREATE FUNCTION dbo.EncriptarClave (@Clave NVARCHAR(MAX))
+RETURNS NVARCHAR(MAX)
+AS
+BEGIN
+    SET @Clave = UPPER(@Clave)
+
+    DECLARE @ClaveEncriptada NVARCHAR(MAX);
+
+    SELECT
+        @ClaveEncriptada = UPPER(
+            SUBSTRING(master.dbo.fn_varbintohexstr(HASHBYTES('SHA1', @Clave)), 3, 40)
+            );
+
+    RETURN @ClaveEncriptada;
+END
+/*SELECT dbo.EncriptarClave('HUGO')
+Esto no es reversible, una vez encriptada ya no se puede desencriptar, se recomienda guardar log.
+*/
+</code></pre>
+
+<h2 id="exists-store-function-index">Exists store, function, index</h2>
+
+<pre><code>IF EXISTS(SELECT * FROM sys.SYSOBJECTS A INNER JOIN SYS.SCHEMAS B ON A.uid =B.schema_id 
+    WHERE A.NAME='Gen_SelBandejaProducto_SP' 
+        AND B.name='dbo')
+ DROP PROCEDURE Gen_SelBandejaProducto_SP 
+GO
+
+-- para indeces 
+IF EXISTS (SELECT * FROM sys.indexes 
+    WHERE name='Cedula_INDEX' 
+        AND object_id = OBJECT_ID('CertificadoTributarioDetalle'))
+BEGIN
+    DROP INDEX Cedula_INDEX ON dbo.CertificadoTributarioDetalle; 
+END
+</code></pre>
+
+<h2 id="formato-miles">Formato miles</h2>
+
+<pre><code>select CONVERT(varchar(50), CONVERT(money, 12345.6), 1)
+</code></pre>
+
+<h2 id="try-catch">Try Catch</h2>
+
+<pre><code>BEGIN
+BEGIN TRY
+BEGIN TRANSACTION  
+BEGIN
+&lt;&lt;Cuerpo de procedimiento&gt;&gt;
+END
+COMMIT TRAN
+END TRY
+BEGIN CATCH
+    IF @@TRANCOUNT &gt; 0
+    BEGIN
+        ROLLBACK TRAN
+    END
+DECLARE @nLinea INT=ERROR_LINE()                            
+DECLARE @cError VARCHAR(8000)=ERROR_MESSAGE()                            
+DECLARE @cStored varchar(500)=(SELECT TOP 1 name FROM sys.objects 
+                                WHERE object_id=@@PROCID)                                           
+    EXEC SIS_RegitrarError @nLinea, @cError, @cStored
+END CATCH
+END 
+
+/**************************/
+CREATE PROCEDURE [dbo].[SIS_RegitrarError] @nLineaError INT
+    ,@cDescrip VARCHAR(8000)
+    ,@cNombreStore VARCHAR(500)
+AS
+BEGIN
+    INSERT INTO Errores (
+        dFecha
+        ,nLineaError
+        ,cDescrip
+        ,cDatos
+        ,cStore
+        )
+    VALUES (
+        GETDATE()
+        ,@nLineaError
+        ,@cDescrip
+        ,CONVERT(VARCHAR(50), HOST_NAME() + ' - ' + SUSER_SNAME(SUSER_SID()))
+        ,@cNombreStore
+        )     
+END
+</code></pre>
+
+<h2 id="select-xml">Select XML</h2>
+
+<pre><code>DECLARE @oData XML = '&lt;GENESYS&gt;&lt;DATA nombre=&quot;Hugo&quot; apellido=&quot;Roca&quot; /&gt;&lt;/GENESYS&gt;'
+DECLARE @nDoc int
+EXEC sp_xml_preparedocument @nDoc OUTPUT,@oData
+SELECT *    
+FROM openxml(@nDoc, '/GENESYS/DATA', 1) 
+WITH (
+    nombre varchar(50), 
+    apellido varchar(50)
+)
+</code></pre>
+
+<h2 id="buscar-tabla-en-store">Buscar tabla en store</h2>
+
+<pre><code>SELECT Name
+FROM sys.procedures
+WHERE OBJECT_DEFINITION(OBJECT_ID) LIKE '%table%'
+Go
+
+------
+SELECT DISTINCT so.name
+FROM syscomments sc
+INNER JOIN sysobjects so ON sc.id=so.id
+WHERE sc.TEXT LIKE '%table%'
+Go
+
+----- Con tipo, si es store o function
+SELECT DISTINCT o.name, o.xtype
+FROM syscomments c
+INNER JOIN sysobjects o ON c.id=o.id
+WHERE c.TEXT LIKE '%SolicitudCredito%'
+go
+</code></pre>
+
+<h2 id="ceros-a-la-izquierda">Ceros a la izquierda</h2>
+
+<pre><code>select RIGHT('0000000000' + Ltrim(Rtrim('987654')),10)
+</code></pre>
+
+<h2 id="enviar-correo">Enviar correo</h2>
+
+<pre><code>CREATE PROCEDURE [dbo].[PA_EnviarCorreoDBA] @pcTo AS VARCHAR(255)
+    ,@pcCC AS VARCHAR(255)
+    ,@pcSubject AS VARCHAR(255)
+    ,@pcMessage AS VARCHAR(max)
+AS
+BEGIN
+    EXEC msdb..sp_send_dbmail @profile_name = 'Database Management'
+        ,@recipients = @pcTo
+        ,@copy_recipients = @pcCC
+        ,@subject = @pcSubject
+        ,@body = @pcMessage
+END
+</code></pre>
+
+<h2 id="config-de-parametros">Config de parametros</h2>
+
+<pre><code>CREATE PROCEDURE dbo.SCC_Configurar_Parametros
+AS
+--ACTIVAR VOLCADO DE DATOS A ARCHIVOS PLANOS  
+EXEC sp_configure 'show advanced options',1;
+
+-- To update the currently configured value for advanced options.  
+RECONFIGURE
+WITH OVERRIDE;
+
+-- To enable the feature.  
+EXEC sp_configure 'xp_cmdshell',1;
+
+-- To update the currently configured value for this feature.  
+RECONFIGURE
+WITH OVERRIDE;
+
+/************************/
+CREATE PROCEDURE dbo.SCC_Configurar_Parametros_Cerrar
+AS
+-- To enable the feature.  
+EXEC sp_configure 'xp_cmdshell',0;
+
+-- To update the currently configured value for this feature.  
+RECONFIGURE
+WITH OVERRIDE;
+
+--ACTIVAR VOLCADO DE DATOS A ARCHIVOS PLANOS  
+EXEC sp_configure 'show advanced options',0;
+
+-- To update the currently configured value for advanced options.  
+RECONFIGURE
+WITH OVERRIDE;
+</code></pre>
+
+<p>Comenta, disfruta y comparte!</p>
+</div>
+          <div class="article-tag-list">
+            
+            
+                
+                
+                    <a href="https://hugorocaproyectos.js.org/tags/sqlserver/">SQLSERVER</a>
+                
+            
+          </div>
+          <div class="modal fade" id="runnable-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <a href="#" data-dismiss="modal" class="modal-close-btn">
+    Close
+  </a>
+
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="article-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="article-author">
+  <figure class="article-author__figure">
+    
+
+
+	<img src="/images/profile.jpg" class="article-author__image">
+
+
+  </figure>
+  <div class="article-author__bio">
+    <h4 class="article-author__name">
+
+ Hugo Roca
+
+
+      <span class="article-author__title">Autor</span>
+    </h4>
+    
+
+
+<nav class="social__nav article-author__social">
+    <ul class="social__list social__list--inline">
+        <li class="social__item social__item--inline">
+            <a href="https://www.linkedin.com/in/hugoroca/" class="social__link">
+                <i class="icon social__icon social__icon--linkedin fa fa-linkedin" aria-hidden="true"></i>
+                
+            </a>
+        </li>
+        <li class="social__item social__item--inline">
+            <a href="https://twitter.com/huugooroca" class="social__link">
+                <i class="icon social__icon fa fa-twitter" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li class="social__item social__item--inline">
+            <a href="https://github.com/HugoRoca" class="social__link">
+                <i class="icon social__icon fa fa-github" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li class="social__item social__item--inline">
+            <a href="https://t.me/hugoroca" class="social__link">
+                <i class="icon social__icon fa fa-telegram" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+</nav>
+<p> Soy Hugo Roca, un analista de software que trabaja en Lima - Perú. Claro y simple, me encanta la programación. Me
+    apasiona escribir código limpio, único y elegante. Códigos que funcionan.</p>
+
+  </div>
+</div>
+
+            
+          </div>
+          <div class="col-12">
+            
+<div id="disqus_thread"></div>
+<script>
+
+
+var disqus_config = function () {
+this.page.url = "https:\/\/hugorocaproyectos.js.org\/post\/2018-04-29-scripts-sql-server\/";  
+this.page.identifier = "https:\/\/hugorocaproyectos.js.org\/post\/2018-04-29-scripts-sql-server\/"; 
+};
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://hugorocaproyectos.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  
+
+
+  <div class="page-footer__wrapper">
+  <footer id="page-footer" class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-3">
+          <figure class="page-logo-footer"><a href="/">
+            <img src="/images/logo_1.png"  alt="Company Logo"></a></figure>
+        </div>
+        <div class="col-4 col-md-2">
+          <nav class="page-footer-nav">
+            <h6 class="page-footer-nav__title"><a href="https://www.linkedin.com/in/hugoroca/">Linkedin</a></h6>
+            
+          </nav>
+        </div>
+        <div class="col-4 col-md-2">
+          <nav class="page-footer-nav">
+            <h6 class="page-footer-nav__title"><a href="https://twitter.com/huugooroca">Twitter</a></h6>
+          </nav>
+        </div>
+        <div class="col-4 col-md-2">
+          <nav class="page-footer-nav">
+            <h6 class="page-footer-nav__title"><a href="https://github.com/HugoRoca">GitHub</a></h6>
+          </nav>
+        </div>
+        <div class="col-4 col-md-2">
+          <nav class="page-footer-nav">
+            <h6 class="page-footer-nav__title"><a href="https://t.me/hugoroca">Telegram</a></h6>
+          </nav>
+        </div>
+      </div>
+      <div class="row">
+        <span class="imprint__copyrights">&copy; 2019 Hugo Roca Proyectos</span>
+      </div>
+    </div>
+
+    
+  </footer>
+  
+</div>
+
+    <script src="https://hugorocaproyectos.js.org/js/clipboard.min.js"></script>
+    <script
+      src='https://hugorocaproyectos.js.org/js/runnable.js?e96637008f750166c2e2dcc8f83bbee1'
+    ></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+
+
+
+<script>
+if (window.location.host.indexOf("dgraph.io") > -1) {
+  (function(i, s, o, g, r, a, m) {
+    i["GoogleAnalyticsObject"] = r;
+    (i[r] =
+      i[r] ||
+      function() {
+        (i[r].q = i[r].q || []).push(arguments);
+      }), (i[r].l = 1 * new Date());
+    (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m);
+  })(
+    window,
+    document,
+    "script",
+    "//www.google-analytics.com/analytics.js",
+    "ga"
+  );
+  ga("create", "UA-125594168-1", "auto");
+  ga("send", "pageview");
+}
+</script>
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/visibility.js/1.2.4/visibility.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+<link
+  href='https://hugorocaproyectos.js.orgcss/heart.css?5d3f0418459ee8913daa4c7418dc752b'
+  rel="stylesheet">
+<link
+  href='https://hugorocaproyectos.js.orgcss/github-engage.css?d6a3a8e21d69139f2b800d8102d2bed1'
+  rel="stylesheet">
+
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.min.js"
+  integrity="sha256-7/yoZS3548fXSRXqc/xYzjsmuW3sFKzuvOCHd06Pmps="
+  crossorigin="anonymous"
+></script>
+<script
+  type="text/javascript"
+  src='/js/custom.js?3bca368d3b42101c80feb37b14695125'
+></script>
+
+</body>
+</html>
+
+  
+
+  
+</html>

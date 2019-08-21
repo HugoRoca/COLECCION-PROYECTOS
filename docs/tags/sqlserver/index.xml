@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SQLSERVER on Hugo Roca Proyectos</title>
+    <link>https://hugorocaproyectos.js.org/tags/sqlserver/</link>
+    <description>Recent content in SQLSERVER on Hugo Roca Proyectos</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 10 Jan 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://hugorocaproyectos.js.org/tags/sqlserver/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Conexión NodeJS con SQLServer</title>
+      <link>https://hugorocaproyectos.js.org/post/2019-01-10-nodejs-sqlserver/</link>
+      <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://hugorocaproyectos.js.org/post/2019-01-10-nodejs-sqlserver/</guid>
+      <description>Microsoft SQL Server es un sistema de gestión de base de datos relacional (RDBMS) producido por Microsoft. Su principal lenguaje de consulta es Transact-SQL, una aplicación de las normas ANSI / ISO estándar Structured Query Language (SQL) utilizado por ambas Microsoft y Sybase.
+ Usaremos clases y funcion asincronas con promesas en javascript ES6.
+Creando el Package.json Antes de proceder con cualquier instalación de paquetes npm necesitamos crear nuestro package.</description>
+    </item>
+    
+    <item>
+      <title>APP Restaurante</title>
+      <link>https://hugorocaproyectos.js.org/post/2018-09-01-apprestaurante/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://hugorocaproyectos.js.org/post/2018-09-01-apprestaurante/</guid>
+      <description>En esta oportunidad les presento un nuevo sistema de restaurante, cuenta con dos formas de ver, una para los pedidos que se configura dentro del sistema y la otra la parte administrativa.
+ Contenido  Registro del menú del día Registro de empleados Control de acceso de usuario Cobranza Genera PDF del Cobro Registro de imagenes Vista rápida en dashboard  Paso 1 Puedes obtener el codigo fuente de la siguiente forma:</description>
+    </item>
+    
+    <item>
+      <title>Registro de errores con Log4Net</title>
+      <link>https://hugorocaproyectos.js.org/post/2018-05-20-log4net/</link>
+      <pubDate>Sun, 20 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://hugorocaproyectos.js.org/post/2018-05-20-log4net/</guid>
+      <description>Si eres un gran desarrollador sabrás que todo software debe de tener un LOG, en esta oportunidad te muestro un aplicativo de como se hace uno.
+ Paso 1 Crear un proyecto de consola en visual studio
+Paso 2 Agregar el siguiente paguete nuget: Paso 3 Agregar una clase a la cual llamaremos LogHelper.cs
+namespace Log4Net { public class LogHelper { public static log4net.ILog GetLogger([CallerFilePath]string filename = &amp;quot;&amp;quot;) { return log4net.</description>
+    </item>
+    
+    <item>
+      <title>Entity Framework Básico</title>
+      <link>https://hugorocaproyectos.js.org/post/2018-05-06-entityframework-basico/</link>
+      <pubDate>Sun, 06 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://hugorocaproyectos.js.org/post/2018-05-06-entityframework-basico/</guid>
+      <description>Una forma mas rápida de realizar CRUD&amp;rsquo;s, a tan solo unos clicks. Este es el poderosisimo Entity Framework
+ Paso 1 Puedes obtener el codigo fuente de la siguiente forma:
+ Descargar el repositorio ENTITY-FRAMEWORK-BASICO Abrir la solución y explorar el código fuente  Paso 2 Ejecutar lo siguiente en SQLServer
+CREATE DATABASE Test GO USE Test GO CREATE TABLE [dbo].[Alumno]( [id] [int] IDENTITY(1,1) NOT NULL, [Nombre] [varchar](50) NOT NULL, [Apellido] [varchar](100) NOT NULL, [Sexo] [int] NOT NULL, [FechaNacimiento] [varchar](10) NOT NULL primary key (id)) GO  Paso 3 Una vez ejecutado el script, abrir el archivo App.</description>
+    </item>
+    
+    <item>
+      <title>Scripts SQLServer</title>
+      <link>https://hugorocaproyectos.js.org/post/2018-04-29-scripts-sql-server/</link>
+      <pubDate>Sun, 29 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://hugorocaproyectos.js.org/post/2018-04-29-scripts-sql-server/</guid>
+      <description>Les comparto algunos scripts que me sirvieron de mucho durante el tiempo que llevo trabajando, y es más aún los sigo usando.
+Split -- select * from dbo.[Split](&#39;1,2,3,4,5,6&#39;,&#39;,&#39;) CREATE FUNCTION [dbo].[Split] ( @ItemList NVARCHAR(MAX) ,@delimiter CHAR(1) ) RETURNS @IDTable TABLE ( nro INT identity(1, 1) ,Item VARCHAR(MAX) ) AS BEGIN DECLARE @tempItemList NVARCHAR(MAX) SET @tempItemList = @ItemList DECLARE @i INT DECLARE @Item NVARCHAR(MAX) SET @i = CHARINDEX(@delimiter, @tempItemList) WHILE (LEN(@tempItemList) &amp;gt; 0) BEGIN IF @i = 0 SET @Item = @tempItemList ELSE SET @Item = LEFT(@tempItemList, @i - 1) INSERT INTO @IDTable (Item) VALUES (@Item) IF @i = 0 SET @tempItemList = &#39;&#39; ELSE SET @tempItemList = RIGHT(@tempItemList, LEN(@tempItemList) - @i) SET @i = CHARINDEX(@delimiter, @tempItemList) END RETURN END  Encriptación Recomendado para contraseñas y/o datos sensibles.</description>
+    </item>
+    
+  </channel>
+</rss>
