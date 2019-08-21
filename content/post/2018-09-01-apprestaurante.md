@@ -2,9 +2,8 @@
 date: "2018-09-01"
 title: "APP Restaurante"
 description: "En estas oportunidad les presento un nuevo sistema de restaurante, cuenta con dos formas de ver, una para los pedidos que se configura dentro del sistema y la otra la parte administrativa."
-author: "Hugo Roca"
-image: /images/post/apprestaurante.svg
-imageShared: /images/post/apprestaurante.svg
+author: "hroca"
+image: shared/apprestaurante.jpg
 tags:
  - SQLSERVER
  - CSharp

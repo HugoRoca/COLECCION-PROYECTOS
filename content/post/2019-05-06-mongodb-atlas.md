@@ -2,9 +2,8 @@
 date: "2019-05-06"
 title: "Configuración de una cuenta en MongoDB Atlas"
 description: "MongoDB Atlas ofrece la base de datos líder mundial para aplicaciones modernas como un servicio en la nube totalmente automatizado, diseñado y ejecutado por el mismo equipo que construye la base de datos."
-author: "Hugo Roca"
-image: /images/post/mongodb-atlas.svg
-imageShared: /images/shared/mongodb-atlas.jpg
+author: "hroca"
+image: shared/mongodb-atlas.jpg
 tags:
   - mongodb
 categories:

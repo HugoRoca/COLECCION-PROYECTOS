@@ -677,7 +677,7 @@ nav.breadcrumbs {
 }
 
 nav.breadcrumbs ol.breadcrumb {
-  background-color: #f9f7f6;
+  background-color: #ececec;
   border-radius: 4px;
 }
 nav.breadcrumbs ol.breadcrumb .breadcrumb-item+.breadcrumb-item::before {

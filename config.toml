@@ -2,9 +2,13 @@ baseurl = "https://hugorocaproyectos.js.org"
 title = "Hugo Roca Proyectos"
 theme = "hugo-dgraph-theme"
 author = "hroca"
+contentdir = "content"
+datadir = "data"
+layoutdir = "layouts"
+publishdir = "docs"
 
 # Number of blogs you want to list on a single page.
-paginate = 5
+paginate = 7
 paginatePath  ="page"
 disqusShortname = "hugorocaproyectos"
 

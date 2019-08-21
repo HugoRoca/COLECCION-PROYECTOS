@@ -2,9 +2,8 @@
 date: "2018-11-01"
 title: "Conexión NodeJS con Redis Cache"
 description: "Redis se utiliza como base de datos y para caché, ya que es súper rápido debido a que los datos se almacenan 'en memoria', a diferencia de otras bases de datos en las que los datos generalmente se almacenan 'en disco'."
-author: "Hugo Roca"
-image: /images/post/nodejs-redis.svg
-imageShared: /images/shared/nodejs-redis.jpg
+author: "hroca"
+image: shared/nodejs-redis.jpg
 tags:
  - JS
  - REDIS
