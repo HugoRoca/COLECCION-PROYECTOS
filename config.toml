@@ -1,5 +1,5 @@
 baseurl = "https://hugorocaproyectos.js.org/"
-title = "Hugo Roca Proyectos"
+title = "HR Proyectos"
 theme = "hugo-dgraph-theme"
 author = "hroca"
 contentdir = "content"
@@ -13,6 +13,7 @@ paginatePath  ="page"
 disqusShortname = "hugorocaproyectos"
 
 [params]
+  description = "Aprende • Piensa • Diseña • Codifica"
   googleAnalytics = "UA-125594168-1"
   github = "https://github.com/HugoRoca"
   twitter = "https://twitter.com/huugooroca"
