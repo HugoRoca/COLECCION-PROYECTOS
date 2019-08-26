@@ -3,7 +3,7 @@ date: "2019-07-21"
 title: "¿Que son las aplicaciones web progresivas?"
 description: "En este pequeña publicación vamos a definir y entender que es una aplicación web progresiva. Empecemos hablando de los beneficios de crear una página web sobre una aplicación nativa. "
 author: "hroca"
-image: shared/AppWebProgresiva-que-es.jpg
+image: 2019-07-21-AppWebProgresiva-que-es/image.jpg
 tags:
  - nodejs
  - mongodb
@@ -41,16 +41,16 @@ Diferenciarlas de una página web tradicional requiere de un poquito mas de deta
 Las aplicaciones web progresivas tienen acceso sin internet, tradicionalmente sabemos que necesitamos internet para poder acceder a una página web, en términos sencillos para que podamos visitar una página el navegador envía una petición al servidor en el que ésta se aloja, ese servidor puede encontrarse en cualquier parte del mundo y es precisamente vía el internet que buscamos y nos conectamos con dicho servidor, una aplicación web progresivo utilice una tecnología de nombre **service workers** que actúa como un pequeño servidor dentro del navegador que permite mostrar páginas aunque no halla internet o estemos usando una conexión lenta, para poder hacer esto el navegador implementa un cache propio donde podemos guardar los archivos que no cambian dentro de nuestra página para que sea este el servidor interno el que los envié desde el caché local en lugar de tener que ir hasta el servidor remoto, el beneficio de esto es que cuando no existe conexión a internet es la service worker la que se encarga de entregar el contenido que tiene guardado.
 - Instalación local, vía un archivo de configuración al que llamamos **manifesto** el navegador sabe que tu APP se puede agregar a la pantalla principal de un teléfono. haciendo que tu aplicación web se muestren prácticamente como una aplicación nativa.
 
- ![manifesto.jpg](/images/PWA-que-es/manifesto.JPG)
+ ![manifesto.jpg](/images/2019-07-21-AppWebProgresiva-que-es/manifesto.JPG)
 
  Los navegadores que soportan esta funcionalidad muestran un banner en la parte inferior de la pantalla para hacer saber al usuario que la página se puede agregar al home de su teléfono, el proceso de **"instalación local"** implica agregar un icono al home pero además algo que mencionamos antes, guarda parte de la página del caché para mostrarlo desde el navegador en lugar de descargarlo del servidor remoto. 
 
- ![manifesto.jpg](/images/PWA-que-es/home.JPG)
+ ![manifesto.jpg](/images/2019-07-21-AppWebProgresiva-que-es/home.JPG)
 
 ### 2. Carga inmediata
 Como parte de la creación de aplicaciones web progresivas introduce el concepto de **APP Shell**, el Shell de tu aplicación es aquello que se debe mostrar inicialmente, es como el Layout de la estructura que rodea tu contenido.
 
- ![manifesto.jpg](/images/PWA-que-es/app-shell.JPG)
+ ![manifesto.jpg](/images/2019-07-21-AppWebProgresiva-que-es/app-shell.JPG)
 
 El Shell debe ser estático y puede incluir cosas como el encabezado, el menú y probablemente un indicador de que la aplicación se está cargando, la ventaja de definir esta sección de tu página es optimizarlo para que se muestre de inmediato, eso podría significar construir el app shell desde el servidor, cachearlo con service workers y servirlos sin la necesidad de esperar una respuesta del servidor remoto.
  
