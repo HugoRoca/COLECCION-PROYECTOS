@@ -3,7 +3,7 @@ date: "2019-01-10"
 title: "Conexión NodeJS con SQLServer"
 description: "Microsoft SQL Server es un sistema de gestión de base de datos relacional (RDBMS) producido por Microsoft. Su principal lenguaje de consulta es Transact-SQL.."
 author: "hroca"
-image: shared/nodejs-sqlserver.jpg
+image: 2019-01-10-nodejs-sqlserver/image.jpg
 tags:
  - JS
  - SQLSERVER

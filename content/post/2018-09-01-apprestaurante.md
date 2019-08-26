@@ -3,7 +3,7 @@ date: "2018-09-01"
 title: "APP Restaurante"
 description: "En estas oportunidad les presento un nuevo sistema de restaurante, cuenta con dos formas de ver, una para los pedidos que se configura dentro del sistema y la otra la parte administrativa."
 author: "hroca"
-image: shared/apprestaurante.jpg
+image: 2018-09-01-apprestaurante/image.jpg
 tags:
  - SQLSERVER
  - CSharp

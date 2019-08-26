@@ -3,7 +3,7 @@ date: "2018-12-15"
 title: "Creación de un juego con JavaScript puro N° 1"
 description: "En esta oportunidad crearemos un juego del clásico piedra, papel o tijeras. Utilizaremos JavaScript puro y HTML5 y CSS3 para el diseño."
 author: "hroca"
-image: shared/juego-piedra-papel-tijeras.jpg
+image: 2018-12-15-game-rock-paper-scissors/image.jpg
 tags:
  - JS
 categories:

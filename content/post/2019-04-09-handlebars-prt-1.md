@@ -3,7 +3,7 @@ date: "2019-04-09"
 title: "Handlebars | Parte 1"
 description: "Handlebars.js es un motor de plantillas muy popular que es potente, fácil de utilizar y que cuenta con una gran comunidad. Se basa en el lenguaje de plantillas Mustache, pero lo mejora de ..."
 author: "hroca"
-image: shared/handlebars.jpg
+image: 2019-04-09-handlebars-prt-1/image.jpg
 tags:
  - Handlebars
 categories:

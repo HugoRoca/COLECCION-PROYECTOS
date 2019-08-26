@@ -3,7 +3,7 @@ date: "2018-05-06"
 title: "Entity Framework Básico"
 description: "Una forma mas rápida de realizar CRUD's, a tan solo unos clicks. Este es el poderosisimo Entity Framework"
 author: "hroca"
-image: shared/entity-framework-basico.jpg
+image: 2018-05-06-EntityFramework-basico/image.jpg
 tags:
  - SQLSERVER
  - CSharp

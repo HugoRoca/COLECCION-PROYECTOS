@@ -3,7 +3,7 @@ date: "2019-04-03"
 title: "Javascript: Promesas"
 description: "A una promesa, como su propio nombre lo dice, es simplemente un objeto que puede o no devolver algún valor en la línea de tiempo presente y futuro. Me gusta describir una promesa..."
 author: "hroca"
-image: shared/javascript-promesas.jpg
+image: 2019-04-03-javascript-promesas/image.jpg
 nomenu: main
 tags:
  - JS

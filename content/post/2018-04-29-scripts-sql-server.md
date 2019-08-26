@@ -3,7 +3,7 @@ date: "2018-04-29"
 title: "Scripts SQLServer"
 description: "Les comparto algunos scripts que me sirvieron de mucho durante el tiempo que llevo trabajando, y es más aún los sigo usando."
 author: "hroca"
-image: shared/scripts-sql.jpg
+image: 2018-04-29-scripts-sql-server/image.jpg
 tags:
  - SQLSERVER
 categories:
