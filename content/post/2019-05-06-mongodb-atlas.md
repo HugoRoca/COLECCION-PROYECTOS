@@ -3,7 +3,7 @@ date: "2019-05-06"
 title: "Configuración de una cuenta en MongoDB Atlas"
 description: "MongoDB Atlas ofrece la base de datos líder mundial para aplicaciones modernas como un servicio en la nube totalmente automatizado, diseñado y ejecutado por el mismo equipo que construye la base de datos."
 author: "hroca"
-image: shared/mongodb-atlas.jpg
+image: 2019-05-06-mongodb-atlas/image.jpg
 tags:
   - mongodb
 categories:
@@ -49,42 +49,42 @@ La configuración se realizará desde una cuenta free, MongoDb Atlas tambien ofr
 
 Nos dirigimos a la página oficial de [MongoDB](https://www.mongodb.com/) y selecionamos ***TRY FREE*** y nos registramos con un correo.
 
-![Sin titulo](/images/mongodb-atlas/paso1.jpg)
+![Sin titulo](/images/2019-05-06-mongodb-atlas/paso1.jpg)
 
 Una vez puesto los datos y haber presionado en el botón **Get started free** redirrecionará a la siguiente ventana donde nos muestra lo que tendra nuestro clúster. 
 
-![Sin titulo](/images/mongodb-atlas/paso2.jpg)
+![Sin titulo](/images/2019-05-06-mongodb-atlas/paso2.jpg)
 
 Continuamos dando clic en **Create clúster**
 
-![Sin titulo](/images/mongodb-atlas/paso3.jpg)
+![Sin titulo](/images/2019-05-06-mongodb-atlas/paso3.jpg)
 
 Nos redireccionará a un dashboard donde el clúster aún se seguirá creando, pero podemos explorar mientras se crea en segundo plano. Una vez finalizado la creación realizamos lo siguiente:
 
-![Sin titulo](/images/mongodb-atlas/paso4.jpg)
+![Sin titulo](/images/2019-05-06-mongodb-atlas/paso4.jpg)
 
-![Sin titulo](/images/mongodb-atlas/paso5.jpg)
+![Sin titulo](/images/2019-05-06-mongodb-atlas/paso5.jpg)
 
 **Punto 1:** MongoDB Atlas nos ofrece una seguridad de conexión por IP, esto quiere decir que podemos configurarlo de 2 maneras.
 
   - **Add You Current IP Address** con esta opcion podemos poner nuestra IP, lo malo de configurar esta opción es que cada vez que nos cambiamos de laptop o PC debemos de volver a configurarlo.
   - **Add a Different IP Address** con esta opción podemos configurar una IP que permita las conexiones de cualquier laptop o PC, por ejemplo podemos colocar la siguiente IP **0.0.0.0/0**.
 
-![Sin titulo](/images/mongodb-atlas/paso6.jpg)
+![Sin titulo](/images/2019-05-06-mongodb-atlas/paso6.jpg)
 
 **Punto 2** Configuración de usuario de acceso
 
-![Sin titulo](/images/mongodb-atlas/paso7.jpg)
+![Sin titulo](/images/2019-05-06-mongodb-atlas/paso7.jpg)
 
 Al realizar todo lo anterior, va quedando así:
 
-![Sin titulo](/images/mongodb-atlas/paso8.jpg)
+![Sin titulo](/images/2019-05-06-mongodb-atlas/paso8.jpg)
 
 Despues del paso anterior procedemos a obtener la cadena de conexión, nos mostrará 3 opciones de la cual seleccionamos la siguiente:
 
-![Sin titulo](/images/mongodb-atlas/paso9.jpg)
+![Sin titulo](/images/2019-05-06-mongodb-atlas/paso9.jpg)
 
-![Sin titulo](/images/mongodb-atlas/paso10.jpg)
+![Sin titulo](/images/2019-05-06-mongodb-atlas/paso10.jpg)
 
 Con la URI copiada podras acceder desde tu GUI para MongoDB preferida.
 

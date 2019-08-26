@@ -3,7 +3,7 @@ date: "2019-04-15"
 title: "Handlebars | Parte 2"
 description: "Continuando con handlebars, esta vez construiremos plantillas mas avanzadas usando condiciones, bucles, with, variables de datos, helpers, helpers de bloque y partials."
 author: "hroca"
-image: shared/handlebars-prt-2.jpg
+image: 2019-04-15-handlebars-prt-2/image.jpg
 tags:
   - Handlebars
 categories:

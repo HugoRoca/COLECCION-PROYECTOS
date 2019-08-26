@@ -3,7 +3,7 @@ date: "2019-05-13"
 title: "Conexión NodeJS con MongoDB Atlas"
 description: "MongoDB Atlas es la base de datos como servicio que permite implementar, utilizar y escalar una base de datos de MongoDB en la nube haciendo conexión con NodeJS."
 author: "hroca"
-image: shared/nodejs-mongodb.jpg
+image: 2019-05-13-nodejs-mongodb/image.jpg
 tags:
  - JavaScript
  - JS
@@ -145,7 +145,7 @@ const mongo = new mongoUtils();
 
 Para ejecutar, solamente basta ejecutar el siguiente comando en la consola `node index.js`
 
-![Sin titulo](/images/nodejs-mongodb-atlas/resultado.jpg)
+![Sin titulo](/images/2019-05-13-nodejs-mongodb/resultado.jpg)
 
 > Para obtener el código completo dar click [aquí](https://github.com/PORTAFOLIO-PROYECTOS/NODEJS_MONGODB/archive/master.zip)
 #### Comenta, disfruta y comparte! 
