@@ -5,7 +5,7 @@
     <link>https://hugorocaproyectos.js.org/tags/tuneles/</link>
     <description>Recent content in tuneles on HR Proyectos</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 11 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 10 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://hugorocaproyectos.js.org/tags/tuneles/index.xml" rel="self" type="application/rss+xml" />
     
@@ -13,7 +13,7 @@
     <item>
       <title>NGrok: Crea URLs públicas para exponer su servidor web local</title>
       <link>https://hugorocaproyectos.js.org/post/2019-06-10-ngrok/</link>
-      <pubDate>Tue, 11 Jun 2019 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 10 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://hugorocaproyectos.js.org/post/2019-06-10-ngrok/</guid>
       <description>Ngrok es una herramienta útil que crea una URL de túnel segura y de acceso público a una aplicación que se ejecuta en localhost.

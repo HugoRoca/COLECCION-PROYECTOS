@@ -38,7 +38,7 @@
     
     
 
-    <link rel="stylesheet" href='https://hugorocaproyectos.js.org/css/styles.css?12646ef6287134bfdae61a4df0e734a1'>
+    <link rel="stylesheet" href='https://hugorocaproyectos.js.org/css/styles.css?51f9698438295c4c7427eb0abd037a70'>
     <link rel="stylesheet" href='https://hugorocaproyectos.js.org/css/custom.css?140cf12e7b6472e3ea75043208c17556'>
 
     
@@ -62,6 +62,8 @@ Split -- select * from dbo.[Split](&#39;1,2,3,4,5,6&#39;,&#39;,&#39;) CREATE FUN
 
     <meta property="og:url" content="https://hugorocaproyectos.js.org/post/2018-04-29-scripts-sql-server/">
     <meta name="og:description" content="Les comparto algunos scripts que me sirvieron de mucho durante el tiempo que llevo trabajando, y es más aún los sigo usando.
+Split -- select * from dbo.[Split](&#39;1,2,3,4,5,6&#39;,&#39;,&#39;) CREATE FUNCTION [dbo].[Split] ( @ItemList NVARCHAR(MAX) ,@delimiter CHAR(1) ) RETURNS @IDTable TABLE ( nro INT identity(1, 1) ,Item VARCHAR(MAX) ) AS BEGIN DECLARE @tempItemList NVARCHAR(MAX) SET @tempItemList = @ItemList DECLARE @i INT DECLARE @Item NVARCHAR(MAX) SET @i = CHARINDEX(@delimiter, @tempItemList) WHILE (LEN(@tempItemList) &gt; 0) BEGIN IF @i = 0 SET @Item = @tempItemList ELSE SET @Item = LEFT(@tempItemList, @i - 1) INSERT INTO @IDTable (Item) VALUES (@Item) IF @i = 0 SET @tempItemList = &#39;&#39; ELSE SET @tempItemList = RIGHT(@tempItemList, LEN(@tempItemList) - @i) SET @i = CHARINDEX(@delimiter, @tempItemList) END RETURN END  Encriptación Recomendado para contraseñas y/o datos sensibles.">
+    <meta name="description" content="Les comparto algunos scripts que me sirvieron de mucho durante el tiempo que llevo trabajando, y es más aún los sigo usando.
 Split -- select * from dbo.[Split](&#39;1,2,3,4,5,6&#39;,&#39;,&#39;) CREATE FUNCTION [dbo].[Split] ( @ItemList NVARCHAR(MAX) ,@delimiter CHAR(1) ) RETURNS @IDTable TABLE ( nro INT identity(1, 1) ,Item VARCHAR(MAX) ) AS BEGIN DECLARE @tempItemList NVARCHAR(MAX) SET @tempItemList = @ItemList DECLARE @i INT DECLARE @Item NVARCHAR(MAX) SET @i = CHARINDEX(@delimiter, @tempItemList) WHILE (LEN(@tempItemList) &gt; 0) BEGIN IF @i = 0 SET @Item = @tempItemList ELSE SET @Item = LEFT(@tempItemList, @i - 1) INSERT INTO @IDTable (Item) VALUES (@Item) IF @i = 0 SET @tempItemList = &#39;&#39; ELSE SET @tempItemList = RIGHT(@tempItemList, LEN(@tempItemList) - @i) SET @i = CHARINDEX(@delimiter, @tempItemList) END RETURN END  Encriptación Recomendado para contraseñas y/o datos sensibles.">
   </head>
 
@@ -99,7 +101,7 @@ Split -- select * from dbo.[Split](&#39;1,2,3,4,5,6&#39;,&#39;,&#39;) CREATE FUN
             <div class="article__meta">
               <span class="article__meta-item article__date">
                 
-                  29/04/29046
+                  29/04/2018
                  by
                 
 
