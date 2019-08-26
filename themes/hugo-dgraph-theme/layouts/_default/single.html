@@ -278,7 +278,7 @@
                 {{ with .Site.Params.DateForm }}
                   {{ $.Date.Format . }}
                 {{ else }}
-                  {{ $.Date.Format "02/01/2016" }}
+                  {{ $.Date.Format "02/01/2006" }}
                 {{ end }} by
                 {{partial "author_name.html" (dict "user" .Params.author)}}
               </span>
